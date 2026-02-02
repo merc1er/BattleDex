@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "PokeBattleDex (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PokeBattleDex (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
