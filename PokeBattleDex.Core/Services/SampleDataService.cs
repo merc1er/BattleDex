@@ -49,17 +49,18 @@ public class SampleDataService : ISampleDataService
             }
 
             var fields = ParseCsvLine(line);
-            if (fields.Length < 13)
+            if (fields.Length < 14)
             {
                 continue;
             }
 
-            // CSV columns:
+            // CSV columns: #,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary,FrenchName
             var species = new PokemonSpecies
             {
                 Id = int.Parse(fields[0]),
                 Name = fields[1].ToLowerInvariant().Replace(" ", "-").Replace(".", "").Replace("'", ""),
                 NameEnglish = fields[1],
+                NameFrench = fields[13],
                 Types = ParseTypes(fields[2], fields[3]),
                 Total = int.Parse(fields[4]),
                 HP = int.Parse(fields[5]),
