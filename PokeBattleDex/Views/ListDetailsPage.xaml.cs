@@ -26,4 +26,12 @@ public sealed partial class ListDetailsPage : Page
             ViewModel.EnsureItemSelected();
         }
     }
+
+    private void SearchBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+    {
+        if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+        {
+            ViewModel.SearchText = sender.Text;
+        }
+    }
 }
