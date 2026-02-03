@@ -34,6 +34,78 @@ public class PokemonSpecies
     public List<PokemonType> Types { get; set; } = new();
 
     /// <summary>
+    /// Base stat total.
+    /// </summary>
+    public int Total
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// Base HP stat.
+    /// </summary>
+    public int HP
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// Base Attack stat.
+    /// </summary>
+    public int Attack
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// Base Defense stat.
+    /// </summary>
+    public int Defense
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// Base Special Attack stat.
+    /// </summary>
+    public int SpAtk
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// Base Special Defense stat.
+    /// </summary>
+    public int SpDef
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// Base Speed stat.
+    /// </summary>
+    public int Speed
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// The generation this Pokémon was introduced in.
+    /// </summary>
+    public int Generation
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// Whether this Pokémon is a legendary.
+    /// </summary>
+    public bool IsLegendary
+    {
+        get; set;
+    }
+
+    /// <summary>
     /// Gets the display name with the Pokédex number.
     /// </summary>
     public string DisplayName => $"#{Id:D3} {NameEnglish}";

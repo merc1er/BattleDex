@@ -1,10 +1,11 @@
-﻿using PokeBattleDex.Core.Contracts.Services;
+﻿using System.Reflection;
+using PokeBattleDex.Core.Contracts.Services;
 using PokeBattleDex.Core.Models;
 
 namespace PokeBattleDex.Core.Services;
 
 /// <summary>
-/// Service that provides sample Pokémon data.
+/// Service that provides Pokémon data loaded from an embedded CSV resource.
 /// </summary>
 public class SampleDataService : ISampleDataService
 {
@@ -14,109 +15,110 @@ public class SampleDataService : ISampleDataService
     {
         if (_allPokemon.Count == 0)
         {
-            _allPokemon = new List<PokemonSpecies>(AllPokemon());
+            _allPokemon = new List<PokemonSpecies>(LoadPokemonFromCsv());
         }
 
         await Task.CompletedTask;
         return _allPokemon;
     }
 
-    private static IEnumerable<PokemonSpecies> AllPokemon()
+    private static IEnumerable<PokemonSpecies> LoadPokemonFromCsv()
     {
-        return new List<PokemonSpecies>
+        var assembly = Assembly.GetExecutingAssembly();
+        var resourceName = "PokeBattleDex.Core.Data.pokemon.csv";
+
+        using var stream = assembly.GetManifestResourceStream(resourceName);
+        if (stream == null)
         {
-            new PokemonSpecies
+            throw new InvalidOperationException($"Could not find embedded resource: {resourceName}");
+        }
+
+        using var reader = new StreamReader(stream);
+
+        // Skip header line
+        reader.ReadLine();
+
+        var pokemon = new List<PokemonSpecies>();
+
+        while (!reader.EndOfStream)
+        {
+            var line = reader.ReadLine();
+            if (string.IsNullOrWhiteSpace(line))
             {
-                Name = "bulbasaur",
-                Id = 1,
-                NameEnglish = "Bulbasaur",
-                NameFrench = "Bulbizarre",
-                Types = new List<PokemonType>
-                {
-                    new PokemonType { Name = "grass" },
-                    new PokemonType { Name = "poison" }
-                }
-            },
-            new PokemonSpecies
-            {
-                Name = "ivysaur",
-                Id = 2,
-                NameEnglish = "Ivysaur",
-                NameFrench = "Herbizarre",
-                Types = new List<PokemonType>
-                {
-                    new PokemonType { Name = "grass" },
-                    new PokemonType { Name = "poison" }
-                }
-            },
-            new PokemonSpecies
-            {
-                Name = "venusaur",
-                Id = 3,
-                NameEnglish = "Venusaur",
-                NameFrench = "Florizarre",
-                Types = new List<PokemonType>
-                {
-                    new PokemonType { Name = "grass" },
-                    new PokemonType { Name = "poison" }
-                }
-            },
-            new PokemonSpecies
-            {
-                Name = "charmander",
-                Id = 4,
-                NameEnglish = "Charmander",
-                NameFrench = "Salamèche",
-                Types = new List<PokemonType>
-                {
-                    new PokemonType { Name = "fire" }
-                }
-            },
-            new PokemonSpecies
-            {
-                Name = "charmeleon",
-                Id = 5,
-                NameEnglish = "Charmeleon",
-                NameFrench = "Reptincel",
-                Types = new List<PokemonType>
-                {
-                    new PokemonType { Name = "fire" }
-                }
-            },
-            new PokemonSpecies
-            {
-                Name = "charizard",
-                Id = 6,
-                NameEnglish = "Charizard",
-                NameFrench = "Dracaufeu",
-                Types = new List<PokemonType>
-                {
-                    new PokemonType { Name = "fire" },
-                    new PokemonType { Name = "flying" }
-                }
-            },
-            new PokemonSpecies
-            {
-                Name = "squirtle",
-                Id = 7,
-                NameEnglish = "Squirtle",
-                NameFrench = "Carapuce",
-                Types = new List<PokemonType>
-                {
-                    new PokemonType { Name = "water" }
-                }
-            },
-            new PokemonSpecies
-            {
-                Name = "wartortle",
-                Id = 8,
-                NameEnglish = "Wartortle",
-                NameFrench = "Carabaffe",
-                Types = new List<PokemonType>
-                {
-                    new PokemonType { Name = "water" }
-                }
+                continue;
             }
-        };
+
+            var fields = ParseCsvLine(line);
+            if (fields.Length < 13)
+            {
+                continue;
+            }
+
+            // CSV columns:
+            var species = new PokemonSpecies
+            {
+                Id = int.Parse(fields[0]),
+                Name = fields[1].ToLowerInvariant().Replace(" ", "-").Replace(".", "").Replace("'", ""),
+                NameEnglish = fields[1],
+                Types = ParseTypes(fields[2], fields[3]),
+                Total = int.Parse(fields[4]),
+                HP = int.Parse(fields[5]),
+                Attack = int.Parse(fields[6]),
+                Defense = int.Parse(fields[7]),
+                SpAtk = int.Parse(fields[8]),
+                SpDef = int.Parse(fields[9]),
+                Speed = int.Parse(fields[10]),
+                Generation = int.Parse(fields[11]),
+                IsLegendary = fields[12].Equals("True", StringComparison.OrdinalIgnoreCase)
+            };
+
+            pokemon.Add(species);
+        }
+
+        return pokemon;
+    }
+
+    private static string[] ParseCsvLine(string line)
+    {
+        var fields = new List<string>();
+        var currentField = "";
+        var inQuotes = false;
+
+        foreach (var c in line)
+        {
+            if (c == '"')
+            {
+                inQuotes = !inQuotes;
+            }
+            else if (c == ',' && !inQuotes)
+            {
+                fields.Add(currentField);
+                currentField = "";
+            }
+            else
+            {
+                currentField += c;
+            }
+        }
+
+        fields.Add(currentField);
+        return fields.ToArray();
+    }
+
+    private static List<PokemonType> ParseTypes(string type1, string type2)
+    {
+        var types = new List<PokemonType>();
+
+        if (!string.IsNullOrWhiteSpace(type1))
+        {
+            types.Add(new PokemonType { Name = type1.ToLowerInvariant() });
+        }
+
+        if (!string.IsNullOrWhiteSpace(type2))
+        {
+            types.Add(new PokemonType { Name = type2.ToLowerInvariant() });
+        }
+
+        return types;
     }
 }
