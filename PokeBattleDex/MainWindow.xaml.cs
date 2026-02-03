@@ -1,11 +1,17 @@
-﻿using PokeBattleDex.Helpers;
+﻿using Microsoft.UI.Windowing;
 
+using PokeBattleDex.Contracts.Services;
+using PokeBattleDex.Helpers;
+
+using Windows.Graphics;
 using Windows.UI.ViewManagement;
 
 namespace PokeBattleDex;
 
 public sealed partial class MainWindow : WindowEx
 {
+    private const string WindowSizeKey = "WindowSize";
+
     private Microsoft.UI.Dispatching.DispatcherQueue dispatcherQueue;
 
     private UISettings settings;
@@ -22,6 +28,44 @@ public sealed partial class MainWindow : WindowEx
         dispatcherQueue = Microsoft.UI.Dispatching.DispatcherQueue.GetForCurrentThread();
         settings = new UISettings();
         settings.ColorValuesChanged += Settings_ColorValuesChanged; // cannot use FrameworkElement.ActualThemeChanged event
+
+        // Restore window size
+        _ = RestoreWindowSizeAsync();
+
+        // Save window size when closing
+        AppWindow.Closing += AppWindow_Closing;
+    }
+
+    private async Task RestoreWindowSizeAsync()
+    {
+        var localSettingsService = App.GetService<ILocalSettingsService>();
+        var savedSettings = await localSettingsService.ReadSettingAsync<WindowSizeSettings>(WindowSizeKey);
+
+        if (savedSettings != null && savedSettings.Width > 0 && savedSettings.Height > 0)
+        {
+            AppWindow.MoveAndResize(new RectInt32(savedSettings.X, savedSettings.Y, savedSettings.Width, savedSettings.Height));
+        }
+    }
+
+    private async void AppWindow_Closing(AppWindow sender, AppWindowClosingEventArgs args)
+    {
+        // Defer closing to allow async save to complete
+        args.Cancel = true;
+
+        var localSettingsService = App.GetService<ILocalSettingsService>();
+        var windowSettings = new WindowSizeSettings
+        {
+            Width = AppWindow.Size.Width,
+            Height = AppWindow.Size.Height,
+            X = AppWindow.Position.X,
+            Y = AppWindow.Position.Y
+        };
+
+        await localSettingsService.SaveSettingAsync(WindowSizeKey, windowSettings);
+
+        // Unhook event to prevent recursion and close
+        AppWindow.Closing -= AppWindow_Closing;
+        Close();
     }
 
     // this handles updating the caption button colors correctly when indows system theme is changed
@@ -33,5 +77,25 @@ public sealed partial class MainWindow : WindowEx
         {
             TitleBarHelper.ApplySystemThemeToCaptionButtons();
         });
+    }
+}
+
+public class WindowSizeSettings
+{
+    public int Width
+    {
+        get; set;
+    }
+    public int Height
+    {
+        get; set;
+    }
+    public int X
+    {
+        get; set;
+    }
+    public int Y
+    {
+        get; set;
     }
 }
