@@ -17,7 +17,7 @@
                     VerticalAlignment="Center"
                     FontSize="48"
                     Glyph="{x:Bind ListDetailsMenuItem.Symbol, Mode=OneWay}"
-                    AutomationProperties.Name="{x:Bind ListDetailsMenuItem.PrimaryTypesDisplay, Mode=OneWay}"  />
+                    AutomationProperties.Name="{x:Bind ListDetailsMenuItem.TypesDisplay, Mode=OneWay}"  />
                 <TextBlock
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center"
@@ -44,28 +44,7 @@
                     Margin="{StaticResource SmallTopMargin}"
                     Text="Types"
                     Style="{StaticResource DetailSubTitleStyle}" />
-                <TextBlock Text="{x:Bind ListDetailsMenuItem.PrimaryTypesDisplay, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
-
-                <TextBlock
-                    Margin="{StaticResource SmallTopMargin}"
-                    Text="Number of Forms"
-                    Style="{StaticResource DetailSubTitleStyle}" />
-                <TextBlock Text="{x:Bind ListDetailsMenuItem.FormCount, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
-
-                <TextBlock
-                    Margin="{StaticResource MediumTopMargin}"
-                    Text="Forms"
-                    Style="{StaticResource DetailSubTitleStyle}" />
-                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.Pokemons, Mode=OneWay}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Margin="0,8,0,0">
-                                <TextBlock Text="{Binding Name}" Style="{StaticResource DetailBodyBaseMediumStyle}" FontWeight="SemiBold" />
-                                <TextBlock Text="{Binding TypesDisplay}" Style="{StaticResource DetailBodyStyle}" Margin="16,0,0,0" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
+                <TextBlock Text="{x:Bind ListDetailsMenuItem.TypesDisplay, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
             </StackPanel>
         </StackPanel>
     </ScrollViewer>

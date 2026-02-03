@@ -20,13 +20,13 @@
                     VerticalAlignment="Center"
                     FontSize="32"
                     Glyph="{x:Bind Symbol}"
-                    AutomationProperties.Name="{x:Bind PrimaryTypesDisplay}" />
+                    AutomationProperties.Name="{x:Bind TypesDisplay}" />
                 <StackPanel
                     Grid.Column="1"
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center">
                     <TextBlock Text="{x:Bind DisplayName}" Style="{StaticResource ListTitleStyle}" />
-                    <TextBlock Text="{x:Bind PrimaryTypesDisplay}" Style="{StaticResource ListSubTitleStyle}" />
+                    <TextBlock Text="{x:Bind TypesDisplay}" Style="{StaticResource ListSubTitleStyle}" />
                 </StackPanel>
             </Grid>
         </DataTemplate>

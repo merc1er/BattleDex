@@ -1,7 +1,7 @@
 namespace PokeBattleDex.Core.Models;
 
 /// <summary>
-/// Represents a Pokémon species with its various forms.
+/// Represents a Pokémon species.
 /// </summary>
 public class PokemonSpecies
 {
@@ -29,9 +29,9 @@ public class PokemonSpecies
     public string NameFrench { get; set; } = string.Empty;
 
     /// <summary>
-    /// All forms of this Pokémon species.
+    /// The Pokémon's types.
     /// </summary>
-    public List<Pokemon> Pokemons { get; set; } = new();
+    public List<PokemonType> Types { get; set; } = new();
 
     /// <summary>
     /// Gets the display name with the Pokédex number.
@@ -39,14 +39,11 @@ public class PokemonSpecies
     public string DisplayName => $"#{Id:D3} {NameEnglish}";
 
     /// <summary>
-    /// Gets the primary form's types as a display string.
+    /// Gets the types as a display string.
     /// </summary>
-    public string PrimaryTypesDisplay => Pokemons.FirstOrDefault()?.TypesDisplay ?? string.Empty;
-
-    /// <summary>
-    /// Gets the number of forms this species has.
-    /// </summary>
-    public int FormCount => Pokemons.Count;
+    public string TypesDisplay => Types.Count > 0
+        ? string.Join(", ", Types.Select(t => char.ToUpper(t.Name[0]) + t.Name[1..]))
+        : string.Empty;
 
     /// <summary>
     /// Gets a symbol code based on the primary type for display purposes.
@@ -55,7 +52,7 @@ public class PokemonSpecies
     {
         get
         {
-            var primaryType = Pokemons.FirstOrDefault()?.Types.FirstOrDefault()?.Name ?? "";
+            var primaryType = Types.FirstOrDefault()?.Name ?? "";
             return primaryType.ToLower() switch
             {
                 "fire" => 0xE706,      // Brightness (sun-like)
