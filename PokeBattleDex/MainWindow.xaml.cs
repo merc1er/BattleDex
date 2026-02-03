@@ -63,8 +63,13 @@ public sealed partial class MainWindow : WindowEx
 
         await localSettingsService.SaveSettingAsync(WindowSizeKey, windowSettings);
 
-        // Unhook event to prevent recursion and close
+        // Unhook event to prevent recursion.
         AppWindow.Closing -= AppWindow_Closing;
+
+        // Hide window before closing to prevent black frame flash (WinUI 3 visual
+        // artifact workaround).
+        AppWindow.Hide();
+
         Close();
     }
 
