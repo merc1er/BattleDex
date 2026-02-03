@@ -13,9 +13,9 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     private readonly ISampleDataService _sampleDataService;
 
     [ObservableProperty]
-    private SampleOrder? selected;
+    private PokemonSpecies? selected;
 
-    public ObservableCollection<SampleOrder> SampleItems { get; private set; } = new ObservableCollection<SampleOrder>();
+    public ObservableCollection<PokemonSpecies> PokemonItems { get; private set; } = new ObservableCollection<PokemonSpecies>();
 
     public ListDetailsViewModel(ISampleDataService sampleDataService)
     {
@@ -24,14 +24,13 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
 
     public async void OnNavigatedTo(object parameter)
     {
-        SampleItems.Clear();
+        PokemonItems.Clear();
 
-        // TODO: Replace with real data.
-        var data = await _sampleDataService.GetListDetailsDataAsync();
+        var data = await _sampleDataService.GetPokemonDataAsync();
 
         foreach (var item in data)
         {
-            SampleItems.Add(item);
+            PokemonItems.Add(item);
         }
     }
 
@@ -41,6 +40,6 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
 
     public void EnsureItemSelected()
     {
-        Selected ??= SampleItems.First();
+        Selected ??= PokemonItems.First();
     }
 }
