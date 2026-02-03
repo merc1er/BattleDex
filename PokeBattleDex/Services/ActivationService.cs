@@ -34,8 +34,15 @@ public class ActivationService : IActivationService
         // Handle activation via ActivationHandlers.
         await HandleActivationAsync(activationArgs);
 
-        // Activate the MainWindow.
+        // Restore window size/position before showing to prevent visual jump.
+        await ((MainWindow)App.MainWindow).RestoreWindowSizeAsync();
+
+        // Activate the MainWindow (hidden initially to prevent flash).
         App.MainWindow.Activate();
+
+        // Show window after content is ready to prevent startup flash (WinUI 3 visual
+        // artifact workaround).
+        App.MainWindow.AppWindow.Show();
 
         // Execute tasks after activation.
         await StartupAsync();

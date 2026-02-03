@@ -24,19 +24,20 @@ public sealed partial class MainWindow : WindowEx
         Content = null;
         Title = "AppDisplayName".GetLocalized();
 
+        // Hide window initially to prevent startup flash (WinUI 3 visual artifact
+        // workaround).
+        AppWindow.Hide();
+
         // Theme change code picked from https://github.com/microsoft/WinUI-Gallery/pull/1239
         dispatcherQueue = Microsoft.UI.Dispatching.DispatcherQueue.GetForCurrentThread();
         settings = new UISettings();
         settings.ColorValuesChanged += Settings_ColorValuesChanged; // cannot use FrameworkElement.ActualThemeChanged event
 
-        // Restore window size
-        _ = RestoreWindowSizeAsync();
-
         // Save window size when closing
         AppWindow.Closing += AppWindow_Closing;
     }
 
-    private async Task RestoreWindowSizeAsync()
+    public async Task RestoreWindowSizeAsync()
     {
         var localSettingsService = App.GetService<ILocalSettingsService>();
         var savedSettings = await localSettingsService.ReadSettingAsync<WindowSizeSettings>(WindowSizeKey);
