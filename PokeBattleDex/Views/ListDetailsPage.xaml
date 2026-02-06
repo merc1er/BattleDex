@@ -68,7 +68,10 @@
         <AutoSuggestBox
             x:Name="SearchBox"
             Grid.Row="0"
+            Height="40"
             Margin="0,12,12,24"
+            Padding="12,0,12,0"
+            VerticalContentAlignment="Center"
             PlaceholderText="Search Pokémon..."
             QueryIcon="Find"
             TextChanged="SearchBox_TextChanged" />
