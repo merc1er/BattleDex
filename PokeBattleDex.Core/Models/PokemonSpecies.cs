@@ -145,7 +145,6 @@ public class PokemonSpecies
             return new Uri(filePath).AbsoluteUri;
         }
     }
-    /// </summary>
     public string TypesDisplay => Types.Count > 0
         ? string.Join(", ", Types.Select(t => char.ToUpper(t.Name[0]) + t.Name[1..]))
         : string.Empty;
