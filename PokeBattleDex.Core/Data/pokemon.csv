@@ -1,1026 +1,1026 @@
-#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary,NameFrench
-1,Bulbasaur,Grass,Poison,318,45,49,49,65,65,45,1,False,Bulbizarre
-2,Ivysaur,Grass,Poison,405,60,62,63,80,80,60,1,False,Herbizarre
-3,Venusaur,Grass,Poison,525,80,82,83,100,100,80,1,False,Florizarre
-4,Charmander,Fire,,309,39,52,43,60,50,65,1,False,Salamèche
-5,Charmeleon,Fire,,405,58,64,58,80,65,80,1,False,Reptincel
-6,Charizard,Fire,Flying,534,78,84,78,109,85,100,1,False,Dracaufeu
-7,Squirtle,Water,,314,44,48,65,50,64,43,1,False,Carapuce
-8,Wartortle,Water,,405,59,63,80,65,80,58,1,False,Carabaffe
-9,Blastoise,Water,,530,79,83,100,85,105,78,1,False,Tortank
-10,Caterpie,Bug,,195,45,30,35,20,20,45,1,False,Chenipan
-11,Metapod,Bug,,205,50,20,55,25,25,30,1,False,Chrysacier
-12,Butterfree,Bug,Flying,395,60,45,50,90,80,70,1,False,Papilusion
-13,Weedle,Bug,Poison,195,40,35,30,20,20,50,1,False,Aspicot
-14,Kakuna,Bug,Poison,205,45,25,50,25,25,35,1,False,Coconfort
-15,Beedrill,Bug,Poison,395,65,90,40,45,80,75,1,False,Dardargnan
-16,Pidgey,Normal,Flying,251,40,45,40,35,35,56,1,False,Roucool
-17,Pidgeotto,Normal,Flying,349,63,60,55,50,50,71,1,False,Roucoups
-18,Pidgeot,Normal,Flying,479,83,80,75,70,70,101,1,False,Roucarnage
-19,Rattata,Normal,,253,30,56,35,25,35,72,1,False,Rattata
-20,Raticate,Normal,,413,55,81,60,50,70,97,1,False,Rattatac
-21,Spearow,Normal,Flying,262,40,60,30,31,31,70,1,False,Piafabec
-22,Fearow,Normal,Flying,442,65,90,65,61,61,100,1,False,Rapasdepic
-23,Ekans,Poison,,288,35,60,44,40,54,55,1,False,Abo
-24,Arbok,Poison,,448,60,95,69,65,79,80,1,False,Arbok
-25,Pikachu,Electric,,320,35,55,40,50,50,90,1,False,Pikachu
-26,Raichu,Electric,,485,60,90,55,90,80,110,1,False,Raichu
-27,Sandshrew,Ground,,300,50,75,85,20,30,40,1,False,Sabelette
-28,Sandslash,Ground,,450,75,100,110,45,55,65,1,False,Sablaireau
-29,Nidoran-f,Poison,,275,55,47,52,40,40,41,1,False,Nidoran♀
-30,Nidorina,Poison,,365,70,62,67,55,55,56,1,False,Nidorina
-31,Nidoqueen,Poison,Ground,505,90,92,87,75,85,76,1,False,Nidoqueen
-32,Nidoran-m,Poison,,273,46,57,40,40,40,50,1,False,Nidoran♂
-33,Nidorino,Poison,,365,61,72,57,55,55,65,1,False,Nidorino
-34,Nidoking,Poison,Ground,505,81,102,77,85,75,85,1,False,Nidoking
-35,Clefairy,Fairy,,323,70,45,48,60,65,35,1,False,Mélofée
-36,Clefable,Fairy,,483,95,70,73,95,90,60,1,False,Mélodelfe
-37,Vulpix,Fire,,299,38,41,40,50,65,65,1,False,Goupix
-38,Ninetales,Fire,,505,73,76,75,81,100,100,1,False,Feunard
-39,Jigglypuff,Normal,Fairy,270,115,45,20,45,25,20,1,False,Rondoudou
-40,Wigglytuff,Normal,Fairy,435,140,70,45,85,50,45,1,False,Grodoudou
-41,Zubat,Poison,Flying,245,40,45,35,30,40,55,1,False,Nosferapti
-42,Golbat,Poison,Flying,455,75,80,70,65,75,90,1,False,Nosferalto
-43,Oddish,Grass,Poison,320,45,50,55,75,65,30,1,False,Mystherbe
-44,Gloom,Grass,Poison,395,60,65,70,85,75,40,1,False,Ortide
-45,Vileplume,Grass,Poison,490,75,80,85,110,90,50,1,False,Rafflesia
-46,Paras,Bug,Grass,285,35,70,55,45,55,25,1,False,Paras
-47,Parasect,Bug,Grass,405,60,95,80,60,80,30,1,False,Parasect
-48,Venonat,Bug,Poison,305,60,55,50,40,55,45,1,False,Mimitoss
-49,Venomoth,Bug,Poison,450,70,65,60,90,75,90,1,False,Aéromite
-50,Diglett,Ground,,265,10,55,25,35,45,95,1,False,Taupiqueur
-51,Dugtrio,Ground,,425,35,100,50,50,70,120,1,False,Triopikeur
-52,Meowth,Normal,,290,40,45,35,40,40,90,1,False,Miaouss
-53,Persian,Normal,,440,65,70,60,65,65,115,1,False,Persian
-54,Psyduck,Water,,320,50,52,48,65,50,55,1,False,Psykokwak
-55,Golduck,Water,,500,80,82,78,95,80,85,1,False,Akwakwak
-56,Mankey,Fighting,,305,40,80,35,35,45,70,1,False,Férosinge
-57,Primeape,Fighting,,455,65,105,60,60,70,95,1,False,Colossinge
-58,Growlithe,Fire,,350,55,70,45,70,50,60,1,False,Caninos
-59,Arcanine,Fire,,555,90,110,80,100,80,95,1,False,Arcanin
-60,Poliwag,Water,,300,40,50,40,40,40,90,1,False,Ptitard
-61,Poliwhirl,Water,,385,65,65,65,50,50,90,1,False,Têtarte
-62,Poliwrath,Water,Fighting,510,90,95,95,70,90,70,1,False,Tartard
-63,Abra,Psychic,,310,25,20,15,105,55,90,1,False,Abra
-64,Kadabra,Psychic,,400,40,35,30,120,70,105,1,False,Kadabra
-65,Alakazam,Psychic,,500,55,50,45,135,95,120,1,False,Alakazam
-66,Machop,Fighting,,305,70,80,50,35,35,35,1,False,Machoc
-67,Machoke,Fighting,,405,80,100,70,50,60,45,1,False,Machopeur
-68,Machamp,Fighting,,505,90,130,80,65,85,55,1,False,Mackogneur
-69,Bellsprout,Grass,Poison,300,50,75,35,70,30,40,1,False,Chétiflor
-70,Weepinbell,Grass,Poison,390,65,90,50,85,45,55,1,False,Boustiflor
-71,Victreebel,Grass,Poison,490,80,105,65,100,70,70,1,False,Empiflor
-72,Tentacool,Water,Poison,335,40,40,35,50,100,70,1,False,Tentacool
-73,Tentacruel,Water,Poison,515,80,70,65,80,120,100,1,False,Tentacruel
-74,Geodude,Rock,Ground,300,40,80,100,30,30,20,1,False,Racaillou
-75,Graveler,Rock,Ground,390,55,95,115,45,45,35,1,False,Gravalanch
-76,Golem,Rock,Ground,495,80,120,130,55,65,45,1,False,Grolem
-77,Ponyta,Fire,,410,50,85,55,65,65,90,1,False,Ponyta
-78,Rapidash,Fire,,500,65,100,70,80,80,105,1,False,Galopa
-79,Slowpoke,Water,Psychic,315,90,65,65,40,40,15,1,False,Ramoloss
-80,Slowbro,Water,Psychic,490,95,75,110,100,80,30,1,False,Flagadoss
-81,Magnemite,Electric,Steel,325,25,35,70,95,55,45,1,False,Magnéti
-82,Magneton,Electric,Steel,465,50,60,95,120,70,70,1,False,Magnéton
-83,Farfetchd,Normal,Flying,377,52,90,55,58,62,60,1,False,Canarticho
-84,Doduo,Normal,Flying,310,35,85,45,35,35,75,1,False,Doduo
-85,Dodrio,Normal,Flying,470,60,110,70,60,60,110,1,False,Dodrio
-86,Seel,Water,,325,65,45,55,45,70,45,1,False,Otaria
-87,Dewgong,Water,Ice,475,90,70,80,70,95,70,1,False,Lamantine
-88,Grimer,Poison,,325,80,80,50,40,50,25,1,False,Tadmorv
-89,Muk,Poison,,500,105,105,75,65,100,50,1,False,Grotadmorv
-90,Shellder,Water,,305,30,65,100,45,25,40,1,False,Kokiyas
-91,Cloyster,Water,Ice,525,50,95,180,85,45,70,1,False,Crustabri
-92,Gastly,Ghost,Poison,310,30,35,30,100,35,80,1,False,Fantominus
-93,Haunter,Ghost,Poison,405,45,50,45,115,55,95,1,False,Spectrum
-94,Gengar,Ghost,Poison,500,60,65,60,130,75,110,1,False,Ectoplasma
-95,Onix,Rock,Ground,385,35,45,160,30,45,70,1,False,Onix
-96,Drowzee,Psychic,,328,60,48,45,43,90,42,1,False,Soporifik
-97,Hypno,Psychic,,483,85,73,70,73,115,67,1,False,Hypnomade
-98,Krabby,Water,,325,30,105,90,25,25,50,1,False,Krabby
-99,Kingler,Water,,475,55,130,115,50,50,75,1,False,Krabboss
-100,Voltorb,Electric,,330,40,30,50,55,55,100,1,False,Voltorbe
-101,Electrode,Electric,,490,60,50,70,80,80,150,1,False,Électrode
-102,Exeggcute,Grass,Psychic,325,60,40,80,60,45,40,1,False,Noeunoeuf
-103,Exeggutor,Grass,Psychic,530,95,95,85,125,75,55,1,False,Noadkoko
-104,Cubone,Ground,,320,50,50,95,40,50,35,1,False,Osselait
-105,Marowak,Ground,,425,60,80,110,50,80,45,1,False,Ossatueur
-106,Hitmonlee,Fighting,,455,50,120,53,35,110,87,1,False,Kicklee
-107,Hitmonchan,Fighting,,455,50,105,79,35,110,76,1,False,Tygnon
-108,Lickitung,Normal,,385,90,55,75,60,75,30,1,False,Excelangue
-109,Koffing,Poison,,340,40,65,95,60,45,35,1,False,Smogo
-110,Weezing,Poison,,490,65,90,120,85,70,60,1,False,Smogogo
-111,Rhyhorn,Ground,Rock,345,80,85,95,30,30,25,1,False,Rhinocorne
-112,Rhydon,Ground,Rock,485,105,130,120,45,45,40,1,False,Rhinoféros
-113,Chansey,Normal,,450,250,5,5,35,105,50,1,False,Leveinard
-114,Tangela,Grass,,435,65,55,115,100,40,60,1,False,Saquedeneu
-115,Kangaskhan,Normal,,490,105,95,80,40,80,90,1,False,Kangourex
-116,Horsea,Water,,295,30,40,70,70,25,60,1,False,Hypotrempe
-117,Seadra,Water,,440,55,65,95,95,45,85,1,False,Hypocéan
-118,Goldeen,Water,,320,45,67,60,35,50,63,1,False,Poissirène
-119,Seaking,Water,,450,80,92,65,65,80,68,1,False,Poissoroy
-120,Staryu,Water,,340,30,45,55,70,55,85,1,False,Stari
-121,Starmie,Water,Psychic,520,60,75,85,100,85,115,1,False,Staross
-122,Mr-mime,Psychic,Fairy,460,40,45,65,100,120,90,1,False,M. Mime
-123,Scyther,Bug,Flying,500,70,110,80,55,80,105,1,False,Insécateur
-124,Jynx,Ice,Psychic,455,65,50,35,115,95,95,1,False,Lippoutou
-125,Electabuzz,Electric,,490,65,83,57,95,85,105,1,False,Élektek
-126,Magmar,Fire,,495,65,95,57,100,85,93,1,False,Magmar
-127,Pinsir,Bug,,500,65,125,100,55,70,85,1,False,Scarabrute
-128,Tauros,Normal,,490,75,100,95,40,70,110,1,False,Tauros
-129,Magikarp,Water,,200,20,10,55,15,20,80,1,False,Magicarpe
-130,Gyarados,Water,Flying,540,95,125,79,60,100,81,1,False,Léviator
-131,Lapras,Water,Ice,535,130,85,80,85,95,60,1,False,Lokhlass
-132,Ditto,Normal,,288,48,48,48,48,48,48,1,False,Métamorph
-133,Eevee,Normal,,325,55,55,50,45,65,55,1,False,Évoli
-134,Vaporeon,Water,,525,130,65,60,110,95,65,1,False,Aquali
-135,Jolteon,Electric,,525,65,65,60,110,95,130,1,False,Voltali
-136,Flareon,Fire,,525,65,130,60,95,110,65,1,False,Pyroli
-137,Porygon,Normal,,395,65,60,70,85,75,40,1,False,Porygon
-138,Omanyte,Rock,Water,355,35,40,100,90,55,35,1,False,Amonita
-139,Omastar,Rock,Water,495,70,60,125,115,70,55,1,False,Amonistar
-140,Kabuto,Rock,Water,355,30,80,90,55,45,55,1,False,Kabuto
-141,Kabutops,Rock,Water,495,60,115,105,65,70,80,1,False,Kabutops
-142,Aerodactyl,Rock,Flying,515,80,105,65,60,75,130,1,False,Ptéra
-143,Snorlax,Normal,,540,160,110,65,65,110,30,1,False,Ronflex
-144,Articuno,Ice,Flying,580,90,85,100,95,125,85,1,True,Artikodin
-145,Zapdos,Electric,Flying,580,90,90,85,125,90,100,1,True,Électhor
-146,Moltres,Fire,Flying,580,90,100,90,125,85,90,1,True,Sulfura
-147,Dratini,Dragon,,300,41,64,45,50,50,50,1,False,Minidraco
-148,Dragonair,Dragon,,420,61,84,65,70,70,70,1,False,Draco
-149,Dragonite,Dragon,Flying,600,91,134,95,100,100,80,1,False,Dracolosse
-150,Mewtwo,Psychic,,680,106,110,90,154,90,130,1,True,Mewtwo
-151,Mew,Psychic,,600,100,100,100,100,100,100,1,False,Mew
-152,Chikorita,Grass,,318,45,49,65,49,65,45,2,False,Germignon
-153,Bayleef,Grass,,405,60,62,80,63,80,60,2,False,Macronium
-154,Meganium,Grass,,525,80,82,100,83,100,80,2,False,Méganium
-155,Cyndaquil,Fire,,309,39,52,43,60,50,65,2,False,Héricendre
-156,Quilava,Fire,,405,58,64,58,80,65,80,2,False,Feurisson
-157,Typhlosion,Fire,,534,78,84,78,109,85,100,2,False,Typhlosion
-158,Totodile,Water,,314,50,65,64,44,48,43,2,False,Kaiminus
-159,Croconaw,Water,,405,65,80,80,59,63,58,2,False,Crocrodil
-160,Feraligatr,Water,,530,85,105,100,79,83,78,2,False,Aligatueur
-161,Sentret,Normal,,215,35,46,34,35,45,20,2,False,Fouinette
-162,Furret,Normal,,415,85,76,64,45,55,90,2,False,Fouinar
-163,Hoothoot,Normal,Flying,262,60,30,30,36,56,50,2,False,Hoothoot
-164,Noctowl,Normal,Flying,452,100,50,50,86,96,70,2,False,Noarfang
-165,Ledyba,Bug,Flying,265,40,20,30,40,80,55,2,False,Coxy
-166,Ledian,Bug,Flying,390,55,35,50,55,110,85,2,False,Coxyclaque
-167,Spinarak,Bug,Poison,250,40,60,40,40,40,30,2,False,Mimigal
-168,Ariados,Bug,Poison,400,70,90,70,60,70,40,2,False,Migalos
-169,Crobat,Poison,Flying,535,85,90,80,70,80,130,2,False,Nostenfer
-170,Chinchou,Water,Electric,330,75,38,38,56,56,67,2,False,Loupio
-171,Lanturn,Water,Electric,460,125,58,58,76,76,67,2,False,Lanturn
-172,Pichu,Electric,,205,20,40,15,35,35,60,2,False,Pichu
-173,Cleffa,Fairy,,218,50,25,28,45,55,15,2,False,Mélo
-174,Igglybuff,Normal,Fairy,210,90,30,15,40,20,15,2,False,Toudoudou
-175,Togepi,Fairy,,245,35,20,65,40,65,20,2,False,Togepi
-176,Togetic,Fairy,Flying,405,55,40,85,80,105,40,2,False,Togetic
-177,Natu,Psychic,Flying,320,40,50,45,70,45,70,2,False,Natu
-178,Xatu,Psychic,Flying,470,65,75,70,95,70,95,2,False,Xatu
-179,Mareep,Electric,,280,55,40,40,65,45,35,2,False,Wattouat
-180,Flaaffy,Electric,,365,70,55,55,80,60,45,2,False,Lainergie
-181,Ampharos,Electric,,510,90,75,85,115,90,55,2,False,Pharamp
-182,Bellossom,Grass,,490,75,80,95,90,100,50,2,False,Joliflor
-183,Marill,Water,Fairy,250,70,20,50,20,50,40,2,False,Marill
-184,Azumarill,Water,Fairy,420,100,50,80,60,80,50,2,False,Azumarill
-185,Sudowoodo,Rock,,410,70,100,115,30,65,30,2,False,Simularbre
-186,Politoed,Water,,500,90,75,75,90,100,70,2,False,Tarpaud
-187,Hoppip,Grass,Flying,250,35,35,40,35,55,50,2,False,Granivol
-188,Skiploom,Grass,Flying,340,55,45,50,45,65,80,2,False,Floravol
-189,Jumpluff,Grass,Flying,460,75,55,70,55,95,110,2,False,Cotovol
-190,Aipom,Normal,,360,55,70,55,40,55,85,2,False,Capumain
-191,Sunkern,Grass,,180,30,30,30,30,30,30,2,False,Tournegrin
-192,Sunflora,Grass,,425,75,75,55,105,85,30,2,False,Héliatronc
-193,Yanma,Bug,Flying,390,65,65,45,75,45,95,2,False,Yanma
-194,Wooper,Water,Ground,210,55,45,45,25,25,15,2,False,Axoloto
-195,Quagsire,Water,Ground,430,95,85,85,65,65,35,2,False,Maraiste
-196,Espeon,Psychic,,525,65,65,60,130,95,110,2,False,Mentali
-197,Umbreon,Dark,,525,95,65,110,60,130,65,2,False,Noctali
-198,Murkrow,Dark,Flying,405,60,85,42,85,42,91,2,False,Cornèbre
-199,Slowking,Water,Psychic,490,95,75,80,100,110,30,2,False,Roigada
-200,Misdreavus,Ghost,,435,60,60,60,85,85,85,2,False,Feuforêve
-201,Unown,Psychic,,336,48,72,48,72,48,48,2,False,Zarbi
-202,Wobbuffet,Psychic,,405,190,33,58,33,58,33,2,False,Qulbutoké
-203,Girafarig,Normal,Psychic,455,70,80,65,90,65,85,2,False,Girafarig
-204,Pineco,Bug,,290,50,65,90,35,35,15,2,False,Pomdepik
-205,Forretress,Bug,Steel,465,75,90,140,60,60,40,2,False,Foretress
-206,Dunsparce,Normal,,415,100,70,70,65,65,45,2,False,Insolourdo
-207,Gligar,Ground,Flying,430,65,75,105,35,65,85,2,False,Scorplane
-208,Steelix,Steel,Ground,510,75,85,200,55,65,30,2,False,Steelix
-209,Snubbull,Fairy,,300,60,80,50,40,40,30,2,False,Snubbull
-210,Granbull,Fairy,,450,90,120,75,60,60,45,2,False,Granbull
-211,Qwilfish,Water,Poison,440,65,95,85,55,55,85,2,False,Qwilfish
-212,Scizor,Bug,Steel,500,70,130,100,55,80,65,2,False,Cizayox
-213,Shuckle,Bug,Rock,505,20,10,230,10,230,5,2,False,Caratroc
-214,Heracross,Bug,Fighting,500,80,125,75,40,95,85,2,False,Scarhino
-215,Sneasel,Dark,Ice,430,55,95,55,35,75,115,2,False,Farfuret
-216,Teddiursa,Normal,,330,60,80,50,50,50,40,2,False,Teddiursa
-217,Ursaring,Normal,,500,90,130,75,75,75,55,2,False,Ursaring
-218,Slugma,Fire,,250,40,40,40,70,40,20,2,False,Limagma
-219,Magcargo,Fire,Rock,430,60,50,120,90,80,30,2,False,Volcaropod
-220,Swinub,Ice,Ground,250,50,50,40,30,30,50,2,False,Marcacrin
-221,Piloswine,Ice,Ground,450,100,100,80,60,60,50,2,False,Cochignon
-222,Corsola,Water,Rock,410,65,55,95,65,95,35,2,False,Corayon
-223,Remoraid,Water,,300,35,65,35,65,35,65,2,False,Rémoraid
-224,Octillery,Water,,480,75,105,75,105,75,45,2,False,Octillery
-225,Delibird,Ice,Flying,330,45,55,45,65,45,75,2,False,Cadoizo
-226,Mantine,Water,Flying,485,85,40,70,80,140,70,2,False,Démanta
-227,Skarmory,Steel,Flying,465,65,80,140,40,70,70,2,False,Airmure
-228,Houndour,Dark,Fire,330,45,60,30,80,50,65,2,False,Malosse
-229,Houndoom,Dark,Fire,500,75,90,50,110,80,95,2,False,Démolosse
-230,Kingdra,Water,Dragon,540,75,95,95,95,95,85,2,False,Hyporoi
-231,Phanpy,Ground,,330,90,60,60,40,40,40,2,False,Phanpy
-232,Donphan,Ground,,500,90,120,120,60,60,50,2,False,Donphan
-233,Porygon2,Normal,,515,85,80,90,105,95,60,2,False,Porygon2
-234,Stantler,Normal,,465,73,95,62,85,65,85,2,False,Cerfrousse
-235,Smeargle,Normal,,250,55,20,35,20,45,75,2,False,Queulorior
-236,Tyrogue,Fighting,,210,35,35,35,35,35,35,2,False,Debugant
-237,Hitmontop,Fighting,,455,50,95,95,35,110,70,2,False,Kapoera
-238,Smoochum,Ice,Psychic,305,45,30,15,85,65,65,2,False,Lippouti
-239,Elekid,Electric,,360,45,63,37,65,55,95,2,False,Élekid
-240,Magby,Fire,,365,45,75,37,70,55,83,2,False,Magby
-241,Miltank,Normal,,490,95,80,105,40,70,100,2,False,Écrémeuh
-242,Blissey,Normal,,540,255,10,10,75,135,55,2,False,Leuphorie
-243,Raikou,Electric,,580,90,85,75,115,100,115,2,True,Raikou
-244,Entei,Fire,,580,115,115,85,90,75,100,2,True,Entei
-245,Suicune,Water,,580,100,75,115,90,115,85,2,True,Suicune
-246,Larvitar,Rock,Ground,300,50,64,50,45,50,41,2,False,Embrylex
-247,Pupitar,Rock,Ground,410,70,84,70,65,70,51,2,False,Ymphect
-248,Tyranitar,Rock,Dark,600,100,134,110,95,100,61,2,False,Tyranocif
-249,Lugia,Psychic,Flying,680,106,90,130,90,154,110,2,True,Lugia
-250,Ho-oh,Fire,Flying,680,106,130,90,110,154,90,2,True,Ho-Oh
-251,Celebi,Psychic,Grass,600,100,100,100,100,100,100,2,False,Celebi
-252,Treecko,Grass,,310,40,45,35,65,55,70,3,False,Arcko
-253,Grovyle,Grass,,405,50,65,45,85,65,95,3,False,Massko
-254,Sceptile,Grass,,530,70,85,65,105,85,120,3,False,Jungko
-255,Torchic,Fire,,310,45,60,40,70,50,45,3,False,Poussifeu
-256,Combusken,Fire,Fighting,405,60,85,60,85,60,55,3,False,Galifeu
-257,Blaziken,Fire,Fighting,530,80,120,70,110,70,80,3,False,Braségali
-258,Mudkip,Water,,310,50,70,50,50,50,40,3,False,Gobou
-259,Marshtomp,Water,Ground,405,70,85,70,60,70,50,3,False,Flobio
-260,Swampert,Water,Ground,535,100,110,90,85,90,60,3,False,Laggron
-261,Poochyena,Dark,,220,35,55,35,30,30,35,3,False,Medhyèna
-262,Mightyena,Dark,,420,70,90,70,60,60,70,3,False,Grahyèna
-263,Zigzagoon,Normal,,240,38,30,41,30,41,60,3,False,Zigzaton
-264,Linoone,Normal,,420,78,70,61,50,61,100,3,False,Linéon
-265,Wurmple,Bug,,195,45,45,35,20,30,20,3,False,Chenipotte
-266,Silcoon,Bug,,205,50,35,55,25,25,15,3,False,Armulys
-267,Beautifly,Bug,Flying,395,60,70,50,100,50,65,3,False,Charmillon
-268,Cascoon,Bug,,205,50,35,55,25,25,15,3,False,Blindalys
-269,Dustox,Bug,Poison,385,60,50,70,50,90,65,3,False,Papinox
-270,Lotad,Water,Grass,220,40,30,30,40,50,30,3,False,Nénupiot
-271,Lombre,Water,Grass,340,60,50,50,60,70,50,3,False,Lombre
-272,Ludicolo,Water,Grass,480,80,70,70,90,100,70,3,False,Ludicolo
-273,Seedot,Grass,,220,40,40,50,30,30,30,3,False,Grainipiot
-274,Nuzleaf,Grass,Dark,340,70,70,40,60,40,60,3,False,Pifeuil
-275,Shiftry,Grass,Dark,480,90,100,60,90,60,80,3,False,Tengalice
-276,Taillow,Normal,Flying,270,40,55,30,30,30,85,3,False,Nirondelle
-277,Swellow,Normal,Flying,455,60,85,60,75,50,125,3,False,Hélédelle
-278,Wingull,Water,Flying,270,40,30,30,55,30,85,3,False,Goélise
-279,Pelipper,Water,Flying,440,60,50,100,95,70,65,3,False,Bekipan
-280,Ralts,Psychic,Fairy,198,28,25,25,45,35,40,3,False,Tarsal
-281,Kirlia,Psychic,Fairy,278,38,35,35,65,55,50,3,False,Kirlia
-282,Gardevoir,Psychic,Fairy,518,68,65,65,125,115,80,3,False,Gardevoir
-283,Surskit,Bug,Water,269,40,30,32,50,52,65,3,False,Arakdo
-284,Masquerain,Bug,Flying,454,70,60,62,100,82,80,3,False,Maskadra
-285,Shroomish,Grass,,295,60,40,60,40,60,35,3,False,Balignon
-286,Breloom,Grass,Fighting,460,60,130,80,60,60,70,3,False,Chapignon
-287,Slakoth,Normal,,280,60,60,60,35,35,30,3,False,Parecool
-288,Vigoroth,Normal,,440,80,80,80,55,55,90,3,False,Vigoroth
-289,Slaking,Normal,,670,150,160,100,95,65,100,3,False,Monaflèmit
-290,Nincada,Bug,Ground,266,31,45,90,30,30,40,3,False,Ningale
-291,Ninjask,Bug,Flying,456,61,90,45,50,50,160,3,False,Ninjask
-292,Shedinja,Bug,Ghost,236,1,90,45,30,30,40,3,False,Munja
-293,Whismur,Normal,,240,64,51,23,51,23,28,3,False,Chuchmur
-294,Loudred,Normal,,360,84,71,43,71,43,48,3,False,Ramboum
-295,Exploud,Normal,,490,104,91,63,91,73,68,3,False,Brouhabam
-296,Makuhita,Fighting,,237,72,60,30,20,30,25,3,False,Makuhita
-297,Hariyama,Fighting,,474,144,120,60,40,60,50,3,False,Hariyama
-298,Azurill,Normal,Fairy,190,50,20,40,20,40,20,3,False,Azurill
-299,Nosepass,Rock,,375,30,45,135,45,90,30,3,False,Tarinor
-300,Skitty,Normal,,260,50,45,45,35,35,50,3,False,Skitty
-301,Delcatty,Normal,,400,70,65,65,55,55,90,3,False,Delcatty
-302,Sableye,Dark,Ghost,380,50,75,75,65,65,50,3,False,Ténéfix
-303,Mawile,Steel,Fairy,380,50,85,85,55,55,50,3,False,Mysdibule
-304,Aron,Steel,Rock,330,50,70,100,40,40,30,3,False,Galekid
-305,Lairon,Steel,Rock,430,60,90,140,50,50,40,3,False,Galegon
-306,Aggron,Steel,Rock,530,70,110,180,60,60,50,3,False,Galeking
-307,Meditite,Fighting,Psychic,280,30,40,55,40,55,60,3,False,Méditikka
-308,Medicham,Fighting,Psychic,410,60,60,75,60,75,80,3,False,Charmina
-309,Electrike,Electric,,295,40,45,40,65,40,65,3,False,Dynavolt
-310,Manectric,Electric,,475,70,75,60,105,60,105,3,False,Élecsprint
-311,Plusle,Electric,,405,60,50,40,85,75,95,3,False,Posipi
-312,Minun,Electric,,405,60,40,50,75,85,95,3,False,Négapi
-313,Volbeat,Bug,,430,65,73,75,47,85,85,3,False,Muciole
-314,Illumise,Bug,,430,65,47,75,73,85,85,3,False,Lumivole
-315,Roselia,Grass,Poison,400,50,60,45,100,80,65,3,False,Rosélia
-316,Gulpin,Poison,,302,70,43,53,43,53,40,3,False,Gloupti
-317,Swalot,Poison,,467,100,73,83,73,83,55,3,False,Avaltout
-318,Carvanha,Water,Dark,305,45,90,20,65,20,65,3,False,Carvanha
-319,Sharpedo,Water,Dark,460,70,120,40,95,40,95,3,False,Sharpedo
-320,Wailmer,Water,,400,130,70,35,70,35,60,3,False,Wailmer
-321,Wailord,Water,,500,170,90,45,90,45,60,3,False,Wailord
-322,Numel,Fire,Ground,305,60,60,40,65,45,35,3,False,Chamallot
-323,Camerupt,Fire,Ground,460,70,100,70,105,75,40,3,False,Camérupt
-324,Torkoal,Fire,,470,70,85,140,85,70,20,3,False,Chartor
-325,Spoink,Psychic,,330,60,25,35,70,80,60,3,False,Spoink
-326,Grumpig,Psychic,,470,80,45,65,90,110,80,3,False,Groret
-327,Spinda,Normal,,360,60,60,60,60,60,60,3,False,Spinda
-328,Trapinch,Ground,,290,45,100,45,45,45,10,3,False,Kraknoix
-329,Vibrava,Ground,Dragon,340,50,70,50,50,50,70,3,False,Vibraninf
-330,Flygon,Ground,Dragon,520,80,100,80,80,80,100,3,False,Libégon
-331,Cacnea,Grass,,335,50,85,40,85,40,35,3,False,Cacnea
-332,Cacturne,Grass,Dark,475,70,115,60,115,60,55,3,False,Cacturne
-333,Swablu,Normal,Flying,310,45,40,60,40,75,50,3,False,Tylton
-334,Altaria,Dragon,Flying,490,75,70,90,70,105,80,3,False,Altaria
-335,Zangoose,Normal,,458,73,115,60,60,60,90,3,False,Mangriff
-336,Seviper,Poison,,458,73,100,60,100,60,65,3,False,Séviper
-337,Lunatone,Rock,Psychic,460,90,55,65,95,85,70,3,False,Séléroc
-338,Solrock,Rock,Psychic,460,90,95,85,55,65,70,3,False,Solaroc
-339,Barboach,Water,Ground,288,50,48,43,46,41,60,3,False,Barloche
-340,Whiscash,Water,Ground,468,110,78,73,76,71,60,3,False,Barbicha
-341,Corphish,Water,,308,43,80,65,50,35,35,3,False,Écrapince
-342,Crawdaunt,Water,Dark,468,63,120,85,90,55,55,3,False,Colhomard
-343,Baltoy,Ground,Psychic,300,40,40,55,40,70,55,3,False,Balbuto
-344,Claydol,Ground,Psychic,500,60,70,105,70,120,75,3,False,Kaorine
-345,Lileep,Rock,Grass,355,66,41,77,61,87,23,3,False,Lilia
-346,Cradily,Rock,Grass,495,86,81,97,81,107,43,3,False,Vacilys
-347,Anorith,Rock,Bug,355,45,95,50,40,50,75,3,False,Anorith
-348,Armaldo,Rock,Bug,495,75,125,100,70,80,45,3,False,Armaldo
-349,Feebas,Water,,200,20,15,20,10,55,80,3,False,Barpau
-350,Milotic,Water,,540,95,60,79,100,125,81,3,False,Milobellus
-351,Castform,Normal,,420,70,70,70,70,70,70,3,False,Morphéo
-352,Kecleon,Normal,,440,60,90,70,60,120,40,3,False,Kecleon
-353,Shuppet,Ghost,,295,44,75,35,63,33,45,3,False,Polichombr
-354,Banette,Ghost,,455,64,115,65,83,63,65,3,False,Branette
-355,Duskull,Ghost,,295,20,40,90,30,90,25,3,False,Skelénox
-356,Dusclops,Ghost,,455,40,70,130,60,130,25,3,False,Téraclope
-357,Tropius,Grass,Flying,460,99,68,83,72,87,51,3,False,Tropius
-358,Chimecho,Psychic,,455,75,50,80,95,90,65,3,False,Éoko
-359,Absol,Dark,,465,65,130,60,75,60,75,3,False,Absol
-360,Wynaut,Psychic,,260,95,23,48,23,48,23,3,False,Okéoké
-361,Snorunt,Ice,,300,50,50,50,50,50,50,3,False,Stalgamin
-362,Glalie,Ice,,480,80,80,80,80,80,80,3,False,Oniglali
-363,Spheal,Ice,Water,290,70,40,50,55,50,25,3,False,Obalie
-364,Sealeo,Ice,Water,410,90,60,70,75,70,45,3,False,Phogleur
-365,Walrein,Ice,Water,530,110,80,90,95,90,65,3,False,Kaimorse
-366,Clamperl,Water,,345,35,64,85,74,55,32,3,False,Coquiperl
-367,Huntail,Water,,485,55,104,105,94,75,52,3,False,Serpang
-368,Gorebyss,Water,,485,55,84,105,114,75,52,3,False,Rosabyss
-369,Relicanth,Water,Rock,485,100,90,130,45,65,55,3,False,Relicanth
-370,Luvdisc,Water,,330,43,30,55,40,65,97,3,False,Lovdisc
-371,Bagon,Dragon,,300,45,75,60,40,30,50,3,False,Draby
-372,Shelgon,Dragon,,420,65,95,100,60,50,50,3,False,Drackhaus
-373,Salamence,Dragon,Flying,600,95,135,80,110,80,100,3,False,Drattak
-374,Beldum,Steel,Psychic,300,40,55,80,35,60,30,3,False,Terhal
-375,Metang,Steel,Psychic,420,60,75,100,55,80,50,3,False,Métang
-376,Metagross,Steel,Psychic,600,80,135,130,95,90,70,3,False,Métalosse
-377,Regirock,Rock,,580,80,100,200,50,100,50,3,True,Regirock
-378,Regice,Ice,,580,80,50,100,100,200,50,3,True,Regice
-379,Registeel,Steel,,580,80,75,150,75,150,50,3,True,Registeel
-380,Latias,Dragon,Psychic,600,80,80,90,110,130,110,3,True,Latias
-381,Latios,Dragon,Psychic,600,80,90,80,130,110,110,3,True,Latios
-382,Kyogre,Water,,670,100,100,90,150,140,90,3,True,Kyogre
-383,Groudon,Ground,,670,100,150,140,100,90,90,3,True,Groudon
-384,Rayquaza,Dragon,Flying,680,105,150,90,150,90,95,3,True,Rayquaza
-385,Jirachi,Steel,Psychic,600,100,100,100,100,100,100,3,False,Jirachi
-386,Deoxys,Psychic,,600,50,150,50,150,50,150,3,False,Deoxys
-387,Turtwig,Grass,,318,55,68,64,45,55,31,4,False,Tortipouss
-388,Grotle,Grass,,405,75,89,85,55,65,36,4,False,Boskara
-389,Torterra,Grass,Ground,525,95,109,105,75,85,56,4,False,Torterra
-390,Chimchar,Fire,,309,44,58,44,58,44,61,4,False,Ouisticram
-391,Monferno,Fire,Fighting,405,64,78,52,78,52,81,4,False,Chimpenfeu
-392,Infernape,Fire,Fighting,534,76,104,71,104,71,108,4,False,Simiabraz
-393,Piplup,Water,,314,53,51,53,61,56,40,4,False,Tiplouf
-394,Prinplup,Water,,405,64,66,68,81,76,50,4,False,Prinplouf
-395,Empoleon,Water,Steel,530,84,86,88,111,101,60,4,False,Pingoléon
-396,Starly,Normal,Flying,245,40,55,30,30,30,60,4,False,Étourmi
-397,Staravia,Normal,Flying,340,55,75,50,40,40,80,4,False,Étourvol
-398,Staraptor,Normal,Flying,485,85,120,70,50,60,100,4,False,Étouraptor
-399,Bidoof,Normal,,250,59,45,40,35,40,31,4,False,Keunotor
-400,Bibarel,Normal,Water,410,79,85,60,55,60,71,4,False,Castorno
-401,Kricketot,Bug,,194,37,25,41,25,41,25,4,False,Crikzik
-402,Kricketune,Bug,,384,77,85,51,55,51,65,4,False,Mélokrik
-403,Shinx,Electric,,263,45,65,34,40,34,45,4,False,Lixy
-404,Luxio,Electric,,363,60,85,49,60,49,60,4,False,Luxio
-405,Luxray,Electric,,523,80,120,79,95,79,70,4,False,Luxray
-406,Budew,Grass,Poison,280,40,30,35,50,70,55,4,False,Rozbouton
-407,Roserade,Grass,Poison,515,60,70,65,125,105,90,4,False,Roserade
-408,Cranidos,Rock,,350,67,125,40,30,30,58,4,False,Kranidos
-409,Rampardos,Rock,,495,97,165,60,65,50,58,4,False,Charkos
-410,Shieldon,Rock,Steel,350,30,42,118,42,88,30,4,False,Dinoclier
-411,Bastiodon,Rock,Steel,495,60,52,168,47,138,30,4,False,Bastiodon
-412,Burmy,Bug,,224,40,29,45,29,45,36,4,False,Cheniti
-413,Wormadam,Bug,Grass,424,60,59,85,79,105,36,4,False,Cheniselle
-414,Mothim,Bug,Flying,424,70,94,50,94,50,66,4,False,Papilord
-415,Combee,Bug,Flying,244,30,30,42,30,42,70,4,False,Apitrini
-416,Vespiquen,Bug,Flying,474,70,80,102,80,102,40,4,False,Apireine
-417,Pachirisu,Electric,,405,60,45,70,45,90,95,4,False,Pachirisu
-418,Buizel,Water,,330,55,65,35,60,30,85,4,False,Mustébouée
-419,Floatzel,Water,,495,85,105,55,85,50,115,4,False,Mustéflott
-420,Cherubi,Grass,,275,45,35,45,62,53,35,4,False,Ceribou
-421,Cherrim,Grass,,450,70,60,70,87,78,85,4,False,Ceriflor
-422,Shellos,Water,,325,76,48,48,57,62,34,4,False,Sancoki
-423,Gastrodon,Water,Ground,475,111,83,68,92,82,39,4,False,Tritosor
-424,Ambipom,Normal,,482,75,100,66,60,66,115,4,False,Capidextre
-425,Drifloon,Ghost,Flying,348,90,50,34,60,44,70,4,False,Baudrive
-426,Drifblim,Ghost,Flying,498,150,80,44,90,54,80,4,False,Grodrive
-427,Buneary,Normal,,350,55,66,44,44,56,85,4,False,Laporeille
-428,Lopunny,Normal,,480,65,76,84,54,96,105,4,False,Lockpin
-429,Mismagius,Ghost,,495,60,60,60,105,105,105,4,False,Magirêve
-430,Honchkrow,Dark,Flying,505,100,125,52,105,52,71,4,False,Corboss
-431,Glameow,Normal,,310,49,55,42,42,37,85,4,False,Chaglam
-432,Purugly,Normal,,452,71,82,64,64,59,112,4,False,Chaffreux
-433,Chingling,Psychic,,285,45,30,50,65,50,45,4,False,Korillon
-434,Stunky,Poison,Dark,329,63,63,47,41,41,74,4,False,Moufouette
-435,Skuntank,Poison,Dark,479,103,93,67,71,61,84,4,False,Moufflair
-436,Bronzor,Steel,Psychic,300,57,24,86,24,86,23,4,False,Archéomire
-437,Bronzong,Steel,Psychic,500,67,89,116,79,116,33,4,False,Archéodong
-438,Bonsly,Rock,,290,50,80,95,10,45,10,4,False,Manzaï
-439,Mime-jr,Psychic,Fairy,310,20,25,45,70,90,60,4,False,Mime Jr.
-440,Happiny,Normal,,220,100,5,5,15,65,30,4,False,Ptiravi
-441,Chatot,Normal,Flying,411,76,65,45,92,42,91,4,False,Pijako
-442,Spiritomb,Ghost,Dark,485,50,92,108,92,108,35,4,False,Spiritomb
-443,Gible,Dragon,Ground,300,58,70,45,40,45,42,4,False,Griknot
-444,Gabite,Dragon,Ground,410,68,90,65,50,55,82,4,False,Carmache
-445,Garchomp,Dragon,Ground,600,108,130,95,80,85,102,4,False,Carchacrok
-446,Munchlax,Normal,,390,135,85,40,40,85,5,4,False,Goinfrex
-447,Riolu,Fighting,,285,40,70,40,35,40,60,4,False,Riolu
-448,Lucario,Fighting,Steel,525,70,110,70,115,70,90,4,False,Lucario
-449,Hippopotas,Ground,,330,68,72,78,38,42,32,4,False,Hippopotas
-450,Hippowdon,Ground,,525,108,112,118,68,72,47,4,False,Hippodocus
-451,Skorupi,Poison,Bug,330,40,50,90,30,55,65,4,False,Rapion
-452,Drapion,Poison,Dark,500,70,90,110,60,75,95,4,False,Drascore
-453,Croagunk,Poison,Fighting,300,48,61,40,61,40,50,4,False,Cradopaud
-454,Toxicroak,Poison,Fighting,490,83,106,65,86,65,85,4,False,Coatox
-455,Carnivine,Grass,,454,74,100,72,90,72,46,4,False,Vortente
-456,Finneon,Water,,330,49,49,56,49,61,66,4,False,Écayon
-457,Lumineon,Water,,460,69,69,76,69,86,91,4,False,Luminéon
-458,Mantyke,Water,Flying,345,45,20,50,60,120,50,4,False,Babimanta
-459,Snover,Grass,Ice,334,60,62,50,62,60,40,4,False,Blizzi
-460,Abomasnow,Grass,Ice,494,90,92,75,92,85,60,4,False,Blizzaroi
-461,Weavile,Dark,Ice,510,70,120,65,45,85,125,4,False,Dimoret
-462,Magnezone,Electric,Steel,535,70,70,115,130,90,60,4,False,Magnézone
-463,Lickilicky,Normal,,515,110,85,95,80,95,50,4,False,Coudlangue
-464,Rhyperior,Ground,Rock,535,115,140,130,55,55,40,4,False,Rhinastoc
-465,Tangrowth,Grass,,535,100,100,125,110,50,50,4,False,Bouldeneu
-466,Electivire,Electric,,540,75,123,67,95,85,95,4,False,Élekable
-467,Magmortar,Fire,,540,75,95,67,125,95,83,4,False,Maganon
-468,Togekiss,Fairy,Flying,545,85,50,95,120,115,80,4,False,Togekiss
-469,Yanmega,Bug,Flying,515,86,76,86,116,56,95,4,False,Yanmega
-470,Leafeon,Grass,,525,65,110,130,60,65,95,4,False,Phyllali
-471,Glaceon,Ice,,525,65,60,110,130,95,65,4,False,Givrali
-472,Gliscor,Ground,Flying,510,75,95,125,45,75,95,4,False,Scorvol
-473,Mamoswine,Ice,Ground,530,110,130,80,70,60,80,4,False,Mammochon
-474,Porygon-z,Normal,,535,85,80,70,135,75,90,4,False,Porygon-Z
-475,Gallade,Psychic,Fighting,518,68,125,65,65,115,80,4,False,Gallame
-476,Probopass,Rock,Steel,525,60,55,145,75,150,40,4,False,Tarinorme
-477,Dusknoir,Ghost,,525,45,100,135,65,135,45,4,False,Noctunoir
-478,Froslass,Ice,Ghost,480,70,80,70,80,70,110,4,False,Momartik
-479,Rotom,Electric,Ghost,440,50,50,77,95,77,91,4,False,Motisma
-480,Uxie,Psychic,,580,75,75,130,75,130,95,4,True,Créhelf
-481,Mesprit,Psychic,,580,80,105,105,105,105,80,4,True,Créfollet
-482,Azelf,Psychic,,580,75,125,70,125,70,115,4,True,Créfadet
-483,Dialga,Steel,Dragon,680,100,120,120,150,100,90,4,True,Dialga
-484,Palkia,Water,Dragon,680,90,120,100,150,120,100,4,True,Palkia
-485,Heatran,Fire,Steel,600,91,90,106,130,106,77,4,True,Heatran
-486,Regigigas,Normal,,670,110,160,110,80,110,100,4,True,Regigigas
-487,Giratina,Ghost,Dragon,680,150,100,120,100,120,90,4,True,Giratina
-488,Cresselia,Psychic,,580,120,70,110,75,120,85,4,True,Cresselia
-489,Phione,Water,,480,80,80,80,80,80,80,4,False,Phione
-490,Manaphy,Water,,600,100,100,100,100,100,100,4,False,Manaphy
-491,Darkrai,Dark,,600,70,90,90,135,90,125,4,False,Darkrai
-492,Shaymin,Grass,,600,100,100,100,100,100,100,4,False,Shaymin
-493,Arceus,Normal,,720,120,120,120,120,120,120,4,False,Arceus
-494,Victini,Psychic,Fire,600,100,100,100,100,100,100,5,False,Victini
-495,Snivy,Grass,,308,45,45,55,45,55,63,5,False,Vipélierre
-496,Servine,Grass,,413,60,60,75,60,75,83,5,False,Lianaja
-497,Serperior,Grass,,528,75,75,95,75,95,113,5,False,Majaspic
-498,Tepig,Fire,,308,65,63,45,45,45,45,5,False,Gruikui
-499,Pignite,Fire,Fighting,418,90,93,55,70,55,55,5,False,Grotichon
-500,Emboar,Fire,Fighting,528,110,123,65,100,65,65,5,False,Roitiflam
-501,Oshawott,Water,,308,55,55,45,63,45,45,5,False,Moustillon
-502,Dewott,Water,,413,75,75,60,83,60,60,5,False,Mateloutre
-503,Samurott,Water,,528,95,100,85,108,70,70,5,False,Clamiral
-504,Patrat,Normal,,255,45,55,39,35,39,42,5,False,Ratentif
-505,Watchog,Normal,,420,60,85,69,60,69,77,5,False,Miradar
-506,Lillipup,Normal,,275,45,60,45,25,45,55,5,False,Ponchiot
-507,Herdier,Normal,,370,65,80,65,35,65,60,5,False,Ponchien
-508,Stoutland,Normal,,500,85,110,90,45,90,80,5,False,Mastouffe
-509,Purrloin,Dark,,281,41,50,37,50,37,66,5,False,Chacripan
-510,Liepard,Dark,,446,64,88,50,88,50,106,5,False,Léopardus
-511,Pansage,Grass,,316,50,53,48,53,48,64,5,False,Feuillajou
-512,Simisage,Grass,,498,75,98,63,98,63,101,5,False,Feuiloutan
-513,Pansear,Fire,,316,50,53,48,53,48,64,5,False,Flamajou
-514,Simisear,Fire,,498,75,98,63,98,63,101,5,False,Flamoutan
-515,Panpour,Water,,316,50,53,48,53,48,64,5,False,Flotajou
-516,Simipour,Water,,498,75,98,63,98,63,101,5,False,Flotoutan
-517,Munna,Psychic,,292,76,25,45,67,55,24,5,False,Munna
-518,Musharna,Psychic,,487,116,55,85,107,95,29,5,False,Mushana
-519,Pidove,Normal,Flying,264,50,55,50,36,30,43,5,False,Poichigeon
-520,Tranquill,Normal,Flying,358,62,77,62,50,42,65,5,False,Colombeau
-521,Unfezant,Normal,Flying,488,80,115,80,65,55,93,5,False,Déflaisan
-522,Blitzle,Electric,,295,45,60,32,50,32,76,5,False,Zébibron
-523,Zebstrika,Electric,,497,75,100,63,80,63,116,5,False,Zéblitz
-524,Roggenrola,Rock,,280,55,75,85,25,25,15,5,False,Nodulithe
-525,Boldore,Rock,,390,70,105,105,50,40,20,5,False,Géolithe
-526,Gigalith,Rock,,515,85,135,130,60,80,25,5,False,Gigalithe
-527,Woobat,Psychic,Flying,323,65,45,43,55,43,72,5,False,Chovsourir
-528,Swoobat,Psychic,Flying,425,67,57,55,77,55,114,5,False,Rhinolove
-529,Drilbur,Ground,,328,60,85,40,30,45,68,5,False,Rototaupe
-530,Excadrill,Ground,Steel,508,110,135,60,50,65,88,5,False,Minotaupe
-531,Audino,Normal,,445,103,60,86,60,86,50,5,False,Nanméouïe
-532,Timburr,Fighting,,305,75,80,55,25,35,35,5,False,Charpenti
-533,Gurdurr,Fighting,,405,85,105,85,40,50,40,5,False,Ouvrifier
-534,Conkeldurr,Fighting,,505,105,140,95,55,65,45,5,False,Bétochef
-535,Tympole,Water,,294,50,50,40,50,40,64,5,False,Tritonde
-536,Palpitoad,Water,Ground,384,75,65,55,65,55,69,5,False,Batracné
-537,Seismitoad,Water,Ground,509,105,95,75,85,75,74,5,False,Crapustule
-538,Throh,Fighting,,465,120,100,85,30,85,45,5,False,Judokrak
-539,Sawk,Fighting,,465,75,125,75,30,75,85,5,False,Karaclée
-540,Sewaddle,Bug,Grass,310,45,53,70,40,60,42,5,False,Larveyette
-541,Swadloon,Bug,Grass,380,55,63,90,50,80,42,5,False,Couverdure
-542,Leavanny,Bug,Grass,500,75,103,80,70,80,92,5,False,Manternel
-543,Venipede,Bug,Poison,260,30,45,59,30,39,57,5,False,Venipatte
-544,Whirlipede,Bug,Poison,360,40,55,99,40,79,47,5,False,Scobolide
-545,Scolipede,Bug,Poison,485,60,100,89,55,69,112,5,False,Brutapode
-546,Cottonee,Grass,Fairy,280,40,27,60,37,50,66,5,False,Doudouvet
-547,Whimsicott,Grass,Fairy,480,60,67,85,77,75,116,5,False,Farfaduvet
-548,Petilil,Grass,,280,45,35,50,70,50,30,5,False,Chlorobule
-549,Lilligant,Grass,,480,70,60,75,110,75,90,5,False,Fragilady
-550,Basculin,Water,,460,70,92,65,80,55,98,5,False,Bargantua
-551,Sandile,Ground,Dark,292,50,72,35,35,35,65,5,False,Mascaïman
-552,Krokorok,Ground,Dark,351,60,82,45,45,45,74,5,False,Escroco
-553,Krookodile,Ground,Dark,519,95,117,80,65,70,92,5,False,Crocorible
-554,Darumaka,Fire,,315,70,90,45,15,45,50,5,False,Darumarond
-555,Darmanitan,Fire,,480,105,140,55,30,55,95,5,False,Darumacho
-556,Maractus,Grass,,461,75,86,67,106,67,60,5,False,Maracachi
-557,Dwebble,Bug,Rock,325,50,65,85,35,35,55,5,False,Crabicoque
-558,Crustle,Bug,Rock,485,70,105,125,65,75,45,5,False,Crabaraque
-559,Scraggy,Dark,Fighting,348,50,75,70,35,70,48,5,False,Baggiguane
-560,Scrafty,Dark,Fighting,488,65,90,115,45,115,58,5,False,Baggaïd
-561,Sigilyph,Psychic,Flying,490,72,58,80,103,80,97,5,False,Cryptéro
-562,Yamask,Ghost,,303,38,30,85,55,65,30,5,False,Tutafeh
-563,Cofagrigus,Ghost,,483,58,50,145,95,105,30,5,False,Tutankafer
-564,Tirtouga,Water,Rock,355,54,78,103,53,45,22,5,False,Carapagos
-565,Carracosta,Water,Rock,495,74,108,133,83,65,32,5,False,Mégapagos
-566,Archen,Rock,Flying,401,55,112,45,74,45,70,5,False,Arkéapti
-567,Archeops,Rock,Flying,567,75,140,65,112,65,110,5,False,Aéroptéryx
-568,Trubbish,Poison,,329,50,50,62,40,62,65,5,False,Miamiasme
-569,Garbodor,Poison,,474,80,95,82,60,82,75,5,False,Miasmax
-570,Zorua,Dark,,330,40,65,40,80,40,65,5,False,Zorua
-571,Zoroark,Dark,,510,60,105,60,120,60,105,5,False,Zoroark
-572,Minccino,Normal,,300,55,50,40,40,40,75,5,False,Chinchidou
-573,Cinccino,Normal,,470,75,95,60,65,60,115,5,False,Pashmilla
-574,Gothita,Psychic,,290,45,30,50,55,65,45,5,False,Scrutella
-575,Gothorita,Psychic,,390,60,45,70,75,85,55,5,False,Mesmérella
-576,Gothitelle,Psychic,,490,70,55,95,95,110,65,5,False,Sidérella
-577,Solosis,Psychic,,290,45,30,40,105,50,20,5,False,Nucléos
-578,Duosion,Psychic,,370,65,40,50,125,60,30,5,False,Méios
-579,Reuniclus,Psychic,,490,110,65,75,125,85,30,5,False,Symbios
-580,Ducklett,Water,Flying,305,62,44,50,44,50,55,5,False,Couaneton
-581,Swanna,Water,Flying,473,75,87,63,87,63,98,5,False,Lakmécygne
-582,Vanillite,Ice,,305,36,50,50,65,60,44,5,False,Sorbébé
-583,Vanillish,Ice,,395,51,65,65,80,75,59,5,False,Sorboul
-584,Vanilluxe,Ice,,535,71,95,85,110,95,79,5,False,Sorbouboul
-585,Deerling,Normal,Grass,335,60,60,50,40,50,75,5,False,Vivaldaim
-586,Sawsbuck,Normal,Grass,475,80,100,70,60,70,95,5,False,Haydaim
-587,Emolga,Electric,Flying,428,55,75,60,75,60,103,5,False,Emolga
-588,Karrablast,Bug,,315,50,75,45,40,45,60,5,False,Carabing
-589,Escavalier,Bug,Steel,495,70,135,105,60,105,20,5,False,Lançargot
-590,Foongus,Grass,Poison,294,69,55,45,55,55,15,5,False,Trompignon
-591,Amoonguss,Grass,Poison,464,114,85,70,85,80,30,5,False,Gaulet
-592,Frillish,Water,Ghost,335,55,40,50,65,85,40,5,False,Viskuse
-593,Jellicent,Water,Ghost,480,100,60,70,85,105,60,5,False,Moyade
-594,Alomomola,Water,,470,165,75,80,40,45,65,5,False,Mamanbo
-595,Joltik,Bug,Electric,319,50,47,50,57,50,65,5,False,Statitik
-596,Galvantula,Bug,Electric,472,70,77,60,97,60,108,5,False,Mygavolt
-597,Ferroseed,Grass,Steel,305,44,50,91,24,86,10,5,False,Grindur
-598,Ferrothorn,Grass,Steel,489,74,94,131,54,116,20,5,False,Noacier
-599,Klink,Steel,,300,40,55,70,45,60,30,5,False,Tic
-600,Klang,Steel,,440,60,80,95,70,85,50,5,False,Clic
-601,Klinklang,Steel,,520,60,100,115,70,85,90,5,False,Cliticlic
-602,Tynamo,Electric,,275,35,55,40,45,40,60,5,False,Anchwatt
-603,Eelektrik,Electric,,405,65,85,70,75,70,40,5,False,Lampéroie
-604,Eelektross,Electric,,515,85,115,80,105,80,50,5,False,Ohmassacre
-605,Elgyem,Psychic,,335,55,55,55,85,55,30,5,False,Lewsor
-606,Beheeyem,Psychic,,485,75,75,75,125,95,40,5,False,Neitram
-607,Litwick,Ghost,Fire,275,50,30,55,65,55,20,5,False,Funécire
-608,Lampent,Ghost,Fire,370,60,40,60,95,60,55,5,False,Mélancolux
-609,Chandelure,Ghost,Fire,520,60,55,90,145,90,80,5,False,Lugulabre
-610,Axew,Dragon,,320,46,87,60,30,40,57,5,False,Coupenotte
-611,Fraxure,Dragon,,410,66,117,70,40,50,67,5,False,Incisache
-612,Haxorus,Dragon,,540,76,147,90,60,70,97,5,False,Tranchodon
-613,Cubchoo,Ice,,305,55,70,40,60,40,40,5,False,Polarhume
-614,Beartic,Ice,,505,95,130,80,70,80,50,5,False,Polagriffe
-615,Cryogonal,Ice,,515,80,50,50,95,135,105,5,False,Hexagel
-616,Shelmet,Bug,,305,50,40,85,40,65,25,5,False,Escargaume
-617,Accelgor,Bug,,495,80,70,40,100,60,145,5,False,Limaspeed
-618,Stunfisk,Ground,Electric,471,109,66,84,81,99,32,5,False,Limonde
-619,Mienfoo,Fighting,,350,45,85,50,55,50,65,5,False,Kungfouine
-620,Mienshao,Fighting,,510,65,125,60,95,60,105,5,False,Shaofouine
-621,Druddigon,Dragon,,485,77,120,90,60,90,48,5,False,Drakkarmin
-622,Golett,Ground,Ghost,303,59,74,50,35,50,35,5,False,Gringolem
-623,Golurk,Ground,Ghost,483,89,124,80,55,80,55,5,False,Golemastoc
-624,Pawniard,Dark,Steel,340,45,85,70,40,40,60,5,False,Scalpion
-625,Bisharp,Dark,Steel,490,65,125,100,60,70,70,5,False,Scalproie
-626,Bouffalant,Normal,,490,95,110,95,40,95,55,5,False,Frison
-627,Rufflet,Normal,Flying,350,70,83,50,37,50,60,5,False,Furaiglon
-628,Braviary,Normal,Flying,510,100,123,75,57,75,80,5,False,Gueriaigle
-629,Vullaby,Dark,Flying,370,70,55,75,45,65,60,5,False,Vostourno
-630,Mandibuzz,Dark,Flying,510,110,65,105,55,95,80,5,False,Vaututrice
-631,Heatmor,Fire,,484,85,97,66,105,66,65,5,False,Aflamanoir
-632,Durant,Bug,Steel,484,58,109,112,48,48,109,5,False,Fermite
-633,Deino,Dark,Dragon,300,52,65,50,45,50,38,5,False,Solochi
-634,Zweilous,Dark,Dragon,420,72,85,70,65,70,58,5,False,Diamat
-635,Hydreigon,Dark,Dragon,600,92,105,90,125,90,98,5,False,Trioxhydre
-636,Larvesta,Bug,Fire,360,55,85,55,50,55,60,5,False,Pyronille
-637,Volcarona,Bug,Fire,550,85,60,65,135,105,100,5,False,Pyrax
-638,Cobalion,Steel,Fighting,580,91,90,129,90,72,108,5,True,Cobaltium
-639,Terrakion,Rock,Fighting,580,91,129,90,72,90,108,5,True,Terrakium
-640,Virizion,Grass,Fighting,580,91,90,72,90,129,108,5,True,Viridium
-641,Tornadus,Flying,,580,79,115,70,125,80,111,5,True,Boréas
-642,Thundurus,Electric,Flying,580,79,115,70,125,80,111,5,True,Fulguris
-643,Reshiram,Dragon,Fire,680,100,120,100,150,120,90,5,True,Reshiram
-644,Zekrom,Dragon,Electric,680,100,150,120,120,100,90,5,True,Zekrom
-645,Landorus,Ground,Flying,600,89,125,90,115,80,101,5,True,Démétéros
-646,Kyurem,Dragon,Ice,660,125,130,90,130,90,95,5,True,Kyurem
-647,Keldeo,Water,Fighting,580,91,72,90,129,90,108,5,False,Keldeo
-648,Meloetta,Normal,Psychic,600,100,77,77,128,128,90,5,False,Meloetta
-649,Genesect,Bug,Steel,600,71,120,95,120,95,99,5,False,Genesect
-650,Chespin,Grass,,313,56,61,65,48,45,38,6,False,Marisson
-651,Quilladin,Grass,,405,61,78,95,56,58,57,6,False,Boguérisse
-652,Chesnaught,Grass,Fighting,530,88,107,122,74,75,64,6,False,Blindépique
-653,Fennekin,Fire,,307,40,45,40,62,60,60,6,False,Feunnec
-654,Braixen,Fire,,409,59,59,58,90,70,73,6,False,Roussil
-655,Delphox,Fire,Psychic,534,75,69,72,114,100,104,6,False,Goupelin
-656,Froakie,Water,,314,41,56,40,62,44,71,6,False,Grenousse
-657,Frogadier,Water,,405,54,63,52,83,56,97,6,False,Croâporal
-658,Greninja,Water,Dark,530,72,95,67,103,71,122,6,False,Amphinobi
-659,Bunnelby,Normal,,237,38,36,38,32,36,57,6,False,Sapereau
-660,Diggersby,Normal,Ground,423,85,56,77,50,77,78,6,False,Excavarenne
-661,Fletchling,Normal,Flying,278,45,50,43,40,38,62,6,False,Passerouge
-662,Fletchinder,Fire,Flying,382,62,73,55,56,52,84,6,False,Braisillon
-663,Talonflame,Fire,Flying,499,78,81,71,74,69,126,6,False,Flambusard
-664,Scatterbug,Bug,,200,38,35,40,27,25,35,6,False,Lépidonille
-665,Spewpa,Bug,,213,45,22,60,27,30,29,6,False,Pérégrain
-666,Vivillon,Bug,Flying,411,80,52,50,90,50,89,6,False,Prismillon
-667,Litleo,Fire,Normal,369,62,50,58,73,54,72,6,False,Hélionceau
-668,Pyroar,Fire,Normal,507,86,68,72,109,66,106,6,False,Némélios
-669,Flabebe,Fairy,,303,44,38,39,61,79,42,6,False,Flabébé
-670,Floette,Fairy,,371,54,45,47,75,98,52,6,False,Floette
-671,Florges,Fairy,,552,78,65,68,112,154,75,6,False,Florges
-672,Skiddo,Grass,,350,66,65,48,62,57,52,6,False,Cabriolaine
-673,Gogoat,Grass,,531,123,100,62,97,81,68,6,False,Chevroum
-674,Pancham,Fighting,,348,67,82,62,46,48,43,6,False,Pandespiègle
-675,Pangoro,Fighting,Dark,495,95,124,78,69,71,58,6,False,Pandarbare
-676,Furfrou,Normal,,472,75,80,60,65,90,102,6,False,Couafarel
-677,Espurr,Psychic,,355,62,48,54,63,60,68,6,False,Psystigri
-678,Meowstic,Psychic,,466,74,48,76,83,81,104,6,False,Mistigrix
-679,Honedge,Steel,Ghost,325,45,80,100,35,37,28,6,False,Monorpale
-680,Doublade,Steel,Ghost,448,59,110,150,45,49,35,6,False,Dimoclès
-681,Aegislash,Steel,Ghost,500,60,50,140,50,140,60,6,False,Exagide
-682,Spritzee,Fairy,,341,78,52,60,63,65,23,6,False,Fluvetin
-683,Aromatisse,Fairy,,462,101,72,72,99,89,29,6,False,Cocotine
-684,Swirlix,Fairy,,341,62,48,66,59,57,49,6,False,Sucroquin
-685,Slurpuff,Fairy,,480,82,80,86,85,75,72,6,False,Cupcanaille
-686,Inkay,Dark,Psychic,288,53,54,53,37,46,45,6,False,Sepiatop
-687,Malamar,Dark,Psychic,482,86,92,88,68,75,73,6,False,Sepiatroce
-688,Binacle,Rock,Water,306,42,52,67,39,56,50,6,False,Opermine
-689,Barbaracle,Rock,Water,500,72,105,115,54,86,68,6,False,Golgopathe
-690,Skrelp,Poison,Water,320,50,60,60,60,60,30,6,False,Venalgue
-691,Dragalge,Poison,Dragon,494,65,75,90,97,123,44,6,False,Kravarech
-692,Clauncher,Water,,330,50,53,62,58,63,44,6,False,Flingouste
-693,Clawitzer,Water,,500,71,73,88,120,89,59,6,False,Gamblast
-694,Helioptile,Electric,Normal,289,44,38,33,61,43,70,6,False,Galvaran
-695,Heliolisk,Electric,Normal,481,62,55,52,109,94,109,6,False,Iguolta
-696,Tyrunt,Rock,Dragon,362,58,89,77,45,45,48,6,False,Ptyranidur
-697,Tyrantrum,Rock,Dragon,521,82,121,119,69,59,71,6,False,Rexillius
-698,Amaura,Rock,Ice,362,77,59,50,67,63,46,6,False,Amagara
-699,Aurorus,Rock,Ice,521,123,77,72,99,92,58,6,False,Dragmara
-700,Sylveon,Fairy,,525,95,65,65,110,130,60,6,False,Nymphali
-701,Hawlucha,Fighting,Flying,500,78,92,75,74,63,118,6,False,Brutalibré
-702,Dedenne,Electric,Fairy,431,67,58,57,81,67,101,6,False,Dedenne
-703,Carbink,Rock,Fairy,500,50,50,150,50,150,50,6,False,Strassie
-704,Goomy,Dragon,,300,45,50,35,55,75,40,6,False,Mucuscule
-705,Sliggoo,Dragon,,452,68,75,53,83,113,60,6,False,Colimucus
-706,Goodra,Dragon,,600,90,100,70,110,150,80,6,False,Muplodocus
-707,Klefki,Steel,Fairy,470,57,80,91,80,87,75,6,False,Trousselin
-708,Phantump,Ghost,Grass,309,43,70,48,50,60,38,6,False,Brocélôme
-709,Trevenant,Ghost,Grass,474,85,110,76,65,82,56,6,False,Desséliande
-710,Pumpkaboo,Ghost,Grass,335,49,66,70,44,55,51,6,False,Pitrouille
-711,Gourgeist,Ghost,Grass,494,65,90,122,58,75,84,6,False,Banshitrouye
-712,Bergmite,Ice,,304,55,69,85,32,35,28,6,False,Grelaçon
-713,Avalugg,Ice,,514,95,117,184,44,46,28,6,False,Séracrawl
-714,Noibat,Flying,Dragon,245,40,30,35,45,40,55,6,False,Sonistrelle
-715,Noivern,Flying,Dragon,535,85,70,80,97,80,123,6,False,Bruyverne
-716,Xerneas,Fairy,,680,126,131,95,131,98,99,6,True,Xerneas
-717,Yveltal,Dark,Flying,680,126,131,95,131,98,99,6,True,Yveltal
-718,Zygarde,Dragon,Ground,600,108,100,121,81,95,95,6,True,Zygarde
-719,Diancie,Rock,Fairy,600,50,100,150,100,150,50,6,False,Diancie
-720,Hoopa,Psychic,Ghost,600,80,110,60,150,130,70,6,False,Hoopa
-721,Volcanion,Fire,Water,600,80,110,120,130,90,70,6,False,Volcanion
-722,Rowlet,Grass,Flying,320,68,55,55,50,50,42,7,False,Brindibou
-723,Dartrix,Grass,Flying,420,78,75,75,70,70,52,7,False,Efflèche
-724,Decidueye,Grass,Ghost,530,78,107,75,100,100,70,7,False,Archéduc
-725,Litten,Fire,,320,45,65,40,60,40,70,7,False,Flamiaou
-726,Torracat,Fire,,420,65,85,50,80,50,90,7,False,Matoufeu
-727,Incineroar,Fire,Dark,530,95,115,90,80,90,60,7,False,Félinferno
-728,Popplio,Water,,320,50,54,54,66,56,40,7,False,Otaquin
-729,Brionne,Water,,420,60,69,69,91,81,50,7,False,Otarlette
-730,Primarina,Water,Fairy,530,80,74,74,126,116,60,7,False,Oratoria
-731,Pikipek,Normal,Flying,265,35,75,30,30,30,65,7,False,Picassaut
-732,Trumbeak,Normal,Flying,355,55,85,50,40,50,75,7,False,Piclairon
-733,Toucannon,Normal,Flying,485,80,120,75,75,75,60,7,False,Bazoucan
-734,Yungoos,Normal,,253,48,70,30,30,30,45,7,False,Manglouton
-735,Gumshoos,Normal,,418,88,110,60,55,60,45,7,False,Argouste
-736,Grubbin,Bug,,300,47,62,45,55,45,46,7,False,Larvibule
-737,Charjabug,Bug,Electric,400,57,82,95,55,75,36,7,False,Chrysapile
-738,Vikavolt,Bug,Electric,500,77,70,90,145,75,43,7,False,Lucanon
-739,Crabrawler,Fighting,,338,47,82,57,42,47,63,7,False,Crabagarre
-740,Crabominable,Fighting,Ice,478,97,132,77,62,67,43,7,False,Crabominable
-741,Oricorio,Fire,Flying,476,75,70,70,98,70,93,7,False,Plumeline
-742,Cutiefly,Bug,Fairy,304,40,45,40,55,40,84,7,False,Bombydou
-743,Ribombee,Bug,Fairy,464,60,55,60,95,70,124,7,False,Rubombelle
-744,Rockruff,Rock,,280,45,65,40,30,40,60,7,False,Rocabot
-745,Lycanroc,Rock,,487,75,115,65,55,65,112,7,False,Lougaroc
-746,Wishiwashi,Water,,175,45,20,20,25,25,40,7,False,Froussardine
-747,Mareanie,Poison,Water,305,50,53,62,43,52,45,7,False,Vorastérie
-748,Toxapex,Poison,Water,495,50,63,152,53,142,35,7,False,Prédastérie
-749,Mudbray,Ground,,385,70,100,70,45,55,45,7,False,Tiboudet
-750,Mudsdale,Ground,,500,100,125,100,55,85,35,7,False,Bourrinos
-751,Dewpider,Water,Bug,269,38,40,52,40,72,27,7,False,Araqua
-752,Araquanid,Water,Bug,454,68,70,92,50,132,42,7,False,Tarenbulle
-753,Fomantis,Grass,,250,40,55,35,50,35,35,7,False,Mimantis
-754,Lurantis,Grass,,480,70,105,90,80,90,45,7,False,Floramantis
-755,Morelull,Grass,Fairy,285,40,35,55,65,75,15,7,False,Spododo
-756,Shiinotic,Grass,Fairy,405,60,45,80,90,100,30,7,False,Lampignon
-757,Salandit,Poison,Fire,320,48,44,40,71,40,77,7,False,Tritox
-758,Salazzle,Poison,Fire,480,68,64,60,111,60,117,7,False,Malamandre
-759,Stufful,Normal,Fighting,340,70,75,50,45,50,50,7,False,Nounourson
-760,Bewear,Normal,Fighting,500,120,125,80,55,60,60,7,False,Chelours
-761,Bounsweet,Grass,,210,42,30,38,30,38,32,7,False,Croquine
-762,Steenee,Grass,,290,52,40,48,40,48,62,7,False,Candine
-763,Tsareena,Grass,,510,72,120,98,50,98,72,7,False,Sucreine
-764,Comfey,Fairy,,485,51,52,90,82,110,100,7,False,Guérilande
-765,Oranguru,Normal,Psychic,490,90,60,80,90,110,60,7,False,Gouroutan
-766,Passimian,Fighting,,490,100,120,90,40,60,80,7,False,Quartermac
-767,Wimpod,Bug,Water,230,25,35,40,20,30,80,7,False,Sovkipou
-768,Golisopod,Bug,Water,530,75,125,140,60,90,40,7,False,Sarmuraï
-769,Sandygast,Ghost,Ground,320,55,55,80,70,45,15,7,False,Bacabouh
-770,Palossand,Ghost,Ground,480,85,75,110,100,75,35,7,False,Trépassable
-771,Pyukumuku,Water,,410,55,60,130,30,130,5,7,False,Concombaffe
-772,Type-null,Normal,,534,95,95,95,95,95,59,7,True,Type:0
-773,Silvally,Normal,,570,95,95,95,95,95,95,7,True,Silvallié
-774,Minior,Rock,Flying,440,60,60,100,60,100,60,7,False,Météno
-775,Komala,Normal,,480,65,115,65,75,95,65,7,False,Dodoala
-776,Turtonator,Fire,Dragon,485,60,78,135,91,85,36,7,False,Boumata
-777,Togedemaru,Electric,Steel,435,65,98,63,40,73,96,7,False,Togedemaru
-778,Mimikyu,Ghost,Fairy,476,55,90,80,50,105,96,7,False,Mimiqui
-779,Bruxish,Water,Psychic,475,68,105,70,70,70,92,7,False,Denticrisse
-780,Drampa,Normal,Dragon,485,78,60,85,135,91,36,7,False,Draïeul
-781,Dhelmise,Ghost,Grass,517,70,131,100,86,90,40,7,False,Sinistrail
-782,Jangmo-o,Dragon,,300,45,55,65,45,45,45,7,False,Bébécaille
-783,Hakamo-o,Dragon,Fighting,420,55,75,90,65,70,65,7,False,Écaïd
-784,Kommo-o,Dragon,Fighting,600,75,110,125,100,105,85,7,False,Ékaïser
-785,Tapu-koko,Electric,Fairy,570,70,115,85,95,75,130,7,True,Tokorico
-786,Tapu-lele,Psychic,Fairy,570,70,85,75,130,115,95,7,True,Tokopiyon
-787,Tapu-bulu,Grass,Fairy,570,70,130,115,85,95,75,7,True,Tokotoro
-788,Tapu-fini,Water,Fairy,570,70,75,115,95,130,85,7,True,Tokopisco
-789,Cosmog,Psychic,,200,43,29,31,29,31,37,7,True,Cosmog
-790,Cosmoem,Psychic,,400,43,29,131,29,131,37,7,True,Cosmovum
-791,Solgaleo,Psychic,Steel,680,137,137,107,113,89,97,7,True,Solgaleo
-792,Lunala,Psychic,Ghost,680,137,113,89,137,107,97,7,True,Lunala
-793,Nihilego,Rock,Poison,570,109,53,47,127,131,103,7,False,Zéroïd
-794,Buzzwole,Bug,Fighting,570,107,139,139,53,53,79,7,False,Mouscoto
-795,Pheromosa,Bug,Fighting,570,71,137,37,137,37,151,7,False,Cancrelove
-796,Xurkitree,Electric,,570,83,89,71,173,71,83,7,False,Câblifère
-797,Celesteela,Steel,Flying,570,97,101,103,107,101,61,7,False,Bamboiselle
-798,Kartana,Grass,Steel,570,59,181,131,59,31,109,7,False,Katagami
-799,Guzzlord,Dark,Dragon,570,223,101,53,97,53,43,7,False,Engloutyran
-800,Necrozma,Psychic,,600,97,107,101,127,89,79,7,True,Necrozma
-801,Magearna,Steel,Fairy,600,80,95,115,130,115,65,7,False,Magearna
-802,Marshadow,Fighting,Ghost,600,90,125,80,90,90,125,7,False,Marshadow
-803,Poipole,Poison,,420,67,73,67,73,67,73,7,False,Vémini
-804,Naganadel,Poison,Dragon,540,73,73,73,127,73,121,7,False,Mandrillon
-805,Stakataka,Rock,Steel,570,61,131,211,53,101,13,7,False,Ama-Ama
-806,Blacephalon,Fire,Ghost,570,53,127,53,151,79,107,7,False,Pierroteknik
-807,Zeraora,Electric,,600,88,112,75,102,80,143,7,False,Zeraora
-808,Meltan,Steel,,300,46,65,65,55,35,34,7,False,Meltan
-809,Melmetal,Steel,,600,135,143,143,80,65,34,7,False,Melmetal
-810,Grookey,Grass,,310,50,65,50,40,40,65,8,False,Ouistempo
-811,Thwackey,Grass,,420,70,85,70,55,60,80,8,False,Badabouin
-812,Rillaboom,Grass,,530,100,125,90,60,70,85,8,False,Gorythmic
-813,Scorbunny,Fire,,310,50,71,40,40,40,69,8,False,Flambino
-814,Raboot,Fire,,420,65,86,60,55,60,94,8,False,Lapyro
-815,Cinderace,Fire,,530,80,116,75,65,75,119,8,False,Pyrobut
-816,Sobble,Water,,310,50,40,40,70,40,70,8,False,Larméléon
-817,Drizzile,Water,,420,65,60,55,95,55,90,8,False,Arrozard
-818,Inteleon,Water,,530,70,85,65,125,65,120,8,False,Lézargus
-819,Skwovet,Normal,,275,70,55,55,35,35,25,8,False,Rongourmand
-820,Greedent,Normal,,460,120,95,95,55,75,20,8,False,Rongrigou
-821,Rookidee,Flying,,245,38,47,35,33,35,57,8,False,Minisange
-822,Corvisquire,Flying,,365,68,67,55,43,55,77,8,False,Bleuseille
-823,Corviknight,Flying,Steel,495,98,87,105,53,85,67,8,False,Corvaillus
-824,Blipbug,Bug,,180,25,20,20,25,45,45,8,False,Larvadar
-825,Dottler,Bug,Psychic,335,50,35,80,50,90,30,8,False,Coléodôme
-826,Orbeetle,Bug,Psychic,505,60,45,110,80,120,90,8,False,Astronelle
-827,Nickit,Dark,,245,40,28,28,47,52,50,8,False,Goupilou
-828,Thievul,Dark,,455,70,58,58,87,92,90,8,False,Roublenard
-829,Gossifleur,Grass,,250,40,40,60,40,60,10,8,False,Tournicoton
-830,Eldegoss,Grass,,460,60,50,90,80,120,60,8,False,Blancoton
-831,Wooloo,Normal,,270,42,40,55,40,45,48,8,False,Moumouton
-832,Dubwool,Normal,,490,72,80,100,60,90,88,8,False,Moumouflon
-833,Chewtle,Water,,284,50,64,50,38,38,44,8,False,Khélocrok
-834,Drednaw,Water,Rock,485,90,115,90,48,68,74,8,False,Torgamord
-835,Yamper,Electric,,270,59,45,50,40,50,26,8,False,Voltoutou
-836,Boltund,Electric,,490,69,90,60,90,60,121,8,False,Fulgudog
-837,Rolycoly,Rock,,240,30,40,50,40,50,30,8,False,Charbi
-838,Carkol,Rock,Fire,410,80,60,90,60,70,50,8,False,Wagomine
-839,Coalossal,Rock,Fire,510,110,80,120,80,90,30,8,False,Monthracite
-840,Applin,Grass,Dragon,260,40,40,80,40,40,20,8,False,Verpom
-841,Flapple,Grass,Dragon,485,70,110,80,95,60,70,8,False,Pomdrapi
-842,Appletun,Grass,Dragon,485,110,85,80,100,80,30,8,False,Dratatin
-843,Silicobra,Ground,,315,52,57,75,35,50,46,8,False,Dunaja
-844,Sandaconda,Ground,,510,72,107,125,65,70,71,8,False,Dunaconda
-845,Cramorant,Flying,Water,475,70,85,55,85,95,85,8,False,Nigosier
-846,Arrokuda,Water,,280,41,63,40,40,30,66,8,False,Embrochet
-847,Barraskewda,Water,,490,61,123,60,60,50,136,8,False,Hastacuda
-848,Toxel,Electric,Poison,242,40,38,35,54,35,40,8,False,Toxizap
-849,Toxtricity,Electric,Poison,502,75,98,70,114,70,75,8,False,Salarsen
-850,Sizzlipede,Fire,Bug,305,50,65,45,50,50,45,8,False,Grillepattes
-851,Centiskorch,Fire,Bug,525,100,115,65,90,90,65,8,False,Scolocendre
-852,Clobbopus,Fighting,,310,50,68,60,50,50,32,8,False,Poulpaf
-853,Grapploct,Fighting,,480,80,118,90,70,80,42,8,False,Krakos
-854,Sinistea,Ghost,,308,40,45,45,74,54,50,8,False,Théffroi
-855,Polteageist,Ghost,,508,60,65,65,134,114,70,8,False,Polthégeist
-856,Hatenna,Psychic,,265,42,30,45,56,53,39,8,False,Bibichut
-857,Hattrem,Psychic,,370,57,40,65,86,73,49,8,False,Chapotus
-858,Hatterene,Psychic,Fairy,510,57,90,95,136,103,29,8,False,Sorcilence
-859,Impidimp,Dark,Fairy,265,45,45,30,55,40,50,8,False,Grimalin
-860,Morgrem,Dark,Fairy,370,65,60,45,75,55,70,8,False,Fourbelin
-861,Grimmsnarl,Dark,Fairy,510,95,120,65,95,75,60,8,False,Angoliath
-862,Obstagoon,Dark,Normal,520,93,90,101,60,81,95,8,False,Ixon
-863,Perrserker,Steel,,440,70,110,100,50,60,50,8,False,Berserkatt
-864,Cursola,Ghost,,510,60,95,50,145,130,30,8,False,Corayôme
-865,Sirfetchd,Fighting,,507,62,135,95,68,82,65,8,False,Palarticho
-866,Mr-rime,Ice,Psychic,520,80,85,75,110,100,70,8,False,M. Glaquette
-867,Runerigus,Ground,Ghost,483,58,95,145,50,105,30,8,False,Tutétékri
-868,Milcery,Fairy,,270,45,40,40,50,61,34,8,False,Crèmy
-869,Alcremie,Fairy,,495,65,60,75,110,121,64,8,False,Charmilly
-870,Falinks,Fighting,,470,65,100,100,70,60,75,8,False,Hexadron
-871,Pincurchin,Electric,,435,48,101,95,91,85,15,8,False,Wattapik
-872,Snom,Ice,Bug,185,30,25,35,45,30,20,8,False,Frissonille
-873,Frosmoth,Ice,Bug,475,70,65,60,125,90,65,8,False,Beldeneige
-874,Stonjourner,Rock,,470,100,125,135,20,20,70,8,False,Dolman
-875,Eiscue,Ice,,470,75,80,110,65,90,50,8,False,Bekaglaçon
-876,Indeedee,Psychic,Normal,475,60,65,55,105,95,95,8,False,Wimessir
-877,Morpeko,Electric,Dark,436,58,95,58,70,58,97,8,False,Morpeko
-878,Cufant,Steel,,330,72,80,49,40,49,40,8,False,Charibari
-879,Copperajah,Steel,,500,122,130,69,80,69,30,8,False,Pachyradjah
-880,Dracozolt,Electric,Dragon,505,90,100,90,80,70,75,8,False,Galvagon
-881,Arctozolt,Electric,Ice,505,90,100,90,90,80,55,8,False,Galvagla
-882,Dracovish,Water,Dragon,505,90,90,100,70,80,75,8,False,Hydragon
-883,Arctovish,Water,Ice,505,90,90,100,80,90,55,8,False,Hydragla
-884,Duraludon,Steel,Dragon,535,70,95,115,120,50,85,8,False,Duralugon
-885,Dreepy,Dragon,Ghost,270,28,60,30,40,30,82,8,False,Fantyrm
-886,Drakloak,Dragon,Ghost,410,68,80,50,60,50,102,8,False,Dispareptil
-887,Dragapult,Dragon,Ghost,600,88,120,75,100,75,142,8,False,Lanssorien
-888,Zacian,Fairy,,660,92,120,115,80,115,138,8,True,Zacian
-889,Zamazenta,Fighting,,660,92,120,115,80,115,138,8,True,Zamazenta
-890,Eternatus,Poison,Dragon,690,140,85,95,145,95,130,8,True,Éthernatos
-891,Kubfu,Fighting,,385,60,90,60,53,50,72,8,True,Wushours
-892,Urshifu,Fighting,Dark,550,100,130,100,63,60,97,8,True,Shifours
-893,Zarude,Dark,Grass,600,105,120,105,70,95,105,8,False,Zarude
-894,Regieleki,Electric,,580,80,100,50,100,50,200,8,True,Regieleki
-895,Regidrago,Dragon,,580,200,100,50,100,50,80,8,True,Regidrago
-896,Glastrier,Ice,,580,100,145,130,65,110,30,8,True,Blizzeval
-897,Spectrier,Ghost,,580,100,65,60,145,80,130,8,True,Spectreval
-898,Calyrex,Psychic,Grass,500,100,80,80,80,80,80,8,True,Sylveroy
-899,Wyrdeer,Normal,Psychic,525,103,105,72,105,75,65,8,False,Cerbyllin
-900,Kleavor,Bug,Rock,500,70,135,95,45,70,85,8,False,Hachécateur
-901,Ursaluna,Ground,Normal,550,130,140,105,45,80,50,8,False,Ursaking
-902,Basculegion,Water,Ghost,530,120,112,65,80,75,78,8,False,Paragruel
-903,Sneasler,Fighting,Poison,510,80,130,60,40,80,120,8,False,Farfurex
-904,Overqwil,Dark,Poison,510,85,115,95,65,65,85,8,False,Qwilpik
-905,Enamorus,Fairy,Flying,580,74,115,70,135,80,106,8,True,Amovénus
-906,Sprigatito,Grass,,310,40,61,54,45,45,65,9,False,Poussacha
-907,Floragato,Grass,,410,61,80,63,60,63,83,9,False,Matourgeon
-908,Meowscarada,Grass,Dark,530,76,110,70,81,70,123,9,False,Miascarade
-909,Fuecoco,Fire,,310,67,45,59,63,40,36,9,False,Chochodile
-910,Crocalor,Fire,,411,81,55,78,90,58,49,9,False,Crocogril
-911,Skeledirge,Fire,Ghost,530,104,75,100,110,75,66,9,False,Flâmigator
-912,Quaxly,Water,,310,55,65,45,50,45,50,9,False,Coiffeton
-913,Quaxwell,Water,,410,70,85,65,65,60,65,9,False,Canarbello
-914,Quaquaval,Water,Fighting,530,85,120,80,85,75,85,9,False,Palmaval
-915,Lechonk,Normal,,254,54,45,40,35,45,35,9,False,Gourmelet
-916,Oinkologne,Normal,,489,110,100,75,59,80,65,9,False,Fragroin
-917,Tarountula,Bug,,210,35,41,45,29,40,20,9,False,Tissenboule
-918,Spidops,Bug,,404,60,79,92,52,86,35,9,False,Filentrappe
-919,Nymble,Bug,,210,33,46,40,21,25,45,9,False,Lilliterelle
-920,Lokix,Bug,Dark,450,71,102,78,52,55,92,9,False,Gambex
-921,Pawmi,Electric,,240,45,50,20,40,25,60,9,False,Pohm
-922,Pawmo,Electric,Fighting,350,60,75,40,50,40,85,9,False,Pohmotte
-923,Pawmot,Electric,Fighting,490,70,115,70,70,60,105,9,False,Pohmarmotte
-924,Tandemaus,Normal,,305,50,50,45,40,45,75,9,False,Compagnol
-925,Maushold,Normal,,470,74,75,70,65,75,111,9,False,Famignol
-926,Fidough,Fairy,,312,37,55,70,30,55,65,9,False,Pâtachiot
-927,Dachsbun,Fairy,,477,57,80,115,50,80,95,9,False,Briochien
-928,Smoliv,Grass,Normal,260,41,35,45,58,51,30,9,False,Olivini
-929,Dolliv,Grass,Normal,354,52,53,60,78,78,33,9,False,Olivado
-930,Arboliva,Grass,Normal,510,78,69,90,125,109,39,9,False,Arboliva
-931,Squawkabilly,Normal,Flying,417,82,96,51,45,51,92,9,False,Tapatoès
-932,Nacli,Rock,,280,55,55,75,35,35,25,9,False,Selutin
-933,Naclstack,Rock,,355,60,60,100,35,65,35,9,False,Amassel
-934,Garganacl,Rock,,500,100,100,130,45,90,35,9,False,Gigansel
-935,Charcadet,Fire,,255,40,50,40,50,40,35,9,False,Charbambin
-936,Armarouge,Fire,Psychic,525,85,60,100,125,80,75,9,False,Carmadura
-937,Ceruledge,Fire,Ghost,525,75,125,80,60,100,85,9,False,Malvalame
-938,Tadbulb,Electric,,272,61,31,41,59,35,45,9,False,Têtampoule
-939,Bellibolt,Electric,,495,109,64,91,103,83,45,9,False,Ampibidou
-940,Wattrel,Electric,Flying,280,40,40,35,55,40,70,9,False,Zapétrel
-941,Kilowattrel,Electric,Flying,490,70,70,60,105,60,125,9,False,Fulgulairo
-942,Maschiff,Dark,,340,60,78,60,40,51,51,9,False,Grondogue
-943,Mabosstiff,Dark,,505,80,120,90,60,70,85,9,False,Dogrino
-944,Shroodle,Poison,Normal,290,40,65,35,40,35,75,9,False,Gribouraigne
-945,Grafaiai,Poison,Normal,485,63,95,65,80,72,110,9,False,Tag-Tag
-946,Bramblin,Grass,Ghost,275,40,65,30,45,35,60,9,False,Virovent
-947,Brambleghast,Grass,Ghost,480,55,115,70,80,70,90,9,False,Virevorreur
-948,Toedscool,Ground,Grass,335,40,40,35,50,100,70,9,False,Terracool
-949,Toedscruel,Ground,Grass,515,80,70,65,80,120,100,9,False,Terracruel
-950,Klawf,Rock,,450,70,100,115,35,55,75,9,False,Craparoi
-951,Capsakid,Grass,,304,50,62,40,62,40,50,9,False,Pimito
-952,Scovillain,Grass,Fire,486,65,108,65,108,65,75,9,False,Scovilain
-953,Rellor,Bug,,270,41,50,60,31,58,30,9,False,Léboulérou
-954,Rabsca,Bug,Psychic,470,75,50,85,115,100,45,9,False,Bérasca
-955,Flittle,Psychic,,255,30,35,30,55,30,75,9,False,Flotillon
-956,Espathra,Psychic,,481,95,60,60,101,60,105,9,False,Cléopsytra
-957,Tinkatink,Fairy,Steel,297,50,45,45,35,64,58,9,False,Forgerette
-958,Tinkatuff,Fairy,Steel,380,65,55,55,45,82,78,9,False,Forgella
-959,Tinkaton,Fairy,Steel,506,85,75,77,70,105,94,9,False,Forgelina
-960,Wiglett,Water,,245,10,55,25,35,25,95,9,False,Taupikeau
-961,Wugtrio,Water,,425,35,100,50,50,70,120,9,False,Triopikeau
-962,Bombirdier,Flying,Dark,485,70,103,85,60,85,82,9,False,Lestombaile
-963,Finizen,Water,,315,70,45,40,45,40,75,9,False,Dofin
-964,Palafin,Water,,457,100,70,72,53,62,100,9,False,Superdofin
-965,Varoom,Steel,Poison,300,45,70,63,30,45,47,9,False,Vrombi
-966,Revavroom,Steel,Poison,500,80,119,90,54,67,90,9,False,Vrombotor
-967,Cyclizar,Dragon,Normal,501,70,95,65,85,65,121,9,False,Motorizard
-968,Orthworm,Steel,,480,70,85,145,60,55,65,9,False,Ferdeter
-969,Glimmet,Rock,Poison,350,48,35,42,105,60,60,9,False,Germéclat
-970,Glimmora,Rock,Poison,525,83,55,90,130,81,86,9,False,Floréclat
-971,Greavard,Ghost,,290,50,61,60,30,55,34,9,False,Toutombe
-972,Houndstone,Ghost,,488,72,101,100,50,97,68,9,False,Tomberro
-973,Flamigo,Flying,Fighting,500,82,115,74,75,64,90,9,False,Flamenroule
-974,Cetoddle,Ice,,334,108,68,45,30,40,43,9,False,Piétacé
-975,Cetitan,Ice,,521,170,113,65,45,55,73,9,False,Balbalèze
-976,Veluza,Water,Psychic,478,90,102,73,78,65,70,9,False,Délestin
-977,Dondozo,Water,,530,150,100,115,65,65,35,9,False,Oyacata
-978,Tatsugiri,Dragon,Water,475,68,50,60,120,95,82,9,False,Nigirigon
-979,Annihilape,Fighting,Ghost,535,110,115,80,50,90,90,9,False,Courrousinge
-980,Clodsire,Poison,Ground,430,130,75,60,45,100,20,9,False,Terraiste
-981,Farigiraf,Normal,Psychic,520,120,90,70,110,70,60,9,False,Farigiraf
-982,Dudunsparce,Normal,,520,125,100,80,85,75,55,9,False,Deusolourdo
-983,Kingambit,Dark,Steel,550,100,135,120,60,85,50,9,False,Scalpereur
-984,Great-tusk,Ground,Fighting,570,115,131,131,53,53,87,9,False,Fort-Ivoire
-985,Scream-tail,Fairy,Psychic,570,115,65,99,65,115,111,9,False,Hurle-Queue
-986,Brute-bonnet,Grass,Dark,570,111,127,99,79,99,55,9,False,Fongus-Furie
-987,Flutter-mane,Ghost,Fairy,570,55,55,55,135,135,135,9,False,Flotte-Mèche
-988,Slither-wing,Bug,Fighting,570,85,135,79,85,105,81,9,False,Rampe-Ailes
-989,Sandy-shocks,Electric,Ground,570,85,81,97,121,85,101,9,False,Pelage-Sablé
-990,Iron-treads,Ground,Steel,570,90,112,120,72,70,106,9,False,Roue-de-Fer
-991,Iron-bundle,Ice,Water,570,56,80,114,124,60,136,9,False,Hotte-de-Fer
-992,Iron-hands,Fighting,Electric,570,154,140,108,50,68,50,9,False,Paume-de-Fer
-993,Iron-jugulis,Dark,Flying,570,94,80,86,122,80,108,9,False,Têtes-de-Fer
-994,Iron-moth,Fire,Poison,570,80,70,60,140,110,110,9,False,Mite-de-Fer
-995,Iron-thorns,Rock,Electric,570,100,134,110,70,84,72,9,False,Épine-de-Fer
-996,Frigibax,Dragon,Ice,320,65,75,45,35,45,55,9,False,Frigodo
-997,Arctibax,Dragon,Ice,423,90,95,66,45,65,62,9,False,Cryodo
-998,Baxcalibur,Dragon,Ice,600,115,145,92,75,86,87,9,False,Glaivodo
-999,Gimmighoul,Ghost,,300,45,30,70,75,70,10,9,False,Mordudor
-1000,Gholdengo,Steel,Ghost,550,87,60,95,133,91,84,9,False,Gromago
-1001,Wo-chien,Dark,Grass,570,85,85,100,95,135,70,9,True,Chongjian
-1002,Chien-pao,Dark,Ice,570,80,120,80,90,65,135,9,True,Baojian
-1003,Ting-lu,Dark,Ground,570,155,110,125,55,80,45,9,True,Dinglu
-1004,Chi-yu,Dark,Fire,570,55,80,80,135,120,100,9,True,Yuyu
-1005,Roaring-moon,Dragon,Dark,590,105,139,71,55,101,119,9,False,Rugit-Lune
-1006,Iron-valiant,Fairy,Fighting,590,74,130,90,120,60,116,9,False,Garde-de-Fer
-1007,Koraidon,Fighting,Dragon,670,100,135,115,85,100,135,9,True,Koraidon
-1008,Miraidon,Electric,Dragon,670,100,85,100,135,115,135,9,True,Miraidon
-1009,Walking-wake,Water,Dragon,590,99,83,91,125,83,109,9,False,Serpente-Eau
-1010,Iron-leaves,Grass,Psychic,590,90,130,88,70,108,104,9,False,Vert-de-Fer
-1011,Dipplin,Grass,Dragon,485,80,80,110,95,80,40,9,False,Pomdramour
-1012,Poltchageist,Grass,Ghost,308,40,45,45,74,54,50,9,False,Poltchageist
-1013,Sinistcha,Grass,Ghost,508,71,60,106,121,80,70,9,False,Théffroyable
-1014,Okidogi,Poison,Fighting,555,88,128,115,58,86,80,9,True,Félicanis
-1015,Munkidori,Poison,Psychic,555,88,75,66,130,90,106,9,True,Fortusimia
-1016,Fezandipiti,Poison,Fairy,555,88,91,82,70,125,99,9,True,Favianos
-1017,Ogerpon,Grass,,550,80,120,84,60,96,110,9,True,Ogerpon
-1018,Archaludon,Steel,Dragon,600,90,105,130,125,65,85,9,False,Pondralugon
-1019,Hydrapple,Grass,Dragon,540,106,80,110,120,80,44,9,False,Pomdorochi
-1020,Gouging-fire,Fire,Dragon,590,105,115,121,65,93,91,9,False,Feu-Perçant
-1021,Raging-bolt,Electric,Dragon,590,125,73,91,137,89,75,9,False,Ire-Foudre
-1022,Iron-boulder,Rock,Psychic,590,90,120,80,68,108,124,9,False,Roc-de-Fer
-1023,Iron-crown,Steel,Psychic,590,90,72,100,122,108,98,9,False,Chef-de-Fer
-1024,Terapagos,Normal,,450,90,65,85,65,85,60,9,True,Terapagos
-1025,Pecharunt,Poison,Ghost,600,88,88,160,88,88,88,9,False,Pêchaminus
+#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary,Ability 1,Ability 2,Hidden Ability,FrenchName
+1,Bulbasaur,Grass,Poison,318,45,49,49,65,65,45,1,False,Overgrow,,Chlorophyll,Bulbizarre
+2,Ivysaur,Grass,Poison,405,60,62,63,80,80,60,1,False,Overgrow,,Chlorophyll,Herbizarre
+3,Venusaur,Grass,Poison,525,80,82,83,100,100,80,1,False,Overgrow,,Chlorophyll,Florizarre
+4,Charmander,Fire,,309,39,52,43,60,50,65,1,False,Blaze,,Solar Power,Salamèche
+5,Charmeleon,Fire,,405,58,64,58,80,65,80,1,False,Blaze,,Solar Power,Reptincel
+6,Charizard,Fire,Flying,534,78,84,78,109,85,100,1,False,Blaze,,Solar Power,Dracaufeu
+7,Squirtle,Water,,314,44,48,65,50,64,43,1,False,Torrent,,Rain Dish,Carapuce
+8,Wartortle,Water,,405,59,63,80,65,80,58,1,False,Torrent,,Rain Dish,Carabaffe
+9,Blastoise,Water,,530,79,83,100,85,105,78,1,False,Torrent,,Rain Dish,Tortank
+10,Caterpie,Bug,,195,45,30,35,20,20,45,1,False,Shield Dust,,Run Away,Chenipan
+11,Metapod,Bug,,205,50,20,55,25,25,30,1,False,Shed Skin,,,Chrysacier
+12,Butterfree,Bug,Flying,395,60,45,50,90,80,70,1,False,Compound Eyes,,Tinted Lens,Papilusion
+13,Weedle,Bug,Poison,195,40,35,30,20,20,50,1,False,Shield Dust,,Run Away,Aspicot
+14,Kakuna,Bug,Poison,205,45,25,50,25,25,35,1,False,Shed Skin,,,Coconfort
+15,Beedrill,Bug,Poison,395,65,90,40,45,80,75,1,False,Swarm,,Sniper,Dardargnan
+16,Pidgey,Normal,Flying,251,40,45,40,35,35,56,1,False,Keen Eye,Tangled Feet,Big Pecks,Roucool
+17,Pidgeotto,Normal,Flying,349,63,60,55,50,50,71,1,False,Keen Eye,Tangled Feet,Big Pecks,Roucoups
+18,Pidgeot,Normal,Flying,479,83,80,75,70,70,101,1,False,Keen Eye,Tangled Feet,Big Pecks,Roucarnage
+19,Rattata,Normal,,253,30,56,35,25,35,72,1,False,Run Away,Guts,Hustle,Rattata
+20,Raticate,Normal,,413,55,81,60,50,70,97,1,False,Run Away,Guts,Hustle,Rattatac
+21,Spearow,Normal,Flying,262,40,60,30,31,31,70,1,False,Keen Eye,,Sniper,Piafabec
+22,Fearow,Normal,Flying,442,65,90,65,61,61,100,1,False,Keen Eye,,Sniper,Rapasdepic
+23,Ekans,Poison,,288,35,60,44,40,54,55,1,False,Intimidate,Shed Skin,Unnerve,Abo
+24,Arbok,Poison,,448,60,95,69,65,79,80,1,False,Intimidate,Shed Skin,Unnerve,Arbok
+25,Pikachu,Electric,,320,35,55,40,50,50,90,1,False,Static,,Lightning Rod,Pikachu
+26,Raichu,Electric,,485,60,90,55,90,80,110,1,False,Static,,Lightning Rod,Raichu
+27,Sandshrew,Ground,,300,50,75,85,20,30,40,1,False,Sand Veil,,Sand Rush,Sabelette
+28,Sandslash,Ground,,450,75,100,110,45,55,65,1,False,Sand Veil,,Sand Rush,Sablaireau
+29,Nidoran-f,Poison,,275,55,47,52,40,40,41,1,False,Poison Point,Rivalry,Hustle,Nidoran♀
+30,Nidorina,Poison,,365,70,62,67,55,55,56,1,False,Poison Point,Rivalry,Hustle,Nidorina
+31,Nidoqueen,Poison,Ground,505,90,92,87,75,85,76,1,False,Poison Point,Rivalry,Sheer Force,Nidoqueen
+32,Nidoran-m,Poison,,273,46,57,40,40,40,50,1,False,Poison Point,Rivalry,Hustle,Nidoran♂
+33,Nidorino,Poison,,365,61,72,57,55,55,65,1,False,Poison Point,Rivalry,Hustle,Nidorino
+34,Nidoking,Poison,Ground,505,81,102,77,85,75,85,1,False,Poison Point,Rivalry,Sheer Force,Nidoking
+35,Clefairy,Fairy,,323,70,45,48,60,65,35,1,False,Cute Charm,Magic Guard,Friend Guard,Mélofée
+36,Clefable,Fairy,,483,95,70,73,95,90,60,1,False,Cute Charm,Magic Guard,Unaware,Mélodelfe
+37,Vulpix,Fire,,299,38,41,40,50,65,65,1,False,Flash Fire,,Drought,Goupix
+38,Ninetales,Fire,,505,73,76,75,81,100,100,1,False,Flash Fire,,Drought,Feunard
+39,Jigglypuff,Normal,Fairy,270,115,45,20,45,25,20,1,False,Cute Charm,Competitive,Friend Guard,Rondoudou
+40,Wigglytuff,Normal,Fairy,435,140,70,45,85,50,45,1,False,Cute Charm,Competitive,Frisk,Grodoudou
+41,Zubat,Poison,Flying,245,40,45,35,30,40,55,1,False,Inner Focus,,Infiltrator,Nosferapti
+42,Golbat,Poison,Flying,455,75,80,70,65,75,90,1,False,Inner Focus,,Infiltrator,Nosferalto
+43,Oddish,Grass,Poison,320,45,50,55,75,65,30,1,False,Chlorophyll,,Run Away,Mystherbe
+44,Gloom,Grass,Poison,395,60,65,70,85,75,40,1,False,Chlorophyll,,Stench,Ortide
+45,Vileplume,Grass,Poison,490,75,80,85,110,90,50,1,False,Chlorophyll,,Effect Spore,Rafflesia
+46,Paras,Bug,Grass,285,35,70,55,45,55,25,1,False,Effect Spore,Dry Skin,Damp,Paras
+47,Parasect,Bug,Grass,405,60,95,80,60,80,30,1,False,Effect Spore,Dry Skin,Damp,Parasect
+48,Venonat,Bug,Poison,305,60,55,50,40,55,45,1,False,Compound Eyes,Tinted Lens,Run Away,Mimitoss
+49,Venomoth,Bug,Poison,450,70,65,60,90,75,90,1,False,Shield Dust,Tinted Lens,Wonder Skin,Aéromite
+50,Diglett,Ground,,265,10,55,25,35,45,95,1,False,Sand Veil,Arena Trap,Sand Force,Taupiqueur
+51,Dugtrio,Ground,,425,35,100,50,50,70,120,1,False,Sand Veil,Arena Trap,Sand Force,Triopikeur
+52,Meowth,Normal,,290,40,45,35,40,40,90,1,False,Pickup,Technician,Unnerve,Miaouss
+53,Persian,Normal,,440,65,70,60,65,65,115,1,False,Limber,Technician,Unnerve,Persian
+54,Psyduck,Water,,320,50,52,48,65,50,55,1,False,Damp,Cloud Nine,Swift Swim,Psykokwak
+55,Golduck,Water,,500,80,82,78,95,80,85,1,False,Damp,Cloud Nine,Swift Swim,Akwakwak
+56,Mankey,Fighting,,305,40,80,35,35,45,70,1,False,Vital Spirit,Anger Point,Defiant,Férosinge
+57,Primeape,Fighting,,455,65,105,60,60,70,95,1,False,Vital Spirit,Anger Point,Defiant,Colossinge
+58,Growlithe,Fire,,350,55,70,45,70,50,60,1,False,Intimidate,Flash Fire,Justified,Caninos
+59,Arcanine,Fire,,555,90,110,80,100,80,95,1,False,Intimidate,Flash Fire,Justified,Arcanin
+60,Poliwag,Water,,300,40,50,40,40,40,90,1,False,Water Absorb,Damp,Swift Swim,Ptitard
+61,Poliwhirl,Water,,385,65,65,65,50,50,90,1,False,Water Absorb,Damp,Swift Swim,Têtarte
+62,Poliwrath,Water,Fighting,510,90,95,95,70,90,70,1,False,Water Absorb,Damp,Swift Swim,Tartard
+63,Abra,Psychic,,310,25,20,15,105,55,90,1,False,Synchronize,Inner Focus,Magic Guard,Abra
+64,Kadabra,Psychic,,400,40,35,30,120,70,105,1,False,Synchronize,Inner Focus,Magic Guard,Kadabra
+65,Alakazam,Psychic,,500,55,50,45,135,95,120,1,False,Synchronize,Inner Focus,Magic Guard,Alakazam
+66,Machop,Fighting,,305,70,80,50,35,35,35,1,False,Guts,No Guard,Steadfast,Machoc
+67,Machoke,Fighting,,405,80,100,70,50,60,45,1,False,Guts,No Guard,Steadfast,Machopeur
+68,Machamp,Fighting,,505,90,130,80,65,85,55,1,False,Guts,No Guard,Steadfast,Mackogneur
+69,Bellsprout,Grass,Poison,300,50,75,35,70,30,40,1,False,Chlorophyll,,Gluttony,Chétiflor
+70,Weepinbell,Grass,Poison,390,65,90,50,85,45,55,1,False,Chlorophyll,,Gluttony,Boustiflor
+71,Victreebel,Grass,Poison,490,80,105,65,100,70,70,1,False,Chlorophyll,,Gluttony,Empiflor
+72,Tentacool,Water,Poison,335,40,40,35,50,100,70,1,False,Clear Body,Liquid Ooze,Rain Dish,Tentacool
+73,Tentacruel,Water,Poison,515,80,70,65,80,120,100,1,False,Clear Body,Liquid Ooze,Rain Dish,Tentacruel
+74,Geodude,Rock,Ground,300,40,80,100,30,30,20,1,False,Rock Head,Sturdy,Sand Veil,Racaillou
+75,Graveler,Rock,Ground,390,55,95,115,45,45,35,1,False,Rock Head,Sturdy,Sand Veil,Gravalanch
+76,Golem,Rock,Ground,495,80,120,130,55,65,45,1,False,Rock Head,Sturdy,Sand Veil,Grolem
+77,Ponyta,Fire,,410,50,85,55,65,65,90,1,False,Run Away,Flash Fire,Flame Body,Ponyta
+78,Rapidash,Fire,,500,65,100,70,80,80,105,1,False,Run Away,Flash Fire,Flame Body,Galopa
+79,Slowpoke,Water,Psychic,315,90,65,65,40,40,15,1,False,Oblivious,Own Tempo,Regenerator,Ramoloss
+80,Slowbro,Water,Psychic,490,95,75,110,100,80,30,1,False,Oblivious,Own Tempo,Regenerator,Flagadoss
+81,Magnemite,Electric,Steel,325,25,35,70,95,55,45,1,False,Magnet Pull,Sturdy,Analytic,Magnéti
+82,Magneton,Electric,Steel,465,50,60,95,120,70,70,1,False,Magnet Pull,Sturdy,Analytic,Magnéton
+83,Farfetchd,Normal,Flying,377,52,90,55,58,62,60,1,False,Keen Eye,Inner Focus,Defiant,Canarticho
+84,Doduo,Normal,Flying,310,35,85,45,35,35,75,1,False,Run Away,Early Bird,Tangled Feet,Doduo
+85,Dodrio,Normal,Flying,470,60,110,70,60,60,110,1,False,Run Away,Early Bird,Tangled Feet,Dodrio
+86,Seel,Water,,325,65,45,55,45,70,45,1,False,Thick Fat,Hydration,Ice Body,Otaria
+87,Dewgong,Water,Ice,475,90,70,80,70,95,70,1,False,Thick Fat,Hydration,Ice Body,Lamantine
+88,Grimer,Poison,,325,80,80,50,40,50,25,1,False,Stench,Sticky Hold,Poison Touch,Tadmorv
+89,Muk,Poison,,500,105,105,75,65,100,50,1,False,Stench,Sticky Hold,Poison Touch,Grotadmorv
+90,Shellder,Water,,305,30,65,100,45,25,40,1,False,Shell Armor,Skill Link,Overcoat,Kokiyas
+91,Cloyster,Water,Ice,525,50,95,180,85,45,70,1,False,Shell Armor,Skill Link,Overcoat,Crustabri
+92,Gastly,Ghost,Poison,310,30,35,30,100,35,80,1,False,Levitate,,,Fantominus
+93,Haunter,Ghost,Poison,405,45,50,45,115,55,95,1,False,Levitate,,,Spectrum
+94,Gengar,Ghost,Poison,500,60,65,60,130,75,110,1,False,Cursed Body,,,Ectoplasma
+95,Onix,Rock,Ground,385,35,45,160,30,45,70,1,False,Rock Head,Sturdy,Weak Armor,Onix
+96,Drowzee,Psychic,,328,60,48,45,43,90,42,1,False,Insomnia,Forewarn,Inner Focus,Soporifik
+97,Hypno,Psychic,,483,85,73,70,73,115,67,1,False,Insomnia,Forewarn,Inner Focus,Hypnomade
+98,Krabby,Water,,325,30,105,90,25,25,50,1,False,Hyper Cutter,Shell Armor,Sheer Force,Krabby
+99,Kingler,Water,,475,55,130,115,50,50,75,1,False,Hyper Cutter,Shell Armor,Sheer Force,Krabboss
+100,Voltorb,Electric,,330,40,30,50,55,55,100,1,False,Soundproof,Static,Aftermath,Voltorbe
+101,Electrode,Electric,,490,60,50,70,80,80,150,1,False,Soundproof,Static,Aftermath,Électrode
+102,Exeggcute,Grass,Psychic,325,60,40,80,60,45,40,1,False,Chlorophyll,,Harvest,Noeunoeuf
+103,Exeggutor,Grass,Psychic,530,95,95,85,125,75,55,1,False,Chlorophyll,,Harvest,Noadkoko
+104,Cubone,Ground,,320,50,50,95,40,50,35,1,False,Rock Head,Lightning Rod,Battle Armor,Osselait
+105,Marowak,Ground,,425,60,80,110,50,80,45,1,False,Rock Head,Lightning Rod,Battle Armor,Ossatueur
+106,Hitmonlee,Fighting,,455,50,120,53,35,110,87,1,False,Limber,Reckless,Unburden,Kicklee
+107,Hitmonchan,Fighting,,455,50,105,79,35,110,76,1,False,Keen Eye,Iron Fist,Inner Focus,Tygnon
+108,Lickitung,Normal,,385,90,55,75,60,75,30,1,False,Own Tempo,Oblivious,Cloud Nine,Excelangue
+109,Koffing,Poison,,340,40,65,95,60,45,35,1,False,Levitate,Neutralizing Gas,Stench,Smogo
+110,Weezing,Poison,,490,65,90,120,85,70,60,1,False,Levitate,Neutralizing Gas,Stench,Smogogo
+111,Rhyhorn,Ground,Rock,345,80,85,95,30,30,25,1,False,Lightning Rod,Rock Head,Reckless,Rhinocorne
+112,Rhydon,Ground,Rock,485,105,130,120,45,45,40,1,False,Lightning Rod,Rock Head,Reckless,Rhinoféros
+113,Chansey,Normal,,450,250,5,5,35,105,50,1,False,Natural Cure,Serene Grace,Healer,Leveinard
+114,Tangela,Grass,,435,65,55,115,100,40,60,1,False,Chlorophyll,Leaf Guard,Regenerator,Saquedeneu
+115,Kangaskhan,Normal,,490,105,95,80,40,80,90,1,False,Early Bird,Scrappy,Inner Focus,Kangourex
+116,Horsea,Water,,295,30,40,70,70,25,60,1,False,Swift Swim,Sniper,Damp,Hypotrempe
+117,Seadra,Water,,440,55,65,95,95,45,85,1,False,Poison Point,Sniper,Damp,Hypocéan
+118,Goldeen,Water,,320,45,67,60,35,50,63,1,False,Swift Swim,Water Veil,Lightning Rod,Poissirène
+119,Seaking,Water,,450,80,92,65,65,80,68,1,False,Swift Swim,Water Veil,Lightning Rod,Poissoroy
+120,Staryu,Water,,340,30,45,55,70,55,85,1,False,Illuminate,Natural Cure,Analytic,Stari
+121,Starmie,Water,Psychic,520,60,75,85,100,85,115,1,False,Illuminate,Natural Cure,Analytic,Staross
+122,Mr-mime,Psychic,Fairy,460,40,45,65,100,120,90,1,False,Soundproof,Filter,Technician,M. Mime
+123,Scyther,Bug,Flying,500,70,110,80,55,80,105,1,False,Swarm,Technician,Steadfast,Insécateur
+124,Jynx,Ice,Psychic,455,65,50,35,115,95,95,1,False,Oblivious,Forewarn,Dry Skin,Lippoutou
+125,Electabuzz,Electric,,490,65,83,57,95,85,105,1,False,Static,,Vital Spirit,Élektek
+126,Magmar,Fire,,495,65,95,57,100,85,93,1,False,Flame Body,,Vital Spirit,Magmar
+127,Pinsir,Bug,,500,65,125,100,55,70,85,1,False,Hyper Cutter,Mold Breaker,Moxie,Scarabrute
+128,Tauros,Normal,,490,75,100,95,40,70,110,1,False,Intimidate,Anger Point,Sheer Force,Tauros
+129,Magikarp,Water,,200,20,10,55,15,20,80,1,False,Swift Swim,,Rattled,Magicarpe
+130,Gyarados,Water,Flying,540,95,125,79,60,100,81,1,False,Intimidate,,Moxie,Léviator
+131,Lapras,Water,Ice,535,130,85,80,85,95,60,1,False,Water Absorb,Shell Armor,Hydration,Lokhlass
+132,Ditto,Normal,,288,48,48,48,48,48,48,1,False,Limber,,Imposter,Métamorph
+133,Eevee,Normal,,325,55,55,50,45,65,55,1,False,Run Away,Adaptability,Anticipation,Évoli
+134,Vaporeon,Water,,525,130,65,60,110,95,65,1,False,Water Absorb,,Hydration,Aquali
+135,Jolteon,Electric,,525,65,65,60,110,95,130,1,False,Volt Absorb,,Quick Feet,Voltali
+136,Flareon,Fire,,525,65,130,60,95,110,65,1,False,Flash Fire,,Guts,Pyroli
+137,Porygon,Normal,,395,65,60,70,85,75,40,1,False,Trace,Download,Analytic,Porygon
+138,Omanyte,Rock,Water,355,35,40,100,90,55,35,1,False,Swift Swim,Shell Armor,Weak Armor,Amonita
+139,Omastar,Rock,Water,495,70,60,125,115,70,55,1,False,Swift Swim,Shell Armor,Weak Armor,Amonistar
+140,Kabuto,Rock,Water,355,30,80,90,55,45,55,1,False,Swift Swim,Battle Armor,Weak Armor,Kabuto
+141,Kabutops,Rock,Water,495,60,115,105,65,70,80,1,False,Swift Swim,Battle Armor,Weak Armor,Kabutops
+142,Aerodactyl,Rock,Flying,515,80,105,65,60,75,130,1,False,Rock Head,Pressure,Unnerve,Ptéra
+143,Snorlax,Normal,,540,160,110,65,65,110,30,1,False,Immunity,Thick Fat,Gluttony,Ronflex
+144,Articuno,Ice,Flying,580,90,85,100,95,125,85,1,True,Pressure,,Snow Cloak,Artikodin
+145,Zapdos,Electric,Flying,580,90,90,85,125,90,100,1,True,Pressure,,Static,Électhor
+146,Moltres,Fire,Flying,580,90,100,90,125,85,90,1,True,Pressure,,Flame Body,Sulfura
+147,Dratini,Dragon,,300,41,64,45,50,50,50,1,False,Shed Skin,,Marvel Scale,Minidraco
+148,Dragonair,Dragon,,420,61,84,65,70,70,70,1,False,Shed Skin,,Marvel Scale,Draco
+149,Dragonite,Dragon,Flying,600,91,134,95,100,100,80,1,False,Inner Focus,,Multiscale,Dracolosse
+150,Mewtwo,Psychic,,680,106,110,90,154,90,130,1,True,Pressure,,Unnerve,Mewtwo
+151,Mew,Psychic,,600,100,100,100,100,100,100,1,False,Synchronize,,,Mew
+152,Chikorita,Grass,,318,45,49,65,49,65,45,2,False,Overgrow,,Leaf Guard,Germignon
+153,Bayleef,Grass,,405,60,62,80,63,80,60,2,False,Overgrow,,Leaf Guard,Macronium
+154,Meganium,Grass,,525,80,82,100,83,100,80,2,False,Overgrow,,Leaf Guard,Méganium
+155,Cyndaquil,Fire,,309,39,52,43,60,50,65,2,False,Blaze,,Flash Fire,Héricendre
+156,Quilava,Fire,,405,58,64,58,80,65,80,2,False,Blaze,,Flash Fire,Feurisson
+157,Typhlosion,Fire,,534,78,84,78,109,85,100,2,False,Blaze,,Flash Fire,Typhlosion
+158,Totodile,Water,,314,50,65,64,44,48,43,2,False,Torrent,,Sheer Force,Kaiminus
+159,Croconaw,Water,,405,65,80,80,59,63,58,2,False,Torrent,,Sheer Force,Crocrodil
+160,Feraligatr,Water,,530,85,105,100,79,83,78,2,False,Torrent,,Sheer Force,Aligatueur
+161,Sentret,Normal,,215,35,46,34,35,45,20,2,False,Run Away,Keen Eye,Frisk,Fouinette
+162,Furret,Normal,,415,85,76,64,45,55,90,2,False,Run Away,Keen Eye,Frisk,Fouinar
+163,Hoothoot,Normal,Flying,262,60,30,30,36,56,50,2,False,Insomnia,Keen Eye,Tinted Lens,Hoothoot
+164,Noctowl,Normal,Flying,452,100,50,50,86,96,70,2,False,Insomnia,Keen Eye,Tinted Lens,Noarfang
+165,Ledyba,Bug,Flying,265,40,20,30,40,80,55,2,False,Swarm,Early Bird,Rattled,Coxy
+166,Ledian,Bug,Flying,390,55,35,50,55,110,85,2,False,Swarm,Early Bird,Iron Fist,Coxyclaque
+167,Spinarak,Bug,Poison,250,40,60,40,40,40,30,2,False,Swarm,Insomnia,Sniper,Mimigal
+168,Ariados,Bug,Poison,400,70,90,70,60,70,40,2,False,Swarm,Insomnia,Sniper,Migalos
+169,Crobat,Poison,Flying,535,85,90,80,70,80,130,2,False,Inner Focus,,Infiltrator,Nostenfer
+170,Chinchou,Water,Electric,330,75,38,38,56,56,67,2,False,Volt Absorb,Illuminate,Water Absorb,Loupio
+171,Lanturn,Water,Electric,460,125,58,58,76,76,67,2,False,Volt Absorb,Illuminate,Water Absorb,Lanturn
+172,Pichu,Electric,,205,20,40,15,35,35,60,2,False,Static,,Lightning Rod,Pichu
+173,Cleffa,Fairy,,218,50,25,28,45,55,15,2,False,Cute Charm,Magic Guard,Friend Guard,Mélo
+174,Igglybuff,Normal,Fairy,210,90,30,15,40,20,15,2,False,Cute Charm,Competitive,Friend Guard,Toudoudou
+175,Togepi,Fairy,,245,35,20,65,40,65,20,2,False,Hustle,Serene Grace,Super Luck,Togepi
+176,Togetic,Fairy,Flying,405,55,40,85,80,105,40,2,False,Hustle,Serene Grace,Super Luck,Togetic
+177,Natu,Psychic,Flying,320,40,50,45,70,45,70,2,False,Synchronize,Early Bird,Magic Bounce,Natu
+178,Xatu,Psychic,Flying,470,65,75,70,95,70,95,2,False,Synchronize,Early Bird,Magic Bounce,Xatu
+179,Mareep,Electric,,280,55,40,40,65,45,35,2,False,Static,,Plus,Wattouat
+180,Flaaffy,Electric,,365,70,55,55,80,60,45,2,False,Static,,Plus,Lainergie
+181,Ampharos,Electric,,510,90,75,85,115,90,55,2,False,Static,,Plus,Pharamp
+182,Bellossom,Grass,,490,75,80,95,90,100,50,2,False,Chlorophyll,,Healer,Joliflor
+183,Marill,Water,Fairy,250,70,20,50,20,50,40,2,False,Thick Fat,Huge Power,Sap Sipper,Marill
+184,Azumarill,Water,Fairy,420,100,50,80,60,80,50,2,False,Thick Fat,Huge Power,Sap Sipper,Azumarill
+185,Sudowoodo,Rock,,410,70,100,115,30,65,30,2,False,Sturdy,Rock Head,Rattled,Simularbre
+186,Politoed,Water,,500,90,75,75,90,100,70,2,False,Water Absorb,Damp,Drizzle,Tarpaud
+187,Hoppip,Grass,Flying,250,35,35,40,35,55,50,2,False,Chlorophyll,Leaf Guard,Infiltrator,Granivol
+188,Skiploom,Grass,Flying,340,55,45,50,45,65,80,2,False,Chlorophyll,Leaf Guard,Infiltrator,Floravol
+189,Jumpluff,Grass,Flying,460,75,55,70,55,95,110,2,False,Chlorophyll,Leaf Guard,Infiltrator,Cotovol
+190,Aipom,Normal,,360,55,70,55,40,55,85,2,False,Run Away,Pickup,Skill Link,Capumain
+191,Sunkern,Grass,,180,30,30,30,30,30,30,2,False,Chlorophyll,Solar Power,Early Bird,Tournegrin
+192,Sunflora,Grass,,425,75,75,55,105,85,30,2,False,Chlorophyll,Solar Power,Early Bird,Héliatronc
+193,Yanma,Bug,Flying,390,65,65,45,75,45,95,2,False,Speed Boost,Compound Eyes,Frisk,Yanma
+194,Wooper,Water,Ground,210,55,45,45,25,25,15,2,False,Damp,Water Absorb,Unaware,Axoloto
+195,Quagsire,Water,Ground,430,95,85,85,65,65,35,2,False,Damp,Water Absorb,Unaware,Maraiste
+196,Espeon,Psychic,,525,65,65,60,130,95,110,2,False,Synchronize,,Magic Bounce,Mentali
+197,Umbreon,Dark,,525,95,65,110,60,130,65,2,False,Synchronize,,Inner Focus,Noctali
+198,Murkrow,Dark,Flying,405,60,85,42,85,42,91,2,False,Insomnia,Super Luck,Prankster,Cornèbre
+199,Slowking,Water,Psychic,490,95,75,80,100,110,30,2,False,Oblivious,Own Tempo,Regenerator,Roigada
+200,Misdreavus,Ghost,,435,60,60,60,85,85,85,2,False,Levitate,,,Feuforêve
+201,Unown,Psychic,,336,48,72,48,72,48,48,2,False,Levitate,,,Zarbi
+202,Wobbuffet,Psychic,,405,190,33,58,33,58,33,2,False,Shadow Tag,,Telepathy,Qulbutoké
+203,Girafarig,Normal,Psychic,455,70,80,65,90,65,85,2,False,Inner Focus,Early Bird,Sap Sipper,Girafarig
+204,Pineco,Bug,,290,50,65,90,35,35,15,2,False,Sturdy,,Overcoat,Pomdepik
+205,Forretress,Bug,Steel,465,75,90,140,60,60,40,2,False,Sturdy,,Overcoat,Foretress
+206,Dunsparce,Normal,,415,100,70,70,65,65,45,2,False,Serene Grace,Run Away,Rattled,Insolourdo
+207,Gligar,Ground,Flying,430,65,75,105,35,65,85,2,False,Hyper Cutter,Sand Veil,Immunity,Scorplane
+208,Steelix,Steel,Ground,510,75,85,200,55,65,30,2,False,Rock Head,Sturdy,Sheer Force,Steelix
+209,Snubbull,Fairy,,300,60,80,50,40,40,30,2,False,Intimidate,Run Away,Rattled,Snubbull
+210,Granbull,Fairy,,450,90,120,75,60,60,45,2,False,Intimidate,Quick Feet,Rattled,Granbull
+211,Qwilfish,Water,Poison,440,65,95,85,55,55,85,2,False,Poison Point,Swift Swim,Intimidate,Qwilfish
+212,Scizor,Bug,Steel,500,70,130,100,55,80,65,2,False,Swarm,Technician,Light Metal,Cizayox
+213,Shuckle,Bug,Rock,505,20,10,230,10,230,5,2,False,Sturdy,Gluttony,Contrary,Caratroc
+214,Heracross,Bug,Fighting,500,80,125,75,40,95,85,2,False,Swarm,Guts,Moxie,Scarhino
+215,Sneasel,Dark,Ice,430,55,95,55,35,75,115,2,False,Inner Focus,Keen Eye,Pickpocket,Farfuret
+216,Teddiursa,Normal,,330,60,80,50,50,50,40,2,False,Pickup,Quick Feet,Honey Gather,Teddiursa
+217,Ursaring,Normal,,500,90,130,75,75,75,55,2,False,Guts,Quick Feet,Unnerve,Ursaring
+218,Slugma,Fire,,250,40,40,40,70,40,20,2,False,Magma Armor,Flame Body,Weak Armor,Limagma
+219,Magcargo,Fire,Rock,430,60,50,120,90,80,30,2,False,Magma Armor,Flame Body,Weak Armor,Volcaropod
+220,Swinub,Ice,Ground,250,50,50,40,30,30,50,2,False,Oblivious,Snow Cloak,Thick Fat,Marcacrin
+221,Piloswine,Ice,Ground,450,100,100,80,60,60,50,2,False,Oblivious,Snow Cloak,Thick Fat,Cochignon
+222,Corsola,Water,Rock,410,65,55,95,65,95,35,2,False,Hustle,Natural Cure,Regenerator,Corayon
+223,Remoraid,Water,,300,35,65,35,65,35,65,2,False,Hustle,Sniper,Moody,Rémoraid
+224,Octillery,Water,,480,75,105,75,105,75,45,2,False,Suction Cups,Sniper,Moody,Octillery
+225,Delibird,Ice,Flying,330,45,55,45,65,45,75,2,False,Vital Spirit,Hustle,Insomnia,Cadoizo
+226,Mantine,Water,Flying,485,85,40,70,80,140,70,2,False,Swift Swim,Water Absorb,Water Veil,Démanta
+227,Skarmory,Steel,Flying,465,65,80,140,40,70,70,2,False,Keen Eye,Sturdy,Weak Armor,Airmure
+228,Houndour,Dark,Fire,330,45,60,30,80,50,65,2,False,Early Bird,Flash Fire,Unnerve,Malosse
+229,Houndoom,Dark,Fire,500,75,90,50,110,80,95,2,False,Early Bird,Flash Fire,Unnerve,Démolosse
+230,Kingdra,Water,Dragon,540,75,95,95,95,95,85,2,False,Swift Swim,Sniper,Damp,Hyporoi
+231,Phanpy,Ground,,330,90,60,60,40,40,40,2,False,Pickup,,Sand Veil,Phanpy
+232,Donphan,Ground,,500,90,120,120,60,60,50,2,False,Sturdy,,Sand Veil,Donphan
+233,Porygon2,Normal,,515,85,80,90,105,95,60,2,False,Trace,Download,Analytic,Porygon2
+234,Stantler,Normal,,465,73,95,62,85,65,85,2,False,Intimidate,Frisk,Sap Sipper,Cerfrousse
+235,Smeargle,Normal,,250,55,20,35,20,45,75,2,False,Own Tempo,Technician,Moody,Queulorior
+236,Tyrogue,Fighting,,210,35,35,35,35,35,35,2,False,Guts,Steadfast,Vital Spirit,Debugant
+237,Hitmontop,Fighting,,455,50,95,95,35,110,70,2,False,Intimidate,Technician,Steadfast,Kapoera
+238,Smoochum,Ice,Psychic,305,45,30,15,85,65,65,2,False,Oblivious,Forewarn,Hydration,Lippouti
+239,Elekid,Electric,,360,45,63,37,65,55,95,2,False,Static,,Vital Spirit,Élekid
+240,Magby,Fire,,365,45,75,37,70,55,83,2,False,Flame Body,,Vital Spirit,Magby
+241,Miltank,Normal,,490,95,80,105,40,70,100,2,False,Thick Fat,Scrappy,Sap Sipper,Écrémeuh
+242,Blissey,Normal,,540,255,10,10,75,135,55,2,False,Natural Cure,Serene Grace,Healer,Leuphorie
+243,Raikou,Electric,,580,90,85,75,115,100,115,2,True,Pressure,,Inner Focus,Raikou
+244,Entei,Fire,,580,115,115,85,90,75,100,2,True,Pressure,,Inner Focus,Entei
+245,Suicune,Water,,580,100,75,115,90,115,85,2,True,Pressure,,Inner Focus,Suicune
+246,Larvitar,Rock,Ground,300,50,64,50,45,50,41,2,False,Guts,,Sand Veil,Embrylex
+247,Pupitar,Rock,Ground,410,70,84,70,65,70,51,2,False,Shed Skin,,,Ymphect
+248,Tyranitar,Rock,Dark,600,100,134,110,95,100,61,2,False,Sand Stream,,Unnerve,Tyranocif
+249,Lugia,Psychic,Flying,680,106,90,130,90,154,110,2,True,Pressure,,Multiscale,Lugia
+250,Ho-oh,Fire,Flying,680,106,130,90,110,154,90,2,True,Pressure,,Regenerator,Ho-Oh
+251,Celebi,Psychic,Grass,600,100,100,100,100,100,100,2,False,Natural Cure,,,Celebi
+252,Treecko,Grass,,310,40,45,35,65,55,70,3,False,Overgrow,,Unburden,Arcko
+253,Grovyle,Grass,,405,50,65,45,85,65,95,3,False,Overgrow,,Unburden,Massko
+254,Sceptile,Grass,,530,70,85,65,105,85,120,3,False,Overgrow,,Unburden,Jungko
+255,Torchic,Fire,,310,45,60,40,70,50,45,3,False,Blaze,,Speed Boost,Poussifeu
+256,Combusken,Fire,Fighting,405,60,85,60,85,60,55,3,False,Blaze,,Speed Boost,Galifeu
+257,Blaziken,Fire,Fighting,530,80,120,70,110,70,80,3,False,Blaze,,Speed Boost,Braségali
+258,Mudkip,Water,,310,50,70,50,50,50,40,3,False,Torrent,,Damp,Gobou
+259,Marshtomp,Water,Ground,405,70,85,70,60,70,50,3,False,Torrent,,Damp,Flobio
+260,Swampert,Water,Ground,535,100,110,90,85,90,60,3,False,Torrent,,Damp,Laggron
+261,Poochyena,Dark,,220,35,55,35,30,30,35,3,False,Run Away,Quick Feet,Rattled,Medhyèna
+262,Mightyena,Dark,,420,70,90,70,60,60,70,3,False,Intimidate,Quick Feet,Moxie,Grahyèna
+263,Zigzagoon,Normal,,240,38,30,41,30,41,60,3,False,Pickup,Gluttony,Quick Feet,Zigzaton
+264,Linoone,Normal,,420,78,70,61,50,61,100,3,False,Pickup,Gluttony,Quick Feet,Linéon
+265,Wurmple,Bug,,195,45,45,35,20,30,20,3,False,Shield Dust,,Run Away,Chenipotte
+266,Silcoon,Bug,,205,50,35,55,25,25,15,3,False,Shed Skin,,,Armulys
+267,Beautifly,Bug,Flying,395,60,70,50,100,50,65,3,False,Swarm,,Rivalry,Charmillon
+268,Cascoon,Bug,,205,50,35,55,25,25,15,3,False,Shed Skin,,,Blindalys
+269,Dustox,Bug,Poison,385,60,50,70,50,90,65,3,False,Shield Dust,,Compound Eyes,Papinox
+270,Lotad,Water,Grass,220,40,30,30,40,50,30,3,False,Swift Swim,Rain Dish,Own Tempo,Nénupiot
+271,Lombre,Water,Grass,340,60,50,50,60,70,50,3,False,Swift Swim,Rain Dish,Own Tempo,Lombre
+272,Ludicolo,Water,Grass,480,80,70,70,90,100,70,3,False,Swift Swim,Rain Dish,Own Tempo,Ludicolo
+273,Seedot,Grass,,220,40,40,50,30,30,30,3,False,Chlorophyll,Early Bird,Pickpocket,Grainipiot
+274,Nuzleaf,Grass,Dark,340,70,70,40,60,40,60,3,False,Chlorophyll,Early Bird,Pickpocket,Pifeuil
+275,Shiftry,Grass,Dark,480,90,100,60,90,60,80,3,False,Chlorophyll,Wind Rider,Pickpocket,Tengalice
+276,Taillow,Normal,Flying,270,40,55,30,30,30,85,3,False,Guts,,Scrappy,Nirondelle
+277,Swellow,Normal,Flying,455,60,85,60,75,50,125,3,False,Guts,,Scrappy,Hélédelle
+278,Wingull,Water,Flying,270,40,30,30,55,30,85,3,False,Keen Eye,Hydration,Rain Dish,Goélise
+279,Pelipper,Water,Flying,440,60,50,100,95,70,65,3,False,Keen Eye,Drizzle,Rain Dish,Bekipan
+280,Ralts,Psychic,Fairy,198,28,25,25,45,35,40,3,False,Synchronize,Trace,Telepathy,Tarsal
+281,Kirlia,Psychic,Fairy,278,38,35,35,65,55,50,3,False,Synchronize,Trace,Telepathy,Kirlia
+282,Gardevoir,Psychic,Fairy,518,68,65,65,125,115,80,3,False,Synchronize,Trace,Telepathy,Gardevoir
+283,Surskit,Bug,Water,269,40,30,32,50,52,65,3,False,Swift Swim,,Rain Dish,Arakdo
+284,Masquerain,Bug,Flying,454,70,60,62,100,82,80,3,False,Intimidate,,Unnerve,Maskadra
+285,Shroomish,Grass,,295,60,40,60,40,60,35,3,False,Effect Spore,Poison Heal,Quick Feet,Balignon
+286,Breloom,Grass,Fighting,460,60,130,80,60,60,70,3,False,Effect Spore,Poison Heal,Technician,Chapignon
+287,Slakoth,Normal,,280,60,60,60,35,35,30,3,False,Truant,,,Parecool
+288,Vigoroth,Normal,,440,80,80,80,55,55,90,3,False,Vital Spirit,,,Vigoroth
+289,Slaking,Normal,,670,150,160,100,95,65,100,3,False,Truant,,,Monaflèmit
+290,Nincada,Bug,Ground,266,31,45,90,30,30,40,3,False,Compound Eyes,,Run Away,Ningale
+291,Ninjask,Bug,Flying,456,61,90,45,50,50,160,3,False,Speed Boost,,Infiltrator,Ninjask
+292,Shedinja,Bug,Ghost,236,1,90,45,30,30,40,3,False,Wonder Guard,,,Munja
+293,Whismur,Normal,,240,64,51,23,51,23,28,3,False,Soundproof,,Rattled,Chuchmur
+294,Loudred,Normal,,360,84,71,43,71,43,48,3,False,Soundproof,,Scrappy,Ramboum
+295,Exploud,Normal,,490,104,91,63,91,73,68,3,False,Soundproof,,Scrappy,Brouhabam
+296,Makuhita,Fighting,,237,72,60,30,20,30,25,3,False,Thick Fat,Guts,Sheer Force,Makuhita
+297,Hariyama,Fighting,,474,144,120,60,40,60,50,3,False,Thick Fat,Guts,Sheer Force,Hariyama
+298,Azurill,Normal,Fairy,190,50,20,40,20,40,20,3,False,Thick Fat,Huge Power,Sap Sipper,Azurill
+299,Nosepass,Rock,,375,30,45,135,45,90,30,3,False,Sturdy,Magnet Pull,Sand Force,Tarinor
+300,Skitty,Normal,,260,50,45,45,35,35,50,3,False,Cute Charm,Normalize,Wonder Skin,Skitty
+301,Delcatty,Normal,,400,70,65,65,55,55,90,3,False,Cute Charm,Normalize,Wonder Skin,Delcatty
+302,Sableye,Dark,Ghost,380,50,75,75,65,65,50,3,False,Keen Eye,Stall,Prankster,Ténéfix
+303,Mawile,Steel,Fairy,380,50,85,85,55,55,50,3,False,Hyper Cutter,Intimidate,Sheer Force,Mysdibule
+304,Aron,Steel,Rock,330,50,70,100,40,40,30,3,False,Sturdy,Rock Head,Heavy Metal,Galekid
+305,Lairon,Steel,Rock,430,60,90,140,50,50,40,3,False,Sturdy,Rock Head,Heavy Metal,Galegon
+306,Aggron,Steel,Rock,530,70,110,180,60,60,50,3,False,Sturdy,Rock Head,Heavy Metal,Galeking
+307,Meditite,Fighting,Psychic,280,30,40,55,40,55,60,3,False,Pure Power,,Telepathy,Méditikka
+308,Medicham,Fighting,Psychic,410,60,60,75,60,75,80,3,False,Pure Power,,Telepathy,Charmina
+309,Electrike,Electric,,295,40,45,40,65,40,65,3,False,Static,Lightning Rod,Minus,Dynavolt
+310,Manectric,Electric,,475,70,75,60,105,60,105,3,False,Static,Lightning Rod,Minus,Élecsprint
+311,Plusle,Electric,,405,60,50,40,85,75,95,3,False,Plus,,Lightning Rod,Posipi
+312,Minun,Electric,,405,60,40,50,75,85,95,3,False,Minus,,Volt Absorb,Négapi
+313,Volbeat,Bug,,430,65,73,75,47,85,85,3,False,Illuminate,Swarm,Prankster,Muciole
+314,Illumise,Bug,,430,65,47,75,73,85,85,3,False,Oblivious,Tinted Lens,Prankster,Lumivole
+315,Roselia,Grass,Poison,400,50,60,45,100,80,65,3,False,Natural Cure,Poison Point,Leaf Guard,Rosélia
+316,Gulpin,Poison,,302,70,43,53,43,53,40,3,False,Liquid Ooze,Sticky Hold,Gluttony,Gloupti
+317,Swalot,Poison,,467,100,73,83,73,83,55,3,False,Liquid Ooze,Sticky Hold,Gluttony,Avaltout
+318,Carvanha,Water,Dark,305,45,90,20,65,20,65,3,False,Rough Skin,,Speed Boost,Carvanha
+319,Sharpedo,Water,Dark,460,70,120,40,95,40,95,3,False,Rough Skin,,Speed Boost,Sharpedo
+320,Wailmer,Water,,400,130,70,35,70,35,60,3,False,Water Veil,Oblivious,Pressure,Wailmer
+321,Wailord,Water,,500,170,90,45,90,45,60,3,False,Water Veil,Oblivious,Pressure,Wailord
+322,Numel,Fire,Ground,305,60,60,40,65,45,35,3,False,Oblivious,Simple,Own Tempo,Chamallot
+323,Camerupt,Fire,Ground,460,70,100,70,105,75,40,3,False,Magma Armor,Solid Rock,Anger Point,Camérupt
+324,Torkoal,Fire,,470,70,85,140,85,70,20,3,False,White Smoke,Drought,Shell Armor,Chartor
+325,Spoink,Psychic,,330,60,25,35,70,80,60,3,False,Thick Fat,Own Tempo,Gluttony,Spoink
+326,Grumpig,Psychic,,470,80,45,65,90,110,80,3,False,Thick Fat,Own Tempo,Gluttony,Groret
+327,Spinda,Normal,,360,60,60,60,60,60,60,3,False,Own Tempo,Tangled Feet,Contrary,Spinda
+328,Trapinch,Ground,,290,45,100,45,45,45,10,3,False,Hyper Cutter,Arena Trap,Sheer Force,Kraknoix
+329,Vibrava,Ground,Dragon,340,50,70,50,50,50,70,3,False,Levitate,,,Vibraninf
+330,Flygon,Ground,Dragon,520,80,100,80,80,80,100,3,False,Levitate,,,Libégon
+331,Cacnea,Grass,,335,50,85,40,85,40,35,3,False,Sand Veil,,Water Absorb,Cacnea
+332,Cacturne,Grass,Dark,475,70,115,60,115,60,55,3,False,Sand Veil,,Water Absorb,Cacturne
+333,Swablu,Normal,Flying,310,45,40,60,40,75,50,3,False,Natural Cure,,Cloud Nine,Tylton
+334,Altaria,Dragon,Flying,490,75,70,90,70,105,80,3,False,Natural Cure,,Cloud Nine,Altaria
+335,Zangoose,Normal,,458,73,115,60,60,60,90,3,False,Immunity,,Toxic Boost,Mangriff
+336,Seviper,Poison,,458,73,100,60,100,60,65,3,False,Shed Skin,,Infiltrator,Séviper
+337,Lunatone,Rock,Psychic,460,90,55,65,95,85,70,3,False,Levitate,,,Séléroc
+338,Solrock,Rock,Psychic,460,90,95,85,55,65,70,3,False,Levitate,,,Solaroc
+339,Barboach,Water,Ground,288,50,48,43,46,41,60,3,False,Oblivious,Anticipation,Hydration,Barloche
+340,Whiscash,Water,Ground,468,110,78,73,76,71,60,3,False,Oblivious,Anticipation,Hydration,Barbicha
+341,Corphish,Water,,308,43,80,65,50,35,35,3,False,Hyper Cutter,Shell Armor,Adaptability,Écrapince
+342,Crawdaunt,Water,Dark,468,63,120,85,90,55,55,3,False,Hyper Cutter,Shell Armor,Adaptability,Colhomard
+343,Baltoy,Ground,Psychic,300,40,40,55,40,70,55,3,False,Levitate,,,Balbuto
+344,Claydol,Ground,Psychic,500,60,70,105,70,120,75,3,False,Levitate,,,Kaorine
+345,Lileep,Rock,Grass,355,66,41,77,61,87,23,3,False,Suction Cups,,Storm Drain,Lilia
+346,Cradily,Rock,Grass,495,86,81,97,81,107,43,3,False,Suction Cups,,Storm Drain,Vacilys
+347,Anorith,Rock,Bug,355,45,95,50,40,50,75,3,False,Battle Armor,,Swift Swim,Anorith
+348,Armaldo,Rock,Bug,495,75,125,100,70,80,45,3,False,Battle Armor,,Swift Swim,Armaldo
+349,Feebas,Water,,200,20,15,20,10,55,80,3,False,Swift Swim,Oblivious,Adaptability,Barpau
+350,Milotic,Water,,540,95,60,79,100,125,81,3,False,Marvel Scale,Competitive,Cute Charm,Milobellus
+351,Castform,Normal,,420,70,70,70,70,70,70,3,False,Forecast,,,Morphéo
+352,Kecleon,Normal,,440,60,90,70,60,120,40,3,False,Color Change,,Protean,Kecleon
+353,Shuppet,Ghost,,295,44,75,35,63,33,45,3,False,Insomnia,Frisk,Cursed Body,Polichombr
+354,Banette,Ghost,,455,64,115,65,83,63,65,3,False,Insomnia,Frisk,Cursed Body,Branette
+355,Duskull,Ghost,,295,20,40,90,30,90,25,3,False,Levitate,,Frisk,Skelénox
+356,Dusclops,Ghost,,455,40,70,130,60,130,25,3,False,Pressure,,Frisk,Téraclope
+357,Tropius,Grass,Flying,460,99,68,83,72,87,51,3,False,Chlorophyll,Solar Power,Harvest,Tropius
+358,Chimecho,Psychic,,455,75,50,80,95,90,65,3,False,Levitate,,,Éoko
+359,Absol,Dark,,465,65,130,60,75,60,75,3,False,Pressure,Super Luck,Justified,Absol
+360,Wynaut,Psychic,,260,95,23,48,23,48,23,3,False,Shadow Tag,,Telepathy,Okéoké
+361,Snorunt,Ice,,300,50,50,50,50,50,50,3,False,Inner Focus,Ice Body,Moody,Stalgamin
+362,Glalie,Ice,,480,80,80,80,80,80,80,3,False,Inner Focus,Ice Body,Moody,Oniglali
+363,Spheal,Ice,Water,290,70,40,50,55,50,25,3,False,Thick Fat,Ice Body,Oblivious,Obalie
+364,Sealeo,Ice,Water,410,90,60,70,75,70,45,3,False,Thick Fat,Ice Body,Oblivious,Phogleur
+365,Walrein,Ice,Water,530,110,80,90,95,90,65,3,False,Thick Fat,Ice Body,Oblivious,Kaimorse
+366,Clamperl,Water,,345,35,64,85,74,55,32,3,False,Shell Armor,,Rattled,Coquiperl
+367,Huntail,Water,,485,55,104,105,94,75,52,3,False,Swift Swim,,Water Veil,Serpang
+368,Gorebyss,Water,,485,55,84,105,114,75,52,3,False,Swift Swim,,Hydration,Rosabyss
+369,Relicanth,Water,Rock,485,100,90,130,45,65,55,3,False,Swift Swim,Rock Head,Sturdy,Relicanth
+370,Luvdisc,Water,,330,43,30,55,40,65,97,3,False,Swift Swim,,Hydration,Lovdisc
+371,Bagon,Dragon,,300,45,75,60,40,30,50,3,False,Rock Head,,Sheer Force,Draby
+372,Shelgon,Dragon,,420,65,95,100,60,50,50,3,False,Rock Head,,Overcoat,Drackhaus
+373,Salamence,Dragon,Flying,600,95,135,80,110,80,100,3,False,Intimidate,,Moxie,Drattak
+374,Beldum,Steel,Psychic,300,40,55,80,35,60,30,3,False,Clear Body,,Light Metal,Terhal
+375,Metang,Steel,Psychic,420,60,75,100,55,80,50,3,False,Clear Body,,Light Metal,Métang
+376,Metagross,Steel,Psychic,600,80,135,130,95,90,70,3,False,Clear Body,,Light Metal,Métalosse
+377,Regirock,Rock,,580,80,100,200,50,100,50,3,True,Clear Body,,Sturdy,Regirock
+378,Regice,Ice,,580,80,50,100,100,200,50,3,True,Clear Body,,Ice Body,Regice
+379,Registeel,Steel,,580,80,75,150,75,150,50,3,True,Clear Body,,Light Metal,Registeel
+380,Latias,Dragon,Psychic,600,80,80,90,110,130,110,3,True,Levitate,,,Latias
+381,Latios,Dragon,Psychic,600,80,90,80,130,110,110,3,True,Levitate,,,Latios
+382,Kyogre,Water,,670,100,100,90,150,140,90,3,True,Drizzle,,,Kyogre
+383,Groudon,Ground,,670,100,150,140,100,90,90,3,True,Drought,,,Groudon
+384,Rayquaza,Dragon,Flying,680,105,150,90,150,90,95,3,True,Air Lock,,,Rayquaza
+385,Jirachi,Steel,Psychic,600,100,100,100,100,100,100,3,False,Serene Grace,,,Jirachi
+386,Deoxys,Psychic,,600,50,150,50,150,50,150,3,False,Pressure,,,Deoxys
+387,Turtwig,Grass,,318,55,68,64,45,55,31,4,False,Overgrow,,Shell Armor,Tortipouss
+388,Grotle,Grass,,405,75,89,85,55,65,36,4,False,Overgrow,,Shell Armor,Boskara
+389,Torterra,Grass,Ground,525,95,109,105,75,85,56,4,False,Overgrow,,Shell Armor,Torterra
+390,Chimchar,Fire,,309,44,58,44,58,44,61,4,False,Blaze,,Iron Fist,Ouisticram
+391,Monferno,Fire,Fighting,405,64,78,52,78,52,81,4,False,Blaze,,Iron Fist,Chimpenfeu
+392,Infernape,Fire,Fighting,534,76,104,71,104,71,108,4,False,Blaze,,Iron Fist,Simiabraz
+393,Piplup,Water,,314,53,51,53,61,56,40,4,False,Torrent,,Competitive,Tiplouf
+394,Prinplup,Water,,405,64,66,68,81,76,50,4,False,Torrent,,Competitive,Prinplouf
+395,Empoleon,Water,Steel,530,84,86,88,111,101,60,4,False,Torrent,,Competitive,Pingoléon
+396,Starly,Normal,Flying,245,40,55,30,30,30,60,4,False,Keen Eye,,Reckless,Étourmi
+397,Staravia,Normal,Flying,340,55,75,50,40,40,80,4,False,Intimidate,,Reckless,Étourvol
+398,Staraptor,Normal,Flying,485,85,120,70,50,60,100,4,False,Intimidate,,Reckless,Étouraptor
+399,Bidoof,Normal,,250,59,45,40,35,40,31,4,False,Simple,Unaware,Moody,Keunotor
+400,Bibarel,Normal,Water,410,79,85,60,55,60,71,4,False,Simple,Unaware,Moody,Castorno
+401,Kricketot,Bug,,194,37,25,41,25,41,25,4,False,Shed Skin,,Run Away,Crikzik
+402,Kricketune,Bug,,384,77,85,51,55,51,65,4,False,Swarm,,Technician,Mélokrik
+403,Shinx,Electric,,263,45,65,34,40,34,45,4,False,Rivalry,Intimidate,Guts,Lixy
+404,Luxio,Electric,,363,60,85,49,60,49,60,4,False,Rivalry,Intimidate,Guts,Luxio
+405,Luxray,Electric,,523,80,120,79,95,79,70,4,False,Rivalry,Intimidate,Guts,Luxray
+406,Budew,Grass,Poison,280,40,30,35,50,70,55,4,False,Natural Cure,Poison Point,Leaf Guard,Rozbouton
+407,Roserade,Grass,Poison,515,60,70,65,125,105,90,4,False,Natural Cure,Poison Point,Technician,Roserade
+408,Cranidos,Rock,,350,67,125,40,30,30,58,4,False,Mold Breaker,,Sheer Force,Kranidos
+409,Rampardos,Rock,,495,97,165,60,65,50,58,4,False,Mold Breaker,,Sheer Force,Charkos
+410,Shieldon,Rock,Steel,350,30,42,118,42,88,30,4,False,Sturdy,,Soundproof,Dinoclier
+411,Bastiodon,Rock,Steel,495,60,52,168,47,138,30,4,False,Sturdy,,Soundproof,Bastiodon
+412,Burmy,Bug,,224,40,29,45,29,45,36,4,False,Shed Skin,,Overcoat,Cheniti
+413,Wormadam,Bug,Grass,424,60,59,85,79,105,36,4,False,Anticipation,,Overcoat,Cheniselle
+414,Mothim,Bug,Flying,424,70,94,50,94,50,66,4,False,Swarm,,Tinted Lens,Papilord
+415,Combee,Bug,Flying,244,30,30,42,30,42,70,4,False,Honey Gather,,Hustle,Apitrini
+416,Vespiquen,Bug,Flying,474,70,80,102,80,102,40,4,False,Pressure,,Unnerve,Apireine
+417,Pachirisu,Electric,,405,60,45,70,45,90,95,4,False,Run Away,Pickup,Volt Absorb,Pachirisu
+418,Buizel,Water,,330,55,65,35,60,30,85,4,False,Swift Swim,,Water Veil,Mustébouée
+419,Floatzel,Water,,495,85,105,55,85,50,115,4,False,Swift Swim,,Water Veil,Mustéflott
+420,Cherubi,Grass,,275,45,35,45,62,53,35,4,False,Chlorophyll,,,Ceribou
+421,Cherrim,Grass,,450,70,60,70,87,78,85,4,False,Flower Gift,,,Ceriflor
+422,Shellos,Water,,325,76,48,48,57,62,34,4,False,Sticky Hold,Storm Drain,Sand Force,Sancoki
+423,Gastrodon,Water,Ground,475,111,83,68,92,82,39,4,False,Sticky Hold,Storm Drain,Sand Force,Tritosor
+424,Ambipom,Normal,,482,75,100,66,60,66,115,4,False,Technician,Pickup,Skill Link,Capidextre
+425,Drifloon,Ghost,Flying,348,90,50,34,60,44,70,4,False,Aftermath,Unburden,Flare Boost,Baudrive
+426,Drifblim,Ghost,Flying,498,150,80,44,90,54,80,4,False,Aftermath,Unburden,Flare Boost,Grodrive
+427,Buneary,Normal,,350,55,66,44,44,56,85,4,False,Run Away,Klutz,Limber,Laporeille
+428,Lopunny,Normal,,480,65,76,84,54,96,105,4,False,Cute Charm,Klutz,Limber,Lockpin
+429,Mismagius,Ghost,,495,60,60,60,105,105,105,4,False,Levitate,,,Magirêve
+430,Honchkrow,Dark,Flying,505,100,125,52,105,52,71,4,False,Insomnia,Super Luck,Moxie,Corboss
+431,Glameow,Normal,,310,49,55,42,42,37,85,4,False,Limber,Own Tempo,Keen Eye,Chaglam
+432,Purugly,Normal,,452,71,82,64,64,59,112,4,False,Thick Fat,Own Tempo,Defiant,Chaffreux
+433,Chingling,Psychic,,285,45,30,50,65,50,45,4,False,Levitate,,,Korillon
+434,Stunky,Poison,Dark,329,63,63,47,41,41,74,4,False,Stench,Aftermath,Keen Eye,Moufouette
+435,Skuntank,Poison,Dark,479,103,93,67,71,61,84,4,False,Stench,Aftermath,Keen Eye,Moufflair
+436,Bronzor,Steel,Psychic,300,57,24,86,24,86,23,4,False,Levitate,Heatproof,Heavy Metal,Archéomire
+437,Bronzong,Steel,Psychic,500,67,89,116,79,116,33,4,False,Levitate,Heatproof,Heavy Metal,Archéodong
+438,Bonsly,Rock,,290,50,80,95,10,45,10,4,False,Sturdy,Rock Head,Rattled,Manzaï
+439,Mime-jr,Psychic,Fairy,310,20,25,45,70,90,60,4,False,Soundproof,Filter,Technician,Mime Jr.
+440,Happiny,Normal,,220,100,5,5,15,65,30,4,False,Natural Cure,Serene Grace,Friend Guard,Ptiravi
+441,Chatot,Normal,Flying,411,76,65,45,92,42,91,4,False,Keen Eye,Tangled Feet,Big Pecks,Pijako
+442,Spiritomb,Ghost,Dark,485,50,92,108,92,108,35,4,False,Pressure,,Infiltrator,Spiritomb
+443,Gible,Dragon,Ground,300,58,70,45,40,45,42,4,False,Sand Veil,,Rough Skin,Griknot
+444,Gabite,Dragon,Ground,410,68,90,65,50,55,82,4,False,Sand Veil,,Rough Skin,Carmache
+445,Garchomp,Dragon,Ground,600,108,130,95,80,85,102,4,False,Sand Veil,,Rough Skin,Carchacrok
+446,Munchlax,Normal,,390,135,85,40,40,85,5,4,False,Pickup,Thick Fat,Gluttony,Goinfrex
+447,Riolu,Fighting,,285,40,70,40,35,40,60,4,False,Steadfast,Inner Focus,Prankster,Riolu
+448,Lucario,Fighting,Steel,525,70,110,70,115,70,90,4,False,Steadfast,Inner Focus,Justified,Lucario
+449,Hippopotas,Ground,,330,68,72,78,38,42,32,4,False,Sand Stream,,Sand Force,Hippopotas
+450,Hippowdon,Ground,,525,108,112,118,68,72,47,4,False,Sand Stream,,Sand Force,Hippodocus
+451,Skorupi,Poison,Bug,330,40,50,90,30,55,65,4,False,Battle Armor,Sniper,Keen Eye,Rapion
+452,Drapion,Poison,Dark,500,70,90,110,60,75,95,4,False,Battle Armor,Sniper,Keen Eye,Drascore
+453,Croagunk,Poison,Fighting,300,48,61,40,61,40,50,4,False,Anticipation,Dry Skin,Poison Touch,Cradopaud
+454,Toxicroak,Poison,Fighting,490,83,106,65,86,65,85,4,False,Anticipation,Dry Skin,Poison Touch,Coatox
+455,Carnivine,Grass,,454,74,100,72,90,72,46,4,False,Levitate,,,Vortente
+456,Finneon,Water,,330,49,49,56,49,61,66,4,False,Swift Swim,Storm Drain,Water Veil,Écayon
+457,Lumineon,Water,,460,69,69,76,69,86,91,4,False,Swift Swim,Storm Drain,Water Veil,Luminéon
+458,Mantyke,Water,Flying,345,45,20,50,60,120,50,4,False,Swift Swim,Water Absorb,Water Veil,Babimanta
+459,Snover,Grass,Ice,334,60,62,50,62,60,40,4,False,Snow Warning,,Soundproof,Blizzi
+460,Abomasnow,Grass,Ice,494,90,92,75,92,85,60,4,False,Snow Warning,,Soundproof,Blizzaroi
+461,Weavile,Dark,Ice,510,70,120,65,45,85,125,4,False,Pressure,,Pickpocket,Dimoret
+462,Magnezone,Electric,Steel,535,70,70,115,130,90,60,4,False,Magnet Pull,Sturdy,Analytic,Magnézone
+463,Lickilicky,Normal,,515,110,85,95,80,95,50,4,False,Own Tempo,Oblivious,Cloud Nine,Coudlangue
+464,Rhyperior,Ground,Rock,535,115,140,130,55,55,40,4,False,Lightning Rod,Solid Rock,Reckless,Rhinastoc
+465,Tangrowth,Grass,,535,100,100,125,110,50,50,4,False,Chlorophyll,Leaf Guard,Regenerator,Bouldeneu
+466,Electivire,Electric,,540,75,123,67,95,85,95,4,False,Motor Drive,,Vital Spirit,Élekable
+467,Magmortar,Fire,,540,75,95,67,125,95,83,4,False,Flame Body,,Vital Spirit,Maganon
+468,Togekiss,Fairy,Flying,545,85,50,95,120,115,80,4,False,Hustle,Serene Grace,Super Luck,Togekiss
+469,Yanmega,Bug,Flying,515,86,76,86,116,56,95,4,False,Speed Boost,Tinted Lens,Frisk,Yanmega
+470,Leafeon,Grass,,525,65,110,130,60,65,95,4,False,Leaf Guard,,Chlorophyll,Phyllali
+471,Glaceon,Ice,,525,65,60,110,130,95,65,4,False,Snow Cloak,,Ice Body,Givrali
+472,Gliscor,Ground,Flying,510,75,95,125,45,75,95,4,False,Hyper Cutter,Sand Veil,Poison Heal,Scorvol
+473,Mamoswine,Ice,Ground,530,110,130,80,70,60,80,4,False,Oblivious,Snow Cloak,Thick Fat,Mammochon
+474,Porygon-z,Normal,,535,85,80,70,135,75,90,4,False,Adaptability,Download,Analytic,Porygon-Z
+475,Gallade,Psychic,Fighting,518,68,125,65,65,115,80,4,False,Steadfast,Sharpness,Justified,Gallame
+476,Probopass,Rock,Steel,525,60,55,145,75,150,40,4,False,Sturdy,Magnet Pull,Sand Force,Tarinorme
+477,Dusknoir,Ghost,,525,45,100,135,65,135,45,4,False,Pressure,,Frisk,Noctunoir
+478,Froslass,Ice,Ghost,480,70,80,70,80,70,110,4,False,Snow Cloak,,Cursed Body,Momartik
+479,Rotom,Electric,Ghost,440,50,50,77,95,77,91,4,False,Levitate,,,Motisma
+480,Uxie,Psychic,,580,75,75,130,75,130,95,4,True,Levitate,,,Créhelf
+481,Mesprit,Psychic,,580,80,105,105,105,105,80,4,True,Levitate,,,Créfollet
+482,Azelf,Psychic,,580,75,125,70,125,70,115,4,True,Levitate,,,Créfadet
+483,Dialga,Steel,Dragon,680,100,120,120,150,100,90,4,True,Pressure,,Telepathy,Dialga
+484,Palkia,Water,Dragon,680,90,120,100,150,120,100,4,True,Pressure,,Telepathy,Palkia
+485,Heatran,Fire,Steel,600,91,90,106,130,106,77,4,True,Flash Fire,,Flame Body,Heatran
+486,Regigigas,Normal,,670,110,160,110,80,110,100,4,True,Slow Start,,,Regigigas
+487,Giratina,Ghost,Dragon,680,150,100,120,100,120,90,4,True,Pressure,,Telepathy,Giratina
+488,Cresselia,Psychic,,580,120,70,110,75,120,85,4,True,Levitate,,,Cresselia
+489,Phione,Water,,480,80,80,80,80,80,80,4,False,Hydration,,,Phione
+490,Manaphy,Water,,600,100,100,100,100,100,100,4,False,Hydration,,,Manaphy
+491,Darkrai,Dark,,600,70,90,90,135,90,125,4,False,Bad Dreams,,,Darkrai
+492,Shaymin,Grass,,600,100,100,100,100,100,100,4,False,Natural Cure,,,Shaymin
+493,Arceus,Normal,,720,120,120,120,120,120,120,4,False,Multitype,,,Arceus
+494,Victini,Psychic,Fire,600,100,100,100,100,100,100,5,False,Victory Star,,,Victini
+495,Snivy,Grass,,308,45,45,55,45,55,63,5,False,Overgrow,,Contrary,Vipélierre
+496,Servine,Grass,,413,60,60,75,60,75,83,5,False,Overgrow,,Contrary,Lianaja
+497,Serperior,Grass,,528,75,75,95,75,95,113,5,False,Overgrow,,Contrary,Majaspic
+498,Tepig,Fire,,308,65,63,45,45,45,45,5,False,Blaze,,Thick Fat,Gruikui
+499,Pignite,Fire,Fighting,418,90,93,55,70,55,55,5,False,Blaze,,Thick Fat,Grotichon
+500,Emboar,Fire,Fighting,528,110,123,65,100,65,65,5,False,Blaze,,Reckless,Roitiflam
+501,Oshawott,Water,,308,55,55,45,63,45,45,5,False,Torrent,,Shell Armor,Moustillon
+502,Dewott,Water,,413,75,75,60,83,60,60,5,False,Torrent,,Shell Armor,Mateloutre
+503,Samurott,Water,,528,95,100,85,108,70,70,5,False,Torrent,,Shell Armor,Clamiral
+504,Patrat,Normal,,255,45,55,39,35,39,42,5,False,Run Away,Keen Eye,Analytic,Ratentif
+505,Watchog,Normal,,420,60,85,69,60,69,77,5,False,Illuminate,Keen Eye,Analytic,Miradar
+506,Lillipup,Normal,,275,45,60,45,25,45,55,5,False,Vital Spirit,Pickup,Run Away,Ponchiot
+507,Herdier,Normal,,370,65,80,65,35,65,60,5,False,Intimidate,Sand Rush,Scrappy,Ponchien
+508,Stoutland,Normal,,500,85,110,90,45,90,80,5,False,Intimidate,Sand Rush,Scrappy,Mastouffe
+509,Purrloin,Dark,,281,41,50,37,50,37,66,5,False,Limber,Unburden,Prankster,Chacripan
+510,Liepard,Dark,,446,64,88,50,88,50,106,5,False,Limber,Unburden,Prankster,Léopardus
+511,Pansage,Grass,,316,50,53,48,53,48,64,5,False,Gluttony,,Overgrow,Feuillajou
+512,Simisage,Grass,,498,75,98,63,98,63,101,5,False,Gluttony,,Overgrow,Feuiloutan
+513,Pansear,Fire,,316,50,53,48,53,48,64,5,False,Gluttony,,Blaze,Flamajou
+514,Simisear,Fire,,498,75,98,63,98,63,101,5,False,Gluttony,,Blaze,Flamoutan
+515,Panpour,Water,,316,50,53,48,53,48,64,5,False,Gluttony,,Torrent,Flotajou
+516,Simipour,Water,,498,75,98,63,98,63,101,5,False,Gluttony,,Torrent,Flotoutan
+517,Munna,Psychic,,292,76,25,45,67,55,24,5,False,Forewarn,Synchronize,Telepathy,Munna
+518,Musharna,Psychic,,487,116,55,85,107,95,29,5,False,Forewarn,Synchronize,Telepathy,Mushana
+519,Pidove,Normal,Flying,264,50,55,50,36,30,43,5,False,Big Pecks,Super Luck,Rivalry,Poichigeon
+520,Tranquill,Normal,Flying,358,62,77,62,50,42,65,5,False,Big Pecks,Super Luck,Rivalry,Colombeau
+521,Unfezant,Normal,Flying,488,80,115,80,65,55,93,5,False,Big Pecks,Super Luck,Rivalry,Déflaisan
+522,Blitzle,Electric,,295,45,60,32,50,32,76,5,False,Lightning Rod,Motor Drive,Sap Sipper,Zébibron
+523,Zebstrika,Electric,,497,75,100,63,80,63,116,5,False,Lightning Rod,Motor Drive,Sap Sipper,Zéblitz
+524,Roggenrola,Rock,,280,55,75,85,25,25,15,5,False,Sturdy,Weak Armor,Sand Force,Nodulithe
+525,Boldore,Rock,,390,70,105,105,50,40,20,5,False,Sturdy,Weak Armor,Sand Force,Géolithe
+526,Gigalith,Rock,,515,85,135,130,60,80,25,5,False,Sturdy,Sand Stream,Sand Force,Gigalithe
+527,Woobat,Psychic,Flying,323,65,45,43,55,43,72,5,False,Unaware,Klutz,Simple,Chovsourir
+528,Swoobat,Psychic,Flying,425,67,57,55,77,55,114,5,False,Unaware,Klutz,Simple,Rhinolove
+529,Drilbur,Ground,,328,60,85,40,30,45,68,5,False,Sand Rush,Sand Force,Mold Breaker,Rototaupe
+530,Excadrill,Ground,Steel,508,110,135,60,50,65,88,5,False,Sand Rush,Sand Force,Mold Breaker,Minotaupe
+531,Audino,Normal,,445,103,60,86,60,86,50,5,False,Healer,Regenerator,Klutz,Nanméouïe
+532,Timburr,Fighting,,305,75,80,55,25,35,35,5,False,Guts,Sheer Force,Iron Fist,Charpenti
+533,Gurdurr,Fighting,,405,85,105,85,40,50,40,5,False,Guts,Sheer Force,Iron Fist,Ouvrifier
+534,Conkeldurr,Fighting,,505,105,140,95,55,65,45,5,False,Guts,Sheer Force,Iron Fist,Bétochef
+535,Tympole,Water,,294,50,50,40,50,40,64,5,False,Swift Swim,Hydration,Water Absorb,Tritonde
+536,Palpitoad,Water,Ground,384,75,65,55,65,55,69,5,False,Swift Swim,Hydration,Water Absorb,Batracné
+537,Seismitoad,Water,Ground,509,105,95,75,85,75,74,5,False,Swift Swim,Poison Touch,Water Absorb,Crapustule
+538,Throh,Fighting,,465,120,100,85,30,85,45,5,False,Guts,Inner Focus,Mold Breaker,Judokrak
+539,Sawk,Fighting,,465,75,125,75,30,75,85,5,False,Sturdy,Inner Focus,Mold Breaker,Karaclée
+540,Sewaddle,Bug,Grass,310,45,53,70,40,60,42,5,False,Swarm,Chlorophyll,Overcoat,Larveyette
+541,Swadloon,Bug,Grass,380,55,63,90,50,80,42,5,False,Leaf Guard,Chlorophyll,Overcoat,Couverdure
+542,Leavanny,Bug,Grass,500,75,103,80,70,80,92,5,False,Swarm,Chlorophyll,Overcoat,Manternel
+543,Venipede,Bug,Poison,260,30,45,59,30,39,57,5,False,Poison Point,Swarm,Speed Boost,Venipatte
+544,Whirlipede,Bug,Poison,360,40,55,99,40,79,47,5,False,Poison Point,Swarm,Speed Boost,Scobolide
+545,Scolipede,Bug,Poison,485,60,100,89,55,69,112,5,False,Poison Point,Swarm,Speed Boost,Brutapode
+546,Cottonee,Grass,Fairy,280,40,27,60,37,50,66,5,False,Prankster,Infiltrator,Chlorophyll,Doudouvet
+547,Whimsicott,Grass,Fairy,480,60,67,85,77,75,116,5,False,Prankster,Infiltrator,Chlorophyll,Farfaduvet
+548,Petilil,Grass,,280,45,35,50,70,50,30,5,False,Chlorophyll,Own Tempo,Leaf Guard,Chlorobule
+549,Lilligant,Grass,,480,70,60,75,110,75,90,5,False,Chlorophyll,Own Tempo,Leaf Guard,Fragilady
+550,Basculin,Water,,460,70,92,65,80,55,98,5,False,Reckless,Adaptability,Mold Breaker,Bargantua
+551,Sandile,Ground,Dark,292,50,72,35,35,35,65,5,False,Intimidate,Moxie,Anger Point,Mascaïman
+552,Krokorok,Ground,Dark,351,60,82,45,45,45,74,5,False,Intimidate,Moxie,Anger Point,Escroco
+553,Krookodile,Ground,Dark,519,95,117,80,65,70,92,5,False,Intimidate,Moxie,Anger Point,Crocorible
+554,Darumaka,Fire,,315,70,90,45,15,45,50,5,False,Hustle,,Inner Focus,Darumarond
+555,Darmanitan,Fire,,480,105,140,55,30,55,95,5,False,Sheer Force,,Zen Mode,Darumacho
+556,Maractus,Grass,,461,75,86,67,106,67,60,5,False,Water Absorb,Chlorophyll,Storm Drain,Maracachi
+557,Dwebble,Bug,Rock,325,50,65,85,35,35,55,5,False,Sturdy,Shell Armor,Weak Armor,Crabicoque
+558,Crustle,Bug,Rock,485,70,105,125,65,75,45,5,False,Sturdy,Shell Armor,Weak Armor,Crabaraque
+559,Scraggy,Dark,Fighting,348,50,75,70,35,70,48,5,False,Shed Skin,Moxie,Intimidate,Baggiguane
+560,Scrafty,Dark,Fighting,488,65,90,115,45,115,58,5,False,Shed Skin,Moxie,Intimidate,Baggaïd
+561,Sigilyph,Psychic,Flying,490,72,58,80,103,80,97,5,False,Wonder Skin,Magic Guard,Tinted Lens,Cryptéro
+562,Yamask,Ghost,,303,38,30,85,55,65,30,5,False,Mummy,,,Tutafeh
+563,Cofagrigus,Ghost,,483,58,50,145,95,105,30,5,False,Mummy,,,Tutankafer
+564,Tirtouga,Water,Rock,355,54,78,103,53,45,22,5,False,Solid Rock,Sturdy,Swift Swim,Carapagos
+565,Carracosta,Water,Rock,495,74,108,133,83,65,32,5,False,Solid Rock,Sturdy,Swift Swim,Mégapagos
+566,Archen,Rock,Flying,401,55,112,45,74,45,70,5,False,Defeatist,,,Arkéapti
+567,Archeops,Rock,Flying,567,75,140,65,112,65,110,5,False,Defeatist,,,Aéroptéryx
+568,Trubbish,Poison,,329,50,50,62,40,62,65,5,False,Stench,Sticky Hold,Aftermath,Miamiasme
+569,Garbodor,Poison,,474,80,95,82,60,82,75,5,False,Stench,Weak Armor,Aftermath,Miasmax
+570,Zorua,Dark,,330,40,65,40,80,40,65,5,False,Illusion,,,Zorua
+571,Zoroark,Dark,,510,60,105,60,120,60,105,5,False,Illusion,,,Zoroark
+572,Minccino,Normal,,300,55,50,40,40,40,75,5,False,Cute Charm,Technician,Skill Link,Chinchidou
+573,Cinccino,Normal,,470,75,95,60,65,60,115,5,False,Cute Charm,Technician,Skill Link,Pashmilla
+574,Gothita,Psychic,,290,45,30,50,55,65,45,5,False,Frisk,Competitive,Shadow Tag,Scrutella
+575,Gothorita,Psychic,,390,60,45,70,75,85,55,5,False,Frisk,Competitive,Shadow Tag,Mesmérella
+576,Gothitelle,Psychic,,490,70,55,95,95,110,65,5,False,Frisk,Competitive,Shadow Tag,Sidérella
+577,Solosis,Psychic,,290,45,30,40,105,50,20,5,False,Overcoat,Magic Guard,Regenerator,Nucléos
+578,Duosion,Psychic,,370,65,40,50,125,60,30,5,False,Overcoat,Magic Guard,Regenerator,Méios
+579,Reuniclus,Psychic,,490,110,65,75,125,85,30,5,False,Overcoat,Magic Guard,Regenerator,Symbios
+580,Ducklett,Water,Flying,305,62,44,50,44,50,55,5,False,Keen Eye,Big Pecks,Hydration,Couaneton
+581,Swanna,Water,Flying,473,75,87,63,87,63,98,5,False,Keen Eye,Big Pecks,Hydration,Lakmécygne
+582,Vanillite,Ice,,305,36,50,50,65,60,44,5,False,Ice Body,Snow Cloak,Weak Armor,Sorbébé
+583,Vanillish,Ice,,395,51,65,65,80,75,59,5,False,Ice Body,Snow Cloak,Weak Armor,Sorboul
+584,Vanilluxe,Ice,,535,71,95,85,110,95,79,5,False,Ice Body,Snow Warning,Weak Armor,Sorbouboul
+585,Deerling,Normal,Grass,335,60,60,50,40,50,75,5,False,Chlorophyll,Sap Sipper,Serene Grace,Vivaldaim
+586,Sawsbuck,Normal,Grass,475,80,100,70,60,70,95,5,False,Chlorophyll,Sap Sipper,Serene Grace,Haydaim
+587,Emolga,Electric,Flying,428,55,75,60,75,60,103,5,False,Static,,Motor Drive,Emolga
+588,Karrablast,Bug,,315,50,75,45,40,45,60,5,False,Swarm,Shed Skin,No Guard,Carabing
+589,Escavalier,Bug,Steel,495,70,135,105,60,105,20,5,False,Swarm,Shell Armor,Overcoat,Lançargot
+590,Foongus,Grass,Poison,294,69,55,45,55,55,15,5,False,Effect Spore,,Regenerator,Trompignon
+591,Amoonguss,Grass,Poison,464,114,85,70,85,80,30,5,False,Effect Spore,,Regenerator,Gaulet
+592,Frillish,Water,Ghost,335,55,40,50,65,85,40,5,False,Water Absorb,Cursed Body,Damp,Viskuse
+593,Jellicent,Water,Ghost,480,100,60,70,85,105,60,5,False,Water Absorb,Cursed Body,Damp,Moyade
+594,Alomomola,Water,,470,165,75,80,40,45,65,5,False,Healer,Hydration,Regenerator,Mamanbo
+595,Joltik,Bug,Electric,319,50,47,50,57,50,65,5,False,Compound Eyes,Unnerve,Swarm,Statitik
+596,Galvantula,Bug,Electric,472,70,77,60,97,60,108,5,False,Compound Eyes,Unnerve,Swarm,Mygavolt
+597,Ferroseed,Grass,Steel,305,44,50,91,24,86,10,5,False,Iron Barbs,,,Grindur
+598,Ferrothorn,Grass,Steel,489,74,94,131,54,116,20,5,False,Iron Barbs,,Anticipation,Noacier
+599,Klink,Steel,,300,40,55,70,45,60,30,5,False,Plus,Minus,Clear Body,Tic
+600,Klang,Steel,,440,60,80,95,70,85,50,5,False,Plus,Minus,Clear Body,Clic
+601,Klinklang,Steel,,520,60,100,115,70,85,90,5,False,Plus,Minus,Clear Body,Cliticlic
+602,Tynamo,Electric,,275,35,55,40,45,40,60,5,False,Levitate,,,Anchwatt
+603,Eelektrik,Electric,,405,65,85,70,75,70,40,5,False,Levitate,,,Lampéroie
+604,Eelektross,Electric,,515,85,115,80,105,80,50,5,False,Levitate,,,Ohmassacre
+605,Elgyem,Psychic,,335,55,55,55,85,55,30,5,False,Telepathy,Synchronize,Analytic,Lewsor
+606,Beheeyem,Psychic,,485,75,75,75,125,95,40,5,False,Telepathy,Synchronize,Analytic,Neitram
+607,Litwick,Ghost,Fire,275,50,30,55,65,55,20,5,False,Flash Fire,Flame Body,Infiltrator,Funécire
+608,Lampent,Ghost,Fire,370,60,40,60,95,60,55,5,False,Flash Fire,Flame Body,Infiltrator,Mélancolux
+609,Chandelure,Ghost,Fire,520,60,55,90,145,90,80,5,False,Flash Fire,Flame Body,Infiltrator,Lugulabre
+610,Axew,Dragon,,320,46,87,60,30,40,57,5,False,Rivalry,Mold Breaker,Unnerve,Coupenotte
+611,Fraxure,Dragon,,410,66,117,70,40,50,67,5,False,Rivalry,Mold Breaker,Unnerve,Incisache
+612,Haxorus,Dragon,,540,76,147,90,60,70,97,5,False,Rivalry,Mold Breaker,Unnerve,Tranchodon
+613,Cubchoo,Ice,,305,55,70,40,60,40,40,5,False,Snow Cloak,Slush Rush,Rattled,Polarhume
+614,Beartic,Ice,,505,95,130,80,70,80,50,5,False,Snow Cloak,Slush Rush,Swift Swim,Polagriffe
+615,Cryogonal,Ice,,515,80,50,50,95,135,105,5,False,Levitate,,,Hexagel
+616,Shelmet,Bug,,305,50,40,85,40,65,25,5,False,Hydration,Shell Armor,Overcoat,Escargaume
+617,Accelgor,Bug,,495,80,70,40,100,60,145,5,False,Hydration,Sticky Hold,Unburden,Limaspeed
+618,Stunfisk,Ground,Electric,471,109,66,84,81,99,32,5,False,Static,Limber,Sand Veil,Limonde
+619,Mienfoo,Fighting,,350,45,85,50,55,50,65,5,False,Inner Focus,Regenerator,Reckless,Kungfouine
+620,Mienshao,Fighting,,510,65,125,60,95,60,105,5,False,Inner Focus,Regenerator,Reckless,Shaofouine
+621,Druddigon,Dragon,,485,77,120,90,60,90,48,5,False,Rough Skin,Sheer Force,Mold Breaker,Drakkarmin
+622,Golett,Ground,Ghost,303,59,74,50,35,50,35,5,False,Iron Fist,Klutz,No Guard,Gringolem
+623,Golurk,Ground,Ghost,483,89,124,80,55,80,55,5,False,Iron Fist,Klutz,No Guard,Golemastoc
+624,Pawniard,Dark,Steel,340,45,85,70,40,40,60,5,False,Defiant,Inner Focus,Pressure,Scalpion
+625,Bisharp,Dark,Steel,490,65,125,100,60,70,70,5,False,Defiant,Inner Focus,Pressure,Scalproie
+626,Bouffalant,Normal,,490,95,110,95,40,95,55,5,False,Reckless,Sap Sipper,Soundproof,Frison
+627,Rufflet,Normal,Flying,350,70,83,50,37,50,60,5,False,Keen Eye,Sheer Force,Hustle,Furaiglon
+628,Braviary,Normal,Flying,510,100,123,75,57,75,80,5,False,Keen Eye,Sheer Force,Defiant,Gueriaigle
+629,Vullaby,Dark,Flying,370,70,55,75,45,65,60,5,False,Big Pecks,Overcoat,Weak Armor,Vostourno
+630,Mandibuzz,Dark,Flying,510,110,65,105,55,95,80,5,False,Big Pecks,Overcoat,Weak Armor,Vaututrice
+631,Heatmor,Fire,,484,85,97,66,105,66,65,5,False,Gluttony,Flash Fire,White Smoke,Aflamanoir
+632,Durant,Bug,Steel,484,58,109,112,48,48,109,5,False,Swarm,Hustle,Truant,Fermite
+633,Deino,Dark,Dragon,300,52,65,50,45,50,38,5,False,Hustle,,,Solochi
+634,Zweilous,Dark,Dragon,420,72,85,70,65,70,58,5,False,Hustle,,,Diamat
+635,Hydreigon,Dark,Dragon,600,92,105,90,125,90,98,5,False,Levitate,,,Trioxhydre
+636,Larvesta,Bug,Fire,360,55,85,55,50,55,60,5,False,Flame Body,,Swarm,Pyronille
+637,Volcarona,Bug,Fire,550,85,60,65,135,105,100,5,False,Flame Body,,Swarm,Pyrax
+638,Cobalion,Steel,Fighting,580,91,90,129,90,72,108,5,True,Justified,,,Cobaltium
+639,Terrakion,Rock,Fighting,580,91,129,90,72,90,108,5,True,Justified,,,Terrakium
+640,Virizion,Grass,Fighting,580,91,90,72,90,129,108,5,True,Justified,,,Viridium
+641,Tornadus,Flying,,580,79,115,70,125,80,111,5,True,Prankster,,Defiant,Boréas
+642,Thundurus,Electric,Flying,580,79,115,70,125,80,111,5,True,Prankster,,Defiant,Fulguris
+643,Reshiram,Dragon,Fire,680,100,120,100,150,120,90,5,True,Turboblaze,,,Reshiram
+644,Zekrom,Dragon,Electric,680,100,150,120,120,100,90,5,True,Teravolt,,,Zekrom
+645,Landorus,Ground,Flying,600,89,125,90,115,80,101,5,True,Sand Force,,Sheer Force,Démétéros
+646,Kyurem,Dragon,Ice,660,125,130,90,130,90,95,5,True,Pressure,,,Kyurem
+647,Keldeo,Water,Fighting,580,91,72,90,129,90,108,5,False,Justified,,,Keldeo
+648,Meloetta,Normal,Psychic,600,100,77,77,128,128,90,5,False,Serene Grace,,,Meloetta
+649,Genesect,Bug,Steel,600,71,120,95,120,95,99,5,False,Download,,,Genesect
+650,Chespin,Grass,,313,56,61,65,48,45,38,6,False,Overgrow,,Bulletproof,Marisson
+651,Quilladin,Grass,,405,61,78,95,56,58,57,6,False,Overgrow,,Bulletproof,Boguérisse
+652,Chesnaught,Grass,Fighting,530,88,107,122,74,75,64,6,False,Overgrow,,Bulletproof,Blindépique
+653,Fennekin,Fire,,307,40,45,40,62,60,60,6,False,Blaze,,Magician,Feunnec
+654,Braixen,Fire,,409,59,59,58,90,70,73,6,False,Blaze,,Magician,Roussil
+655,Delphox,Fire,Psychic,534,75,69,72,114,100,104,6,False,Blaze,,Magician,Goupelin
+656,Froakie,Water,,314,41,56,40,62,44,71,6,False,Torrent,,Protean,Grenousse
+657,Frogadier,Water,,405,54,63,52,83,56,97,6,False,Torrent,,Protean,Croâporal
+658,Greninja,Water,Dark,530,72,95,67,103,71,122,6,False,Torrent,,Protean,Amphinobi
+659,Bunnelby,Normal,,237,38,36,38,32,36,57,6,False,Pickup,Cheek Pouch,Huge Power,Sapereau
+660,Diggersby,Normal,Ground,423,85,56,77,50,77,78,6,False,Pickup,Cheek Pouch,Huge Power,Excavarenne
+661,Fletchling,Normal,Flying,278,45,50,43,40,38,62,6,False,Big Pecks,,Gale Wings,Passerouge
+662,Fletchinder,Fire,Flying,382,62,73,55,56,52,84,6,False,Flame Body,,Gale Wings,Braisillon
+663,Talonflame,Fire,Flying,499,78,81,71,74,69,126,6,False,Flame Body,,Gale Wings,Flambusard
+664,Scatterbug,Bug,,200,38,35,40,27,25,35,6,False,Shield Dust,Compound Eyes,Friend Guard,Lépidonille
+665,Spewpa,Bug,,213,45,22,60,27,30,29,6,False,Shed Skin,,Friend Guard,Pérégrain
+666,Vivillon,Bug,Flying,411,80,52,50,90,50,89,6,False,Shield Dust,Compound Eyes,Friend Guard,Prismillon
+667,Litleo,Fire,Normal,369,62,50,58,73,54,72,6,False,Rivalry,Unnerve,Moxie,Hélionceau
+668,Pyroar,Fire,Normal,507,86,68,72,109,66,106,6,False,Rivalry,Unnerve,Moxie,Némélios
+669,Flabebe,Fairy,,303,44,38,39,61,79,42,6,False,Flower Veil,,Symbiosis,Flabébé
+670,Floette,Fairy,,371,54,45,47,75,98,52,6,False,Flower Veil,,Symbiosis,Floette
+671,Florges,Fairy,,552,78,65,68,112,154,75,6,False,Flower Veil,,Symbiosis,Florges
+672,Skiddo,Grass,,350,66,65,48,62,57,52,6,False,Sap Sipper,,Grass Pelt,Cabriolaine
+673,Gogoat,Grass,,531,123,100,62,97,81,68,6,False,Sap Sipper,,Grass Pelt,Chevroum
+674,Pancham,Fighting,,348,67,82,62,46,48,43,6,False,Iron Fist,Mold Breaker,Scrappy,Pandespiègle
+675,Pangoro,Fighting,Dark,495,95,124,78,69,71,58,6,False,Iron Fist,Mold Breaker,Scrappy,Pandarbare
+676,Furfrou,Normal,,472,75,80,60,65,90,102,6,False,Fur Coat,,,Couafarel
+677,Espurr,Psychic,,355,62,48,54,63,60,68,6,False,Keen Eye,Infiltrator,Own Tempo,Psystigri
+678,Meowstic,Psychic,,466,74,48,76,83,81,104,6,False,Keen Eye,Infiltrator,Prankster,Mistigrix
+679,Honedge,Steel,Ghost,325,45,80,100,35,37,28,6,False,No Guard,,,Monorpale
+680,Doublade,Steel,Ghost,448,59,110,150,45,49,35,6,False,No Guard,,,Dimoclès
+681,Aegislash,Steel,Ghost,500,60,50,140,50,140,60,6,False,Stance Change,,,Exagide
+682,Spritzee,Fairy,,341,78,52,60,63,65,23,6,False,Healer,,Aroma Veil,Fluvetin
+683,Aromatisse,Fairy,,462,101,72,72,99,89,29,6,False,Healer,,Aroma Veil,Cocotine
+684,Swirlix,Fairy,,341,62,48,66,59,57,49,6,False,Sweet Veil,,Unburden,Sucroquin
+685,Slurpuff,Fairy,,480,82,80,86,85,75,72,6,False,Sweet Veil,,Unburden,Cupcanaille
+686,Inkay,Dark,Psychic,288,53,54,53,37,46,45,6,False,Contrary,Suction Cups,Infiltrator,Sepiatop
+687,Malamar,Dark,Psychic,482,86,92,88,68,75,73,6,False,Contrary,Suction Cups,Infiltrator,Sepiatroce
+688,Binacle,Rock,Water,306,42,52,67,39,56,50,6,False,Tough Claws,Sniper,Pickpocket,Opermine
+689,Barbaracle,Rock,Water,500,72,105,115,54,86,68,6,False,Tough Claws,Sniper,Pickpocket,Golgopathe
+690,Skrelp,Poison,Water,320,50,60,60,60,60,30,6,False,Poison Point,Poison Touch,Adaptability,Venalgue
+691,Dragalge,Poison,Dragon,494,65,75,90,97,123,44,6,False,Poison Point,Poison Touch,Adaptability,Kravarech
+692,Clauncher,Water,,330,50,53,62,58,63,44,6,False,Mega Launcher,,,Flingouste
+693,Clawitzer,Water,,500,71,73,88,120,89,59,6,False,Mega Launcher,,,Gamblast
+694,Helioptile,Electric,Normal,289,44,38,33,61,43,70,6,False,Dry Skin,Sand Veil,Solar Power,Galvaran
+695,Heliolisk,Electric,Normal,481,62,55,52,109,94,109,6,False,Dry Skin,Sand Veil,Solar Power,Iguolta
+696,Tyrunt,Rock,Dragon,362,58,89,77,45,45,48,6,False,Strong Jaw,,Sturdy,Ptyranidur
+697,Tyrantrum,Rock,Dragon,521,82,121,119,69,59,71,6,False,Strong Jaw,,Rock Head,Rexillius
+698,Amaura,Rock,Ice,362,77,59,50,67,63,46,6,False,Refrigerate,,Snow Warning,Amagara
+699,Aurorus,Rock,Ice,521,123,77,72,99,92,58,6,False,Refrigerate,,Snow Warning,Dragmara
+700,Sylveon,Fairy,,525,95,65,65,110,130,60,6,False,Cute Charm,,Pixilate,Nymphali
+701,Hawlucha,Fighting,Flying,500,78,92,75,74,63,118,6,False,Limber,Unburden,Mold Breaker,Brutalibré
+702,Dedenne,Electric,Fairy,431,67,58,57,81,67,101,6,False,Cheek Pouch,Pickup,Plus,Dedenne
+703,Carbink,Rock,Fairy,500,50,50,150,50,150,50,6,False,Clear Body,,Sturdy,Strassie
+704,Goomy,Dragon,,300,45,50,35,55,75,40,6,False,Sap Sipper,Hydration,Gooey,Mucuscule
+705,Sliggoo,Dragon,,452,68,75,53,83,113,60,6,False,Sap Sipper,Hydration,Gooey,Colimucus
+706,Goodra,Dragon,,600,90,100,70,110,150,80,6,False,Sap Sipper,Hydration,Gooey,Muplodocus
+707,Klefki,Steel,Fairy,470,57,80,91,80,87,75,6,False,Prankster,,Magician,Trousselin
+708,Phantump,Ghost,Grass,309,43,70,48,50,60,38,6,False,Natural Cure,Frisk,Harvest,Brocélôme
+709,Trevenant,Ghost,Grass,474,85,110,76,65,82,56,6,False,Natural Cure,Frisk,Harvest,Desséliande
+710,Pumpkaboo,Ghost,Grass,335,49,66,70,44,55,51,6,False,Pickup,Frisk,Insomnia,Pitrouille
+711,Gourgeist,Ghost,Grass,494,65,90,122,58,75,84,6,False,Pickup,Frisk,Insomnia,Banshitrouye
+712,Bergmite,Ice,,304,55,69,85,32,35,28,6,False,Own Tempo,Ice Body,Sturdy,Grelaçon
+713,Avalugg,Ice,,514,95,117,184,44,46,28,6,False,Own Tempo,Ice Body,Sturdy,Séracrawl
+714,Noibat,Flying,Dragon,245,40,30,35,45,40,55,6,False,Frisk,Infiltrator,Telepathy,Sonistrelle
+715,Noivern,Flying,Dragon,535,85,70,80,97,80,123,6,False,Frisk,Infiltrator,Telepathy,Bruyverne
+716,Xerneas,Fairy,,680,126,131,95,131,98,99,6,True,Fairy Aura,,,Xerneas
+717,Yveltal,Dark,Flying,680,126,131,95,131,98,99,6,True,Dark Aura,,,Yveltal
+718,Zygarde,Dragon,Ground,600,108,100,121,81,95,95,6,True,Aura Break,,,Zygarde
+719,Diancie,Rock,Fairy,600,50,100,150,100,150,50,6,False,Clear Body,,,Diancie
+720,Hoopa,Psychic,Ghost,600,80,110,60,150,130,70,6,False,Magician,,,Hoopa
+721,Volcanion,Fire,Water,600,80,110,120,130,90,70,6,False,Water Absorb,,,Volcanion
+722,Rowlet,Grass,Flying,320,68,55,55,50,50,42,7,False,Overgrow,,Long Reach,Brindibou
+723,Dartrix,Grass,Flying,420,78,75,75,70,70,52,7,False,Overgrow,,Long Reach,Efflèche
+724,Decidueye,Grass,Ghost,530,78,107,75,100,100,70,7,False,Overgrow,,Long Reach,Archéduc
+725,Litten,Fire,,320,45,65,40,60,40,70,7,False,Blaze,,Intimidate,Flamiaou
+726,Torracat,Fire,,420,65,85,50,80,50,90,7,False,Blaze,,Intimidate,Matoufeu
+727,Incineroar,Fire,Dark,530,95,115,90,80,90,60,7,False,Blaze,,Intimidate,Félinferno
+728,Popplio,Water,,320,50,54,54,66,56,40,7,False,Torrent,,Liquid Voice,Otaquin
+729,Brionne,Water,,420,60,69,69,91,81,50,7,False,Torrent,,Liquid Voice,Otarlette
+730,Primarina,Water,Fairy,530,80,74,74,126,116,60,7,False,Torrent,,Liquid Voice,Oratoria
+731,Pikipek,Normal,Flying,265,35,75,30,30,30,65,7,False,Keen Eye,Skill Link,Pickup,Picassaut
+732,Trumbeak,Normal,Flying,355,55,85,50,40,50,75,7,False,Keen Eye,Skill Link,Pickup,Piclairon
+733,Toucannon,Normal,Flying,485,80,120,75,75,75,60,7,False,Keen Eye,Skill Link,Sheer Force,Bazoucan
+734,Yungoos,Normal,,253,48,70,30,30,30,45,7,False,Stakeout,Strong Jaw,Adaptability,Manglouton
+735,Gumshoos,Normal,,418,88,110,60,55,60,45,7,False,Stakeout,Strong Jaw,Adaptability,Argouste
+736,Grubbin,Bug,,300,47,62,45,55,45,46,7,False,Swarm,,,Larvibule
+737,Charjabug,Bug,Electric,400,57,82,95,55,75,36,7,False,Battery,,,Chrysapile
+738,Vikavolt,Bug,Electric,500,77,70,90,145,75,43,7,False,Levitate,,,Lucanon
+739,Crabrawler,Fighting,,338,47,82,57,42,47,63,7,False,Hyper Cutter,Iron Fist,Anger Point,Crabagarre
+740,Crabominable,Fighting,Ice,478,97,132,77,62,67,43,7,False,Hyper Cutter,Iron Fist,Anger Point,Crabominable
+741,Oricorio,Fire,Flying,476,75,70,70,98,70,93,7,False,Dancer,,,Plumeline
+742,Cutiefly,Bug,Fairy,304,40,45,40,55,40,84,7,False,Honey Gather,Shield Dust,Sweet Veil,Bombydou
+743,Ribombee,Bug,Fairy,464,60,55,60,95,70,124,7,False,Honey Gather,Shield Dust,Sweet Veil,Rubombelle
+744,Rockruff,Rock,,280,45,65,40,30,40,60,7,False,Keen Eye,Vital Spirit,Steadfast,Rocabot
+745,Lycanroc,Rock,,487,75,115,65,55,65,112,7,False,Keen Eye,Sand Rush,Steadfast,Lougaroc
+746,Wishiwashi,Water,,175,45,20,20,25,25,40,7,False,Schooling,,,Froussardine
+747,Mareanie,Poison,Water,305,50,53,62,43,52,45,7,False,Merciless,Limber,Regenerator,Vorastérie
+748,Toxapex,Poison,Water,495,50,63,152,53,142,35,7,False,Merciless,Limber,Regenerator,Prédastérie
+749,Mudbray,Ground,,385,70,100,70,45,55,45,7,False,Own Tempo,Stamina,Inner Focus,Tiboudet
+750,Mudsdale,Ground,,500,100,125,100,55,85,35,7,False,Own Tempo,Stamina,Inner Focus,Bourrinos
+751,Dewpider,Water,Bug,269,38,40,52,40,72,27,7,False,Water Bubble,,Water Absorb,Araqua
+752,Araquanid,Water,Bug,454,68,70,92,50,132,42,7,False,Water Bubble,,Water Absorb,Tarenbulle
+753,Fomantis,Grass,,250,40,55,35,50,35,35,7,False,Leaf Guard,,Contrary,Mimantis
+754,Lurantis,Grass,,480,70,105,90,80,90,45,7,False,Leaf Guard,,Contrary,Floramantis
+755,Morelull,Grass,Fairy,285,40,35,55,65,75,15,7,False,Illuminate,Effect Spore,Rain Dish,Spododo
+756,Shiinotic,Grass,Fairy,405,60,45,80,90,100,30,7,False,Illuminate,Effect Spore,Rain Dish,Lampignon
+757,Salandit,Poison,Fire,320,48,44,40,71,40,77,7,False,Corrosion,,Oblivious,Tritox
+758,Salazzle,Poison,Fire,480,68,64,60,111,60,117,7,False,Corrosion,,Oblivious,Malamandre
+759,Stufful,Normal,Fighting,340,70,75,50,45,50,50,7,False,Fluffy,Klutz,Cute Charm,Nounourson
+760,Bewear,Normal,Fighting,500,120,125,80,55,60,60,7,False,Fluffy,Klutz,Unnerve,Chelours
+761,Bounsweet,Grass,,210,42,30,38,30,38,32,7,False,Leaf Guard,Oblivious,Sweet Veil,Croquine
+762,Steenee,Grass,,290,52,40,48,40,48,62,7,False,Leaf Guard,Oblivious,Sweet Veil,Candine
+763,Tsareena,Grass,,510,72,120,98,50,98,72,7,False,Leaf Guard,Queenly Majesty,Sweet Veil,Sucreine
+764,Comfey,Fairy,,485,51,52,90,82,110,100,7,False,Flower Veil,Triage,Natural Cure,Guérilande
+765,Oranguru,Normal,Psychic,490,90,60,80,90,110,60,7,False,Inner Focus,Telepathy,Symbiosis,Gouroutan
+766,Passimian,Fighting,,490,100,120,90,40,60,80,7,False,Receiver,,Defiant,Quartermac
+767,Wimpod,Bug,Water,230,25,35,40,20,30,80,7,False,Wimp Out,,,Sovkipou
+768,Golisopod,Bug,Water,530,75,125,140,60,90,40,7,False,Emergency Exit,,,Sarmuraï
+769,Sandygast,Ghost,Ground,320,55,55,80,70,45,15,7,False,Water Compaction,,Sand Veil,Bacabouh
+770,Palossand,Ghost,Ground,480,85,75,110,100,75,35,7,False,Water Compaction,,Sand Veil,Trépassable
+771,Pyukumuku,Water,,410,55,60,130,30,130,5,7,False,Innards Out,,Unaware,Concombaffe
+772,Type-null,Normal,,534,95,95,95,95,95,59,7,True,Battle Armor,,,Type:0
+773,Silvally,Normal,,570,95,95,95,95,95,95,7,True,Rks System,,,Silvallié
+774,Minior,Rock,Flying,440,60,60,100,60,100,60,7,False,Shields Down,,,Météno
+775,Komala,Normal,,480,65,115,65,75,95,65,7,False,Comatose,,,Dodoala
+776,Turtonator,Fire,Dragon,485,60,78,135,91,85,36,7,False,Shell Armor,,,Boumata
+777,Togedemaru,Electric,Steel,435,65,98,63,40,73,96,7,False,Iron Barbs,Lightning Rod,Sturdy,Togedemaru
+778,Mimikyu,Ghost,Fairy,476,55,90,80,50,105,96,7,False,Disguise,,,Mimiqui
+779,Bruxish,Water,Psychic,475,68,105,70,70,70,92,7,False,Dazzling,Strong Jaw,Wonder Skin,Denticrisse
+780,Drampa,Normal,Dragon,485,78,60,85,135,91,36,7,False,Berserk,Sap Sipper,Cloud Nine,Draïeul
+781,Dhelmise,Ghost,Grass,517,70,131,100,86,90,40,7,False,Steelworker,,,Sinistrail
+782,Jangmo-o,Dragon,,300,45,55,65,45,45,45,7,False,Bulletproof,Soundproof,Overcoat,Bébécaille
+783,Hakamo-o,Dragon,Fighting,420,55,75,90,65,70,65,7,False,Bulletproof,Soundproof,Overcoat,Écaïd
+784,Kommo-o,Dragon,Fighting,600,75,110,125,100,105,85,7,False,Bulletproof,Soundproof,Overcoat,Ékaïser
+785,Tapu-koko,Electric,Fairy,570,70,115,85,95,75,130,7,True,Electric Surge,,Telepathy,Tokorico
+786,Tapu-lele,Psychic,Fairy,570,70,85,75,130,115,95,7,True,Psychic Surge,,Telepathy,Tokopiyon
+787,Tapu-bulu,Grass,Fairy,570,70,130,115,85,95,75,7,True,Grassy Surge,,Telepathy,Tokotoro
+788,Tapu-fini,Water,Fairy,570,70,75,115,95,130,85,7,True,Misty Surge,,Telepathy,Tokopisco
+789,Cosmog,Psychic,,200,43,29,31,29,31,37,7,True,Unaware,,,Cosmog
+790,Cosmoem,Psychic,,400,43,29,131,29,131,37,7,True,Sturdy,,,Cosmovum
+791,Solgaleo,Psychic,Steel,680,137,137,107,113,89,97,7,True,Full Metal Body,,,Solgaleo
+792,Lunala,Psychic,Ghost,680,137,113,89,137,107,97,7,True,Shadow Shield,,,Lunala
+793,Nihilego,Rock,Poison,570,109,53,47,127,131,103,7,False,Beast Boost,,,Zéroïd
+794,Buzzwole,Bug,Fighting,570,107,139,139,53,53,79,7,False,Beast Boost,,,Mouscoto
+795,Pheromosa,Bug,Fighting,570,71,137,37,137,37,151,7,False,Beast Boost,,,Cancrelove
+796,Xurkitree,Electric,,570,83,89,71,173,71,83,7,False,Beast Boost,,,Câblifère
+797,Celesteela,Steel,Flying,570,97,101,103,107,101,61,7,False,Beast Boost,,,Bamboiselle
+798,Kartana,Grass,Steel,570,59,181,131,59,31,109,7,False,Beast Boost,,,Katagami
+799,Guzzlord,Dark,Dragon,570,223,101,53,97,53,43,7,False,Beast Boost,,,Engloutyran
+800,Necrozma,Psychic,,600,97,107,101,127,89,79,7,True,Prism Armor,,,Necrozma
+801,Magearna,Steel,Fairy,600,80,95,115,130,115,65,7,False,Soul Heart,,,Magearna
+802,Marshadow,Fighting,Ghost,600,90,125,80,90,90,125,7,False,Technician,,,Marshadow
+803,Poipole,Poison,,420,67,73,67,73,67,73,7,False,Beast Boost,,,Vémini
+804,Naganadel,Poison,Dragon,540,73,73,73,127,73,121,7,False,Beast Boost,,,Mandrillon
+805,Stakataka,Rock,Steel,570,61,131,211,53,101,13,7,False,Beast Boost,,,Ama-Ama
+806,Blacephalon,Fire,Ghost,570,53,127,53,151,79,107,7,False,Beast Boost,,,Pierroteknik
+807,Zeraora,Electric,,600,88,112,75,102,80,143,7,False,Volt Absorb,,,Zeraora
+808,Meltan,Steel,,300,46,65,65,55,35,34,7,False,Magnet Pull,,,Meltan
+809,Melmetal,Steel,,600,135,143,143,80,65,34,7,False,Iron Fist,,,Melmetal
+810,Grookey,Grass,,310,50,65,50,40,40,65,8,False,Overgrow,,Grassy Surge,Ouistempo
+811,Thwackey,Grass,,420,70,85,70,55,60,80,8,False,Overgrow,,Grassy Surge,Badabouin
+812,Rillaboom,Grass,,530,100,125,90,60,70,85,8,False,Overgrow,,Grassy Surge,Gorythmic
+813,Scorbunny,Fire,,310,50,71,40,40,40,69,8,False,Blaze,,Libero,Flambino
+814,Raboot,Fire,,420,65,86,60,55,60,94,8,False,Blaze,,Libero,Lapyro
+815,Cinderace,Fire,,530,80,116,75,65,75,119,8,False,Blaze,,Libero,Pyrobut
+816,Sobble,Water,,310,50,40,40,70,40,70,8,False,Torrent,,Sniper,Larméléon
+817,Drizzile,Water,,420,65,60,55,95,55,90,8,False,Torrent,,Sniper,Arrozard
+818,Inteleon,Water,,530,70,85,65,125,65,120,8,False,Torrent,,Sniper,Lézargus
+819,Skwovet,Normal,,275,70,55,55,35,35,25,8,False,Cheek Pouch,,Gluttony,Rongourmand
+820,Greedent,Normal,,460,120,95,95,55,75,20,8,False,Cheek Pouch,,Gluttony,Rongrigou
+821,Rookidee,Flying,,245,38,47,35,33,35,57,8,False,Keen Eye,Unnerve,Big Pecks,Minisange
+822,Corvisquire,Flying,,365,68,67,55,43,55,77,8,False,Keen Eye,Unnerve,Big Pecks,Bleuseille
+823,Corviknight,Flying,Steel,495,98,87,105,53,85,67,8,False,Pressure,Unnerve,Mirror Armor,Corvaillus
+824,Blipbug,Bug,,180,25,20,20,25,45,45,8,False,Swarm,Compound Eyes,Telepathy,Larvadar
+825,Dottler,Bug,Psychic,335,50,35,80,50,90,30,8,False,Swarm,Compound Eyes,Telepathy,Coléodôme
+826,Orbeetle,Bug,Psychic,505,60,45,110,80,120,90,8,False,Swarm,Frisk,Telepathy,Astronelle
+827,Nickit,Dark,,245,40,28,28,47,52,50,8,False,Run Away,Unburden,Stakeout,Goupilou
+828,Thievul,Dark,,455,70,58,58,87,92,90,8,False,Run Away,Unburden,Stakeout,Roublenard
+829,Gossifleur,Grass,,250,40,40,60,40,60,10,8,False,Cotton Down,Regenerator,Effect Spore,Tournicoton
+830,Eldegoss,Grass,,460,60,50,90,80,120,60,8,False,Cotton Down,Regenerator,Effect Spore,Blancoton
+831,Wooloo,Normal,,270,42,40,55,40,45,48,8,False,Fluffy,Run Away,Bulletproof,Moumouton
+832,Dubwool,Normal,,490,72,80,100,60,90,88,8,False,Fluffy,Steadfast,Bulletproof,Moumouflon
+833,Chewtle,Water,,284,50,64,50,38,38,44,8,False,Strong Jaw,Shell Armor,Swift Swim,Khélocrok
+834,Drednaw,Water,Rock,485,90,115,90,48,68,74,8,False,Strong Jaw,Shell Armor,Swift Swim,Torgamord
+835,Yamper,Electric,,270,59,45,50,40,50,26,8,False,Ball Fetch,,Rattled,Voltoutou
+836,Boltund,Electric,,490,69,90,60,90,60,121,8,False,Strong Jaw,,Competitive,Fulgudog
+837,Rolycoly,Rock,,240,30,40,50,40,50,30,8,False,Steam Engine,Heatproof,Flash Fire,Charbi
+838,Carkol,Rock,Fire,410,80,60,90,60,70,50,8,False,Steam Engine,Flame Body,Flash Fire,Wagomine
+839,Coalossal,Rock,Fire,510,110,80,120,80,90,30,8,False,Steam Engine,Flame Body,Flash Fire,Monthracite
+840,Applin,Grass,Dragon,260,40,40,80,40,40,20,8,False,Ripen,Gluttony,Bulletproof,Verpom
+841,Flapple,Grass,Dragon,485,70,110,80,95,60,70,8,False,Ripen,Gluttony,Hustle,Pomdrapi
+842,Appletun,Grass,Dragon,485,110,85,80,100,80,30,8,False,Ripen,Gluttony,Thick Fat,Dratatin
+843,Silicobra,Ground,,315,52,57,75,35,50,46,8,False,Sand Spit,Shed Skin,Sand Veil,Dunaja
+844,Sandaconda,Ground,,510,72,107,125,65,70,71,8,False,Sand Spit,Shed Skin,Sand Veil,Dunaconda
+845,Cramorant,Flying,Water,475,70,85,55,85,95,85,8,False,Gulp Missile,,,Nigosier
+846,Arrokuda,Water,,280,41,63,40,40,30,66,8,False,Swift Swim,,Propeller Tail,Embrochet
+847,Barraskewda,Water,,490,61,123,60,60,50,136,8,False,Swift Swim,,Propeller Tail,Hastacuda
+848,Toxel,Electric,Poison,242,40,38,35,54,35,40,8,False,Rattled,Static,Klutz,Toxizap
+849,Toxtricity,Electric,Poison,502,75,98,70,114,70,75,8,False,Punk Rock,Plus,Technician,Salarsen
+850,Sizzlipede,Fire,Bug,305,50,65,45,50,50,45,8,False,Flash Fire,White Smoke,Flame Body,Grillepattes
+851,Centiskorch,Fire,Bug,525,100,115,65,90,90,65,8,False,Flash Fire,White Smoke,Flame Body,Scolocendre
+852,Clobbopus,Fighting,,310,50,68,60,50,50,32,8,False,Limber,,Technician,Poulpaf
+853,Grapploct,Fighting,,480,80,118,90,70,80,42,8,False,Limber,,Technician,Krakos
+854,Sinistea,Ghost,,308,40,45,45,74,54,50,8,False,Weak Armor,,Cursed Body,Théffroi
+855,Polteageist,Ghost,,508,60,65,65,134,114,70,8,False,Weak Armor,,Cursed Body,Polthégeist
+856,Hatenna,Psychic,,265,42,30,45,56,53,39,8,False,Healer,Anticipation,Magic Bounce,Bibichut
+857,Hattrem,Psychic,,370,57,40,65,86,73,49,8,False,Healer,Anticipation,Magic Bounce,Chapotus
+858,Hatterene,Psychic,Fairy,510,57,90,95,136,103,29,8,False,Healer,Anticipation,Magic Bounce,Sorcilence
+859,Impidimp,Dark,Fairy,265,45,45,30,55,40,50,8,False,Prankster,Frisk,Pickpocket,Grimalin
+860,Morgrem,Dark,Fairy,370,65,60,45,75,55,70,8,False,Prankster,Frisk,Pickpocket,Fourbelin
+861,Grimmsnarl,Dark,Fairy,510,95,120,65,95,75,60,8,False,Prankster,Frisk,Pickpocket,Angoliath
+862,Obstagoon,Dark,Normal,520,93,90,101,60,81,95,8,False,Reckless,Guts,Defiant,Ixon
+863,Perrserker,Steel,,440,70,110,100,50,60,50,8,False,Battle Armor,Tough Claws,Steely Spirit,Berserkatt
+864,Cursola,Ghost,,510,60,95,50,145,130,30,8,False,Weak Armor,,Perish Body,Corayôme
+865,Sirfetchd,Fighting,,507,62,135,95,68,82,65,8,False,Steadfast,,Scrappy,Palarticho
+866,Mr-rime,Ice,Psychic,520,80,85,75,110,100,70,8,False,Tangled Feet,Screen Cleaner,Ice Body,M. Glaquette
+867,Runerigus,Ground,Ghost,483,58,95,145,50,105,30,8,False,Wandering Spirit,,,Tutétékri
+868,Milcery,Fairy,,270,45,40,40,50,61,34,8,False,Sweet Veil,,Aroma Veil,Crèmy
+869,Alcremie,Fairy,,495,65,60,75,110,121,64,8,False,Sweet Veil,,Aroma Veil,Charmilly
+870,Falinks,Fighting,,470,65,100,100,70,60,75,8,False,Battle Armor,,Defiant,Hexadron
+871,Pincurchin,Electric,,435,48,101,95,91,85,15,8,False,Lightning Rod,,Electric Surge,Wattapik
+872,Snom,Ice,Bug,185,30,25,35,45,30,20,8,False,Shield Dust,,Ice Scales,Frissonille
+873,Frosmoth,Ice,Bug,475,70,65,60,125,90,65,8,False,Shield Dust,,Ice Scales,Beldeneige
+874,Stonjourner,Rock,,470,100,125,135,20,20,70,8,False,Power Spot,,,Dolman
+875,Eiscue,Ice,,470,75,80,110,65,90,50,8,False,Ice Face,,,Bekaglaçon
+876,Indeedee,Psychic,Normal,475,60,65,55,105,95,95,8,False,Inner Focus,Synchronize,Psychic Surge,Wimessir
+877,Morpeko,Electric,Dark,436,58,95,58,70,58,97,8,False,Hunger Switch,,,Morpeko
+878,Cufant,Steel,,330,72,80,49,40,49,40,8,False,Sheer Force,,Heavy Metal,Charibari
+879,Copperajah,Steel,,500,122,130,69,80,69,30,8,False,Sheer Force,,Heavy Metal,Pachyradjah
+880,Dracozolt,Electric,Dragon,505,90,100,90,80,70,75,8,False,Volt Absorb,Hustle,Sand Rush,Galvagon
+881,Arctozolt,Electric,Ice,505,90,100,90,90,80,55,8,False,Volt Absorb,Static,Slush Rush,Galvagla
+882,Dracovish,Water,Dragon,505,90,90,100,70,80,75,8,False,Water Absorb,Strong Jaw,Sand Rush,Hydragon
+883,Arctovish,Water,Ice,505,90,90,100,80,90,55,8,False,Water Absorb,Ice Body,Slush Rush,Hydragla
+884,Duraludon,Steel,Dragon,535,70,95,115,120,50,85,8,False,Light Metal,Heavy Metal,Stalwart,Duralugon
+885,Dreepy,Dragon,Ghost,270,28,60,30,40,30,82,8,False,Clear Body,Infiltrator,Cursed Body,Fantyrm
+886,Drakloak,Dragon,Ghost,410,68,80,50,60,50,102,8,False,Clear Body,Infiltrator,Cursed Body,Dispareptil
+887,Dragapult,Dragon,Ghost,600,88,120,75,100,75,142,8,False,Clear Body,Infiltrator,Cursed Body,Lanssorien
+888,Zacian,Fairy,,660,92,120,115,80,115,138,8,True,Intrepid Sword,,,Zacian
+889,Zamazenta,Fighting,,660,92,120,115,80,115,138,8,True,Dauntless Shield,,,Zamazenta
+890,Eternatus,Poison,Dragon,690,140,85,95,145,95,130,8,True,Pressure,,,Éthernatos
+891,Kubfu,Fighting,,385,60,90,60,53,50,72,8,True,Inner Focus,,,Wushours
+892,Urshifu,Fighting,Dark,550,100,130,100,63,60,97,8,True,Unseen Fist,,,Shifours
+893,Zarude,Dark,Grass,600,105,120,105,70,95,105,8,False,Leaf Guard,,,Zarude
+894,Regieleki,Electric,,580,80,100,50,100,50,200,8,True,Transistor,,,Regieleki
+895,Regidrago,Dragon,,580,200,100,50,100,50,80,8,True,Dragons Maw,,,Regidrago
+896,Glastrier,Ice,,580,100,145,130,65,110,30,8,True,Chilling Neigh,,,Blizzeval
+897,Spectrier,Ghost,,580,100,65,60,145,80,130,8,True,Grim Neigh,,,Spectreval
+898,Calyrex,Psychic,Grass,500,100,80,80,80,80,80,8,True,Unnerve,,,Sylveroy
+899,Wyrdeer,Normal,Psychic,525,103,105,72,105,75,65,8,False,Intimidate,Frisk,Sap Sipper,Cerbyllin
+900,Kleavor,Bug,Rock,500,70,135,95,45,70,85,8,False,Swarm,Sheer Force,Sharpness,Hachécateur
+901,Ursaluna,Ground,Normal,550,130,140,105,45,80,50,8,False,Guts,Bulletproof,Unnerve,Ursaking
+902,Basculegion,Water,Ghost,530,120,112,65,80,75,78,8,False,Swift Swim,Adaptability,Mold Breaker,Paragruel
+903,Sneasler,Fighting,Poison,510,80,130,60,40,80,120,8,False,Pressure,Unburden,Poison Touch,Farfurex
+904,Overqwil,Dark,Poison,510,85,115,95,65,65,85,8,False,Poison Point,Swift Swim,Intimidate,Qwilpik
+905,Enamorus,Fairy,Flying,580,74,115,70,135,80,106,8,True,Cute Charm,,Contrary,Amovénus
+906,Sprigatito,Grass,,310,40,61,54,45,45,65,9,False,Overgrow,,Protean,Poussacha
+907,Floragato,Grass,,410,61,80,63,60,63,83,9,False,Overgrow,,Protean,Matourgeon
+908,Meowscarada,Grass,Dark,530,76,110,70,81,70,123,9,False,Overgrow,,Protean,Miascarade
+909,Fuecoco,Fire,,310,67,45,59,63,40,36,9,False,Blaze,,Unaware,Chochodile
+910,Crocalor,Fire,,411,81,55,78,90,58,49,9,False,Blaze,,Unaware,Crocogril
+911,Skeledirge,Fire,Ghost,530,104,75,100,110,75,66,9,False,Blaze,,Unaware,Flâmigator
+912,Quaxly,Water,,310,55,65,45,50,45,50,9,False,Torrent,,Moxie,Coiffeton
+913,Quaxwell,Water,,410,70,85,65,65,60,65,9,False,Torrent,,Moxie,Canarbello
+914,Quaquaval,Water,Fighting,530,85,120,80,85,75,85,9,False,Torrent,,Moxie,Palmaval
+915,Lechonk,Normal,,254,54,45,40,35,45,35,9,False,Aroma Veil,Gluttony,Thick Fat,Gourmelet
+916,Oinkologne,Normal,,489,110,100,75,59,80,65,9,False,Lingering Aroma,Gluttony,Thick Fat,Fragroin
+917,Tarountula,Bug,,210,35,41,45,29,40,20,9,False,Insomnia,,Stakeout,Tissenboule
+918,Spidops,Bug,,404,60,79,92,52,86,35,9,False,Insomnia,,Stakeout,Filentrappe
+919,Nymble,Bug,,210,33,46,40,21,25,45,9,False,Swarm,,Tinted Lens,Lilliterelle
+920,Lokix,Bug,Dark,450,71,102,78,52,55,92,9,False,Swarm,,Tinted Lens,Gambex
+921,Pawmi,Electric,,240,45,50,20,40,25,60,9,False,Static,Natural Cure,Iron Fist,Pohm
+922,Pawmo,Electric,Fighting,350,60,75,40,50,40,85,9,False,Volt Absorb,Natural Cure,Iron Fist,Pohmotte
+923,Pawmot,Electric,Fighting,490,70,115,70,70,60,105,9,False,Volt Absorb,Natural Cure,Iron Fist,Pohmarmotte
+924,Tandemaus,Normal,,305,50,50,45,40,45,75,9,False,Run Away,Pickup,Own Tempo,Compagnol
+925,Maushold,Normal,,470,74,75,70,65,75,111,9,False,Friend Guard,Cheek Pouch,Technician,Famignol
+926,Fidough,Fairy,,312,37,55,70,30,55,65,9,False,Own Tempo,,Klutz,Pâtachiot
+927,Dachsbun,Fairy,,477,57,80,115,50,80,95,9,False,Well Baked Body,,Aroma Veil,Briochien
+928,Smoliv,Grass,Normal,260,41,35,45,58,51,30,9,False,Early Bird,,Harvest,Olivini
+929,Dolliv,Grass,Normal,354,52,53,60,78,78,33,9,False,Early Bird,,Harvest,Olivado
+930,Arboliva,Grass,Normal,510,78,69,90,125,109,39,9,False,Seed Sower,,Harvest,Arboliva
+931,Squawkabilly,Normal,Flying,417,82,96,51,45,51,92,9,False,Intimidate,Hustle,Guts,Tapatoès
+932,Nacli,Rock,,280,55,55,75,35,35,25,9,False,Purifying Salt,Sturdy,Clear Body,Selutin
+933,Naclstack,Rock,,355,60,60,100,35,65,35,9,False,Purifying Salt,Sturdy,Clear Body,Amassel
+934,Garganacl,Rock,,500,100,100,130,45,90,35,9,False,Purifying Salt,Sturdy,Clear Body,Gigansel
+935,Charcadet,Fire,,255,40,50,40,50,40,35,9,False,Flash Fire,,Flame Body,Charbambin
+936,Armarouge,Fire,Psychic,525,85,60,100,125,80,75,9,False,Flash Fire,,Weak Armor,Carmadura
+937,Ceruledge,Fire,Ghost,525,75,125,80,60,100,85,9,False,Flash Fire,,Weak Armor,Malvalame
+938,Tadbulb,Electric,,272,61,31,41,59,35,45,9,False,Own Tempo,Static,Damp,Têtampoule
+939,Bellibolt,Electric,,495,109,64,91,103,83,45,9,False,Electromorphosis,Static,Damp,Ampibidou
+940,Wattrel,Electric,Flying,280,40,40,35,55,40,70,9,False,Wind Power,Volt Absorb,Competitive,Zapétrel
+941,Kilowattrel,Electric,Flying,490,70,70,60,105,60,125,9,False,Wind Power,Volt Absorb,Competitive,Fulgulairo
+942,Maschiff,Dark,,340,60,78,60,40,51,51,9,False,Intimidate,Run Away,Stakeout,Grondogue
+943,Mabosstiff,Dark,,505,80,120,90,60,70,85,9,False,Intimidate,Guard Dog,Stakeout,Dogrino
+944,Shroodle,Poison,Normal,290,40,65,35,40,35,75,9,False,Unburden,Pickpocket,Prankster,Gribouraigne
+945,Grafaiai,Poison,Normal,485,63,95,65,80,72,110,9,False,Unburden,Poison Touch,Prankster,Tag-Tag
+946,Bramblin,Grass,Ghost,275,40,65,30,45,35,60,9,False,Wind Rider,,Infiltrator,Virovent
+947,Brambleghast,Grass,Ghost,480,55,115,70,80,70,90,9,False,Wind Rider,,Infiltrator,Virevorreur
+948,Toedscool,Ground,Grass,335,40,40,35,50,100,70,9,False,Mycelium Might,,,Terracool
+949,Toedscruel,Ground,Grass,515,80,70,65,80,120,100,9,False,Mycelium Might,,,Terracruel
+950,Klawf,Rock,,450,70,100,115,35,55,75,9,False,Anger Shell,Shell Armor,Regenerator,Craparoi
+951,Capsakid,Grass,,304,50,62,40,62,40,50,9,False,Chlorophyll,Insomnia,Klutz,Pimito
+952,Scovillain,Grass,Fire,486,65,108,65,108,65,75,9,False,Chlorophyll,Insomnia,Moody,Scovilain
+953,Rellor,Bug,,270,41,50,60,31,58,30,9,False,Compound Eyes,,Shed Skin,Léboulérou
+954,Rabsca,Bug,Psychic,470,75,50,85,115,100,45,9,False,Synchronize,,Telepathy,Bérasca
+955,Flittle,Psychic,,255,30,35,30,55,30,75,9,False,Anticipation,Frisk,Speed Boost,Flotillon
+956,Espathra,Psychic,,481,95,60,60,101,60,105,9,False,Opportunist,Frisk,Speed Boost,Cléopsytra
+957,Tinkatink,Fairy,Steel,297,50,45,45,35,64,58,9,False,Mold Breaker,Own Tempo,Pickpocket,Forgerette
+958,Tinkatuff,Fairy,Steel,380,65,55,55,45,82,78,9,False,Mold Breaker,Own Tempo,Pickpocket,Forgella
+959,Tinkaton,Fairy,Steel,506,85,75,77,70,105,94,9,False,Mold Breaker,Own Tempo,Pickpocket,Forgelina
+960,Wiglett,Water,,245,10,55,25,35,25,95,9,False,Gooey,Rattled,Sand Veil,Taupikeau
+961,Wugtrio,Water,,425,35,100,50,50,70,120,9,False,Gooey,Rattled,Sand Veil,Triopikeau
+962,Bombirdier,Flying,Dark,485,70,103,85,60,85,82,9,False,Big Pecks,Keen Eye,Rocky Payload,Lestombaile
+963,Finizen,Water,,315,70,45,40,45,40,75,9,False,Water Veil,,,Dofin
+964,Palafin,Water,,457,100,70,72,53,62,100,9,False,Zero To Hero,,,Superdofin
+965,Varoom,Steel,Poison,300,45,70,63,30,45,47,9,False,Overcoat,,Slow Start,Vrombi
+966,Revavroom,Steel,Poison,500,80,119,90,54,67,90,9,False,Overcoat,,Filter,Vrombotor
+967,Cyclizar,Dragon,Normal,501,70,95,65,85,65,121,9,False,Shed Skin,,Regenerator,Motorizard
+968,Orthworm,Steel,,480,70,85,145,60,55,65,9,False,Earth Eater,,Sand Veil,Ferdeter
+969,Glimmet,Rock,Poison,350,48,35,42,105,60,60,9,False,Toxic Debris,,Corrosion,Germéclat
+970,Glimmora,Rock,Poison,525,83,55,90,130,81,86,9,False,Toxic Debris,,Corrosion,Floréclat
+971,Greavard,Ghost,,290,50,61,60,30,55,34,9,False,Pickup,,Fluffy,Toutombe
+972,Houndstone,Ghost,,488,72,101,100,50,97,68,9,False,Sand Rush,,Fluffy,Tomberro
+973,Flamigo,Flying,Fighting,500,82,115,74,75,64,90,9,False,Scrappy,Tangled Feet,Costar,Flamenroule
+974,Cetoddle,Ice,,334,108,68,45,30,40,43,9,False,Thick Fat,Snow Cloak,Sheer Force,Piétacé
+975,Cetitan,Ice,,521,170,113,65,45,55,73,9,False,Thick Fat,Slush Rush,Sheer Force,Balbalèze
+976,Veluza,Water,Psychic,478,90,102,73,78,65,70,9,False,Mold Breaker,,Sharpness,Délestin
+977,Dondozo,Water,,530,150,100,115,65,65,35,9,False,Unaware,Oblivious,Water Veil,Oyacata
+978,Tatsugiri,Dragon,Water,475,68,50,60,120,95,82,9,False,Commander,,Storm Drain,Nigirigon
+979,Annihilape,Fighting,Ghost,535,110,115,80,50,90,90,9,False,Vital Spirit,Inner Focus,Defiant,Courrousinge
+980,Clodsire,Poison,Ground,430,130,75,60,45,100,20,9,False,Poison Point,Water Absorb,Unaware,Terraiste
+981,Farigiraf,Normal,Psychic,520,120,90,70,110,70,60,9,False,Cud Chew,Armor Tail,Sap Sipper,Farigiraf
+982,Dudunsparce,Normal,,520,125,100,80,85,75,55,9,False,Serene Grace,Run Away,Rattled,Deusolourdo
+983,Kingambit,Dark,Steel,550,100,135,120,60,85,50,9,False,Defiant,Supreme Overlord,Pressure,Scalpereur
+984,Great-tusk,Ground,Fighting,570,115,131,131,53,53,87,9,False,Protosynthesis,,,Fort-Ivoire
+985,Scream-tail,Fairy,Psychic,570,115,65,99,65,115,111,9,False,Protosynthesis,,,Hurle-Queue
+986,Brute-bonnet,Grass,Dark,570,111,127,99,79,99,55,9,False,Protosynthesis,,,Fongus-Furie
+987,Flutter-mane,Ghost,Fairy,570,55,55,55,135,135,135,9,False,Protosynthesis,,,Flotte-Mèche
+988,Slither-wing,Bug,Fighting,570,85,135,79,85,105,81,9,False,Protosynthesis,,,Rampe-Ailes
+989,Sandy-shocks,Electric,Ground,570,85,81,97,121,85,101,9,False,Protosynthesis,,,Pelage-Sablé
+990,Iron-treads,Ground,Steel,570,90,112,120,72,70,106,9,False,Quark Drive,,,Roue-de-Fer
+991,Iron-bundle,Ice,Water,570,56,80,114,124,60,136,9,False,Quark Drive,,,Hotte-de-Fer
+992,Iron-hands,Fighting,Electric,570,154,140,108,50,68,50,9,False,Quark Drive,,,Paume-de-Fer
+993,Iron-jugulis,Dark,Flying,570,94,80,86,122,80,108,9,False,Quark Drive,,,Têtes-de-Fer
+994,Iron-moth,Fire,Poison,570,80,70,60,140,110,110,9,False,Quark Drive,,,Mite-de-Fer
+995,Iron-thorns,Rock,Electric,570,100,134,110,70,84,72,9,False,Quark Drive,,,Épine-de-Fer
+996,Frigibax,Dragon,Ice,320,65,75,45,35,45,55,9,False,Thermal Exchange,,Ice Body,Frigodo
+997,Arctibax,Dragon,Ice,423,90,95,66,45,65,62,9,False,Thermal Exchange,,Ice Body,Cryodo
+998,Baxcalibur,Dragon,Ice,600,115,145,92,75,86,87,9,False,Thermal Exchange,,Ice Body,Glaivodo
+999,Gimmighoul,Ghost,,300,45,30,70,75,70,10,9,False,Rattled,,,Mordudor
+1000,Gholdengo,Steel,Ghost,550,87,60,95,133,91,84,9,False,Good As Gold,,,Gromago
+1001,Wo-chien,Dark,Grass,570,85,85,100,95,135,70,9,True,Tablets Of Ruin,,,Chongjian
+1002,Chien-pao,Dark,Ice,570,80,120,80,90,65,135,9,True,Sword Of Ruin,,,Baojian
+1003,Ting-lu,Dark,Ground,570,155,110,125,55,80,45,9,True,Vessel Of Ruin,,,Dinglu
+1004,Chi-yu,Dark,Fire,570,55,80,80,135,120,100,9,True,Beads Of Ruin,,,Yuyu
+1005,Roaring-moon,Dragon,Dark,590,105,139,71,55,101,119,9,False,Protosynthesis,,,Rugit-Lune
+1006,Iron-valiant,Fairy,Fighting,590,74,130,90,120,60,116,9,False,Quark Drive,,,Garde-de-Fer
+1007,Koraidon,Fighting,Dragon,670,100,135,115,85,100,135,9,True,Orichalcum Pulse,,,Koraidon
+1008,Miraidon,Electric,Dragon,670,100,85,100,135,115,135,9,True,Hadron Engine,,,Miraidon
+1009,Walking-wake,Water,Dragon,590,99,83,91,125,83,109,9,False,Protosynthesis,,,Serpente-Eau
+1010,Iron-leaves,Grass,Psychic,590,90,130,88,70,108,104,9,False,Quark Drive,,,Vert-de-Fer
+1011,Dipplin,Grass,Dragon,485,80,80,110,95,80,40,9,False,Supersweet Syrup,Gluttony,Sticky Hold,Pomdramour
+1012,Poltchageist,Grass,Ghost,308,40,45,45,74,54,50,9,False,Hospitality,,Heatproof,Poltchageist
+1013,Sinistcha,Grass,Ghost,508,71,60,106,121,80,70,9,False,Hospitality,,Heatproof,Théffroyable
+1014,Okidogi,Poison,Fighting,555,88,128,115,58,86,80,9,True,Toxic Chain,,Guard Dog,Félicanis
+1015,Munkidori,Poison,Psychic,555,88,75,66,130,90,106,9,True,Toxic Chain,,Frisk,Fortusimia
+1016,Fezandipiti,Poison,Fairy,555,88,91,82,70,125,99,9,True,Toxic Chain,,Technician,Favianos
+1017,Ogerpon,Grass,,550,80,120,84,60,96,110,9,True,Defiant,,,Ogerpon
+1018,Archaludon,Steel,Dragon,600,90,105,130,125,65,85,9,False,Stamina,Sturdy,Stalwart,Pondralugon
+1019,Hydrapple,Grass,Dragon,540,106,80,110,120,80,44,9,False,Supersweet Syrup,Regenerator,Sticky Hold,Pomdorochi
+1020,Gouging-fire,Fire,Dragon,590,105,115,121,65,93,91,9,False,Protosynthesis,,,Feu-Perçant
+1021,Raging-bolt,Electric,Dragon,590,125,73,91,137,89,75,9,False,Protosynthesis,,,Ire-Foudre
+1022,Iron-boulder,Rock,Psychic,590,90,120,80,68,108,124,9,False,Quark Drive,,,Roc-de-Fer
+1023,Iron-crown,Steel,Psychic,590,90,72,100,122,108,98,9,False,Quark Drive,,,Chef-de-Fer
+1024,Terapagos,Normal,,450,90,65,85,65,85,60,9,True,Tera Shift,,,Terapagos
+1025,Pecharunt,Poison,Ghost,600,88,88,160,88,88,88,9,False,Poison Puppeteer,,,Pêchaminus

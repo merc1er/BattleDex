@@ -35,8 +35,19 @@ public class SampleDataService : ISampleDataService
 
         using var reader = new StreamReader(stream);
 
-        // Skip header line
-        reader.ReadLine();
+        // Read and parse header line to create column index map
+        var headerLine = reader.ReadLine();
+        if (string.IsNullOrWhiteSpace(headerLine))
+        {
+            throw new InvalidOperationException("CSV file is empty or missing header.");
+        }
+
+        var headers = ParseCsvLine(headerLine);
+        var columnIndex = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+        for (var i = 0; i < headers.Length; i++)
+        {
+            columnIndex[headers[i]] = i;
+        }
 
         var pokemon = new List<PokemonSpecies>();
 
@@ -49,28 +60,33 @@ public class SampleDataService : ISampleDataService
             }
 
             var fields = ParseCsvLine(line);
-            if (fields.Length < 14)
+            if (fields.Length < headers.Length)
             {
                 continue;
             }
 
-            // CSV columns: #,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary,FrenchName
+            string GetField(string columnName) => columnIndex.TryGetValue(columnName, out var idx) && idx < fields.Length ? fields[idx] : string.Empty;
+
+            var name = GetField("Name");
             var species = new PokemonSpecies
             {
-                Id = int.Parse(fields[0]),
-                Name = fields[1].ToLowerInvariant().Replace(" ", "-").Replace(".", "").Replace("'", ""),
-                NameEnglish = fields[1],
-                NameFrench = fields[13],
-                Types = ParseTypes(fields[2], fields[3]),
-                Total = int.Parse(fields[4]),
-                HP = int.Parse(fields[5]),
-                Attack = int.Parse(fields[6]),
-                Defense = int.Parse(fields[7]),
-                SpAtk = int.Parse(fields[8]),
-                SpDef = int.Parse(fields[9]),
-                Speed = int.Parse(fields[10]),
-                Generation = int.Parse(fields[11]),
-                IsLegendary = fields[12].Equals("True", StringComparison.OrdinalIgnoreCase)
+                Id = int.Parse(GetField("#")),
+                Name = name.ToLowerInvariant().Replace(" ", "-").Replace(".", "").Replace("'", ""),
+                NameEnglish = name,
+                NameFrench = GetField("FrenchName"),
+                Types = ParseTypes(GetField("Type 1"), GetField("Type 2")),
+                Total = int.Parse(GetField("Total")),
+                HP = int.Parse(GetField("HP")),
+                Attack = int.Parse(GetField("Attack")),
+                Defense = int.Parse(GetField("Defense")),
+                SpAtk = int.Parse(GetField("Sp. Atk")),
+                SpDef = int.Parse(GetField("Sp. Def")),
+                Speed = int.Parse(GetField("Speed")),
+                Generation = int.Parse(GetField("Generation")),
+                IsLegendary = GetField("Legendary").Equals("True", StringComparison.OrdinalIgnoreCase),
+                Ability1 = GetField("Ability 1"),
+                Ability2 = GetField("Ability 2"),
+                HiddenAbility = GetField("Hidden Ability")
             };
 
             pokemon.Add(species);

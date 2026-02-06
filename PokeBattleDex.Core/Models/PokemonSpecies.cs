@@ -106,6 +106,21 @@ public class PokemonSpecies
     }
 
     /// <summary>
+    /// The Pokémon's primary ability.
+    /// </summary>
+    public string Ability1 { get; set; } = string.Empty;
+
+    /// <summary>
+    /// The Pokémon's secondary ability (if any).
+    /// </summary>
+    public string Ability2 { get; set; } = string.Empty;
+
+    /// <summary>
+    /// The Pokémon's hidden ability (if any).
+    /// </summary>
+    public string HiddenAbility { get; set; } = string.Empty;
+
+    /// <summary>
     /// Gets the display name with the Pokédex number.
     /// </summary>
     public string DisplayName => $"#{Id:D3} {NameEnglish}";
@@ -116,6 +131,30 @@ public class PokemonSpecies
     public string TypesDisplay => Types.Count > 0
         ? string.Join(", ", Types.Select(t => char.ToUpper(t.Name[0]) + t.Name[1..]))
         : string.Empty;
+
+    /// <summary>
+    /// Gets the abilities as a display string.
+    /// </summary>
+    public string AbilitiesDisplay
+    {
+        get
+        {
+            var abilities = new List<string>();
+            if (!string.IsNullOrWhiteSpace(Ability1))
+            {
+                abilities.Add(Ability1);
+            }
+            if (!string.IsNullOrWhiteSpace(Ability2))
+            {
+                abilities.Add(Ability2);
+            }
+            if (!string.IsNullOrWhiteSpace(HiddenAbility))
+            {
+                abilities.Add($"{HiddenAbility} (hidden)");
+            }
+            return abilities.Count > 0 ? string.Join("\n", abilities) : string.Empty;
+        }
+    }
 
     /// <summary>
     /// Gets a symbol code based on the primary type for display purposes.

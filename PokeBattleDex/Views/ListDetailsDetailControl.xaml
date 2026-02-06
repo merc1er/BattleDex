@@ -45,6 +45,12 @@
                     Text="Types"
                     Style="{StaticResource DetailSubTitleStyle}" />
                 <TextBlock Text="{x:Bind ListDetailsMenuItem.TypesDisplay, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Text="Abilities"
+                    Style="{StaticResource DetailSubTitleStyle}" />
+                <TextBlock Text="{x:Bind ListDetailsMenuItem.AbilitiesDisplay, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
