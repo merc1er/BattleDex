@@ -32,6 +32,9 @@ public sealed partial class ListDetailsPage : Page
         if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
         {
             ViewModel.SearchText = sender.Text;
+
+            // Keep focus on search box after auto-selection.
+            sender.Focus(Microsoft.UI.Xaml.FocusState.Programmatic);
         }
     }
 }

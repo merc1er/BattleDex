@@ -92,6 +92,12 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
                 }
             }
         }
+
+        // Auto-select if there's exactly one match.
+        if (FilteredPokemonItems.Count == 1)
+        {
+            Selected = FilteredPokemonItems[0];
+        }
     }
 
     /// <summary>
