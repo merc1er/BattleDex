@@ -15,12 +15,13 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <FontIcon
+                <Image
                     Grid.Column="0"
+                    Width="48"
+                    Height="48"
                     VerticalAlignment="Center"
-                    FontSize="32"
-                    Glyph="{x:Bind Symbol}"
-                    AutomationProperties.Name="{x:Bind TypesDisplay}" />
+                    Source="{x:Bind SpriteUri}"
+                    Stretch="Uniform" />
                 <StackPanel
                     Grid.Column="1"
                     Margin="{StaticResource SmallLeftMargin}"

@@ -32,6 +32,13 @@
   <ItemGroup>
     <ProjectReference Include="..\PokeBattleDex.Core\PokeBattleDex.Core.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Sprites\Pokemon\**\*.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
   <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -126,6 +126,18 @@ public class PokemonSpecies
     public string DisplayName => $"#{Id:D3} {NameEnglish}";
 
     /// <summary>
+    /// Base directory for sprite assets. Must be set by the application on startup.
+    /// </summary>
+    public static string SpriteBasePath { get; set; } = string.Empty;
+
+    /// <summary>
+    /// Gets the file path for the Pokémon's sprite image.
+    /// </summary>
+    public string SpriteUri => string.IsNullOrEmpty(SpriteBasePath)
+        ? string.Empty
+        : Path.Combine(SpriteBasePath, "Assets", "Sprites", "Pokemon", $"{Id}.png");
+
+    /// <summary>
     /// Gets the types as a display string.
     /// </summary>
     public string TypesDisplay => Types.Count > 0
@@ -155,42 +167,4 @@ public class PokemonSpecies
             return abilities.Count > 0 ? string.Join("\n", abilities) : string.Empty;
         }
     }
-
-    /// <summary>
-    /// Gets a symbol code based on the primary type for display purposes.
-    /// </summary>
-    public int SymbolCode
-    {
-        get
-        {
-            var primaryType = Types.FirstOrDefault()?.Name ?? "";
-            return primaryType.ToLower() switch
-            {
-                "fire" => 0xE706,      // Brightness (sun-like)
-                "water" => 0xE774,     // Drizzle/rain
-                "grass" => 0xE8B3,     // Leaf
-                "electric" => 0xE945,  // Lightning
-                "poison" => 0xE7BA,    // Warning
-                "flying" => 0xE709,    // Up arrow
-                "dragon" => 0xE735,    // Star filled
-                "normal" => 0xE73E,    // Circle
-                "fighting" => 0xE74E,  // Heart (passion)
-                "ground" => 0xE81C,    // Map
-                "rock" => 0xE71D,      // Solid
-                "bug" => 0xE774,       // Bug
-                "ghost" => 0xE7B3,     // Eye
-                "steel" => 0xE72E,     // Sync (metallic)
-                "psychic" => 0xE7B3,   // Eye
-                "ice" => 0xE9CA,       // Snow
-                "dark" => 0xE708,      // Moon
-                "fairy" => 0xE74E,     // Heart
-                _ => 0xE73E            // Default circle
-            };
-        }
-    }
-
-    /// <summary>
-    /// Gets the symbol as a string for display.
-    /// </summary>
-    public string Symbol => char.ConvertFromUtf32(SymbolCode);
 }

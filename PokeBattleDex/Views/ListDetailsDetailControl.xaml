@@ -12,12 +12,12 @@
         IsTabStop="True">
         <StackPanel HorizontalAlignment="Left">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-                <FontIcon
-                    HorizontalAlignment="Center"
+                <Image
+                    Width="96"
+                    Height="96"
                     VerticalAlignment="Center"
-                    FontSize="48"
-                    Glyph="{x:Bind ListDetailsMenuItem.Symbol, Mode=OneWay}"
-                    AutomationProperties.Name="{x:Bind ListDetailsMenuItem.TypesDisplay, Mode=OneWay}"  />
+                    Source="{x:Bind ListDetailsMenuItem.SpriteUri, Mode=OneWay}"
+                    Stretch="Uniform" />
                 <TextBlock
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center"

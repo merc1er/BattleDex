@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml;
 using PokeBattleDex.Activation;
 using PokeBattleDex.Contracts.Services;
 using PokeBattleDex.Core.Contracts.Services;
+using PokeBattleDex.Core.Models;
 using PokeBattleDex.Core.Services;
 using PokeBattleDex.Helpers;
 using PokeBattleDex.Models;
@@ -48,6 +49,9 @@ public partial class App : Application
     public App()
     {
         InitializeComponent();
+
+        // Set the base path for Pokemon sprites
+        PokemonSpecies.SpriteBasePath = AppContext.BaseDirectory;
 
         Host = Microsoft.Extensions.Hosting.Host.
         CreateDefaultBuilder().
