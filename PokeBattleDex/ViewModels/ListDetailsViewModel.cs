@@ -1,10 +1,13 @@
 ﻿using System.Collections.ObjectModel;
+using System.Globalization;
+using System.Text;
 
 using CommunityToolkit.Mvvm.ComponentModel;
 
 using PokeBattleDex.Contracts.ViewModels;
 using PokeBattleDex.Core.Contracts.Services;
 using PokeBattleDex.Core.Models;
+using PokeBattleDex.Helpers;
 
 namespace PokeBattleDex.ViewModels;
 
@@ -13,9 +16,27 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     private readonly ISampleDataService _sampleDataService;
 
     [ObservableProperty]
-    private SampleOrder? selected;
+    private PokemonSpecies? selected;
 
-    public ObservableCollection<SampleOrder> SampleItems { get; private set; } = new ObservableCollection<SampleOrder>();
+    private string _searchText = string.Empty;
+    public string SearchText
+    {
+        get => _searchText;
+        set
+        {
+            if (SetProperty(ref _searchText, value))
+            {
+                ApplyFilter();
+            }
+        }
+    }
+
+    private List<PokemonSpecies> _allPokemonItems = new();
+
+    public ObservableCollection<PokemonSpecies> FilteredPokemonItems { get; private set; } = new();
+
+    // Keep for backwards compatibility
+    public ObservableCollection<PokemonSpecies> PokemonItems => FilteredPokemonItems;
 
     public ListDetailsViewModel(ISampleDataService sampleDataService)
     {
@@ -24,15 +45,17 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
 
     public async void OnNavigatedTo(object parameter)
     {
-        SampleItems.Clear();
+        // Load data on background thread to avoid blocking UI
+        var data = await Task.Run(() => _sampleDataService.GetPokemonDataAsync());
+        _allPokemonItems = data.ToList();
 
-        // TODO: Replace with real data.
-        var data = await _sampleDataService.GetListDetailsDataAsync();
+        // Use incremental loading - only load first batch, rest loads on scroll
+        var incrementalCollection = new IncrementalLoadingCollection<PokemonSpecies>(_allPokemonItems, batchSize: 50);
+        incrementalCollection.LoadInitialItems();
 
-        foreach (var item in data)
-        {
-            SampleItems.Add(item);
-        }
+        FilteredPokemonItems = incrementalCollection;
+        OnPropertyChanged(nameof(FilteredPokemonItems));
+        OnPropertyChanged(nameof(PokemonItems));
     }
 
     public void OnNavigatedFrom()
@@ -41,6 +64,79 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
 
     public void EnsureItemSelected()
     {
-        Selected ??= SampleItems.First();
+        Selected ??= FilteredPokemonItems.FirstOrDefault();
+    }
+
+    private void ApplyFilter()
+    {
+        var normalizedSearch = NormalizeString(SearchText);
+
+        IList<PokemonSpecies> filtered;
+
+        if (string.IsNullOrWhiteSpace(normalizedSearch))
+        {
+            filtered = _allPokemonItems;
+        }
+        else
+        {
+            filtered = _allPokemonItems.Where(item =>
+            {
+                var normalizedEnglish = NormalizeString(item.NameEnglish);
+                var normalizedFrench = NormalizeString(item.NameFrench);
+
+                return normalizedEnglish.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
+                       normalizedFrench.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase);
+            }).ToList();
+        }
+
+        // Use incremental loading for large result sets, regular collection for small ones
+        if (filtered.Count > 100)
+        {
+            var incrementalCollection = new IncrementalLoadingCollection<PokemonSpecies>(filtered, batchSize: 50);
+            incrementalCollection.LoadInitialItems();
+            FilteredPokemonItems = incrementalCollection;
+        }
+        else
+        {
+            FilteredPokemonItems = new ObservableCollection<PokemonSpecies>(filtered);
+        }
+
+        OnPropertyChanged(nameof(FilteredPokemonItems));
+        OnPropertyChanged(nameof(PokemonItems));
+
+        // Auto-select if there's exactly one match.
+        if (FilteredPokemonItems.Count == 1)
+        {
+            Selected = FilteredPokemonItems[0];
+        }
+    }
+
+    /// <summary>
+    /// Normalizes a string by removing accents/diacritics and trimming whitespace.
+    /// </summary>
+    private static string NormalizeString(string text)
+    {
+        if (string.IsNullOrEmpty(text))
+        {
+            return string.Empty;
+        }
+
+        // Trim spaces
+        text = text.Trim();
+
+        // Remove accents by decomposing and filtering out diacritical marks
+        var normalized = text.Normalize(NormalizationForm.FormD);
+        var sb = new StringBuilder();
+
+        foreach (var c in normalized)
+        {
+            var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+            if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+            {
+                sb.Append(c);
+            }
+        }
+
+        return sb.ToString().Normalize(NormalizationForm.FormC);
     }
 }

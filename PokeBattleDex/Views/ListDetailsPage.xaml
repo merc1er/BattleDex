@@ -9,24 +9,25 @@
     xmlns:views="using:PokeBattleDex.Views"
     mc:Ignorable="d">
     <Page.Resources>
-        <DataTemplate x:Key="ItemTemplate" x:DataType="models:SampleOrder">
+        <DataTemplate x:Key="ItemTemplate" x:DataType="models:PokemonSpecies">
             <Grid Height="60">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <FontIcon
+                <Image
                     Grid.Column="0"
+                    Width="48"
+                    Height="48"
                     VerticalAlignment="Center"
-                    FontSize="32"
-                    Glyph="{x:Bind Symbol}"
-                    AutomationProperties.Name="{x:Bind SymbolName}" />
+                    Source="{x:Bind SpriteUri}"
+                    Stretch="Uniform" />
                 <StackPanel
                     Grid.Column="1"
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center">
-                    <TextBlock Text="{x:Bind Company}" Style="{StaticResource ListTitleStyle}" />
-                    <TextBlock Text="{x:Bind Status}" Style="{StaticResource ListSubTitleStyle}" />
+                    <TextBlock Text="{x:Bind DisplayName}" Style="{StaticResource ListTitleStyle}" />
+                    <TextBlock Text="{x:Bind TypesDisplay}" Style="{StaticResource ListSubTitleStyle}" />
                 </StackPanel>
             </Grid>
         </DataTemplate>
@@ -59,18 +60,36 @@
     </Page.Resources>
 
     <Grid x:Name="ContentArea">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <AutoSuggestBox
+            x:Name="SearchBox"
+            Grid.Row="0"
+            Height="40"
+            Margin="0,12,12,24"
+            Padding="12,0,12,0"
+            VerticalContentAlignment="Center"
+            PlaceholderText="Search Pokémon..."
+            QueryIcon="Find"
+            TextChanged="SearchBox_TextChanged" />
+
         <controls:ListDetailsView
             x:Uid="ListDetails"
             x:Name="ListDetailsViewControl"
+            Grid.Row="1"
             BackButtonBehavior="Inline"
             Background="Transparent"
             BorderBrush="Transparent"
             DetailsTemplate="{StaticResource DetailsTemplate}"
-            ItemsSource="{x:Bind ViewModel.SampleItems}"
+            ItemsSource="{x:Bind ViewModel.FilteredPokemonItems, Mode=OneWay}"
             ItemTemplate="{StaticResource ItemTemplate}"
             ListHeaderTemplate="{StaticResource ListHeaderTemplate}"
             NoSelectionContentTemplate="{StaticResource NoSelectionContentTemplate}"
             SelectedItem="{x:Bind ViewModel.Selected, Mode=TwoWay}"
+            GotFocus="ListDetailsViewControl_GotFocus"
             ViewStateChanged="OnViewStateChanged"/>
     </Grid>
 </Page>
