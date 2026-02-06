@@ -133,12 +133,18 @@ public class PokemonSpecies
     /// <summary>
     /// Gets the file path for the Pokémon's sprite image.
     /// </summary>
-    public string SpriteUri => string.IsNullOrEmpty(SpriteBasePath)
-        ? string.Empty
-        : Path.Combine(SpriteBasePath, "Assets", "Sprites", "Pokemon", $"{Id}.png");
-
-    /// <summary>
-    /// Gets the types as a display string.
+    public string SpriteUri
+    {
+        get
+        {
+            if (string.IsNullOrEmpty(SpriteBasePath))
+            {
+                return string.Empty;
+            }
+            var filePath = Path.Combine(SpriteBasePath, "Assets", "Sprites", "Pokemon", $"{Id}.png");
+            return new Uri(filePath).AbsoluteUri;
+        }
+    }
     /// </summary>
     public string TypesDisplay => Types.Count > 0
         ? string.Join(", ", Types.Select(t => char.ToUpper(t.Name[0]) + t.Name[1..]))
