@@ -16,6 +16,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
                 <Image
                     Grid.Column="0"
@@ -28,7 +29,7 @@
                     Grid.Column="1"
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center">
-                    <TextBlock Text="{x:Bind DisplayName}" Style="{StaticResource ListTitleStyle}" />
+                    <TextBlock Text="{x:Bind NameEnglish}" Style="{StaticResource ListTitleStyle}" />
                     <ItemsControl ItemsSource="{x:Bind Types}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
@@ -51,6 +52,13 @@
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
                 </StackPanel>
+                <TextBlock
+                    Grid.Column="2"
+                    VerticalAlignment="Center"
+                    Margin="8,0,4,0"
+                    Text="{x:Bind IdDisplay}"
+                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                    FontSize="12" />
             </Grid>
         </DataTemplate>
 

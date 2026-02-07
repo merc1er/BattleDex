@@ -126,6 +126,11 @@ public class PokemonSpecies
     public string DisplayName => $"#{Id:D3} {NameEnglish}";
 
     /// <summary>
+    /// Gets the formatted Pokédex number (e.g., "#001").
+    /// </summary>
+    public string IdDisplay => $"#{Id:D3}";
+
+    /// <summary>
     /// Base directory for sprite assets. Must be set by the application on startup.
     /// </summary>
     public static string SpriteBasePath { get; set; } = string.Empty;
