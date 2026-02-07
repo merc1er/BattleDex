@@ -44,3 +44,16 @@ PokeBattleDex.Tests/    # Unit tests
 ## License
 
 Licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE).
+
+## Disclaimer
+
+This project is not licensed by Game Freak or The Pokemon Company and is provided for
+informational use only. It is a free fan project that does not generate revenue and does
+not include ROMs or other game files. All rights to Pokemon names, and sprites belong
+to their respective owners.
+
+Pokémon sprites provided by [PokéAPI](https://github.com/PokeAPI/sprites).
+
+Takedown, copyright infringement, and other legal notices regarding this repository
+may be submitted to 3af83whud(at)mozmail.com, and I will promptly and fully cooperate
+in good faith in accordance with applicable law.
