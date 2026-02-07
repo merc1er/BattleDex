@@ -4,7 +4,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:helpers="using:PokeBattleDex.Helpers"
     mc:Ignorable="d">
+    <UserControl.Resources>
+        <helpers:PokemonTypeToColorConverter x:Key="TypeToColorConverter" />
+    </UserControl.Resources>
     <ScrollViewer
         Name="ForegroundElement"
         HorizontalAlignment="Stretch"
@@ -44,7 +48,27 @@
                     Margin="{StaticResource SmallTopMargin}"
                     Text="Types"
                     Style="{StaticResource DetailSubTitleStyle}" />
-                <TextBlock Text="{x:Bind ListDetailsMenuItem.TypesDisplay, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.Types, Mode=OneWay}" Margin="0,6,0,0">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="8" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Background="{Binding Converter={StaticResource TypeToColorConverter}}"
+                                CornerRadius="4"
+                                Padding="12,4">
+                                <TextBlock
+                                    Text="{Binding}"
+                                    Foreground="White"
+                                    FontWeight="SemiBold"
+                                    FontSize="12" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
 
                 <TextBlock
                     Margin="{StaticResource SmallTopMargin}"

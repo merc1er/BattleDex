@@ -7,8 +7,10 @@
     xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     xmlns:models="using:PokeBattleDex.Core.Models"
     xmlns:views="using:PokeBattleDex.Views"
+    xmlns:helpers="using:PokeBattleDex.Helpers"
     mc:Ignorable="d">
     <Page.Resources>
+        <helpers:PokemonTypeToColorConverter x:Key="TypeToColorConverter" />
         <DataTemplate x:Key="ItemTemplate" x:DataType="models:PokemonSpecies">
             <Grid Height="60">
                 <Grid.ColumnDefinitions>
@@ -27,7 +29,27 @@
                     Margin="{StaticResource SmallLeftMargin}"
                     VerticalAlignment="Center">
                     <TextBlock Text="{x:Bind DisplayName}" Style="{StaticResource ListTitleStyle}" />
-                    <TextBlock Text="{x:Bind TypesDisplay}" Style="{StaticResource ListSubTitleStyle}" />
+                    <ItemsControl ItemsSource="{x:Bind Types}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" Spacing="4" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border
+                                    Background="{Binding Converter={StaticResource TypeToColorConverter}}"
+                                    CornerRadius="3"
+                                    Padding="8,2">
+                                    <TextBlock
+                                        Text="{Binding}"
+                                        Foreground="White"
+                                        FontWeight="SemiBold"
+                                        FontSize="10" />
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
                 </StackPanel>
             </Grid>
         </DataTemplate>

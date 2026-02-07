@@ -145,11 +145,7 @@ public class PokemonSpecies
             return new Uri(filePath).AbsoluteUri;
         }
     }
-    public string TypesDisplay => Types.Any(t => !string.IsNullOrEmpty(t.Name))
-        ? string.Join(", ", Types
-            .Where(t => !string.IsNullOrEmpty(t.Name))
-            .Select(t => char.ToUpper(t.Name[0]) + t.Name[1..]))
-        : string.Empty;
+    public string TypesDisplay => string.Join(", ", Types);
 
     /// <summary>
     /// Gets the abilities as a display string.

@@ -126,14 +126,14 @@ public class SampleDataService : ISampleDataService
     {
         var types = new List<PokemonType>();
 
-        if (!string.IsNullOrWhiteSpace(type1))
+        if (!string.IsNullOrWhiteSpace(type1) && Enum.TryParse<PokemonType>(type1, true, out var parsedType1))
         {
-            types.Add(new PokemonType { Name = type1.ToLowerInvariant() });
+            types.Add(parsedType1);
         }
 
-        if (!string.IsNullOrWhiteSpace(type2))
+        if (!string.IsNullOrWhiteSpace(type2) && Enum.TryParse<PokemonType>(type2, true, out var parsedType2))
         {
-            types.Add(new PokemonType { Name = type2.ToLowerInvariant() });
+            types.Add(parsedType2);
         }
 
         return types;
