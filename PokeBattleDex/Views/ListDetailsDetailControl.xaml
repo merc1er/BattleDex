@@ -14,7 +14,7 @@
         HorizontalAlignment="Stretch"
         VerticalScrollMode="Enabled"
         IsTabStop="True">
-        <StackPanel HorizontalAlignment="Left">
+        <StackPanel HorizontalAlignment="Left" Padding="12,0,0,0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
                 <Image
                     Width="96"
