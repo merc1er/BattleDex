@@ -11,19 +11,31 @@ namespace PokeBattleDex.Helpers;
 /// </summary>
 public class PokemonTypeToColorConverter : IValueConverter
 {
+    private static readonly Dictionary<PokemonType, SolidColorBrush> BrushCache = new();
+    private static readonly SolidColorBrush DefaultBrush = new(Colors.Gray);
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         if (value is PokemonType type)
         {
-            var color = GetTypeColor(type);
-            return new SolidColorBrush(color);
+            return GetOrCreateBrush(type);
         }
-        return new SolidColorBrush(Colors.Gray);
+        return DefaultBrush;
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
         throw new NotImplementedException();
+    }
+
+    private static SolidColorBrush GetOrCreateBrush(PokemonType type)
+    {
+        if (!BrushCache.TryGetValue(type, out var brush))
+        {
+            brush = new SolidColorBrush(GetTypeColor(type));
+            BrushCache[type] = brush;
+        }
+        return brush;
     }
 
     public static Color GetTypeColor(PokemonType type) => type switch
