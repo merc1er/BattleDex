@@ -14,6 +14,7 @@ namespace PokeBattleDex.ViewModels;
 public partial class ListDetailsViewModel : ObservableRecipient, INavigationAware
 {
     private readonly ISampleDataService _sampleDataService;
+    private readonly int _itemsPerPage = 25;
 
     [ObservableProperty]
     private PokemonSpecies? selected;
@@ -50,7 +51,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         _allPokemonItems = data.ToList();
 
         // Use incremental loading - only load first batch, rest loads on scroll
-        var incrementalCollection = new IncrementalLoadingCollection<PokemonSpecies>(_allPokemonItems, batchSize: 50);
+        var incrementalCollection = new IncrementalLoadingCollection<PokemonSpecies>(_allPokemonItems, batchSize: _itemsPerPage);
         incrementalCollection.LoadInitialItems();
 
         FilteredPokemonItems = incrementalCollection;
@@ -92,7 +93,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         // Use incremental loading for large result sets, regular collection for small ones
         if (filtered.Count > 100)
         {
-            var incrementalCollection = new IncrementalLoadingCollection<PokemonSpecies>(filtered, batchSize: 50);
+            var incrementalCollection = new IncrementalLoadingCollection<PokemonSpecies>(filtered, batchSize: _itemsPerPage);
             incrementalCollection.LoadInitialItems();
             FilteredPokemonItems = incrementalCollection;
         }
