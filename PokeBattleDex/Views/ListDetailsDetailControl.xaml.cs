@@ -13,6 +13,11 @@ public sealed partial class ListDetailsDetailControl : UserControl
         set => SetValue(ListDetailsMenuItemProperty, value);
     }
 
+    public Visibility HasImmunities =>
+        ListDetailsMenuItem?.DefensiveMatchup.Immunities.Count > 0
+            ? Visibility.Visible
+            : Visibility.Collapsed;
+
     public static readonly DependencyProperty ListDetailsMenuItemProperty = DependencyProperty.Register("ListDetailsMenuItem", typeof(PokemonSpecies), typeof(ListDetailsDetailControl), new PropertyMetadata(null, OnListDetailsMenuItemPropertyChanged));
 
     public ListDetailsDetailControl()
@@ -25,6 +30,7 @@ public sealed partial class ListDetailsDetailControl : UserControl
         if (d is ListDetailsDetailControl control)
         {
             control.ForegroundElement.ChangeView(0, 0, 1);
+            control.Bindings.Update();
         }
     }
 }

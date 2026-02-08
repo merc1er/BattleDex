@@ -153,6 +153,11 @@ public class PokemonSpecies
     public string TypesDisplay => string.Join(", ", Types);
 
     /// <summary>
+    /// Gets the defensive type matchup (weaknesses, resistances, immunities) for this Pokémon.
+    /// </summary>
+    public TypeMatchup DefensiveMatchup => TypeEffectiveness.GetDefensiveMatchup(Types);
+
+    /// <summary>
     /// Gets the abilities as a display string.
     /// </summary>
     public string AbilitiesDisplay

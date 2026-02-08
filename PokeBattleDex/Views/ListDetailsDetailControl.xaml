@@ -8,6 +8,8 @@
     mc:Ignorable="d">
     <UserControl.Resources>
         <helpers:PokemonTypeToColorConverter x:Key="TypeToColorConverter" />
+        <helpers:TypeMultiplierToDisplayConverter x:Key="TypeMultiplierToDisplayConverter" />
+        <helpers:TypeMultiplierToColorConverter x:Key="TypeMultiplierToColorConverter" />
     </UserControl.Resources>
     <ScrollViewer
         Name="ForegroundElement"
@@ -81,6 +83,89 @@
                     Text="Abilities"
                     Style="{StaticResource DetailSubTitleStyle}" />
                 <TextBlock Text="{x:Bind ListDetailsMenuItem.AbilitiesDisplay, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+
+                <!-- Weaknesses -->
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Text="Weaknesses"
+                    Style="{StaticResource DetailSubTitleStyle}" />
+                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Weaknesses, Mode=OneWay}" Margin="0,6,0,0">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="8" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Background="{Binding Converter={StaticResource TypeMultiplierToColorConverter}}"
+                                CornerRadius="4"
+                                Padding="12,4">
+                                <TextBlock
+                                    Text="{Binding Converter={StaticResource TypeMultiplierToDisplayConverter}}"
+                                    Foreground="White"
+                                    FontWeight="SemiBold"
+                                    FontSize="12" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <!-- Resistances -->
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Text="Resistances"
+                    Style="{StaticResource DetailSubTitleStyle}" />
+                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Resistances, Mode=OneWay}" Margin="0,6,0,0">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="8" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Background="{Binding Converter={StaticResource TypeMultiplierToColorConverter}}"
+                                CornerRadius="4"
+                                Padding="12,4">
+                                <TextBlock
+                                    Text="{Binding Converter={StaticResource TypeMultiplierToDisplayConverter}}"
+                                    Foreground="White"
+                                    FontWeight="SemiBold"
+                                    FontSize="12" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <!-- Immunities -->
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Text="Immunities"
+                    Style="{StaticResource DetailSubTitleStyle}"
+                    Visibility="{x:Bind HasImmunities, Mode=OneWay}" />
+                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Immunities, Mode=OneWay}" Margin="0,6,0,0"
+                    Visibility="{x:Bind HasImmunities, Mode=OneWay}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="8" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Background="{Binding Converter={StaticResource TypeToColorConverter}}"
+                                CornerRadius="4"
+                                Padding="12,4">
+                                <TextBlock
+                                    Text="{Binding}"
+                                    Foreground="White"
+                                    FontWeight="SemiBold"
+                                    FontSize="12" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
