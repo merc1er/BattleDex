@@ -11,6 +11,8 @@
         <helpers:PokemonTypeToColorConverter x:Key="TypeToColorConverter" />
         <helpers:TypeMultiplierToDisplayConverter x:Key="TypeMultiplierToDisplayConverter" />
         <helpers:TypeMultiplierToColorConverter x:Key="TypeMultiplierToColorConverter" />
+        <helpers:PokemonTypeToForegroundConverter x:Key="TypeToForegroundConverter" />
+        <helpers:TypeMultiplierToForegroundConverter x:Key="TypeMultiplierToForegroundConverter" />
     </UserControl.Resources>
     <ScrollViewer
         Name="ForegroundElement"
@@ -71,7 +73,7 @@
                                 Padding="12,4">
                                 <TextBlock
                                     Text="{Binding}"
-                                    Foreground="White"
+                                    Foreground="{Binding Converter={StaticResource TypeToForegroundConverter}}"
                                     FontWeight="SemiBold"
                                     FontSize="12" />
                             </Border>
@@ -104,7 +106,7 @@
                                 Padding="12,4">
                                 <TextBlock
                                     Text="{Binding Converter={StaticResource TypeMultiplierToDisplayConverter}}"
-                                    Foreground="White"
+                                    Foreground="{Binding Converter={StaticResource TypeMultiplierToForegroundConverter}}"
                                     FontWeight="SemiBold"
                                     FontSize="12" />
                             </Border>
@@ -131,7 +133,7 @@
                                 Padding="12,4">
                                 <TextBlock
                                     Text="{Binding Converter={StaticResource TypeMultiplierToDisplayConverter}}"
-                                    Foreground="White"
+                                    Foreground="{Binding Converter={StaticResource TypeMultiplierToForegroundConverter}}"
                                     FontWeight="SemiBold"
                                     FontSize="12" />
                             </Border>
@@ -160,7 +162,7 @@
                                 Padding="12,4">
                                 <TextBlock
                                     Text="{Binding}"
-                                    Foreground="White"
+                                    Foreground="{Binding Converter={StaticResource TypeToForegroundConverter}}"
                                     FontWeight="SemiBold"
                                     FontSize="12" />
                             </Border>

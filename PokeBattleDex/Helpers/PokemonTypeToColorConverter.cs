@@ -38,6 +38,16 @@ public class PokemonTypeToColorConverter : IValueConverter
         return brush;
     }
 
+    /// <summary>
+    /// Returns black or white depending on the luminance of the given color.
+    /// </summary>
+    public static Color GetContrastForeground(Color bg)
+    {
+        // Perceived luminance formula
+        var luminance = 0.299 * bg.R + 0.587 * bg.G + 0.114 * bg.B;
+        return luminance > 150 ? Color.FromArgb(255, 0, 0, 0) : Color.FromArgb(255, 255, 255, 255);
+    }
+
     public static Color GetTypeColor(PokemonType type) => type switch
     {
         PokemonType.Normal => Color.FromArgb(255, 168, 167, 122),
