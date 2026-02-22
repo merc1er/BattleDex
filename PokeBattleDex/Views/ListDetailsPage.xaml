@@ -9,6 +9,10 @@
     xmlns:views="using:PokeBattleDex.Views"
     xmlns:helpers="using:PokeBattleDex.Helpers"
     mc:Ignorable="d">
+    <Page.KeyboardAccelerators>
+        <KeyboardAccelerator Key="F" Modifiers="Control" Invoked="SearchAccelerator_Invoked" />
+        <KeyboardAccelerator Key="K" Modifiers="Control" Invoked="SearchAccelerator_Invoked" />
+    </Page.KeyboardAccelerators>
     <Page.Resources>
         <helpers:PokemonTypeToColorConverter x:Key="TypeToColorConverter" />
         <DataTemplate x:Key="ItemTemplate" x:DataType="models:PokemonSpecies">

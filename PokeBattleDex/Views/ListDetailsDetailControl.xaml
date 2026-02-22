@@ -5,16 +5,21 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:helpers="using:PokeBattleDex.Helpers"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
     mc:Ignorable="d">
     <UserControl.Resources>
         <helpers:PokemonTypeToColorConverter x:Key="TypeToColorConverter" />
+        <helpers:TypeMultiplierToDisplayConverter x:Key="TypeMultiplierToDisplayConverter" />
+        <helpers:TypeMultiplierToColorConverter x:Key="TypeMultiplierToColorConverter" />
+        <helpers:PokemonTypeToForegroundConverter x:Key="TypeToForegroundConverter" />
+        <helpers:TypeMultiplierToForegroundConverter x:Key="TypeMultiplierToForegroundConverter" />
     </UserControl.Resources>
     <ScrollViewer
         Name="ForegroundElement"
         HorizontalAlignment="Stretch"
         VerticalScrollMode="Enabled"
         IsTabStop="True">
-        <StackPanel HorizontalAlignment="Left" Padding="12,0,0,0">
+        <StackPanel HorizontalAlignment="Left" Padding="12,0,0,24">
             <Grid HorizontalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -68,7 +73,7 @@
                                 Padding="12,4">
                                 <TextBlock
                                     Text="{Binding}"
-                                    Foreground="White"
+                                    Foreground="{Binding Converter={StaticResource TypeToForegroundConverter}}"
                                     FontWeight="SemiBold"
                                     FontSize="12" />
                             </Border>
@@ -81,6 +86,89 @@
                     Text="Abilities"
                     Style="{StaticResource DetailSubTitleStyle}" />
                 <TextBlock Text="{x:Bind ListDetailsMenuItem.AbilitiesDisplay, Mode=OneWay}" Style="{StaticResource DetailBodyBaseMediumStyle}" />
+
+                <!-- Weaknesses -->
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Text="Weaknesses"
+                    Style="{StaticResource DetailSubTitleStyle}" />
+                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Weaknesses, Mode=OneWay}" Margin="0,6,0,0">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <controls:WrapPanel Orientation="Horizontal" HorizontalSpacing="8" VerticalSpacing="8" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Background="{Binding Converter={StaticResource TypeMultiplierToColorConverter}}"
+                                CornerRadius="4"
+                                Padding="12,4">
+                                <TextBlock
+                                    Text="{Binding Converter={StaticResource TypeMultiplierToDisplayConverter}}"
+                                    Foreground="{Binding Converter={StaticResource TypeMultiplierToForegroundConverter}}"
+                                    FontWeight="SemiBold"
+                                    FontSize="12" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <!-- Resistances -->
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Text="Resistances"
+                    Style="{StaticResource DetailSubTitleStyle}" />
+                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Resistances, Mode=OneWay}" Margin="0,6,0,0">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <controls:WrapPanel Orientation="Horizontal" HorizontalSpacing="8" VerticalSpacing="8" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Background="{Binding Converter={StaticResource TypeMultiplierToColorConverter}}"
+                                CornerRadius="4"
+                                Padding="12,4">
+                                <TextBlock
+                                    Text="{Binding Converter={StaticResource TypeMultiplierToDisplayConverter}}"
+                                    Foreground="{Binding Converter={StaticResource TypeMultiplierToForegroundConverter}}"
+                                    FontWeight="SemiBold"
+                                    FontSize="12" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <!-- Immunities -->
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Text="Immunities"
+                    Style="{StaticResource DetailSubTitleStyle}"
+                    Visibility="{x:Bind HasImmunities, Mode=OneWay}" />
+                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Immunities, Mode=OneWay}" Margin="0,6,0,0"
+                    Visibility="{x:Bind HasImmunities, Mode=OneWay}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <controls:WrapPanel Orientation="Horizontal" HorizontalSpacing="8" VerticalSpacing="8" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Background="{Binding Converter={StaticResource TypeToColorConverter}}"
+                                CornerRadius="4"
+                                Padding="12,4">
+                                <TextBlock
+                                    Text="{Binding}"
+                                    Foreground="{Binding Converter={StaticResource TypeToForegroundConverter}}"
+                                    FontWeight="SemiBold"
+                                    FontSize="12" />
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
