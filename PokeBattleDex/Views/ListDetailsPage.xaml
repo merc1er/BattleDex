@@ -11,6 +11,7 @@
     mc:Ignorable="d">
     <Page.KeyboardAccelerators>
         <KeyboardAccelerator Key="F" Modifiers="Control" Invoked="SearchAccelerator_Invoked" />
+        <KeyboardAccelerator Key="K" Modifiers="Control" Invoked="SearchAccelerator_Invoked" />
     </Page.KeyboardAccelerators>
     <Page.Resources>
         <helpers:PokemonTypeToColorConverter x:Key="TypeToColorConverter" />
