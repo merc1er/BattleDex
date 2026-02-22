@@ -12,14 +12,14 @@
 
   <Identity
     Name="e3cbdea9-3779-49fc-a322-679207e9caef"
-    Publisher="CN=rat"
-    Version="1.0.0.0" />
+    Publisher="CN=merc1er"
+    Version="0.1.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="e3cbdea9-3779-49fc-a322-679207e9caef" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>PokeBattleDex</DisplayName>
-    <PublisherDisplayName>rat</PublisherDisplayName>
+    <DisplayName>PokéBattleDex</DisplayName>
+    <PublisherDisplayName>merc1er</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
