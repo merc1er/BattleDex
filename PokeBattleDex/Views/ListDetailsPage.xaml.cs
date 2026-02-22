@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.WinUI.UI.Controls;
 
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Input;
 
 using PokeBattleDex.ViewModels;
 
@@ -33,6 +34,12 @@ public sealed partial class ListDetailsPage : Page
         {
             ViewModel.SearchText = sender.Text;
         }
+    }
+
+    private void SearchAccelerator_Invoked(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
+    {
+        SearchBox.Focus(Microsoft.UI.Xaml.FocusState.Keyboard);
+        args.Handled = true;
     }
 
     private void ListDetailsViewControl_GotFocus(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
