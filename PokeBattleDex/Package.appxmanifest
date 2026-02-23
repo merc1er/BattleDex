@@ -11,8 +11,8 @@
   IgnorableNamespaces="uap rescap genTemplate">
 
   <Identity
-    Name="e3cbdea9-3779-49fc-a322-679207e9caef"
-    Publisher="CN=merc1er"
+    Name="25876corentin.mercier.PokBattleDex"
+    Publisher="CN=9167F883-E7BE-408F-9E19-4F5398105F7B"
     Version="0.1.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="e3cbdea9-3779-49fc-a322-679207e9caef" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
