@@ -103,7 +103,7 @@
             x:Name="SearchBox"
             Grid.Row="0"
             Height="40"
-            Margin="0,12,12,24"
+            Margin="0,12,0,24"
             Padding="12,0,12,0"
             VerticalContentAlignment="Center"
             PlaceholderText="Search Pokémon..."
