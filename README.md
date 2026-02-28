@@ -17,6 +17,10 @@ A fast, native, modern Pokédex for Windows.
 
 ![PokéBattleDex](/.github/images/thumbnail.png)
 
+<a href="https://apps.microsoft.com/detail/9nd3tf5dp6ft">
+  <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft Store" width="200"/>
+</a>
+
 ## Installation
 
 ### Requirements
