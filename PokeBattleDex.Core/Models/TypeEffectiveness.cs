@@ -46,7 +46,7 @@ public static class TypeEffectiveness
         /* Fairy    */ {      1f, .5f,  1f,  1f,  1f,  1f,  2f, .5f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  2f, .5f,  1f },
     };
 
-    // Gen II–V chart: 17×17 (no Fairy; Ghost & Dark resist Steel).
+    // Gen II–V chart: 17×17 (no Fairy; Steel resists Ghost & Dark).
     private static readonly float[,] Gen2To5Chart = new float[17, 17]
     {
         //                    NOR  FIR  WAT  ELE  GRA  ICE  FIG  POI  GND  FLY  PSY  BUG  ROC  GHO  DRA  DAR  STE
