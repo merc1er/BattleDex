@@ -31,10 +31,21 @@ public sealed partial class ListDetailsDetailControl : UserControl
     public ListDetailsDetailControl()
     {
         _viewModel = App.GetService<ListDetailsViewModel>();
-        _viewModel.PropertyChanged += OnViewModelPropertyChanged;
         InitializeComponent();
+        Loaded += ListDetailsDetailControl_Loaded;
+        Unloaded += ListDetailsDetailControl_Unloaded;
     }
 
+    private void ListDetailsDetailControl_Loaded(object sender, RoutedEventArgs e)
+    {
+        _viewModel.PropertyChanged += OnViewModelPropertyChanged;
+        UpdateMatchupBindings();
+    }
+
+    private void ListDetailsDetailControl_Unloaded(object sender, RoutedEventArgs e)
+    {
+        _viewModel.PropertyChanged -= OnViewModelPropertyChanged;
+    }
     private void OnViewModelPropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
     {
         if (e.PropertyName == nameof(ListDetailsViewModel.SelectedGeneration))
