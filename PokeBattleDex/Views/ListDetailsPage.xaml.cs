@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.WinUI.UI.Controls;
+﻿using CommunityToolkit.WinUI.UI;
+using CommunityToolkit.WinUI.UI.Controls;
 
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
@@ -39,6 +40,8 @@ public sealed partial class ListDetailsPage : Page
     private void SearchAccelerator_Invoked(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
     {
         SearchBox.Focus(Microsoft.UI.Xaml.FocusState.Keyboard);
+        var textBox = SearchBox.FindDescendant<TextBox>();
+        textBox?.SelectAll();
         args.Handled = true;
     }
 
