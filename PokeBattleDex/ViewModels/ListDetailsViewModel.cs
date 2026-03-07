@@ -126,9 +126,11 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
             {
                 var normalizedEnglish = NormalizeString(item.NameEnglish);
                 var normalizedFrench = NormalizeString(item.NameFrench);
+                var idString = item.Id.ToString();
 
                 return normalizedEnglish.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
-                       normalizedFrench.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase);
+                       normalizedFrench.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
+                       idString == normalizedSearch;
             }).ToList();
         }
 
