@@ -4,6 +4,7 @@ using System.Text;
 
 using CommunityToolkit.Mvvm.ComponentModel;
 
+using PokeBattleDex.Contracts.Services;
 using PokeBattleDex.Contracts.ViewModels;
 using PokeBattleDex.Core.Contracts.Services;
 using PokeBattleDex.Core.Models;
@@ -13,7 +14,9 @@ namespace PokeBattleDex.ViewModels;
 
 public partial class ListDetailsViewModel : ObservableRecipient, INavigationAware
 {
+    private const string SelectedGenerationKey = "SelectedGeneration";
     private readonly ISampleDataService _sampleDataService;
+    private readonly ILocalSettingsService _localSettingsService;
     private readonly int _itemsPerPage = 25;
 
     [ObservableProperty]
@@ -22,13 +25,22 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     [ObservableProperty]
     private GenerationChart selectedGeneration = GenerationChart.Gen6Plus;
 
+    private bool _generationLoaded;
+
     public int SelectedGenerationIndex
     {
         get => (int)SelectedGeneration;
         set
         {
-            SelectedGeneration = (GenerationChart)value;
-            OnPropertyChanged();
+            if ((int)SelectedGeneration != value)
+            {
+                SelectedGeneration = (GenerationChart)value;
+                OnPropertyChanged();
+            }
+            if (_generationLoaded)
+            {
+                _ = _localSettingsService.SaveSettingAsync(SelectedGenerationKey, value);
+            }
         }
     }
 
@@ -52,13 +64,30 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     // Keep for backwards compatibility
     public ObservableCollection<PokemonSpecies> PokemonItems => FilteredPokemonItems;
 
-    public ListDetailsViewModel(ISampleDataService sampleDataService)
+    public ListDetailsViewModel(ISampleDataService sampleDataService, ILocalSettingsService localSettingsService)
     {
         _sampleDataService = sampleDataService;
+        _localSettingsService = localSettingsService;
     }
 
     public async void OnNavigatedTo(object parameter)
     {
+        // Restore persisted generation selection
+        try
+        {
+            var savedGen = await _localSettingsService.ReadSettingAsync<int>(SelectedGenerationKey);
+            if (Enum.IsDefined(typeof(GenerationChart), savedGen))
+            {
+                SelectedGeneration = (GenerationChart)savedGen;
+                OnPropertyChanged(nameof(SelectedGenerationIndex));
+            }
+        }
+        catch
+        {
+            // First launch — no saved value yet
+        }
+        _generationLoaded = true;
+
         // Load data on background thread to avoid blocking UI
         var data = await Task.Run(() => _sampleDataService.GetPokemonDataAsync());
         _allPokemonItems = data.ToList();
