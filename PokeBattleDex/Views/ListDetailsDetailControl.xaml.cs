@@ -39,8 +39,19 @@ public sealed partial class ListDetailsDetailControl : UserControl
     {
         if (e.PropertyName == nameof(ListDetailsViewModel.SelectedGeneration))
         {
-            Bindings.Update();
+            UpdateMatchupBindings();
         }
+    }
+
+    private void UpdateMatchupBindings()
+    {
+        var matchup = CurrentMatchup;
+        WeaknessesControl.ItemsSource = matchup?.Weaknesses;
+        ResistancesControl.ItemsSource = matchup?.Resistances;
+        ImmunitiesControl.ItemsSource = matchup?.Immunities;
+        var immuneVis = matchup?.Immunities.Count > 0 ? Visibility.Visible : Visibility.Collapsed;
+        ImmunitiesHeader.Visibility = immuneVis;
+        ImmunitiesControl.Visibility = immuneVis;
     }
 
     private static void OnListDetailsMenuItemPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
