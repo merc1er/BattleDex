@@ -23,7 +23,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     private PokemonSpecies? selected;
 
     [ObservableProperty]
-    private GenerationChart selectedGeneration = GenerationChart.Gen6Plus;
+    private GenerationChart selectedGeneration = GenerationChart.Gen2To5;
 
     private bool _generationLoaded;
 
@@ -73,18 +73,11 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     public async void OnNavigatedTo(object parameter)
     {
         // Restore persisted generation selection
-        try
+        var savedGen = await _localSettingsService.ReadSettingAsync<int?>(SelectedGenerationKey);
+        if (savedGen.HasValue && Enum.IsDefined(typeof(GenerationChart), savedGen.Value))
         {
-            var savedGen = await _localSettingsService.ReadSettingAsync<int>(SelectedGenerationKey);
-            if (Enum.IsDefined(typeof(GenerationChart), savedGen))
-            {
-                SelectedGeneration = (GenerationChart)savedGen;
-                OnPropertyChanged(nameof(SelectedGenerationIndex));
-            }
-        }
-        catch
-        {
-            // First launch — no saved value yet
+            SelectedGeneration = (GenerationChart)savedGen.Value;
+            OnPropertyChanged(nameof(SelectedGenerationIndex));
         }
         _generationLoaded = true;
 
