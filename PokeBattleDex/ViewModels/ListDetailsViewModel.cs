@@ -19,6 +19,19 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     [ObservableProperty]
     private PokemonSpecies? selected;
 
+    [ObservableProperty]
+    private GenerationChart selectedGeneration = GenerationChart.Gen6Plus;
+
+    public int SelectedGenerationIndex
+    {
+        get => (int)SelectedGeneration;
+        set
+        {
+            SelectedGeneration = (GenerationChart)value;
+            OnPropertyChanged();
+        }
+    }
+
     private string _searchText = string.Empty;
     public string SearchText
     {

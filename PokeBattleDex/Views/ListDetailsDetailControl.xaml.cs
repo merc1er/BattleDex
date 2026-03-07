@@ -2,19 +2,27 @@
 using Microsoft.UI.Xaml.Controls;
 
 using PokeBattleDex.Core.Models;
+using PokeBattleDex.ViewModels;
 
 namespace PokeBattleDex.Views;
 
 public sealed partial class ListDetailsDetailControl : UserControl
 {
+    private readonly ListDetailsViewModel _viewModel;
+
     public PokemonSpecies? ListDetailsMenuItem
     {
         get => GetValue(ListDetailsMenuItemProperty) as PokemonSpecies;
         set => SetValue(ListDetailsMenuItemProperty, value);
     }
 
+    public TypeMatchup? CurrentMatchup =>
+        ListDetailsMenuItem is { } item
+            ? TypeEffectiveness.GetDefensiveMatchup(item.Types, _viewModel.SelectedGeneration)
+            : null;
+
     public Visibility HasImmunities =>
-        ListDetailsMenuItem?.DefensiveMatchup.Immunities.Count > 0
+        CurrentMatchup?.Immunities.Count > 0
             ? Visibility.Visible
             : Visibility.Collapsed;
 
@@ -22,7 +30,17 @@ public sealed partial class ListDetailsDetailControl : UserControl
 
     public ListDetailsDetailControl()
     {
+        _viewModel = App.GetService<ListDetailsViewModel>();
+        _viewModel.PropertyChanged += OnViewModelPropertyChanged;
         InitializeComponent();
+    }
+
+    private void OnViewModelPropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName == nameof(ListDetailsViewModel.SelectedGeneration))
+        {
+            Bindings.Update();
+        }
     }
 
     private static void OnListDetailsMenuItemPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
