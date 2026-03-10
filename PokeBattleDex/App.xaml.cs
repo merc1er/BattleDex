@@ -74,7 +74,7 @@ public partial class App : Application
             services.AddSingleton<IFileService, FileService>();
 
             // Views and ViewModels
-            services.AddTransient<ListDetailsViewModel>();
+            services.AddSingleton<ListDetailsViewModel>();
             services.AddTransient<ListDetailsPage>();
             services.AddTransient<ShellPage>();
             services.AddTransient<ShellViewModel>();

@@ -92,7 +92,7 @@
                     Margin="{StaticResource SmallTopMargin}"
                     Text="Weaknesses"
                     Style="{StaticResource DetailSubTitleStyle}" />
-                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Weaknesses, Mode=OneWay}" Margin="0,6,0,0">
+                <ItemsControl x:Name="WeaknessesControl" ItemsSource="{x:Bind CurrentMatchup.Weaknesses, Mode=OneWay}" Margin="0,6,0,0">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <controls:WrapPanel Orientation="Horizontal" HorizontalSpacing="8" VerticalSpacing="8" />
@@ -119,7 +119,7 @@
                     Margin="{StaticResource SmallTopMargin}"
                     Text="Resistances"
                     Style="{StaticResource DetailSubTitleStyle}" />
-                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Resistances, Mode=OneWay}" Margin="0,6,0,0">
+                <ItemsControl x:Name="ResistancesControl" ItemsSource="{x:Bind CurrentMatchup.Resistances, Mode=OneWay}" Margin="0,6,0,0">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <controls:WrapPanel Orientation="Horizontal" HorizontalSpacing="8" VerticalSpacing="8" />
@@ -143,11 +143,12 @@
 
                 <!-- Immunities -->
                 <TextBlock
+                    x:Name="ImmunitiesHeader"
                     Margin="{StaticResource SmallTopMargin}"
                     Text="Immunities"
                     Style="{StaticResource DetailSubTitleStyle}"
                     Visibility="{x:Bind HasImmunities, Mode=OneWay}" />
-                <ItemsControl ItemsSource="{x:Bind ListDetailsMenuItem.DefensiveMatchup.Immunities, Mode=OneWay}" Margin="0,6,0,0"
+                <ItemsControl x:Name="ImmunitiesControl" ItemsSource="{x:Bind CurrentMatchup.Immunities, Mode=OneWay}" Margin="0,6,0,0"
                     Visibility="{x:Bind HasImmunities, Mode=OneWay}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>

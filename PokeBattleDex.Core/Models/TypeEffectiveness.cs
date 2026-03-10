@@ -1,53 +1,109 @@
 namespace PokeBattleDex.Core.Models;
 
 /// <summary>
-/// Provides the Gen VI+ type effectiveness chart.
+/// Identifies which generation's type chart to use.
+/// </summary>
+public enum GenerationChart
+{
+    Gen2To5,
+    Gen6Plus,
+}
+
+/// <summary>
+/// Provides type effectiveness charts for Gen II–V and Gen VI+.
 /// All multipliers are from the attacking type's perspective against a defending type.
 /// </summary>
 public static class TypeEffectiveness
 {
-    // Indexed by [attacker, defender] using PokemonType enum ordinals.
-    // Row = attacking type, Column = defending type.
-    private static readonly float[,] Chart = new float[18, 18]
+    /// <summary>The number of types that exist in each generation chart.</summary>
+    private static readonly Dictionary<GenerationChart, int> TypeCounts = new()
     {
-        //                    NOR  FIR  WAT  ELE  GRA  ICE  FIG  POI  GND  FLY  PSY  BUG  ROC  GHO  DRA  DAR  STE  FAI
-        /* Normal   */ {      1f, 1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f, .5f,  0f,  1f,  1f, .5f,  1f },
-        /* Fire     */ {      1f, .5f, .5f, 1f,  2f,  2f,  1f,  1f,  1f,  1f,  1f,  2f, .5f,  1f, .5f,  1f,  2f,  1f },
-        /* Water    */ {      1f,  2f, .5f, 1f, .5f,  1f,  1f,  1f,  2f,  1f,  1f,  1f,  2f,  1f, .5f,  1f,  1f,  1f },
-        /* Electric */ {      1f,  1f,  2f, .5f,.5f,  1f,  1f,  1f,  0f,  2f,  1f,  1f,  1f,  1f, .5f,  1f,  1f,  1f },
-        /* Grass    */ {      1f, .5f,  2f, 1f, .5f,  1f,  1f, .5f,  2f, .5f,  1f, .5f,  2f,  1f, .5f,  1f, .5f,  1f },
-        /* Ice      */ {      1f, .5f, .5f, 1f,  2f, .5f,  1f,  1f,  2f,  2f,  1f,  1f,  1f,  1f,  2f,  1f, .5f,  1f },
-        /* Fighting */ {      2f,  1f,  1f, 1f,  1f,  2f,  1f, .5f,  1f, .5f, .5f, .5f,  2f,  0f,  1f,  2f,  2f, .5f },
-        /* Poison   */ {      1f,  1f,  1f, 1f,  2f,  1f,  1f, .5f, .5f,  1f,  1f,  1f, .5f, .5f,  1f,  1f,  0f,  2f },
-        /* Ground   */ {      1f,  2f,  1f, 2f, .5f,  1f,  1f,  2f,  1f,  0f,  1f, .5f,  2f,  1f,  1f,  1f,  2f,  1f },
-        /* Flying   */ {      1f,  1f,  1f, .5f, 2f,  1f,  2f,  1f,  1f,  1f,  1f,  2f, .5f,  1f,  1f,  1f, .5f,  1f },
-        /* Psychic  */ {      1f,  1f,  1f, 1f,  1f,  1f,  2f,  2f,  1f,  1f, .5f,  1f,  1f,  1f,  1f,  0f, .5f,  1f },
-        /* Bug      */ {      1f, .5f,  1f, 1f,  2f,  1f, .5f, .5f,  1f, .5f,  2f,  1f,  1f, .5f,  1f,  2f, .5f, .5f },
-        /* Rock     */ {      1f,  2f,  1f, 1f,  1f,  2f, .5f,  1f, .5f,  2f,  1f,  2f,  1f,  1f,  1f,  1f, .5f,  1f },
-        /* Ghost    */ {      0f,  1f,  1f, 1f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f,  1f,  2f,  1f, .5f,  1f,  1f },
-        /* Dragon   */ {      1f,  1f,  1f, 1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f, .5f,  0f },
-        /* Dark     */ {      1f,  1f,  1f, 1f,  1f,  1f, .5f,  1f,  1f,  1f,  2f,  1f,  1f,  2f,  1f, .5f,  1f, .5f },
-        /* Steel    */ {      1f, .5f, .5f,.5f,  1f,  2f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f,  1f,  1f, .5f,  2f },
-        /* Fairy    */ {      1f, .5f,  1f, 1f,  1f,  1f,  2f, .5f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  2f, .5f,  1f },
+        [GenerationChart.Gen2To5] = 17,  // Normal..Steel (no Fairy)
+        [GenerationChart.Gen6Plus] = 18, // Normal..Fairy
+    };
+
+    // Gen VI+ chart: 18×18 (includes Fairy).
+    private static readonly float[,] Gen6PlusChart = new float[18, 18]
+    {
+        //               NOR  FIR  WAT  ELE  GRA  ICE  FIG  POI  GND  FLY  PSY  BUG  ROC  GHO  DRA  DAR  STE  FAI
+        /* Normal   */ { 1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f, .5f,  0f,  1f,  1f, .5f,  1f },
+        /* Fire     */ { 1f, .5f, .5f,  1f,  2f,  2f,  1f,  1f,  1f,  1f,  1f,  2f, .5f,  1f, .5f,  1f,  2f,  1f },
+        /* Water    */ { 1f,  2f, .5f,  1f, .5f,  1f,  1f,  1f,  2f,  1f,  1f,  1f,  2f,  1f, .5f,  1f,  1f,  1f },
+        /* Electric */ { 1f,  1f,  2f, .5f, .5f,  1f,  1f,  1f,  0f,  2f,  1f,  1f,  1f,  1f, .5f,  1f,  1f,  1f },
+        /* Grass    */ { 1f, .5f,  2f,  1f, .5f,  1f,  1f, .5f,  2f, .5f,  1f, .5f,  2f,  1f, .5f,  1f, .5f,  1f },
+        /* Ice      */ { 1f, .5f, .5f,  1f,  2f, .5f,  1f,  1f,  2f,  2f,  1f,  1f,  1f,  1f,  2f,  1f, .5f,  1f },
+        /* Fighting */ { 2f,  1f,  1f,  1f,  1f,  2f,  1f, .5f,  1f, .5f, .5f, .5f,  2f,  0f,  1f,  2f,  2f, .5f },
+        /* Poison   */ { 1f,  1f,  1f,  1f,  2f,  1f,  1f, .5f, .5f,  1f,  1f,  1f, .5f, .5f,  1f,  1f,  0f,  2f },
+        /* Ground   */ { 1f,  2f,  1f,  2f, .5f,  1f,  1f,  2f,  1f,  0f,  1f, .5f,  2f,  1f,  1f,  1f,  2f,  1f },
+        /* Flying   */ { 1f,  1f,  1f, .5f,  2f,  1f,  2f,  1f,  1f,  1f,  1f,  2f, .5f,  1f,  1f,  1f, .5f,  1f },
+        /* Psychic  */ { 1f,  1f,  1f,  1f,  1f,  1f,  2f,  2f,  1f,  1f, .5f,  1f,  1f,  1f,  1f,  0f, .5f,  1f },
+        /* Bug      */ { 1f, .5f,  1f,  1f,  2f,  1f, .5f, .5f,  1f, .5f,  2f,  1f,  1f, .5f,  1f,  2f, .5f, .5f },
+        /* Rock     */ { 1f,  2f,  1f,  1f,  1f,  2f, .5f,  1f, .5f,  2f,  1f,  2f,  1f,  1f,  1f,  1f, .5f,  1f },
+        /* Ghost    */ { 0f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f,  1f,  2f,  1f, .5f,  1f,  1f },
+        /* Dragon   */ { 1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f, .5f,  0f },
+        /* Dark     */ { 1f,  1f,  1f,  1f,  1f,  1f, .5f,  1f,  1f,  1f,  2f,  1f,  1f,  2f,  1f, .5f,  1f, .5f },
+        /* Steel    */ { 1f, .5f, .5f, .5f,  1f,  2f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f,  1f,  1f, .5f,  2f },
+        /* Fairy    */ { 1f, .5f,  1f,  1f,  1f,  1f,  2f, .5f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  2f, .5f,  1f },
+    };
+
+    // Gen II–V chart: 17×17 (no Fairy; Steel resists Ghost & Dark).
+    private static readonly float[,] Gen2To5Chart = new float[17, 17]
+    {
+        //               NOR  FIR  WAT  ELE  GRA  ICE  FIG  POI  GND  FLY  PSY  BUG  ROC  GHO  DRA  DAR  STE
+        /* Normal   */ { 1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f, .5f,  0f,  1f,  1f, .5f },
+        /* Fire     */ { 1f, .5f, .5f,  1f,  2f,  2f,  1f,  1f,  1f,  1f,  1f,  2f, .5f,  1f, .5f,  1f,  2f },
+        /* Water    */ { 1f,  2f, .5f,  1f, .5f,  1f,  1f,  1f,  2f,  1f,  1f,  1f,  2f,  1f, .5f,  1f,  1f },
+        /* Electric */ { 1f,  1f,  2f, .5f, .5f,  1f,  1f,  1f,  0f,  2f,  1f,  1f,  1f,  1f, .5f,  1f,  1f },
+        /* Grass    */ { 1f, .5f,  2f,  1f, .5f,  1f,  1f, .5f,  2f, .5f,  1f, .5f,  2f,  1f, .5f,  1f, .5f },
+        /* Ice      */ { 1f, .5f, .5f,  1f,  2f, .5f,  1f,  1f,  2f,  2f,  1f,  1f,  1f,  1f,  2f,  1f, .5f },
+        /* Fighting */ { 2f,  1f,  1f,  1f,  1f,  2f,  1f, .5f,  1f, .5f, .5f, .5f,  2f,  0f,  1f,  2f,  2f },
+        /* Poison   */ { 1f,  1f,  1f,  1f,  2f,  1f,  1f, .5f, .5f,  1f,  1f,  1f, .5f, .5f,  1f,  1f,  0f },
+        /* Ground   */ { 1f,  2f,  1f,  2f, .5f,  1f,  1f,  2f,  1f,  0f,  1f, .5f,  2f,  1f,  1f,  1f,  2f },
+        /* Flying   */ { 1f,  1f,  1f, .5f,  2f,  1f,  2f,  1f,  1f,  1f,  1f,  2f, .5f,  1f,  1f,  1f, .5f },
+        /* Psychic  */ { 1f,  1f,  1f,  1f,  1f,  1f,  2f,  2f,  1f,  1f, .5f,  1f,  1f,  1f,  1f,  0f, .5f },
+        /* Bug      */ { 1f, .5f,  1f,  1f,  2f,  1f, .5f, .5f,  1f, .5f,  2f,  1f,  1f, .5f,  1f,  2f, .5f },
+        /* Rock     */ { 1f,  2f,  1f,  1f,  1f,  2f, .5f,  1f, .5f,  2f,  1f,  2f,  1f,  1f,  1f,  1f, .5f },
+        /* Ghost    */ { 0f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f,  1f,  2f,  1f, .5f, .5f },
+        /* Dragon   */ { 1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f, .5f },
+        /* Dark     */ { 1f,  1f,  1f,  1f,  1f,  1f, .5f,  1f,  1f,  1f,  2f,  1f,  1f,  2f,  1f, .5f, .5f },
+        /* Steel    */ { 1f, .5f, .5f, .5f,  1f,  2f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f,  1f,  1f, .5f },
+    };
+
+    private static float[,] GetChart(GenerationChart gen) => gen switch
+    {
+        GenerationChart.Gen2To5 => Gen2To5Chart,
+        _ => Gen6PlusChart,
     };
 
     /// <summary>
     /// Gets the effectiveness multiplier when <paramref name="attacker"/> attacks <paramref name="defender"/>.
     /// </summary>
-    public static float GetMultiplier(PokemonType attacker, PokemonType defender)
-        => Chart[(int)attacker, (int)defender];
+    public static float GetMultiplier(PokemonType attacker, PokemonType defender, GenerationChart gen = GenerationChart.Gen2To5)
+    {
+        var chart = GetChart(gen);
+        var atkIdx = (int)attacker;
+        var defIdx = (int)defender;
+
+        // Type doesn't exist in the chosen chart — treat as neutral.
+        if (atkIdx >= chart.GetLength(0) || defIdx >= chart.GetLength(1))
+        {
+            return 1f;
+        }
+
+        return chart[atkIdx, defIdx];
+    }
 
     /// <summary>
     /// Calculates the combined defensive multiplier for a Pokémon with the given types
     /// when attacked by <paramref name="attackingType"/>.
     /// For dual types the multipliers are multiplied together.
     /// </summary>
-    public static float GetDefensiveMultiplier(PokemonType attackingType, IReadOnlyList<PokemonType> defendingTypes)
+    public static float GetDefensiveMultiplier(PokemonType attackingType, IReadOnlyList<PokemonType> defendingTypes, GenerationChart gen = GenerationChart.Gen2To5)
     {
         var multiplier = 1f;
         foreach (var defType in defendingTypes)
         {
-            multiplier *= GetMultiplier(attackingType, defType);
+            multiplier *= GetMultiplier(attackingType, defType, gen);
         }
         return multiplier;
     }
@@ -55,15 +111,21 @@ public static class TypeEffectiveness
     /// <summary>
     /// Returns all attacking types grouped by their effectiveness against the given defending types.
     /// </summary>
-    public static TypeMatchup GetDefensiveMatchup(IReadOnlyList<PokemonType> defendingTypes)
+    public static TypeMatchup GetDefensiveMatchup(IReadOnlyList<PokemonType> defendingTypes, GenerationChart gen = GenerationChart.Gen2To5)
     {
+        var typeCount = TypeCounts[gen];
         var weaknesses = new List<TypeMultiplier>();
         var resistances = new List<TypeMultiplier>();
         var immunities = new List<PokemonType>();
 
         foreach (PokemonType atkType in Enum.GetValues(typeof(PokemonType)))
         {
-            var mult = GetDefensiveMultiplier(atkType, defendingTypes);
+            if ((int)atkType >= typeCount)
+            {
+                continue;
+            }
+
+            var mult = GetDefensiveMultiplier(atkType, defendingTypes, gen);
 
             if (mult == 0f)
             {
