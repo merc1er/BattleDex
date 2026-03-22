@@ -25,6 +25,7 @@ public sealed partial class ShellPage : Page
         InitializeComponent();
 
         ViewModel.NavigationService.Frame = NavigationFrame;
+        ViewModel.NavigationService.Navigated += OnNavigated;
 
         // Set the title bar icon
         var iconPath = Path.Combine(AppContext.BaseDirectory, "Assets", "Square44x44Logo.targetsize-24_altform-unplated.png");
@@ -53,6 +54,28 @@ public sealed partial class ShellPage : Page
 
     private void OnUnloaded(object sender, RoutedEventArgs e)
     {
+        ViewModel.NavigationService.Navigated -= OnNavigated;
+    }
+
+    private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+    {
+        if (args.SelectedItem is NavigationViewItem item && item.Tag is string tag)
+        {
+            ViewModel.NavigationService.NavigateTo(tag);
+        }
+    }
+
+    private void OnNavigated(object sender, Microsoft.UI.Xaml.Navigation.NavigationEventArgs e)
+    {
+        var pageService = App.GetService<IPageService>();
+        foreach (var menuItem in NavigationViewControl.MenuItems.OfType<NavigationViewItem>())
+        {
+            if (menuItem.Tag is string tag && pageService.GetPageType(tag) == e.SourcePageType)
+            {
+                NavigationViewControl.SelectedItem = menuItem;
+                return;
+            }
+        }
     }
 
     private static KeyboardAccelerator BuildKeyboardAccelerator(VirtualKey key, VirtualKeyModifiers? modifiers = null)

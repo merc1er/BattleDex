@@ -15,6 +15,7 @@ public class PageService : IPageService
     public PageService()
     {
         Configure<ListDetailsViewModel, ListDetailsPage>();
+        Configure<TypeChartViewModel, TypeChartPage>();
     }
 
     public Type GetPageType(string key)
