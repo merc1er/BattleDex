@@ -117,12 +117,17 @@
                 x:Name="GenerationComboBox"
                 Grid.Column="1"
                 Height="40"
-                MinWidth="150"
+                MinWidth="120"
                 Margin="12,0,0,0"
                 VerticalAlignment="Center"
                 SelectedIndex="{x:Bind ViewModel.SelectedGenerationIndex, Mode=TwoWay}">
-                <ComboBoxItem Content="Gen 2 to 5" />
-                <ComboBoxItem Content="Gen 6 to 9" />
+                <ComboBoxItem Content="Gen 3" />
+                <ComboBoxItem Content="Gen 4" />
+                <ComboBoxItem Content="Gen 5" />
+                <ComboBoxItem Content="Gen 6" />
+                <ComboBoxItem Content="Gen 7" />
+                <ComboBoxItem Content="Gen 8" />
+                <ComboBoxItem Content="Gen 9" />
             </ComboBox>
         </Grid>
 

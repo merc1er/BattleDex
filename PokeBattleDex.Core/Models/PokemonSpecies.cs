@@ -90,6 +90,54 @@ public class PokemonSpecies
     }
 
     /// <summary>
+    /// EV yield for HP.
+    /// </summary>
+    public int EvHP
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// EV yield for Attack.
+    /// </summary>
+    public int EvAttack
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// EV yield for Defense.
+    /// </summary>
+    public int EvDefense
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// EV yield for Special Attack.
+    /// </summary>
+    public int EvSpAtk
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// EV yield for Special Defense.
+    /// </summary>
+    public int EvSpDef
+    {
+        get; set;
+    }
+
+    /// <summary>
+    /// EV yield for Speed.
+    /// </summary>
+    public int EvSpeed
+    {
+        get; set;
+    }
+
+    /// <summary>
     /// The generation this Pokémon was introduced in.
     /// </summary>
     public int Generation
@@ -156,6 +204,69 @@ public class PokemonSpecies
     /// Gets the defensive type matchup (weaknesses, resistances, immunities) for this Pokémon.
     /// </summary>
     public TypeMatchup DefensiveMatchup => TypeEffectiveness.GetDefensiveMatchup(Types);
+
+    /// <summary>
+    /// Per-generation EV yield overrides for Pokémon whose yields changed across generations.
+    /// Only generations that differ from the default (Gen IX) values stored in the CSV are listed.
+    /// </summary>
+    private static readonly Dictionary<int, Dictionary<GenerationChart, (int HP, int Atk, int Def, int SpAtk, int SpDef, int Spd)>> EvOverrides = new()
+    {
+        [193] = new() // Yanma: 2 Speed in Gen III, 1 Speed from Gen IV+
+        {
+            [GenerationChart.Gen3] = (0, 0, 0, 0, 0, 2),
+        },
+        [199] = new() // Slowking: 3 Sp. Def in Gen III–VII, 2 Sp. Def from Gen VIII+
+        {
+            [GenerationChart.Gen3] = (0, 0, 0, 0, 3, 0),
+            [GenerationChart.Gen4] = (0, 0, 0, 0, 3, 0),
+            [GenerationChart.Gen5] = (0, 0, 0, 0, 3, 0),
+            [GenerationChart.Gen6] = (0, 0, 0, 0, 3, 0),
+            [GenerationChart.Gen7] = (0, 0, 0, 0, 3, 0),
+        },
+        [200] = new() // Misdreavus: 1 Sp. Atk + 1 Sp. Def in Gen III, 1 Sp. Def from Gen IV+
+        {
+            [GenerationChart.Gen3] = (0, 0, 0, 1, 1, 0),
+        },
+        [242] = new() // Blissey: 2 HP in Gen III, 3 HP from Gen IV+
+        {
+            [GenerationChart.Gen3] = (2, 0, 0, 0, 0, 0),
+        },
+        [315] = new() // Roselia: 1 Sp. Atk in Gen III, 2 Sp. Atk from Gen IV+
+        {
+            [GenerationChart.Gen3] = (0, 0, 0, 1, 0, 0),
+        },
+        [355] = new() // Duskull: 1 Def + 1 Sp. Def in Gen III, 1 Sp. Def from Gen IV+
+        {
+            [GenerationChart.Gen3] = (0, 0, 1, 0, 1, 0),
+        },
+        [356] = new() // Dusclops: 1 Def + 2 Sp. Def in Gen III, 1 Sp. Def + 1 Speed in Gen IV, 1 Def + 1 Sp. Def from Gen V+
+        {
+            [GenerationChart.Gen3] = (0, 0, 1, 0, 2, 0),
+            [GenerationChart.Gen4] = (0, 0, 0, 0, 1, 1),
+        },
+    };
+
+    /// <summary>
+    /// Gets the EV yield as a display string for the given generation.
+    /// </summary>
+    public string GetEvYieldDisplay(GenerationChart generation = GenerationChart.Gen9)
+    {
+        int hp = EvHP, atk = EvAttack, def = EvDefense, spAtk = EvSpAtk, spDef = EvSpDef, spd = EvSpeed;
+
+        if (EvOverrides.TryGetValue(Id, out var genOverrides) && genOverrides.TryGetValue(generation, out var overrides))
+        {
+            (hp, atk, def, spAtk, spDef, spd) = overrides;
+        }
+
+        var yields = new List<string>();
+        if (hp > 0) yields.Add($"{hp} HP");
+        if (atk > 0) yields.Add($"{atk} Attack");
+        if (def > 0) yields.Add($"{def} Defense");
+        if (spAtk > 0) yields.Add($"{spAtk} Sp. Atk");
+        if (spDef > 0) yields.Add($"{spDef} Sp. Def");
+        if (spd > 0) yields.Add($"{spd} Speed");
+        return yields.Count > 0 ? string.Join("\n", yields) : "None";
+    }
 
     /// <summary>
     /// Gets the abilities as a display string.
