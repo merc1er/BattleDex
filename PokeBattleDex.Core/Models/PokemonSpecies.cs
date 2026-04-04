@@ -211,11 +211,11 @@ public class PokemonSpecies
     /// </summary>
     private static readonly Dictionary<int, Dictionary<GenerationChart, (int HP, int Atk, int Def, int SpAtk, int SpDef, int Spd)>> EvOverrides = new()
     {
-        [193] = new() // Yanma: 2 Speed in Gen III, 1 Speed from Gen IV+
+        [193] = new() // Yanma
         {
             [GenerationChart.Gen3] = (0, 0, 0, 0, 0, 2),
         },
-        [199] = new() // Slowking: 3 Sp. Def in Gen III–VII, 2 Sp. Def from Gen VIII+
+        [199] = new() // Slowking
         {
             [GenerationChart.Gen3] = (0, 0, 0, 0, 3, 0),
             [GenerationChart.Gen4] = (0, 0, 0, 0, 3, 0),
@@ -223,23 +223,23 @@ public class PokemonSpecies
             [GenerationChart.Gen6] = (0, 0, 0, 0, 3, 0),
             [GenerationChart.Gen7] = (0, 0, 0, 0, 3, 0),
         },
-        [200] = new() // Misdreavus: 1 Sp. Atk + 1 Sp. Def in Gen III, 1 Sp. Def from Gen IV+
+        [200] = new() // Misdreavus
         {
             [GenerationChart.Gen3] = (0, 0, 0, 1, 1, 0),
         },
-        [242] = new() // Blissey: 2 HP in Gen III, 3 HP from Gen IV+
+        [242] = new() // Blissey
         {
             [GenerationChart.Gen3] = (2, 0, 0, 0, 0, 0),
         },
-        [315] = new() // Roselia: 1 Sp. Atk in Gen III, 2 Sp. Atk from Gen IV+
+        [315] = new() // Roselia
         {
             [GenerationChart.Gen3] = (0, 0, 0, 1, 0, 0),
         },
-        [355] = new() // Duskull: 1 Def + 1 Sp. Def in Gen III, 1 Sp. Def from Gen IV+
+        [355] = new() // Duskull
         {
             [GenerationChart.Gen3] = (0, 0, 1, 0, 1, 0),
         },
-        [356] = new() // Dusclops: 1 Def + 2 Sp. Def in Gen III, 1 Sp. Def + 1 Speed in Gen IV, 1 Def + 1 Sp. Def from Gen V+
+        [356] = new() // Dusclops
         {
             [GenerationChart.Gen3] = (0, 0, 1, 0, 2, 0),
             [GenerationChart.Gen4] = (0, 0, 0, 0, 1, 1),
