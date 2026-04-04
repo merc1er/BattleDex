@@ -23,7 +23,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     private PokemonSpecies? selected;
 
     [ObservableProperty]
-    private GenerationChart selectedGeneration = GenerationChart.Gen2To5;
+    private GenerationChart selectedGeneration = GenerationChart.Gen9;
 
     private bool _generationLoaded;
 

@@ -5,8 +5,13 @@ namespace PokeBattleDex.Core.Models;
 /// </summary>
 public enum GenerationChart
 {
-    Gen2To5,
-    Gen6Plus,
+    Gen3,
+    Gen4,
+    Gen5,
+    Gen6,
+    Gen7,
+    Gen8,
+    Gen9,
 }
 
 /// <summary>
@@ -15,11 +20,11 @@ public enum GenerationChart
 /// </summary>
 public static class TypeEffectiveness
 {
-    /// <summary>The number of types that exist in each generation chart.</summary>
-    private static readonly Dictionary<GenerationChart, int> TypeCounts = new()
+    /// <summary>Returns the number of types that exist in the given generation.</summary>
+    private static int GetTypeCount(GenerationChart gen) => gen switch
     {
-        [GenerationChart.Gen2To5] = 17,  // Normal..Steel (no Fairy)
-        [GenerationChart.Gen6Plus] = 18, // Normal..Fairy
+        GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 => 17, // Normal..Steel (no Fairy)
+        _ => 18, // Normal..Fairy (Gen VI+)
     };
 
     // Gen VI+ chart: 18×18 (includes Fairy).
@@ -71,14 +76,14 @@ public static class TypeEffectiveness
 
     private static float[,] GetChart(GenerationChart gen) => gen switch
     {
-        GenerationChart.Gen2To5 => Gen2To5Chart,
+        GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 => Gen2To5Chart,
         _ => Gen6PlusChart,
     };
 
     /// <summary>
     /// Gets the effectiveness multiplier when <paramref name="attacker"/> attacks <paramref name="defender"/>.
     /// </summary>
-    public static float GetMultiplier(PokemonType attacker, PokemonType defender, GenerationChart gen = GenerationChart.Gen2To5)
+    public static float GetMultiplier(PokemonType attacker, PokemonType defender, GenerationChart gen = GenerationChart.Gen9)
     {
         var chart = GetChart(gen);
         var atkIdx = (int)attacker;
@@ -98,7 +103,7 @@ public static class TypeEffectiveness
     /// when attacked by <paramref name="attackingType"/>.
     /// For dual types the multipliers are multiplied together.
     /// </summary>
-    public static float GetDefensiveMultiplier(PokemonType attackingType, IReadOnlyList<PokemonType> defendingTypes, GenerationChart gen = GenerationChart.Gen2To5)
+    public static float GetDefensiveMultiplier(PokemonType attackingType, IReadOnlyList<PokemonType> defendingTypes, GenerationChart gen = GenerationChart.Gen9)
     {
         var multiplier = 1f;
         foreach (var defType in defendingTypes)
@@ -111,9 +116,9 @@ public static class TypeEffectiveness
     /// <summary>
     /// Returns all attacking types grouped by their effectiveness against the given defending types.
     /// </summary>
-    public static TypeMatchup GetDefensiveMatchup(IReadOnlyList<PokemonType> defendingTypes, GenerationChart gen = GenerationChart.Gen2To5)
+    public static TypeMatchup GetDefensiveMatchup(IReadOnlyList<PokemonType> defendingTypes, GenerationChart gen = GenerationChart.Gen9)
     {
-        var typeCount = TypeCounts[gen];
+        var typeCount = GetTypeCount(gen);
         var weaknesses = new List<TypeMultiplier>();
         var resistances = new List<TypeMultiplier>();
         var immunities = new List<PokemonType>();
