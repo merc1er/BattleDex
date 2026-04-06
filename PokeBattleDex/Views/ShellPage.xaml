@@ -10,14 +10,25 @@
     mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="32" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" x:Name="AppTitleBar">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" Margin="8,0,0,0">
                 <Image x:Name="AppTitleBarIcon" Width="16" Height="16"/>
                 <TextBlock x:Name="AppTitleBarText" VerticalAlignment="Center" TextWrapping="NoWrap" Style="{StaticResource CaptionTextBlockStyle}" Margin="8,0,0,0"/>
             </StackPanel>
+            <MenuBar Grid.Column="1" VerticalAlignment="Center" Margin="8,0,0,0">
+                <MenuBarItem x:Uid="ShellMenuBarItem_Help">
+                    <MenuFlyoutItem x:Uid="ShellMenuItem_Help_About" Command="{x:Bind ViewModel.MenuHelpAboutCommand}" />
+                </MenuBarItem>
+            </MenuBar>
+            <Grid Grid.Column="2" x:Name="AppTitleBar" />
         </Grid>
         <Grid Grid.Row="1" Margin="{StaticResource MenuBarContentMargin}">
             <Frame x:Name="NavigationFrame" />
