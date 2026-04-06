@@ -14,7 +14,7 @@ namespace PokeBattleDex.Views;
 public sealed partial class TypeChartPage : Page
 {
     private const double CellSize = 40;
-    private const double HeaderWidth = 80;
+    private const double HeaderSize = 80;
 
     public TypeChartViewModel ViewModel { get; }
 
@@ -56,13 +56,13 @@ public sealed partial class TypeChartPage : Page
         var count = types.Length;
 
         // Define rows and columns: header + N type rows/cols
-        ChartGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(HeaderWidth) });
+        ChartGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(HeaderSize) });
         for (var i = 0; i < count; i++)
         {
             ChartGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(CellSize) });
         }
 
-        ChartGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(HeaderWidth) });
+        ChartGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(HeaderSize) });
         for (var i = 0; i < count; i++)
         {
             ChartGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(CellSize) });
@@ -182,7 +182,7 @@ public sealed partial class TypeChartPage : Page
         var allTypes = Enum.GetValues<PokemonType>();
         if (gen is GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5)
         {
-            // Exclude Fairy (index 17) — didn't exist before Gen 6
+            // Exclude types introduced in Gen 6+ (Fairy and beyond)
             return allTypes.Where(t => (int)t < (int)PokemonType.Fairy).ToArray();
         }
         return allTypes;
