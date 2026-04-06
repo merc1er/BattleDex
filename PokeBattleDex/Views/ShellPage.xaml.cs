@@ -83,9 +83,9 @@ public sealed partial class ShellPage : Page
         ViewModel.NavigationService.Navigated -= OnNavigated;
     }
 
-    private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+    private void NavigationView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
     {
-        if (args.SelectedItem is NavigationViewItem item && item.Tag is string tag)
+        if (args.InvokedItemContainer is NavigationViewItem item && item.Tag is string tag)
         {
             ViewModel.NavigationService.NavigateTo(tag);
         }

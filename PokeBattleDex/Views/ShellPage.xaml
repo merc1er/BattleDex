@@ -35,7 +35,7 @@
             PaneDisplayMode="Top"
             IsBackButtonVisible="Collapsed"
             IsSettingsVisible="False"
-            SelectionChanged="NavigationView_SelectionChanged">
+            ItemInvoked="NavigationView_ItemInvoked">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Pokédex" Tag="PokeBattleDex.ViewModels.ListDetailsViewModel">
                     <NavigationViewItem.Icon>
