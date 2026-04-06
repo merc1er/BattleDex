@@ -12,23 +12,25 @@ public partial class TypeChartViewModel : ObservableRecipient, INavigationAware
     private readonly ILocalSettingsService _localSettingsService;
 
     [ObservableProperty]
-    private GenerationChart selectedGeneration = GenerationChart.Gen6Plus;
+    public partial GenerationChart SelectedGeneration { get; set; } = GenerationChart.Gen9;
 
     private bool _generationLoaded;
 
+    // ComboBox index: 0 = Gen 2–5 chart, 1 = Gen 6+ chart
     public int SelectedGenerationIndex
     {
-        get => (int)SelectedGeneration;
+        get => SelectedGeneration is GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 ? 0 : 1;
         set
         {
-            if ((int)SelectedGeneration != value)
+            var newGen = value == 0 ? GenerationChart.Gen5 : GenerationChart.Gen9;
+            if (SelectedGeneration != newGen)
             {
-                SelectedGeneration = (GenerationChart)value;
+                SelectedGeneration = newGen;
                 OnPropertyChanged();
             }
             if (_generationLoaded)
             {
-                _ = _localSettingsService.SaveSettingAsync(SelectedGenerationKey, value);
+                _ = _localSettingsService.SaveSettingAsync(SelectedGenerationKey, (int)newGen);
             }
         }
     }

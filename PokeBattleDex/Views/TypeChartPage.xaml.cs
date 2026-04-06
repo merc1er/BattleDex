@@ -174,9 +174,9 @@ public sealed partial class TypeChartPage : Page
     private static PokemonType[] GetVisibleTypes(GenerationChart gen)
     {
         var allTypes = Enum.GetValues<PokemonType>();
-        if (gen == GenerationChart.Gen2To5)
+        if (gen is GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5)
         {
-            // Exclude Fairy (index 17)
+            // Exclude Fairy (index 17) — didn't exist before Gen 6
             return allTypes.Where(t => (int)t < 17).ToArray();
         }
         return allTypes;
