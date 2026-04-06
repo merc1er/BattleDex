@@ -29,8 +29,28 @@
                 </MenuBarItem>
             </MenuBar>
         </Grid>
-        <Grid Grid.Row="1" Margin="{StaticResource MenuBarContentMargin}">
-            <Frame x:Name="NavigationFrame" />
-        </Grid>
+        <NavigationView
+            x:Name="NavigationViewControl"
+            Grid.Row="1"
+            PaneDisplayMode="Top"
+            IsBackButtonVisible="Collapsed"
+            IsSettingsVisible="False"
+            ItemInvoked="NavigationView_ItemInvoked">
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Uid="ShellNavItem_Pokedex" Tag="PokeBattleDex.ViewModels.ListDetailsViewModel">
+                    <NavigationViewItem.Icon>
+                        <SymbolIcon Symbol="AllApps" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="ShellNavItem_TypeChart" Tag="PokeBattleDex.ViewModels.TypeChartViewModel">
+                    <NavigationViewItem.Icon>
+                        <SymbolIcon Symbol="ViewAll" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+            <Grid Margin="{StaticResource MenuBarContentMargin}">
+                <Frame x:Name="NavigationFrame" />
+            </Grid>
+        </NavigationView>
     </Grid>
 </Page>

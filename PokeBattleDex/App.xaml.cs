@@ -76,6 +76,8 @@ public partial class App : Application
             // Views and ViewModels
             services.AddSingleton<ListDetailsViewModel>();
             services.AddTransient<ListDetailsPage>();
+            services.AddTransient<TypeChartViewModel>();
+            services.AddTransient<TypeChartPage>();
             services.AddTransient<ShellPage>();
             services.AddTransient<ShellViewModel>();
 
