@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" x:Name="AppTitleBar">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
@@ -23,12 +23,11 @@
                 <Image x:Name="AppTitleBarIcon" Width="16" Height="16"/>
                 <TextBlock x:Name="AppTitleBarText" VerticalAlignment="Center" TextWrapping="NoWrap" Style="{StaticResource CaptionTextBlockStyle}" Margin="8,0,0,0"/>
             </StackPanel>
-            <MenuBar Grid.Column="1" VerticalAlignment="Center" Margin="8,0,0,0">
+            <MenuBar x:Name="TitleBarMenuBar" Grid.Column="1" VerticalAlignment="Center" Margin="8,0,0,0">
                 <MenuBarItem x:Uid="ShellMenuBarItem_Help">
                     <MenuFlyoutItem x:Uid="ShellMenuItem_Help_About" Command="{x:Bind ViewModel.MenuHelpAboutCommand}" />
                 </MenuBarItem>
             </MenuBar>
-            <Grid Grid.Column="2" x:Name="AppTitleBar" />
         </Grid>
         <Grid Grid.Row="1" Margin="{StaticResource MenuBarContentMargin}">
             <Frame x:Name="NavigationFrame" />
