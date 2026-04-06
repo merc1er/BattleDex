@@ -48,50 +48,50 @@ public partial class ShellViewModel : ObservableRecipient
         {
             Title = "About_Title".GetLocalized(),
             CloseButtonText = "About_CloseButton".GetLocalized(),
-            Content = new StackPanel
+            Content = new ScrollViewer
             {
-                Spacing = 12,
-                Children =
+                VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
+                HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled,
+                Content = new StackPanel
                 {
-                    new TextBlock
+                    Spacing = 12,
+                    Children =
                     {
-                        Text = $"PokéBattleDex v{versionString}",
-                        Style = (Style)Application.Current.Resources["SubtitleTextBlockStyle"],
-                    },
-                    new TextBlock
-                    {
-                        Text = "About_Description".GetLocalized(),
-                        TextWrapping = TextWrapping.Wrap,
-                    },
-                    new HyperlinkButton
-                    {
-                        Content = "About_SourceCode".GetLocalized(),
-                        NavigateUri = new Uri("https://github.com/merc1er/PokeBattleDex"),
-                    },
-                    new TextBlock
-                    {
-                        Text = "About_SourcesHeader".GetLocalized(),
-                        Style = (Style)Application.Current.Resources["BodyStrongTextBlockStyle"],
-                    },
-                    new HyperlinkButton
-                    {
-                        Content = "About_Sprites".GetLocalized(),
-                        NavigateUri = new Uri("https://github.com/PokeAPI/sprites"),
-                    },
-                    new TextBlock
-                    {
-                        Text = "About_ContactHeader".GetLocalized(),
-                        Style = (Style)Application.Current.Resources["BodyStrongTextBlockStyle"],
-                    },
-                    new TextBlock
-                    {
-                        Text = "About_ContactText".GetLocalized(),
-                        TextWrapping = TextWrapping.Wrap,
-                    },
-                    new TextBlock
-                    {
-                        Text = string.Format("About_Copyright".GetLocalized(), DateTime.Now.Year),
-                        Opacity = 0.6,
+                        new TextBlock
+                        {
+                            Text = $"PokéBattleDex v{versionString}",
+                            Style = (Style)Application.Current.Resources["SubtitleTextBlockStyle"],
+                        },
+                        new TextBlock
+                        {
+                            Text = "About_Description".GetLocalized(),
+                            TextWrapping = TextWrapping.Wrap,
+                        },
+                        new HyperlinkButton
+                        {
+                            Content = "About_SourceCode".GetLocalized(),
+                            NavigateUri = new Uri("https://github.com/merc1er/PokeBattleDex"),
+                        },
+                        new TextBlock
+                        {
+                            Text = "About_SourcesHeader".GetLocalized(),
+                            Style = (Style)Application.Current.Resources["BodyStrongTextBlockStyle"],
+                        },
+                        new HyperlinkButton
+                        {
+                            Content = "About_Sprites".GetLocalized(),
+                            NavigateUri = new Uri("https://github.com/PokeAPI/sprites"),
+                        },
+                        new TextBlock
+                        {
+                            Text = "About_ContactHeader".GetLocalized(),
+                            Style = (Style)Application.Current.Resources["BodyStrongTextBlockStyle"],
+                        },
+                        new TextBlock
+                        {
+                            Text = "About_ContactText".GetLocalized(),
+                            TextWrapping = TextWrapping.Wrap,
+                        },
                     },
                 },
             },

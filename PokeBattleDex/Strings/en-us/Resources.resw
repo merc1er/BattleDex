@@ -103,9 +103,6 @@
 
 You can also open an issue on GitHub.</value>
   </data>
-  <data name="About_Copyright" xml:space="preserve">
-    <value>© {0} merc1er. All rights reserved.</value>
-  </data>
   <data name="ListDetails_NoSelection.Text" xml:space="preserve">
     <value>Select an item from the list.</value>
   </data>
