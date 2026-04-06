@@ -8,7 +8,7 @@ namespace PokeBattleDex.ViewModels;
 
 public partial class TypeChartViewModel : ObservableRecipient, INavigationAware
 {
-    private const string SelectedGenerationKey = "SelectedGeneration";
+    private const string SelectedGenerationKey = "TypeChartSelectedGeneration";
     private readonly ILocalSettingsService _localSettingsService;
 
     [ObservableProperty]

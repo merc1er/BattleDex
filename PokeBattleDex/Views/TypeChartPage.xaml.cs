@@ -22,13 +22,19 @@ public sealed partial class TypeChartPage : Page
     {
         ViewModel = App.GetService<TypeChartViewModel>();
         InitializeComponent();
-        ViewModel.PropertyChanged += ViewModel_PropertyChanged;
         Loaded += TypeChartPage_Loaded;
+        Unloaded += TypeChartPage_Unloaded;
     }
 
     private void TypeChartPage_Loaded(object sender, RoutedEventArgs e)
     {
+        ViewModel.PropertyChanged += ViewModel_PropertyChanged;
         BuildChart();
+    }
+
+    private void TypeChartPage_Unloaded(object sender, RoutedEventArgs e)
+    {
+        ViewModel.PropertyChanged -= ViewModel_PropertyChanged;
     }
 
     private void ViewModel_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -177,7 +183,7 @@ public sealed partial class TypeChartPage : Page
         if (gen is GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5)
         {
             // Exclude Fairy (index 17) — didn't exist before Gen 6
-            return allTypes.Where(t => (int)t < 17).ToArray();
+            return allTypes.Where(t => (int)t < (int)PokemonType.Fairy).ToArray();
         }
         return allTypes;
     }
