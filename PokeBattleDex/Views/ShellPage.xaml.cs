@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿using Microsoft.UI.Input;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
@@ -8,6 +9,7 @@ using PokeBattleDex.Contracts.Services;
 using PokeBattleDex.Helpers;
 using PokeBattleDex.ViewModels;
 
+using Windows.Graphics;
 using Windows.System;
 
 namespace PokeBattleDex.Views;
@@ -43,8 +45,29 @@ public sealed partial class ShellPage : Page
     {
         TitleBarHelper.UpdateTitleBar(RequestedTheme);
 
+        SetMenuBarPassthrough();
+        TitleBarMenuBar.SizeChanged += (_, _) => SetMenuBarPassthrough();
+
         KeyboardAccelerators.Add(BuildKeyboardAccelerator(VirtualKey.Left, VirtualKeyModifiers.Menu));
         KeyboardAccelerators.Add(BuildKeyboardAccelerator(VirtualKey.GoBack));
+    }
+
+    private void SetMenuBarPassthrough()
+    {
+        var scale = XamlRoot.RasterizationScale;
+        var transform = TitleBarMenuBar.TransformToVisual(null);
+        var position = transform.TransformPoint(new Windows.Foundation.Point(0, 0));
+
+        var region = new RectInt32
+        {
+            X = (int)(position.X * scale),
+            Y = (int)(position.Y * scale),
+            Width = (int)(TitleBarMenuBar.ActualWidth * scale),
+            Height = (int)(TitleBarMenuBar.ActualHeight * scale),
+        };
+
+        var nonClientSource = InputNonClientPointerSource.GetForWindowId(App.MainWindow.AppWindow.Id);
+        nonClientSource.SetRegionRects(NonClientRegionKind.Passthrough, [region]);
     }
 
     private void MainWindow_Activated(object sender, WindowActivatedEventArgs args)

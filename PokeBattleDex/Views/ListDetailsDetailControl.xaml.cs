@@ -63,6 +63,7 @@ public sealed partial class ListDetailsDetailControl : UserControl
         var immuneVis = matchup?.Immunities.Count > 0 ? Visibility.Visible : Visibility.Collapsed;
         ImmunitiesHeader.Visibility = immuneVis;
         ImmunitiesControl.Visibility = immuneVis;
+        EvYieldText.Text = ListDetailsMenuItem?.GetEvYieldDisplay(_viewModel.SelectedGeneration) ?? string.Empty;
     }
 
     private static void OnListDetailsMenuItemPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -71,6 +72,7 @@ public sealed partial class ListDetailsDetailControl : UserControl
         {
             control.ForegroundElement.ChangeView(0, 0, 1);
             control.Bindings.Update();
+            control.UpdateMatchupBindings();
         }
     }
 }

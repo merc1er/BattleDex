@@ -3,7 +3,7 @@
 A fast, native, modern Pokédex for Windows.
 
 ![Windows](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white)
-![.NET 9](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet)
+![.NET 10](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)
 ![WinUI 3](https://img.shields.io/badge/WinUI-3-blue)
 
 ## Features
@@ -26,7 +26,7 @@ A fast, native, modern Pokédex for Windows.
 ### Requirements
 
 - Windows 10 or Windows 11
-- [.NET 9 Runtime](https://dotnet.microsoft.com/download/dotnet/9.0)
+- [.NET 10 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
 
 ### Quick Start
 

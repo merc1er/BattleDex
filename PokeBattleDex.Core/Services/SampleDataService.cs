@@ -86,7 +86,13 @@ public class SampleDataService : ISampleDataService
                 IsLegendary = GetField("Legendary").Equals("True", StringComparison.OrdinalIgnoreCase),
                 Ability1 = GetField("Ability 1"),
                 Ability2 = GetField("Ability 2"),
-                HiddenAbility = GetField("Hidden Ability")
+                HiddenAbility = GetField("Hidden Ability"),
+                EvHP = int.TryParse(GetField("EV HP"), out var evHp) ? evHp : 0,
+                EvAttack = int.TryParse(GetField("EV Attack"), out var evAtk) ? evAtk : 0,
+                EvDefense = int.TryParse(GetField("EV Defense"), out var evDef) ? evDef : 0,
+                EvSpAtk = int.TryParse(GetField("EV Sp. Atk"), out var evSpAtk) ? evSpAtk : 0,
+                EvSpDef = int.TryParse(GetField("EV Sp. Def"), out var evSpDef) ? evSpDef : 0,
+                EvSpeed = int.TryParse(GetField("EV Speed"), out var evSpd) ? evSpd : 0
             };
 
             pokemon.Add(species);
