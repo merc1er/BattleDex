@@ -50,6 +50,9 @@ public sealed partial class ShellPage : Page
 
         KeyboardAccelerators.Add(BuildKeyboardAccelerator(VirtualKey.Left, VirtualKeyModifiers.Menu));
         KeyboardAccelerators.Add(BuildKeyboardAccelerator(VirtualKey.GoBack));
+
+        // Move focus away from the MenuBar so "Help" isn't highlighted on startup
+        NavigationFrame.Focus(FocusState.Programmatic);
     }
 
     private void SetMenuBarPassthrough()
