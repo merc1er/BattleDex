@@ -18,8 +18,8 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <TextBlock
+                x:Uid="TypeChart_Title"
                 Grid.Column="0"
-                Text="Type Chart"
                 Style="{ThemeResource SubtitleTextBlockStyle}"
                 VerticalAlignment="Center" />
             <ComboBox
@@ -30,8 +30,8 @@
                 Margin="16,0,0,0"
                 VerticalAlignment="Center"
                 SelectedIndex="{x:Bind ViewModel.SelectedGenerationIndex, Mode=TwoWay}">
-                <ComboBoxItem Content="Gen 2 to 5" />
-                <ComboBoxItem Content="Gen 6 to 9" />
+                <ComboBoxItem x:Uid="TypeChart_Gen2To5" />
+                <ComboBoxItem x:Uid="TypeChart_Gen6To9" />
             </ComboBox>
         </Grid>
 
