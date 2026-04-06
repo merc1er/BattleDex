@@ -71,6 +71,38 @@
   <data name="ShellMenuItem_File_Exit.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="ShellMenuBarItem_Help.Title" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="ShellMenuItem_Help_About.Text" xml:space="preserve">
+    <value>About PokéBattleDex</value>
+  </data>
+  <data name="About_Title" xml:space="preserve">
+    <value>About PokéBattleDex</value>
+  </data>
+  <data name="About_CloseButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="About_Description" xml:space="preserve">
+    <value>A fast, native, modern Pokédex for Windows.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Source code on GitHub</value>
+  </data>
+  <data name="About_SourcesHeader" xml:space="preserve">
+    <value>Sources</value>
+  </data>
+  <data name="About_Sprites" xml:space="preserve">
+    <value>Pokémon sprites from PokeAPI/sprites</value>
+  </data>
+  <data name="About_ContactHeader" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="About_ContactText" xml:space="preserve">
+    <value>Takedown, copyright infringement, and other legal notices regarding this repository may be submitted to 3af83whud@mozmail.com, and I will promptly and fully cooperate in good faith in accordance with applicable law.
+
+You can also open an issue on GitHub.</value>
+  </data>
   <data name="ListDetails_NoSelection.Text" xml:space="preserve">
     <value>Select an item from the list.</value>
   </data>
