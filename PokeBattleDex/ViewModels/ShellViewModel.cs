@@ -10,6 +10,7 @@ using Microsoft.UI.Xaml.Navigation;
 using System.Reflection;
 
 using PokeBattleDex.Contracts.Services;
+using PokeBattleDex.Helpers;
 
 namespace PokeBattleDex.ViewModels;
 
@@ -45,8 +46,8 @@ public partial class ShellViewModel : ObservableRecipient
 
         var dialog = new ContentDialog
         {
-            Title = "About PokéBattleDex",
-            CloseButtonText = "OK",
+            Title = "About_Title".GetLocalized(),
+            CloseButtonText = "About_CloseButton".GetLocalized(),
             Content = new StackPanel
             {
                 Spacing = 12,
@@ -59,33 +60,38 @@ public partial class ShellViewModel : ObservableRecipient
                     },
                     new TextBlock
                     {
-                        Text = "A fast, native, modern Pokédex for Windows.",
+                        Text = "About_Description".GetLocalized(),
                         TextWrapping = TextWrapping.Wrap,
                     },
                     new HyperlinkButton
                     {
-                        Content = "Source code on GitHub",
+                        Content = "About_SourceCode".GetLocalized(),
                         NavigateUri = new Uri("https://github.com/merc1er/PokeBattleDex"),
                     },
                     new TextBlock
                     {
-                        Text = "Sources",
+                        Text = "About_SourcesHeader".GetLocalized(),
                         Style = (Style)Application.Current.Resources["BodyStrongTextBlockStyle"],
                     },
                     new HyperlinkButton
                     {
-                        Content = "Pokémon sprites from PokeAPI/sprites",
+                        Content = "About_Sprites".GetLocalized(),
                         NavigateUri = new Uri("https://github.com/PokeAPI/sprites"),
                     },
                     new TextBlock
                     {
-                        Text = "Contact",
+                        Text = "About_ContactHeader".GetLocalized(),
                         Style = (Style)Application.Current.Resources["BodyStrongTextBlockStyle"],
                     },
                     new TextBlock
                     {
-                        Text = "Takedown, copyright infringement, and other legal notices regarding this repository may be submitted to 3af83whud@mozmail.com, and I will promptly and fully cooperate in good faith in accordance with applicable law.\n\nYou can also open an issue on GitHub.",
+                        Text = "About_ContactText".GetLocalized(),
                         TextWrapping = TextWrapping.Wrap,
+                    },
+                    new TextBlock
+                    {
+                        Text = string.Format("About_Copyright".GetLocalized(), DateTime.Now.Year),
+                        Opacity = 0.6,
                     },
                 },
             },
