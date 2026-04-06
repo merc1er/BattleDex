@@ -17,7 +17,7 @@ namespace PokeBattleDex.ViewModels;
 public partial class ShellViewModel : ObservableRecipient
 {
     [ObservableProperty]
-    private bool isBackEnabled;
+    public partial bool IsBackEnabled { get; set; }
 
     public ICommand MenuHelpAboutCommand
     {

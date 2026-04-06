@@ -20,10 +20,10 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     private readonly int _itemsPerPage = 25;
 
     [ObservableProperty]
-    private PokemonSpecies? selected;
+    public partial PokemonSpecies? Selected { get; set; }
 
     [ObservableProperty]
-    private GenerationChart selectedGeneration = GenerationChart.Gen9;
+    public partial GenerationChart SelectedGeneration { get; set; } = GenerationChart.Gen9;
 
     private bool _generationLoaded;
 
