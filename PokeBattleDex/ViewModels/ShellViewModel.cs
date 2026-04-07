@@ -17,7 +17,10 @@ namespace PokeBattleDex.ViewModels;
 public partial class ShellViewModel : ObservableRecipient
 {
     [ObservableProperty]
-    public partial bool IsBackEnabled { get; set; }
+    public partial bool IsBackEnabled
+    {
+        get; set;
+    }
 
     public ICommand MenuHelpAboutCommand
     {
@@ -42,7 +45,7 @@ public partial class ShellViewModel : ObservableRecipient
     private async Task OnMenuHelpAbout()
     {
         var version = Assembly.GetExecutingAssembly().GetName().Version!;
-        var versionString = $"{version.Major}.{version.Minor}.{version.Build}.{version.Revision}";
+        var versionString = $"{version.Major}.{version.Minor}.{version.Build}";
 
         var dialog = new ContentDialog
         {
