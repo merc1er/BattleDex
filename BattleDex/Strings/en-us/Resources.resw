@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <!-- Window title -->
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>BattleDex</value>
+  </data>
+	<data name="AppDescription" xml:space="preserve">
+		<value>BattleDex</value>
+  	</data>
+  <data name="ShellMenuBarItem_File.Title" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="ShellMenuItem_File_Exit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="ShellMenuBarItem_Help.Title" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="ShellMenuItem_Help_About.Text" xml:space="preserve">
+    <value>About BattleDex</value>
+  </data>
+  <data name="About_Title" xml:space="preserve">
+    <value>About BattleDex</value>
+  </data>
+  <data name="About_CloseButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="About_Description" xml:space="preserve">
+    <value>A fast, native, modern Pokédex for Windows.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Source code on GitHub</value>
+  </data>
+  <data name="About_SourcesHeader" xml:space="preserve">
+    <value>Sources</value>
+  </data>
+  <data name="About_Sprites" xml:space="preserve">
+    <value>Pokémon sprites from PokeAPI/sprites</value>
+  </data>
+  <data name="About_ContactHeader" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="About_ContactText" xml:space="preserve">
+    <value>Takedown, copyright infringement, and other legal notices regarding this repository may be submitted to 3af83whud@mozmail.com, and I will promptly and fully cooperate in good faith in accordance with applicable law.
+
+You can also open an issue on GitHub.</value>
+  </data>
+  <data name="ShellNavItem_Pokedex.Content" xml:space="preserve">
+    <value>Pokédex</value>
+  </data>
+  <data name="ShellNavItem_TypeChart.Content" xml:space="preserve">
+    <value>Type Chart</value>
+  </data>
+  <data name="TypeChart_Title.Text" xml:space="preserve">
+    <value>Type Chart</value>
+  </data>
+  <data name="TypeChart_Gen2To5.Content" xml:space="preserve">
+    <value>Gen 2 to 5</value>
+  </data>
+  <data name="TypeChart_Gen6To9.Content" xml:space="preserve">
+    <value>Gen 6 to 9</value>
+  </data>
+  <data name="ListDetails_NoSelection.Text" xml:space="preserve">
+    <value>Select an item from the list.</value>
+  </data>
+</root>

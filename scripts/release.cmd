@@ -1,10 +1,10 @@
 @echo off
 setlocal
 
-cd /d "%~dp0..\PokeBattleDex"
+cd /d "%~dp0..\BattleDex"
 
 echo ===================================
-echo Building PokeBattleDex for Release
+echo Building BattleDex for Release
 echo ===================================
 
 REM Clean previous builds

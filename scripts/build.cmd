@@ -1,1 +1,1 @@
-dotnet build .\PokeBattleDex\PokeBattleDex.csproj -p:Platform=x64
+dotnet build .\BattleDex\BattleDex.csproj -p:Platform=x64

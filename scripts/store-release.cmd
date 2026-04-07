@@ -1,16 +1,16 @@
 @echo off
 setlocal enabledelayedexpansion
 
-cd /d "%~dp0..\PokeBattleDex"
+cd /d "%~dp0..\BattleDex"
 
 echo =============================================
-echo  PokeBattleDex - Microsoft Store MSIX Build
+echo  BattleDex - Microsoft Store MSIX Build
 echo =============================================
 
 REM --- Configuration ---
 set "PLATFORMS=x64 x86 arm64"
 set "CONFIG=Release"
-set "CSPROJ=PokeBattleDex.csproj"
+set "CSPROJ=BattleDex.csproj"
 set "BUNDLE_DIR=bin\%CONFIG%\AppPackages"
 set "STAGING_DIR=bin\%CONFIG%\BundleStaging"
 set "MAKEAPPX="
@@ -50,7 +50,7 @@ for %%P in (%PLATFORMS%) do (
     dotnet msbuild %CSPROJ% -restore ^
         -p:Configuration=%CONFIG% ^
         -p:Platform=%%P ^
-        -p:UapAppxPackageBuildMode=StoreUpload ^
+        -p:UapAppxPackageBuildMode=SideloadOnly ^
         -p:AppxBundle=Never ^
         -p:AppxPackageSigningEnabled=false ^
         -p:GenerateAppInstallerFile=false ^
@@ -66,20 +66,18 @@ REM --- Gather MSIX files into staging directory ---
 echo.
 echo Collecting MSIX packages...
 set "FOUND=0"
-for /r "bin" %%M in (*_%CONFIG%_*.msix PokeBattleDex_*_x64.msix PokeBattleDex_*_x86.msix PokeBattleDex_*_arm64.msix) do (
-    REM Only copy .msix files (not .msixbundle etc.)
-    echo %%~xM | findstr /i ".msix" >nul && echo %%~xM | findstr /i "bundle upload" >nul || (
-        copy /y "%%M" "%STAGING_DIR%\" >nul 2>&1
+
+REM Search AppPackages (SideloadOnly output) and bin (StoreUpload output)
+for /r "AppPackages" %%M in (BattleDex_*.msix) do (
+    if /i "%%~xM"==".msix" (
+        copy /y "%%M" "%STAGING_DIR%\" >nul
+        set /a FOUND+=1
     )
 )
-
-REM Explicit copy as fallback
-for %%P in (%PLATFORMS%) do (
-    for /r "bin\%%P\%CONFIG%" %%M in (PokeBattleDex_*.msix) do (
-        if /i "%%~xM"==".msix" (
-            copy /y "%%M" "%STAGING_DIR%\" >nul
-            set /a FOUND+=1
-        )
+for /r "bin" %%M in (*_%CONFIG%_*.msix BattleDex_*_x64.msix BattleDex_*_x86.msix BattleDex_*_arm64.msix) do (
+    if /i "%%~xM"==".msix" (
+        copy /y "%%M" "%STAGING_DIR%\" >nul 2>&1
+        set /a FOUND+=1
     )
 )
 
@@ -95,7 +93,7 @@ echo.
 echo =============================================
 echo  Creating MSIX Bundle...
 echo =============================================
-set "BUNDLE_PATH=%BUNDLE_DIR%\PokeBattleDex_%VERSION%.msixbundle"
+set "BUNDLE_PATH=%BUNDLE_DIR%\BattleDex_%VERSION%.msixbundle"
 "%MAKEAPPX%" bundle /d "%STAGING_DIR%" /p "%BUNDLE_PATH%" /o
 if %ERRORLEVEL% neq 0 (
     echo ERROR: Bundle creation failed!
@@ -105,7 +103,7 @@ if %ERRORLEVEL% neq 0 (
 REM --- Create .msixupload (zip of the bundle) ---
 echo.
 echo Creating .msixupload for Store submission...
-set "UPLOAD_PATH=%BUNDLE_DIR%\PokeBattleDex_%VERSION%.msixupload"
+set "UPLOAD_PATH=%BUNDLE_DIR%\BattleDex_%VERSION%.msixupload"
 if exist "%UPLOAD_PATH%" del "%UPLOAD_PATH%"
 powershell -NoProfile -Command "Compress-Archive -Path '%BUNDLE_PATH%' -DestinationPath '%UPLOAD_PATH%' -Force"
 if %ERRORLEVEL% neq 0 (

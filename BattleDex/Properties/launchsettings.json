@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "BattleDex (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BattleDex (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

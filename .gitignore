@@ -4,6 +4,15 @@
 # AI
 .claude/
 
+# Visual Studio
+.vs/
+
+# MSIX packaging output
+AppPackages/
+*.msix
+*.msixbundle
+*.msixupload
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

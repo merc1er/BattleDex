@@ -1,4 +1,4 @@
-# PokéBattleDex
+﻿# BattleDex
 
 A fast, native, modern Pokédex for Windows.
 
@@ -15,7 +15,7 @@ A fast, native, modern Pokédex for Windows.
 - 🖥️ **Native look** — Built with WinUI 3
 - ⚡ **Fast performance** — Lightweight and responsive
 
-![PokéBattleDex](/.github/images/thumbnail.png)
+![BattleDex](/.github/images/thumbnail.png)
 
 <a href="https://apps.microsoft.com/detail/9nd3tf5dp6ft">
   <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft Store" width="200"/>
@@ -31,18 +31,18 @@ A fast, native, modern Pokédex for Windows.
 ### Quick Start
 
 ```powershell
-git clone https://github.com/merc1er/PokeBattleDex.git
-cd PokeBattleDex
-dotnet build PokeBattleDex/PokeBattleDex.sln
-dotnet run --project PokeBattleDex/PokeBattleDex.csproj
+git clone https://github.com/merc1er/BattleDex.git
+cd BattleDex
+dotnet build BattleDex/BattleDex.sln
+dotnet run --project BattleDex/BattleDex.csproj
 ```
 
 ## Project Structure
 
 ```
-PokeBattleDex/          # WinUI 3 application
-PokeBattleDex.Core/     # Core library (models, data, services)
-PokeBattleDex.Tests/    # Unit tests
+BattleDex/          # WinUI 3 application
+BattleDex.Core/     # Core library (models, data, services)
+BattleDex.Tests/    # Unit tests
 ```
 
 ## License
