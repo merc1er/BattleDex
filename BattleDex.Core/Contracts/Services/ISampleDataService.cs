@@ -1,4 +1,4 @@
-﻿using BattleDex.Core.Models;
+using BattleDex.Core.Models;
 
 namespace BattleDex.Core.Contracts.Services;
 

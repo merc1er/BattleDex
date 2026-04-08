@@ -1,4 +1,4 @@
-﻿namespace BattleDex.Core.Contracts.Services;
+namespace BattleDex.Core.Contracts.Services;
 
 public interface IFileService
 {

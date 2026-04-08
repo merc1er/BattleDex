@@ -1,4 +1,4 @@
-﻿namespace BattleDex.Core.Models;
+namespace BattleDex.Core.Models;
 
 /// <summary>
 /// Identifies which generation's type chart to use.

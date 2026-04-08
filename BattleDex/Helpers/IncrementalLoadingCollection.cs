@@ -1,4 +1,4 @@
-﻿using System.Collections.ObjectModel;
+using System.Collections.ObjectModel;
 using System.Runtime.InteropServices.WindowsRuntime;
 
 using Microsoft.UI.Xaml.Data;

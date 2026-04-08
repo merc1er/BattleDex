@@ -1,4 +1,4 @@
-﻿using BattleDex.Core.Helpers;
+using BattleDex.Core.Helpers;
 
 using Windows.Storage;
 using Windows.Storage.Streams;

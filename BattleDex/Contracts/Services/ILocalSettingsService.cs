@@ -1,4 +1,4 @@
-﻿namespace BattleDex.Contracts.Services;
+namespace BattleDex.Contracts.Services;
 
 public interface ILocalSettingsService
 {

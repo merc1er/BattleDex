@@ -1,4 +1,4 @@
-﻿namespace BattleDex.Activation;
+namespace BattleDex.Activation;
 
 public interface IActivationHandler
 {

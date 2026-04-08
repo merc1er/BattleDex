@@ -1,4 +1,4 @@
-﻿using Microsoft.UI.Windowing;
+using Microsoft.UI.Windowing;
 
 using BattleDex.Contracts.Services;
 using BattleDex.Helpers;

@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using BattleDex.Core.Contracts.Services;
 using BattleDex.Core.Models;
 

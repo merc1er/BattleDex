@@ -1,4 +1,4 @@
-﻿using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml;
 
 using BattleDex.Contracts.Services;
 using BattleDex.ViewModels;

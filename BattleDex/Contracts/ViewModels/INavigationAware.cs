@@ -1,4 +1,4 @@
-﻿namespace BattleDex.Contracts.ViewModels;
+namespace BattleDex.Contracts.ViewModels;
 
 public interface INavigationAware
 {

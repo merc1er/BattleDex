@@ -1,4 +1,4 @@
-﻿namespace BattleDex.Models;
+namespace BattleDex.Models;
 
 public class LocalSettingsOptions
 {

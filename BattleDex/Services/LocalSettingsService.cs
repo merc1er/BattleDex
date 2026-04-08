@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Options;
 
 using BattleDex.Contracts.Services;
 using BattleDex.Core.Contracts.Services;

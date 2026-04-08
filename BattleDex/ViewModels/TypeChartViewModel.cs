@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 using BattleDex.Contracts.Services;
 using BattleDex.Contracts.ViewModels;

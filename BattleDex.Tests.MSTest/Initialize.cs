@@ -1,4 +1,4 @@
-﻿using Microsoft.Windows.ApplicationModel.DynamicDependency;
+using Microsoft.Windows.ApplicationModel.DynamicDependency;
 
 [assembly: WinUITestTarget(typeof(BattleDex.App))]
 

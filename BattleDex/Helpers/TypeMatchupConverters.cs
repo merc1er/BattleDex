@@ -1,4 +1,4 @@
-﻿using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Data;
 using BattleDex.Core.Models;
 
 namespace BattleDex.Helpers;
