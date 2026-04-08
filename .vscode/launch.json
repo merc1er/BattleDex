@@ -10,7 +10,7 @@
       "request": "launch",
       "preLaunchTask": "build",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/BattleDex/bin/Debug/net7.0-windows10.0.19041.0/BattleDex.dll",
+      "program": "${workspaceFolder}/BattleDex/bin/Debug/net10.0-windows10.0.19041.0/BattleDex.dll",
       "args": [],
       "cwd": "${workspaceFolder}/BattleDex",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
