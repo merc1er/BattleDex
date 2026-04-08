@@ -36,6 +36,7 @@ REM --- Clean previous output ---
 echo.
 echo Cleaning previous builds...
 dotnet clean %CSPROJ% -c %CONFIG% >nul 2>&1
+if exist "AppPackages" rmdir /s /q "AppPackages"
 if exist "%BUNDLE_DIR%" rmdir /s /q "%BUNDLE_DIR%"
 if exist "%STAGING_DIR%" rmdir /s /q "%STAGING_DIR%"
 mkdir "%BUNDLE_DIR%" 2>nul
