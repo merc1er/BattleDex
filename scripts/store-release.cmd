@@ -68,16 +68,10 @@ echo.
 echo Collecting MSIX packages...
 set "FOUND=0"
 
-REM Search AppPackages (SideloadOnly output) and bin (StoreUpload output)
+REM Search AppPackages (SideloadOnly output)
 for /r "AppPackages" %%M in (BattleDex_*.msix) do (
     if /i "%%~xM"==".msix" (
         copy /y "%%M" "%STAGING_DIR%\" >nul
-        set /a FOUND+=1
-    )
-)
-for /r "bin" %%M in (*_%CONFIG%_*.msix BattleDex_*_x64.msix BattleDex_*_x86.msix BattleDex_*_arm64.msix) do (
-    if /i "%%~xM"==".msix" (
-        copy /y "%%M" "%STAGING_DIR%\" >nul 2>&1
         set /a FOUND+=1
     )
 )

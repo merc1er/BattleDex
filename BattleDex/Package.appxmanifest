@@ -9,7 +9,7 @@
   IgnorableNamespaces="uap rescap genTemplate">
 
   <Identity
-    Name="25876corentin.mercier.BattleDex"
+    Name="25876corentin.mercier.PokBattleDex"
     Publisher="CN=9167F883-E7BE-408F-9E19-4F5398105F7B"
     Version="0.4.0.0" />
 
