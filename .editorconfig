@@ -200,3 +200,9 @@ dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_compound_assignment = true:warning
 dotnet_style_prefer_simplified_interpolation = true:suggestion
+
+# Auto-generated XAML type-info files reference WinUIEx.Icon (marked [Obsolete] with no
+# message), which triggers CS0612. The generator's pragma only suppresses CS0618.
+[*.g.cs]
+dotnet_diagnostic.CS0612.severity = none
+

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Data\pokemon.csv" />
+    <EmbeddedResource Include="Data\regional-dex.json" />
   </ItemGroup>
 
   <ItemGroup>

@@ -15,17 +15,24 @@ namespace BattleDex.ViewModels;
 public partial class ListDetailsViewModel : ObservableRecipient, INavigationAware
 {
     private const string SelectedGenerationKey = "SelectedGeneration";
+    private const string SelectedDexTypeKey = "SelectedDexType";
     private readonly ISampleDataService _sampleDataService;
     private readonly ILocalSettingsService _localSettingsService;
     private readonly int _itemsPerPage = 25;
 
     [ObservableProperty]
-    public partial PokemonSpecies? Selected { get; set; }
+    public partial PokemonSpecies? Selected
+    {
+        get; set;
+    }
 
     [ObservableProperty]
     public partial GenerationChart SelectedGeneration { get; set; } = GenerationChart.Gen9;
 
-    private bool _generationLoaded;
+    [ObservableProperty]
+    public partial DexType SelectedDexType { get; set; } = DexType.National;
+
+    private bool _settingsLoaded;
 
     public int SelectedGenerationIndex
     {
@@ -37,7 +44,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
                 SelectedGeneration = (GenerationChart)value;
                 OnPropertyChanged();
             }
-            if (_generationLoaded)
+            if (_settingsLoaded)
             {
                 _ = _localSettingsService.SaveSettingAsync(SelectedGenerationKey, value);
             }
@@ -58,6 +65,9 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     }
 
     private List<PokemonSpecies> _allPokemonItems = new();
+    private Dictionary<int, PokemonSpecies> _speciesById = new();
+    private IReadOnlyDictionary<int, IReadOnlyList<int>> _regionalDex = new Dictionary<int, IReadOnlyList<int>>();
+    private Dictionary<int, HashSet<int>> _regionalDexSets = new();
 
     public ObservableCollection<PokemonSpecies> FilteredPokemonItems { get; private set; } = new();
 
@@ -72,18 +82,29 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
 
     public async void OnNavigatedTo(object parameter)
     {
-        // Restore persisted generation selection
+        // Restore persisted settings
         var savedGen = await _localSettingsService.ReadSettingAsync<int?>(SelectedGenerationKey);
         if (savedGen.HasValue && Enum.IsDefined(typeof(GenerationChart), savedGen.Value))
         {
             SelectedGeneration = (GenerationChart)savedGen.Value;
             OnPropertyChanged(nameof(SelectedGenerationIndex));
         }
-        _generationLoaded = true;
+
+        var savedDexType = await _localSettingsService.ReadSettingAsync<int?>(SelectedDexTypeKey);
+        if (savedDexType.HasValue && Enum.IsDefined(typeof(DexType), savedDexType.Value))
+        {
+            SelectedDexType = (DexType)savedDexType.Value;
+            OnPropertyChanged(nameof(SelectedDexTypeIndex));
+        }
+
+        _settingsLoaded = true;
 
         // Load data on background thread to avoid blocking UI
         var data = await Task.Run(() => _sampleDataService.GetPokemonDataAsync());
         _allPokemonItems = data.ToList();
+        _speciesById = _allPokemonItems.ToDictionary(p => p.Id);
+        _regionalDex = await Task.Run(() => _sampleDataService.GetRegionalDexAsync());
+        _regionalDexSets = _regionalDex.ToDictionary(kv => kv.Key, kv => new HashSet<int>(kv.Value));
 
         ApplyFilter();
     }
@@ -91,6 +112,29 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     partial void OnSelectedGenerationChanged(GenerationChart value)
     {
         ApplyFilter();
+    }
+
+    partial void OnSelectedDexTypeChanged(DexType value)
+    {
+        if (_settingsLoaded)
+        {
+            _ = _localSettingsService.SaveSettingAsync(SelectedDexTypeKey, (int)value);
+        }
+        OnPropertyChanged(nameof(SelectedDexTypeIndex));
+        ApplyFilter();
+    }
+
+    public int SelectedDexTypeIndex
+    {
+        get => (int)SelectedDexType;
+        set
+        {
+            if ((int)SelectedDexType != value && Enum.IsDefined(typeof(DexType), value))
+            {
+                SelectedDexType = (DexType)value;
+                OnPropertyChanged();
+            }
+        }
     }
 
     private int MaxGenerationNumber => (int)SelectedGeneration + 3;
@@ -108,27 +152,43 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     {
         var normalizedSearch = NormalizeString(SearchText);
         var maxGen = MaxGenerationNumber;
+        var regionalIds = SelectedDexType == DexType.Regional && _regionalDex.TryGetValue(maxGen, out var ids)
+            ? ids
+            : null;
 
-        var filtered = _allPokemonItems.Where(item =>
+        bool MatchesSearch(PokemonSpecies item)
         {
-            if (item.Generation > maxGen)
-            {
-                return false;
-            }
-
             if (string.IsNullOrWhiteSpace(normalizedSearch))
             {
                 return true;
             }
-
             var normalizedEnglish = NormalizeString(item.NameEnglish);
             var normalizedFrench = NormalizeString(item.NameFrench);
             var idString = item.Id.ToString();
-
             return normalizedEnglish.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
                    normalizedFrench.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
                    idString == normalizedSearch;
-        }).ToList();
+        }
+
+        List<PokemonSpecies> filtered;
+        if (regionalIds is not null)
+        {
+            // Regional mode: iterate in regional dex order.
+            filtered = new List<PokemonSpecies>(regionalIds.Count);
+            foreach (var id in regionalIds)
+            {
+                if (_speciesById.TryGetValue(id, out var species) && MatchesSearch(species))
+                {
+                    filtered.Add(species);
+                }
+            }
+        }
+        else
+        {
+            filtered = _allPokemonItems
+                .Where(item => item.Generation <= maxGen && MatchesSearch(item))
+                .ToList();
+        }
 
         // Use incremental loading for large result sets, regular collection for small ones
         if (filtered.Count > 100)
@@ -145,9 +205,15 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         OnPropertyChanged(nameof(FilteredPokemonItems));
         OnPropertyChanged(nameof(PokemonItems));
 
-        if (Selected is not null && Selected.Generation > maxGen)
+        if (Selected is not null)
         {
-            Selected = FilteredPokemonItems.FirstOrDefault();
+            var outOfRange = regionalIds is not null
+                ? !_regionalDexSets[maxGen].Contains(Selected.Id)
+                : Selected.Generation > maxGen;
+            if (outOfRange)
+            {
+                Selected = FilteredPokemonItems.FirstOrDefault();
+            }
         }
 
         // Auto-select if there's exactly one match.
