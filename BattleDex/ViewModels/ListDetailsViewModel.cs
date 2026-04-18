@@ -65,6 +65,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     }
 
     private List<PokemonSpecies> _allPokemonItems = new();
+    private Dictionary<int, PokemonSpecies> _speciesById = new();
     private IReadOnlyDictionary<int, IReadOnlyList<int>> _regionalDex = new Dictionary<int, IReadOnlyList<int>>();
 
     public ObservableCollection<PokemonSpecies> FilteredPokemonItems { get; private set; } = new();
@@ -100,6 +101,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         // Load data on background thread to avoid blocking UI
         var data = await Task.Run(() => _sampleDataService.GetPokemonDataAsync());
         _allPokemonItems = data.ToList();
+        _speciesById = _allPokemonItems.ToDictionary(p => p.Id);
         _regionalDex = await Task.Run(() => _sampleDataService.GetRegionalDexAsync());
 
         ApplyFilter();
@@ -170,11 +172,10 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         if (regionalIds is not null)
         {
             // Regional mode: iterate in regional dex order.
-            var byId = _allPokemonItems.ToDictionary(p => p.Id);
             filtered = new List<PokemonSpecies>(regionalIds.Count);
             foreach (var id in regionalIds)
             {
-                if (byId.TryGetValue(id, out var species) && MatchesSearch(species))
+                if (_speciesById.TryGetValue(id, out var species) && MatchesSearch(species))
                 {
                     filtered.Add(species);
                 }
