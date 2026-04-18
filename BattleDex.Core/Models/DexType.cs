@@ -8,6 +8,9 @@ public enum DexType
     /// <summary>All Pokémon up to and including the selected generation.</summary>
     National,
 
-    /// <summary>Only Pokémon introduced in the selected generation.</summary>
+    /// <summary>
+    /// Pokémon in the selected generation's regional Pokédex, in regional dex order.
+    /// Includes species from earlier generations that appear in that region.
+    /// </summary>
     Regional,
 }
