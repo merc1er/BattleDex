@@ -5,6 +5,8 @@ namespace BattleDex.Core.Models;
 /// </summary>
 public enum GenerationChart
 {
+    Gen1,
+    Gen2,
     Gen3,
     Gen4,
     Gen5,
@@ -23,7 +25,8 @@ public static class TypeEffectiveness
     /// <summary>Returns the number of types that exist in the given generation.</summary>
     private static int GetTypeCount(GenerationChart gen) => gen switch
     {
-        GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 => 17, // Normal..Steel (no Fairy)
+        GenerationChart.Gen1 => 15, // Normal..Dragon (no Dark/Steel/Fairy)
+        GenerationChart.Gen2 or GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 => 17, // Normal..Steel (no Fairy)
         _ => 18, // Normal..Fairy (Gen VI+)
     };
 
@@ -74,9 +77,35 @@ public static class TypeEffectiveness
         /* Steel    */ { 1f, .5f, .5f, .5f,  1f,  2f,  1f,  1f,  1f,  1f,  1f,  1f,  2f,  1f,  1f,  1f, .5f },
     };
 
+    // Gen I chart: 15×15 (no Dark/Steel/Fairy).
+    // Differences from Gen II+:
+    //   • Bug → Poison: 2× (was the only way to hit Bug hard; changed to 0.5× in Gen II)
+    //   • Poison → Bug: 2× (changed to 1× in Gen II)
+    //   • Ghost → Psychic: 0× (a well-known bug; changed to 2× in Gen II)
+    private static readonly float[,] Gen1Chart = new float[15, 15]
+    {
+        //               NOR  FIR  WAT  ELE  GRA  ICE  FIG  POI  GND  FLY  PSY  BUG  ROC  GHO  DRA
+        /* Normal   */ { 1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f, .5f,  0f,  1f },
+        /* Fire     */ { 1f, .5f, .5f,  1f,  2f,  2f,  1f,  1f,  1f,  1f,  1f,  2f, .5f,  1f, .5f },
+        /* Water    */ { 1f,  2f, .5f,  1f, .5f,  1f,  1f,  1f,  2f,  1f,  1f,  1f,  2f,  1f, .5f },
+        /* Electric */ { 1f,  1f,  2f, .5f, .5f,  1f,  1f,  1f,  0f,  2f,  1f,  1f,  1f,  1f, .5f },
+        /* Grass    */ { 1f, .5f,  2f,  1f, .5f,  1f,  1f, .5f,  2f, .5f,  1f, .5f,  2f,  1f, .5f },
+        /* Ice      */ { 1f, .5f, .5f,  1f,  2f, .5f,  1f,  1f,  2f,  2f,  1f,  1f,  1f,  1f,  2f },
+        /* Fighting */ { 2f,  1f,  1f,  1f,  1f,  2f,  1f, .5f,  1f, .5f, .5f, .5f,  2f,  0f,  1f },
+        /* Poison   */ { 1f,  1f,  1f,  1f,  2f,  1f,  1f, .5f, .5f,  1f,  1f,  2f, .5f, .5f,  1f },
+        /* Ground   */ { 1f,  2f,  1f,  2f, .5f,  1f,  1f,  2f,  1f,  0f,  1f, .5f,  2f,  1f,  1f },
+        /* Flying   */ { 1f,  1f,  1f, .5f,  2f,  1f,  2f,  1f,  1f,  1f,  1f,  2f, .5f,  1f,  1f },
+        /* Psychic  */ { 1f,  1f,  1f,  1f,  1f,  1f,  2f,  2f,  1f,  1f, .5f,  1f,  1f,  1f,  1f },
+        /* Bug      */ { 1f, .5f,  1f,  1f,  2f,  1f, .5f,  2f,  1f, .5f,  2f,  1f,  1f, .5f,  1f },
+        /* Rock     */ { 1f,  2f,  1f,  1f,  1f,  2f, .5f,  1f, .5f,  2f,  1f,  2f,  1f,  1f,  1f },
+        /* Ghost    */ { 0f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  0f,  1f,  1f,  2f,  1f },
+        /* Dragon   */ { 1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  1f,  2f },
+    };
+
     private static float[,] GetChart(GenerationChart gen) => gen switch
     {
-        GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 => Gen2To5Chart,
+        GenerationChart.Gen1 => Gen1Chart,
+        GenerationChart.Gen2 or GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 => Gen2To5Chart,
         _ => Gen6PlusChart,
     };
 
