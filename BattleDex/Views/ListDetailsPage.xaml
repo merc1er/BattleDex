@@ -103,6 +103,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <AutoSuggestBox
                 x:Name="SearchBox"
@@ -128,6 +129,17 @@
                 <ComboBoxItem Content="Gen 7" />
                 <ComboBoxItem Content="Gen 8" />
                 <ComboBoxItem Content="Gen 9" />
+            </ComboBox>
+            <ComboBox
+                x:Name="DexTypeComboBox"
+                Grid.Column="2"
+                Height="40"
+                Width="150"
+                Margin="8,0,0,0"
+                VerticalAlignment="Center"
+                SelectedIndex="{x:Bind ViewModel.SelectedDexTypeIndex, Mode=TwoWay}">
+                <ComboBoxItem Content="National Dex" />
+                <ComboBoxItem Content="Regional Dex" />
             </ComboBox>
         </Grid>
 

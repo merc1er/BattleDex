@@ -1,4 +1,7 @@
+#nullable enable
+
 using System.Reflection;
+using System.Text.Json;
 using BattleDex.Core.Contracts.Services;
 using BattleDex.Core.Models;
 
@@ -10,6 +13,7 @@ namespace BattleDex.Core.Services;
 public class SampleDataService : ISampleDataService
 {
     private List<PokemonSpecies> _allPokemon = new();
+    private IReadOnlyDictionary<int, IReadOnlyList<int>>? _regionalDex;
 
     public async Task<IEnumerable<PokemonSpecies>> GetPokemonDataAsync()
     {
@@ -20,6 +24,32 @@ public class SampleDataService : ISampleDataService
 
         await Task.CompletedTask;
         return _allPokemon;
+    }
+
+    public async Task<IReadOnlyDictionary<int, IReadOnlyList<int>>> GetRegionalDexAsync()
+    {
+        _regionalDex ??= LoadRegionalDex();
+        await Task.CompletedTask;
+        return _regionalDex;
+    }
+
+    private static IReadOnlyDictionary<int, IReadOnlyList<int>> LoadRegionalDex()
+    {
+        var assembly = Assembly.GetExecutingAssembly();
+        var resourceName = "BattleDex.Core.Data.regional-dex.json";
+
+        using var stream = assembly.GetManifestResourceStream(resourceName)
+            ?? throw new InvalidOperationException($"Could not find embedded resource: {resourceName}");
+
+        var raw = JsonSerializer.Deserialize<Dictionary<string, int[]>>(stream)
+            ?? throw new InvalidOperationException($"Failed to parse {resourceName}");
+
+        var result = new Dictionary<int, IReadOnlyList<int>>(raw.Count);
+        foreach (var (key, ids) in raw)
+        {
+            result[int.Parse(key)] = ids;
+        }
+        return result;
     }
 
     private static IEnumerable<PokemonSpecies> LoadPokemonFromCsv()
