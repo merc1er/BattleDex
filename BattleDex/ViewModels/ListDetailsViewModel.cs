@@ -85,14 +85,15 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         var data = await Task.Run(() => _sampleDataService.GetPokemonDataAsync());
         _allPokemonItems = data.ToList();
 
-        // Use incremental loading - only load first batch, rest loads on scroll
-        var incrementalCollection = new IncrementalLoadingCollection<PokemonSpecies>(_allPokemonItems, batchSize: _itemsPerPage);
-        incrementalCollection.LoadInitialItems();
-
-        FilteredPokemonItems = incrementalCollection;
-        OnPropertyChanged(nameof(FilteredPokemonItems));
-        OnPropertyChanged(nameof(PokemonItems));
+        ApplyFilter();
     }
+
+    partial void OnSelectedGenerationChanged(GenerationChart value)
+    {
+        ApplyFilter();
+    }
+
+    private int MaxGenerationNumber => (int)SelectedGeneration + 3;
 
     public void OnNavigatedFrom()
     {
@@ -106,26 +107,28 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     private void ApplyFilter()
     {
         var normalizedSearch = NormalizeString(SearchText);
+        var maxGen = MaxGenerationNumber;
 
-        IList<PokemonSpecies> filtered;
-
-        if (string.IsNullOrWhiteSpace(normalizedSearch))
+        var filtered = _allPokemonItems.Where(item =>
         {
-            filtered = _allPokemonItems;
-        }
-        else
-        {
-            filtered = _allPokemonItems.Where(item =>
+            if (item.Generation > maxGen)
             {
-                var normalizedEnglish = NormalizeString(item.NameEnglish);
-                var normalizedFrench = NormalizeString(item.NameFrench);
-                var idString = item.Id.ToString();
+                return false;
+            }
 
-                return normalizedEnglish.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
-                       normalizedFrench.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
-                       idString == normalizedSearch;
-            }).ToList();
-        }
+            if (string.IsNullOrWhiteSpace(normalizedSearch))
+            {
+                return true;
+            }
+
+            var normalizedEnglish = NormalizeString(item.NameEnglish);
+            var normalizedFrench = NormalizeString(item.NameFrench);
+            var idString = item.Id.ToString();
+
+            return normalizedEnglish.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
+                   normalizedFrench.Contains(normalizedSearch, StringComparison.OrdinalIgnoreCase) ||
+                   idString == normalizedSearch;
+        }).ToList();
 
         // Use incremental loading for large result sets, regular collection for small ones
         if (filtered.Count > 100)
@@ -141,6 +144,11 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
 
         OnPropertyChanged(nameof(FilteredPokemonItems));
         OnPropertyChanged(nameof(PokemonItems));
+
+        if (Selected is not null && Selected.Generation > maxGen)
+        {
+            Selected = FilteredPokemonItems.FirstOrDefault();
+        }
 
         // Auto-select if there's exactly one match.
         if (FilteredPokemonItems.Count == 1)
