@@ -67,6 +67,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     private List<PokemonSpecies> _allPokemonItems = new();
     private Dictionary<int, PokemonSpecies> _speciesById = new();
     private IReadOnlyDictionary<int, IReadOnlyList<int>> _regionalDex = new Dictionary<int, IReadOnlyList<int>>();
+    private Dictionary<int, HashSet<int>> _regionalDexSets = new();
 
     public ObservableCollection<PokemonSpecies> FilteredPokemonItems { get; private set; } = new();
 
@@ -103,6 +104,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         _allPokemonItems = data.ToList();
         _speciesById = _allPokemonItems.ToDictionary(p => p.Id);
         _regionalDex = await Task.Run(() => _sampleDataService.GetRegionalDexAsync());
+        _regionalDexSets = _regionalDex.ToDictionary(kv => kv.Key, kv => new HashSet<int>(kv.Value));
 
         ApplyFilter();
     }
@@ -206,7 +208,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         if (Selected is not null)
         {
             var outOfRange = regionalIds is not null
-                ? !regionalIds.Contains(Selected.Id)
+                ? !_regionalDexSets[maxGen].Contains(Selected.Id)
                 : Selected.Generation > maxGen;
             if (outOfRange)
             {
