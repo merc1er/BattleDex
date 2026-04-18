@@ -138,8 +138,8 @@
                 Margin="8,0,0,0"
                 VerticalAlignment="Center"
                 SelectedIndex="{x:Bind ViewModel.SelectedDexTypeIndex, Mode=TwoWay}">
-                <ComboBoxItem Content="National Dex" />
-                <ComboBoxItem Content="Regional Dex" />
+                <ComboBoxItem x:Uid="ListDetails_DexTypeNational" />
+                <ComboBoxItem x:Uid="ListDetails_DexTypeRegional" />
             </ComboBox>
         </Grid>
 

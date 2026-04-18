@@ -118,6 +118,12 @@ You can also open an issue on GitHub.</value>
   <data name="TypeChart_Gen6To9.Content" xml:space="preserve">
     <value>Gen 6 to 9</value>
   </data>
+  <data name="ListDetails_DexTypeNational.Content" xml:space="preserve">
+    <value>National Dex</value>
+  </data>
+  <data name="ListDetails_DexTypeRegional.Content" xml:space="preserve">
+    <value>Regional Dex</value>
+  </data>
   <data name="ListDetails_NoSelection.Text" xml:space="preserve">
     <value>Select an item from the list.</value>
   </data>
