@@ -33,8 +33,7 @@ A fast, native, modern Pokédex for Windows.
 ```powershell
 git clone https://github.com/merc1er/BattleDex.git
 cd BattleDex
-dotnet build BattleDex/BattleDex.sln
-dotnet run --project BattleDex/BattleDex.csproj
+.\scripts\run.cmd
 ```
 
 ## Project Structure

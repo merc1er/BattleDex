@@ -14,9 +14,7 @@ namespace BattleDex.ViewModels;
 
 public partial class ListDetailsViewModel : ObservableRecipient, INavigationAware
 {
-    // V1 used a 0..6 enum mapping to Gen3..Gen9. V2 adds Gen1/Gen2 and remaps 0..8 to Gen1..Gen9.
-    private const string SelectedGenerationKeyV1 = "SelectedGeneration";
-    private const string SelectedGenerationKey = "SelectedGenerationV2";
+    private const string SelectedGenerationKey = "SelectedGeneration";
     private const string SelectedDexTypeKey = "SelectedDexType";
     private readonly ISampleDataService _sampleDataService;
     private readonly ILocalSettingsService _localSettingsService;
@@ -38,17 +36,18 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
 
     public int SelectedGenerationIndex
     {
-        get => (int)SelectedGeneration;
+        get => (int)SelectedGeneration - 1;
         set
         {
-            if ((int)SelectedGeneration != value)
+            var newGen = (GenerationChart)(value + 1);
+            if (SelectedGeneration != newGen)
             {
-                SelectedGeneration = (GenerationChart)value;
+                SelectedGeneration = newGen;
                 OnPropertyChanged();
             }
             if (_settingsLoaded)
             {
-                _ = _localSettingsService.SaveSettingAsync(SelectedGenerationKey, value);
+                _ = _localSettingsService.SaveSettingAsync(SelectedGenerationKey, (int)newGen);
             }
         }
     }
@@ -86,15 +85,6 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
     {
         // Restore persisted settings
         var savedGen = await _localSettingsService.ReadSettingAsync<int?>(SelectedGenerationKey);
-        if (!savedGen.HasValue)
-        {
-            // One-time migration from V1 (0=Gen3..6=Gen9) to V2 (0=Gen1..8=Gen9).
-            var savedGenV1 = await _localSettingsService.ReadSettingAsync<int?>(SelectedGenerationKeyV1);
-            if (savedGenV1.HasValue)
-            {
-                savedGen = savedGenV1.Value + 2;
-            }
-        }
         if (savedGen.HasValue && Enum.IsDefined(typeof(GenerationChart), savedGen.Value))
         {
             SelectedGeneration = (GenerationChart)savedGen.Value;
@@ -148,7 +138,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         }
     }
 
-    private int MaxGenerationNumber => (int)SelectedGeneration + 1;
+    private int MaxGenerationNumber => (int)SelectedGeneration;
 
     public void OnNavigatedFrom()
     {

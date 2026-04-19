@@ -5,15 +5,15 @@ namespace BattleDex.Core.Models;
 /// </summary>
 public enum GenerationChart
 {
-    Gen1,
-    Gen2,
-    Gen3,
-    Gen4,
-    Gen5,
-    Gen6,
-    Gen7,
-    Gen8,
-    Gen9,
+    Gen1 = 1,
+    Gen2 = 2,
+    Gen3 = 3,
+    Gen4 = 4,
+    Gen5 = 5,
+    Gen6 = 6,
+    Gen7 = 7,
+    Gen8 = 8,
+    Gen9 = 9,
 }
 
 /// <summary>

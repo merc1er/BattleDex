@@ -8,9 +8,7 @@ namespace BattleDex.ViewModels;
 
 public partial class TypeChartViewModel : ObservableRecipient, INavigationAware
 {
-    // V1 stored (int)GenerationChart when 0..6 meant Gen3..Gen9. V2 uses the new 0..8 = Gen1..Gen9 mapping.
-    private const string SelectedGenerationKeyV1 = "TypeChartSelectedGeneration";
-    private const string SelectedGenerationKey = "TypeChartSelectedGenerationV2";
+    private const string SelectedGenerationKey = "TypeChartSelectedGeneration";
     private readonly ILocalSettingsService _localSettingsService;
 
     [ObservableProperty]
@@ -55,14 +53,6 @@ public partial class TypeChartViewModel : ObservableRecipient, INavigationAware
     public async void OnNavigatedTo(object parameter)
     {
         var savedGen = await _localSettingsService.ReadSettingAsync<int?>(SelectedGenerationKey);
-        if (!savedGen.HasValue)
-        {
-            var savedGenV1 = await _localSettingsService.ReadSettingAsync<int?>(SelectedGenerationKeyV1);
-            if (savedGenV1.HasValue)
-            {
-                savedGen = savedGenV1.Value + 2;
-            }
-        }
         if (savedGen.HasValue && Enum.IsDefined(typeof(GenerationChart), savedGen.Value))
         {
             SelectedGeneration = (GenerationChart)savedGen.Value;
