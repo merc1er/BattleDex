@@ -180,12 +180,13 @@ public sealed partial class TypeChartPage : Page
     private static PokemonType[] GetVisibleTypes(GenerationChart gen)
     {
         var allTypes = Enum.GetValues<PokemonType>();
-        if (gen is GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5)
+        var maxExclusive = gen switch
         {
-            // Exclude types introduced in Gen 6+ (Fairy and beyond)
-            return allTypes.Where(t => (int)t < (int)PokemonType.Fairy).ToArray();
-        }
-        return allTypes;
+            GenerationChart.Gen1 => (int)PokemonType.Dark, // no Dark/Steel/Fairy
+            GenerationChart.Gen2 or GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 => (int)PokemonType.Fairy, // no Fairy
+            _ => allTypes.Length,
+        };
+        return allTypes.Where(t => (int)t < maxExclusive).ToArray();
     }
 
     private static (Color bg, Color fg, string text) GetCellStyle(float multiplier) => multiplier switch
