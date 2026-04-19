@@ -30,6 +30,7 @@
                 Margin="16,0,0,0"
                 VerticalAlignment="Center"
                 SelectedIndex="{x:Bind ViewModel.SelectedGenerationIndex, Mode=TwoWay}">
+                <ComboBoxItem x:Uid="TypeChart_Gen1" />
                 <ComboBoxItem x:Uid="TypeChart_Gen2To5" />
                 <ComboBoxItem x:Uid="TypeChart_Gen6To9" />
             </ComboBox>

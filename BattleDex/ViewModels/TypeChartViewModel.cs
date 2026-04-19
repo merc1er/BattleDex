@@ -16,13 +16,23 @@ public partial class TypeChartViewModel : ObservableRecipient, INavigationAware
 
     private bool _generationLoaded;
 
-    // ComboBox index: 0 = Gen 2–5 chart, 1 = Gen 6+ chart
+    // ComboBox index: 0 = Gen 1 chart, 1 = Gen 2–5 chart, 2 = Gen 6+ chart
     public int SelectedGenerationIndex
     {
-        get => SelectedGeneration is GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 ? 0 : 1;
+        get => SelectedGeneration switch
+        {
+            GenerationChart.Gen1 => 0,
+            GenerationChart.Gen2 or GenerationChart.Gen3 or GenerationChart.Gen4 or GenerationChart.Gen5 => 1,
+            _ => 2,
+        };
         set
         {
-            var newGen = value == 0 ? GenerationChart.Gen5 : GenerationChart.Gen9;
+            var newGen = value switch
+            {
+                0 => GenerationChart.Gen1,
+                1 => GenerationChart.Gen5,
+                _ => GenerationChart.Gen9,
+            };
             if (SelectedGeneration != newGen)
             {
                 SelectedGeneration = newGen;

@@ -122,6 +122,8 @@
                 Margin="12,0,0,0"
                 VerticalAlignment="Center"
                 SelectedIndex="{x:Bind ViewModel.SelectedGenerationIndex, Mode=TwoWay}">
+                <ComboBoxItem Content="Gen 1" />
+                <ComboBoxItem Content="Gen 2" />
                 <ComboBoxItem Content="Gen 3" />
                 <ComboBoxItem Content="Gen 4" />
                 <ComboBoxItem Content="Gen 5" />

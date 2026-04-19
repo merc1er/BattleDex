@@ -36,17 +36,18 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
 
     public int SelectedGenerationIndex
     {
-        get => (int)SelectedGeneration;
+        get => (int)SelectedGeneration - 1;
         set
         {
-            if ((int)SelectedGeneration != value)
+            var newGen = (GenerationChart)(value + 1);
+            if (SelectedGeneration != newGen)
             {
-                SelectedGeneration = (GenerationChart)value;
+                SelectedGeneration = newGen;
                 OnPropertyChanged();
             }
             if (_settingsLoaded)
             {
-                _ = _localSettingsService.SaveSettingAsync(SelectedGenerationKey, value);
+                _ = _localSettingsService.SaveSettingAsync(SelectedGenerationKey, (int)newGen);
             }
         }
     }
@@ -137,7 +138,7 @@ public partial class ListDetailsViewModel : ObservableRecipient, INavigationAwar
         }
     }
 
-    private int MaxGenerationNumber => (int)SelectedGeneration + 3;
+    private int MaxGenerationNumber => (int)SelectedGeneration;
 
     public void OnNavigatedFrom()
     {
