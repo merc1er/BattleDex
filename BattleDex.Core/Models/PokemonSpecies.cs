@@ -246,6 +246,54 @@ public class PokemonSpecies : INotifyPropertyChanged
     public string TypesDisplay => string.Join(", ", Types);
 
     /// <summary>
+    /// Gets the Pokémon Database (pokemondb.net) page for this Pokémon.
+    /// </summary>
+    public Uri PokemonDbUri => new($"https://pokemondb.net/pokedex/{Name}");
+
+    /// <summary>
+    /// Gets the Bulbapedia page for this Pokémon.
+    /// </summary>
+    public Uri BulbapediaUri => new($"https://bulbapedia.bulbagarden.net/wiki/{Uri.EscapeDataString(GetBulbapediaTitle())}_(Pok%C3%A9mon)");
+
+    /// <summary>
+    /// Bulbapedia article titles that can't be derived from the species name.
+    /// </summary>
+    private static readonly Dictionary<int, string> BulbapediaTitleOverrides = new()
+    {
+        [29] = "Nidoran♀",
+        [32] = "Nidoran♂",
+        [83] = "Farfetch'd",
+        [122] = "Mr._Mime",
+        [250] = "Ho-Oh",
+        [439] = "Mime_Jr.",
+        [474] = "Porygon-Z",
+        [669] = "Flabébé",
+        [772] = "Type:_Null",
+        [782] = "Jangmo-o",
+        [783] = "Hakamo-o",
+        [784] = "Kommo-o",
+        [865] = "Sirfetch'd",
+        [866] = "Mr._Rime",
+        [1001] = "Wo-Chien",
+        [1002] = "Chien-Pao",
+        [1003] = "Ting-Lu",
+        [1004] = "Chi-Yu",
+    };
+
+    private string GetBulbapediaTitle()
+    {
+        if (BulbapediaTitleOverrides.TryGetValue(Id, out var title))
+        {
+            return title;
+        }
+
+        // e.g. "great-tusk" -> "Great_Tusk"
+        var parts = Name.Split('-', StringSplitOptions.RemoveEmptyEntries)
+            .Select(part => char.ToUpperInvariant(part[0]) + part[1..]);
+        return string.Join("_", parts);
+    }
+
+    /// <summary>
     /// Gets the defensive type matchup (weaknesses, resistances, immunities) for this Pokémon.
     /// </summary>
     public TypeMatchup DefensiveMatchup => TypeEffectiveness.GetDefensiveMatchup(Types);

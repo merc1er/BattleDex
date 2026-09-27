@@ -204,6 +204,20 @@
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
+
+                <!-- External links -->
+                <TextBlock
+                    Margin="{StaticResource SmallTopMargin}"
+                    Text="Learn more"
+                    Style="{StaticResource DetailSubTitleStyle}" />
+                <StackPanel Orientation="Horizontal" Spacing="8" Margin="-11,0,0,0">
+                    <HyperlinkButton
+                        Content="Pokémon Database"
+                        NavigateUri="{x:Bind ListDetailsMenuItem.PokemonDbUri, Mode=OneWay}" />
+                    <HyperlinkButton
+                        Content="Bulbapedia"
+                        NavigateUri="{x:Bind ListDetailsMenuItem.BulbapediaUri, Mode=OneWay}" />
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
