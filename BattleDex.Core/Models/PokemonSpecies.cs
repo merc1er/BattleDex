@@ -256,6 +256,44 @@ public class PokemonSpecies : INotifyPropertyChanged
     public Uri BulbapediaUri => new($"https://bulbapedia.bulbagarden.net/wiki/{Uri.EscapeDataString(GetBulbapediaTitle())}_(Pok%C3%A9mon)");
 
     /// <summary>
+    /// Smogon's short code for each generation's dex, as used in its URLs.
+    /// </summary>
+    private static readonly Dictionary<GenerationChart, string> SmogonGenerationCodes = new()
+    {
+        [GenerationChart.Gen1] = "rb",
+        [GenerationChart.Gen2] = "gs",
+        [GenerationChart.Gen3] = "rs",
+        [GenerationChart.Gen4] = "dp",
+        [GenerationChart.Gen5] = "bw",
+        [GenerationChart.Gen6] = "xy",
+        [GenerationChart.Gen7] = "sm",
+        [GenerationChart.Gen8] = "ss",
+        [GenerationChart.Gen9] = "sv",
+    };
+
+    /// <summary>
+    /// Gets the Smogon strategy dex page for this Pokémon in the given generation,
+    /// or null if Smogon's dex for that generation doesn't have it.
+    /// </summary>
+    public Uri? GetSmogonUri(GenerationChart generation)
+    {
+        if (Generation > (int)generation)
+        {
+            return null;
+        }
+
+        // The Legends: Arceus Pokémon (Wyrdeer to Enamorus) are Gen VIII but aren't in Smogon's Sword/Shield dex.
+        if (generation == GenerationChart.Gen8 && Id is >= 899 and <= 905)
+        {
+            return null;
+        }
+
+        // Smogon only lists Meowstic by gender form; link to the default (male) one.
+        var slug = Id == 678 ? "meowstic-m" : Name;
+        return new($"https://www.smogon.com/dex/{SmogonGenerationCodes[generation]}/pokemon/{slug}/");
+    }
+
+    /// <summary>
     /// Bulbapedia article titles that can't be derived from the species name.
     /// </summary>
     private static readonly Dictionary<int, string> BulbapediaTitleOverrides = new()
