@@ -29,6 +29,14 @@ public sealed partial class ListDetailsPage : Page
         }
     }
 
+    private void ListDetailsViewControl_Loaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        // Narrower than the toolkit's 320 default: the longest names and type pairs fit and the details get more room.
+        // Set here rather than in XAML, where assigning it before the template is applied fails.
+        ListDetailsViewControl.ListPaneWidth = 290;
+        ListDetailsViewControl.CompactModeThresholdWidth = 710;
+    }
+
     private void SearchBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
     {
         if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)

@@ -13,20 +13,44 @@
         <helpers:TypeMultiplierToColorConverter x:Key="TypeMultiplierToColorConverter" />
         <helpers:PokemonTypeToForegroundConverter x:Key="TypeToForegroundConverter" />
         <helpers:TypeMultiplierToForegroundConverter x:Key="TypeMultiplierToForegroundConverter" />
+        <Thickness x:Key="LinksBesideNameMargin">12,0,0,0</Thickness>
+        <Thickness x:Key="LinksAboveNameMargin">0,0,0,8</Thickness>
     </UserControl.Resources>
     <ScrollViewer
         Name="ForegroundElement"
         HorizontalAlignment="Stretch"
         VerticalScrollMode="Enabled"
         IsTabStop="True">
-        <StackPanel HorizontalAlignment="Left" Padding="12,0,0,24">
-            <Grid HorizontalAlignment="Stretch">
+        <StackPanel HorizontalAlignment="Stretch" Padding="12,0,4,24">
+            <Grid x:Name="HeaderGrid" HorizontalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
+                <!-- Shown when only the details pane is visible -->
+                <Button
+                    x:Name="BackButton"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="4"
+                    Width="40"
+                    Height="40"
+                    Padding="0"
+                    Margin="0,0,0,8"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Visibility="Collapsed"
+                    Click="BackButton_Click"
+                    ToolTipService.ToolTip="Back to list">
+                    <FontIcon FontSize="16" Glyph="&#xE72B;" />
+                </Button>
                 <Image
+                    Grid.Row="1"
                     Grid.Column="0"
                     Width="96"
                     Height="96"
@@ -34,6 +58,7 @@
                     Source="{x:Bind DisplayedSpriteUri, Mode=OneWay}"
                     Stretch="Uniform" />
                 <ToggleButton
+                    Grid.Row="1"
                     Grid.Column="1"
                     Width="32"
                     Height="32"
@@ -61,21 +86,38 @@
                         Data="M7,3 Q7,8 12,8 Q7,8 7,13 Q7,8 2,8 Q7,8 7,3 Z M11.5,1.5 Q11.5,3 13,3 Q11.5,3 11.5,4.5 Q11.5,3 10,3 Q11.5,3 11.5,1.5 Z" />
                 </ToggleButton>
                 <StackPanel
+                    Grid.Row="1"
                     Grid.Column="2"
                     Margin="{StaticResource SmallLeftMargin}"
-                    VerticalAlignment="Center"
-                    Orientation="Horizontal">
+                    VerticalAlignment="Center">
                     <TextBlock
                         Text="{x:Bind ListDetailsMenuItem.NameEnglish, Mode=OneWay}"
-                        Style="{ThemeResource TitleTextBlockStyle}" />
+                        Style="{ThemeResource TitleTextBlockStyle}"
+                        TextWrapping="NoWrap"
+                        TextTrimming="CharacterEllipsis" />
                     <TextBlock
-                        Margin="12,0,0,0"
-                        VerticalAlignment="Bottom"
-                        Padding="0,0,0,2"
                         Text="{x:Bind ListDetailsMenuItem.IdDisplay, Mode=OneWay}"
                         Foreground="{ThemeResource TextFillColorSecondaryBrush}"
                         FontSize="18" />
                 </StackPanel>
+                <DropDownButton
+                    x:Name="LinksButton"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Margin="{StaticResource LinksBesideNameMargin}"
+                    VerticalAlignment="Center"
+                    ToolTipService.ToolTip="Open this Pokémon on other Pokédex websites">
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <TextBlock Text="Links" />
+                        <FontIcon FontSize="14" Glyph="&#xE71B;" />
+                    </StackPanel>
+                    <DropDownButton.Flyout>
+                        <MenuFlyout Placement="BottomEdgeAlignedRight">
+                            <MenuFlyoutItem Text="Pokémon Database" Click="PokemonDbLink_Click" />
+                            <MenuFlyoutItem Text="Bulbapedia" Click="BulbapediaLink_Click" />
+                        </MenuFlyout>
+                    </DropDownButton.Flyout>
+                </DropDownButton>
             </Grid>
             <StackPanel Padding="0,15,0,0">
                 <TextBlock

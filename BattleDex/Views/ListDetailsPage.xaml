@@ -170,7 +170,7 @@
             x:Uid="ListDetails"
             x:Name="ListDetailsViewControl"
             Grid.Row="1"
-            BackButtonBehavior="Inline"
+            BackButtonBehavior="Manual"
             Background="Transparent"
             BorderBrush="Transparent"
             DetailsTemplate="{StaticResource DetailsTemplate}"
@@ -179,6 +179,7 @@
             ListHeaderTemplate="{StaticResource ListHeaderTemplate}"
             NoSelectionContentTemplate="{StaticResource NoSelectionContentTemplate}"
             SelectedItem="{x:Bind ViewModel.Selected, Mode=TwoWay}"
+            Loaded="ListDetailsViewControl_Loaded"
             GotFocus="ListDetailsViewControl_GotFocus"
             ViewStateChanged="OnViewStateChanged"/>
     </Grid>

@@ -1,5 +1,9 @@
+using CommunityToolkit.WinUI.UI;
+using CommunityToolkit.WinUI.UI.Controls;
+
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Windows.System;
 
 using BattleDex.Core.Models;
 using BattleDex.ViewModels;
@@ -9,6 +13,7 @@ namespace BattleDex.Views;
 public sealed partial class ListDetailsDetailControl : UserControl
 {
     private readonly ListDetailsViewModel _viewModel;
+    private ListDetailsView? _listDetailsView;
 
     public PokemonSpecies? ListDetailsMenuItem
     {
@@ -52,12 +57,46 @@ public sealed partial class ListDetailsDetailControl : UserControl
     private void ListDetailsDetailControl_Loaded(object sender, RoutedEventArgs e)
     {
         _viewModel.PropertyChanged += OnViewModelPropertyChanged;
+        _listDetailsView = this.FindAscendant<ListDetailsView>();
+        if (_listDetailsView is not null)
+        {
+            _listDetailsView.ViewStateChanged += OnViewStateChanged;
+        }
         UpdateMatchupBindings();
+        UpdateHeaderLayout();
     }
 
     private void ListDetailsDetailControl_Unloaded(object sender, RoutedEventArgs e)
     {
         _viewModel.PropertyChanged -= OnViewModelPropertyChanged;
+        if (_listDetailsView is not null)
+        {
+            _listDetailsView.ViewStateChanged -= OnViewStateChanged;
+            _listDetailsView = null;
+        }
+    }
+
+    private void OnViewStateChanged(object? sender, ListDetailsViewState e) => UpdateHeaderLayout();
+
+    /// <summary>
+    /// When only the details pane is visible, shows the back button and moves the Links button
+    /// up beside it, above the name.
+    /// </summary>
+    private void UpdateHeaderLayout()
+    {
+        var detailsOnly = _listDetailsView?.ViewState == ListDetailsViewState.Details;
+        BackButton.Visibility = detailsOnly ? Visibility.Visible : Visibility.Collapsed;
+
+        Grid.SetRow(LinksButton, detailsOnly ? 0 : 1);
+        Grid.SetColumn(LinksButton, detailsOnly ? 0 : 3);
+        Grid.SetColumnSpan(LinksButton, detailsOnly ? 4 : 1);
+        LinksButton.HorizontalAlignment = detailsOnly ? HorizontalAlignment.Right : HorizontalAlignment.Left;
+        LinksButton.Margin = (Thickness)Resources[detailsOnly ? "LinksAboveNameMargin" : "LinksBesideNameMargin"];
+    }
+
+    private void BackButton_Click(object sender, RoutedEventArgs e)
+    {
+        _viewModel.Selected = null;
     }
     private void OnViewModelPropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
     {
@@ -79,6 +118,22 @@ public sealed partial class ListDetailsDetailControl : UserControl
         EvYieldText.Text = ListDetailsMenuItem?.GetEvYieldDisplay(_viewModel.SelectedGeneration) ?? string.Empty;
     }
 
+    private async void PokemonDbLink_Click(object sender, RoutedEventArgs e)
+    {
+        if (ListDetailsMenuItem is { } item)
+        {
+            await Launcher.LaunchUriAsync(item.PokemonDbUri);
+        }
+    }
+
+    private async void BulbapediaLink_Click(object sender, RoutedEventArgs e)
+    {
+        if (ListDetailsMenuItem is { } item)
+        {
+            await Launcher.LaunchUriAsync(item.BulbapediaUri);
+        }
+    }
+
     private static void OnListDetailsMenuItemPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
         if (d is ListDetailsDetailControl control)
@@ -87,6 +142,7 @@ public sealed partial class ListDetailsDetailControl : UserControl
             control.IsShiny = false;
             control.Bindings.Update();
             control.UpdateMatchupBindings();
+            control.UpdateHeaderLayout();
         }
     }
 
