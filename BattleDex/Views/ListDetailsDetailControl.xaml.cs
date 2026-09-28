@@ -116,6 +116,9 @@ public sealed partial class ListDetailsDetailControl : UserControl
         ImmunitiesHeader.Visibility = immuneVis;
         ImmunitiesControl.Visibility = immuneVis;
         EvYieldText.Text = ListDetailsMenuItem?.GetEvYieldDisplay(_viewModel.SelectedGeneration) ?? string.Empty;
+        SmogonLinkItem.Visibility = ListDetailsMenuItem?.GetSmogonUri(_viewModel.SelectedGeneration) is not null
+            ? Visibility.Visible
+            : Visibility.Collapsed;
     }
 
     private async void PokemonDbLink_Click(object sender, RoutedEventArgs e)
@@ -131,6 +134,14 @@ public sealed partial class ListDetailsDetailControl : UserControl
         if (ListDetailsMenuItem is { } item)
         {
             await Launcher.LaunchUriAsync(item.BulbapediaUri);
+        }
+    }
+
+    private async void SmogonLink_Click(object sender, RoutedEventArgs e)
+    {
+        if (ListDetailsMenuItem?.GetSmogonUri(_viewModel.SelectedGeneration) is { } uri)
+        {
+            await Launcher.LaunchUriAsync(uri);
         }
     }
 

@@ -115,6 +115,7 @@
                         <MenuFlyout Placement="BottomEdgeAlignedRight">
                             <MenuFlyoutItem Text="Pokémon Database" Click="PokemonDbLink_Click" />
                             <MenuFlyoutItem Text="Bulbapedia" Click="BulbapediaLink_Click" />
+                            <MenuFlyoutItem x:Name="SmogonLinkItem" Text="Smogon" Click="SmogonLink_Click" />
                         </MenuFlyout>
                     </DropDownButton.Flyout>
                 </DropDownButton>
